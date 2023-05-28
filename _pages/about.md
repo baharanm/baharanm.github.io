@@ -2,25 +2,30 @@
 layout: about
 title: about
 permalink: /
-subtitle: <a href='#'>Affiliations</a>. Address. Contacts. Moto. Etc.
+# subtitle: <a href='#'>Affiliations</a>. Address. Contacts. Moto. Etc.
 
 profile:
   align: right
-  image: prof_pic.jpg
+  image: baharan.jpg
   image_circular: false # crops the image to make it circular
   address: >
-    <p>555 your office number</p>
-    <p>123 your address street</p>
-    <p>Your City, State 12345</p>
+    <p>Engineering VI - 397B</p>
+    <p>404 Westwood Plaza</p>
+    <p>Los Angeles, CA 90095</p>
+    <p><a href='mailto:baharan@cs.ucla.edu'>baharan@cs.ucla.edu</a></p>
 
 news: true  # includes a list of news items
-latest_posts: true  # includes a list of the newest posts
-selected_papers: true # includes a list of papers marked as "selected={true}"
-social: true  # includes social icons at the bottom of the page
+# latest_posts: true  # includes a list of the newest posts
+# selected_papers: true # includes a list of papers marked as "selected={true}"
+# social: true  # includes social icons at the bottom of the page
 ---
 
-Write your biography here. Tell the world about yourself. Link to your favorite [subreddit](http://reddit.com). You can put a picture in, too. The code is already in, just name your picture `prof_pic.jpg` and put it in the `img/` folder.
+I am an Assistant Professor in [Computer Science Department](https://www.cs.ucla.edu/) at [UCLA](https://www.ucla.edu/), where I lead the [BigML](http://web.cs.ucla.edu/~baharan/research.htm) research group.
+                    
+My research aims to address sustainability, reliability, and efficiency of machine learning, by selecting the most relevant data for training. The resulting algorithms will be broadly applicable for learning from massive datasets across a wide range of applications, such as medical diagnosis and environment sensing.
 
-Put your address / P.O. box / other info right below your picture. You can also disable any of these elements by editing `profile` property of the YAML header of your `_pages/about.md`. Edit `_bibliography/papers.bib` and Jekyll will render your [publications page](/al-folio/publications/) automatically.
+<!-- My research focuses on developing new methods that enable efficient machine learning from massive datasets. More specifically, I am interested in designing techniques that can gain insights from the underlying data structure by utilizing complex and higher-order interactions between data points. The extracted information can be used to efficiently explore and robustly learn from datasets that are too large to be dealt with by traditional approaches. My methods have immediate application to high-impact problems where massive data volumes prohibit efficient learning and inference, such as huge image collections, recommender systems, Web and social services, video and other large data streams. -->
 
-Link to your social media connections, too. This theme is set up to use [Font Awesome icons](http://fortawesome.github.io/Font-Awesome/) and [Academicons](https://jpswalsh.github.io/academicons/), like the ones below. Add your Facebook, Twitter, LinkedIn, Google Scholar, or just disable all of them.
+
+Before joining UCLA, I was a postdoctoral research fellow in Computer Science at [Stanford University](https://www.cs.ucla.edu/) working with [Jure Leskovec](https://cs.stanford.edu/people/jure/). I received my Ph.D. in Computer Science from [ETH Zurich](https://ethz.ch/en.html) advised by [Andreas Krause](https://las.inf.ethz.ch/krausea/). I received an [ETH medal for Outstanding Doctoral Thesis](https://ethz.ch/content/dam/ethz/main/eth-zurich/education/auszeichnungen-preise/files/eth-medaille/medaille-doktorarbeit-2017.pdf), was selected as a [Rising Star in EECS by MIT](https://risingstars18-eecs.mit.edu/participant-mirzasoleiman/), and received an [NSF Career Award](https://samueli.ucla.edu/ucla-computer-scientist-receives-nsf-career-award-to-improve-sustainability-in-machine-learning/).
+
