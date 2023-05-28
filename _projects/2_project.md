@@ -1,7 +1,7 @@
 ---
 layout: page
-title: Robustness agains Label Noise
-description: Robust traing against label nosie
+title: Robustness against Label Noise
+description: Robust Training against Label Noise
 img: assets/img/noise.png
 importance: 2
 category: work

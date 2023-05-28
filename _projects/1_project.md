@@ -1,7 +1,7 @@
 ---
 layout: page
 title: Efficiency & Sustainability
-description: Data-efficient machine learning
+description: Data-Efficient Machine Learning
 img: assets/img/efficient.png
 importance: 1
 category: work

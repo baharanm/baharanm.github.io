@@ -15,10 +15,8 @@ We develop methods to mitigate the effect of spurious correlations during traini
 
 Checkout the following papers to know more:
 
-
 - [Mitigating Spurious Correlations in Multi-modal Models during Fine-tuning](https://arxiv.org/pdf/2304.03916), ICML 2023
 
 - [Eliminating Spurious Correlations from Pre-trained Models via Data Mixing](http://arxiv.org/abs/2305.14521), ArXiv preprint 2023
 
 - [Identifying Spurious Biases Early in Training through the Lens of Simplicity Bias](), ArXiv preprint 2023
-
