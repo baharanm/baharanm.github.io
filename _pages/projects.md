@@ -2,7 +2,7 @@
 layout: page
 title: projects
 permalink: /projects/
-description: We aims to address sustainability, reliability, and efficiency of machine learning, by selecting the most relevant data for training.
+description: We aim to address sustainability, reliability, and efficiency of machine learning, by selecting the most relevant data for training.
 nav: true
 nav_order: 2
 display_categories: [work]
