@@ -2,11 +2,13 @@
 layout: page
 permalink: /teaching/
 title: teaching
-description: Materials for courses you taught. Replace this text with your description.
+# description: Materials for courses you taught. Replace this text with your description.
 nav: true
 nav_order: 5
 ---
 
-For now, this page is assumed to be a static description of your courses. You can convert it to a collection similar to `_projects/` so that you can have a dedicated page for each course.
+Large-scale Machine Learning (CS 260D), Fall 2021-2022
 
-Organize your courses by years, topics, or universities, however you like!
+Data Science Fundamentals (CSM 148), Winter 2021-2022
+
+Projects in Large-scale Machine Learning (CS 269), Fall 2021, Spring 2022-2023
