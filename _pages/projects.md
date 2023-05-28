@@ -2,10 +2,10 @@
 layout: page
 title: projects
 permalink: /projects/
-description: A growing collection of your cool projects.
+description: We aims to address sustainability, reliability, and efficiency of machine learning, by selecting the most relevant data for training.
 nav: true
 nav_order: 2
-display_categories: [work, fun]
+display_categories: [work]
 horizontal: false
 ---
 
