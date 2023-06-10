@@ -10,9 +10,9 @@
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <title>Efficiency &amp; Sustainability | Baharan  Mirzasoleiman</title>
+    <title>Data-efficiency | Baharan  Mirzasoleiman</title>
     <meta name="author" content="Baharan  Mirzasoleiman">
-    <meta name="description" content="Data-Efficient Machine Learning">
+    <meta name="description" content="Data-efficient machine learning">
     <meta name="keywords" content="machine learning, data selection, optimization">
 
 
@@ -137,22 +137,15 @@
         <div class="post">
 
           <header class="post-header">
-            <h1 class="post-title">Efficiency &amp; Sustainability</h1>
-            <p class="post-description">Data-Efficient Machine Learning</p>
+            <h1 class="post-title">Data-efficiency</h1>
+            <p class="post-description">Data-efficient machine learning</p>
           </header>
 
           <article>
             <p>Large datasets have enabled over-parameterized neural networks to achieve unprecedented success. However, training such models, with millions or billions of parameters, on large data requires expensive computational resources, which consume substantial energy, leave a massive amount of carbon footprint, and often soon become obsolete and turn into e-waste. While there has been a persistent effort to improve the performance and reliability of machine learning models, their sustainability is often neglected.</p>
 
-<p>To address the sustainability and efficiency of machine learning, one approach involves selecting the most relevant data for training. We address the above problem by proposing rigorous methods to find coresets for training machine learning models, in particular neural networks. We address this problem both in supervised settings, as well as unsupervised setting for pretraining large models on large datasets.</p>
-
-<p>Checkout the following papers to know more:</p>
-
-<p>-<a href="https://arxiv.org/pdf/2302.09195" rel="external nofollow noopener" target="_blank">Data-Efficient Contrastive Self-supervised Learning: Easy Examples Contribute the Most</a>, ICML 2023, [<a href="https://sjoshi804.github.io/data-efficient-contrastive-learning/" rel="external nofollow noopener" target="_blank">Project page</a>]</p>
-
-<p>-<a href="">Towards Sustainable Learning: Coresets for Data-efficient Deep Learning</a>, ICML 2023</p>
-
-<p>-<a href="/assets/pdf/mirzasoleiman20data_long.pdf">Coresets for Data-efficient Training of Machine Learning Models</a>, ICML 2020</p>
+<p>To address the sustainability and efficiency of machine learning, one approach involves selecting the most relevant data for training. We address the above problem by proposing rigorous methods to find coresets for training machine learning models, in particular neural networks. 
+<!-- We address this problem both in supervised settings, as well as unsupervised setting for pretraining large models on large datasets. --></p>
 
 <div class="row">
     <div class="col-sm mt-3 mt-md-0">
@@ -169,6 +162,354 @@
 </figure>
 
     </div>
+</div>
+
+<p>Checkout the following papers to know more:</p>
+
+<div class="publications">
+<ol class="bibliography">
+<li>
+<!-- _layouts/bib.html -->
+      <div class="row">
+        <div class="col-sm-2 abbr"><abbr class="badge" style="background-color:#00369f"><a href="https://icml.cc/" rel="external nofollow noopener" target="_blank">ICML</a></abbr></div>
+
+        <!-- Entry bib key -->
+        <div id="joshi2023data" class="col-sm-8">
+        <!-- Title -->
+        <div class="title">Data-Efficient Contrastive Self-supervised Learning: Most Beneficial Examples for Supervised Learning Contribute the Least</div>
+        <!-- Author -->
+        <div class="author">
+        
+
+        <a href="https://sjoshi804.github.io/" rel="external nofollow noopener" target="_blank">Siddharth Joshi</a>, and <a href="https://baharanm.github.io/">Baharan Mirzasoleiman</a>
+</div>
+
+        <!-- Journal/Book title and date -->
+        
+        
+        <div class="periodical">
+          <em>International Conference on Machine Learning (ICML)</em>, 2023
+        </div>
+        <div class="periodical">
+          
+        </div>
+
+          <!-- Links/Buttons -->
+          <div class="links">
+            <a class="abstract btn btn-sm z-depth-0" role="button">Abs</a>
+            <a class="bibtex btn btn-sm z-depth-0" role="button">Bib</a>
+            <a href="/assets/pdf/joshi23data.pdf" class="btn btn-sm z-depth-0" role="button">PDF</a>
+            <a href="/assets/pdf/joshi23data_long.pdf" class="btn btn-sm z-depth-0" role="button">Supp</a>
+            <a href="https://github.com/BigML-CS-UCLA/sas-data-efficient-contrastive-learning" class="btn btn-sm z-depth-0" role="button" rel="external nofollow noopener" target="_blank">Code</a>
+            <a href="https://baharanm.github.io/blog/2023/data-CL/" class="btn btn-sm z-depth-0" role="button">Website</a>
+          </div>
+          
+          <div class="badges">
+            <span class="altmetric-embed" data-hide-no-mentions="true" data-hide-less-than="15" data-badge-type="2" data-badge-popover="right"></span>
+              <span class="__dimensions_badge_embed__" data-pmid="" data-hide-zero-citations="true" data-style="small_rectangle" data-legend="hover-right" style="margin-bottom: 3px;"></span>
+          </div>
+
+          <!-- Hidden abstract block -->
+          <div class="abstract hidden">
+            <p>Self-supervised learning (SSL) learns high-quality representations from large pools of unlabeled training data. As datasets grow larger, it becomes crucial to identify the examples that contribute the most to learning such representations. This enables efficient SSL by reducing the volume of data required for learning high-quality representations. Nevertheless, quantifying the value of examples for SSL has remained an open question. In this work, we address this for the first time, by proving that examples that contribute the most to contrastive SSL are those that have the most similar augmentations to other examples, in expectation. We provide rigorous guarantees for the generalization performance of SSL on such subsets. Empirically, we discover, perhaps surprisingly, the subsets that contribute the most to SSL are those that contribute the least to supervised learning. Through extensive experiments, we show that our subsets outperform random subsets by more than 3% on CIFAR100, CIFAR10, and STL10. Interestingly, we also find that we can safely exclude 20% of examples from CIFAR100 and 40% from STL10, without affecting downstream task performance.</p>
+          </div>
+<!-- Hidden bibtex block -->
+          <div class="bibtex hidden">
+            <figure class="highlight"><pre><code class="language-bibtex" data-lang="bibtex"><span class="nc">@article</span><span class="p">{</span><span class="nl">joshi2023data</span><span class="p">,</span>
+  <span class="na">title</span> <span class="p">=</span> <span class="s">{Data-Efficient Contrastive Self-supervised Learning: Most Beneficial Examples for Supervised Learning Contribute the Least}</span><span class="p">,</span>
+  <span class="na">author</span> <span class="p">=</span> <span class="s">{Joshi, Siddharth and Mirzasoleiman, Baharan}</span><span class="p">,</span>
+  <span class="na">journal</span> <span class="p">=</span> <span class="s">{International Conference on Machine Learning (ICML)}</span><span class="p">,</span>
+  <span class="na">year</span> <span class="p">=</span> <span class="s">{2023}</span><span class="p">,</span>
+  <span class="na">efficient</span> <span class="p">=</span> <span class="s">{true}</span>
+<span class="p">}</span></code></pre></figure>
+          </div>
+        </div>
+      </div>
+</li>
+<li>
+<!-- _layouts/bib.html -->
+      <div class="row">
+        <div class="col-sm-2 abbr"><abbr class="badge" style="background-color:#00369f"><a href="https://icml.cc/" rel="external nofollow noopener" target="_blank">ICML</a></abbr></div>
+
+        <!-- Entry bib key -->
+        <div id="yang2023towards" class="col-sm-8">
+        <!-- Title -->
+        <div class="title">Towards Sustainable Learning: Coresets for Data-efficient Deep Learning</div>
+        <!-- Author -->
+        <div class="author">
+        
+
+        <a href="https://sites.google.com/g.ucla.edu/yuyang/home" rel="external nofollow noopener" target="_blank">Yu Yang</a>, Hao Kang, and <a href="https://baharanm.github.io/">Baharan Mirzasoleiman</a>
+</div>
+
+        <!-- Journal/Book title and date -->
+        
+        
+        <div class="periodical">
+          <em>International Conference on Machine Learning (ICML)</em>, 2023
+        </div>
+        <div class="periodical">
+          
+        </div>
+
+          <!-- Links/Buttons -->
+          <div class="links">
+            <a class="abstract btn btn-sm z-depth-0" role="button">Abs</a>
+            <a class="bibtex btn btn-sm z-depth-0" role="button">Bib</a>
+            <a href="/assets/pdf/yang23sustainable.pdf" class="btn btn-sm z-depth-0" role="button">PDF</a>
+            <a href="/assets/pdf/yang23sustainable.pdf" class="btn btn-sm z-depth-0" role="button">Supp</a>
+          </div>
+          
+          <div class="badges">
+            <span class="altmetric-embed" data-hide-no-mentions="true" data-hide-less-than="15" data-badge-type="2" data-badge-popover="right"></span>
+              <span class="__dimensions_badge_embed__" data-pmid="" data-hide-zero-citations="true" data-style="small_rectangle" data-legend="hover-right" style="margin-bottom: 3px;"></span>
+          </div>
+
+          <!-- Hidden abstract block -->
+          <div class="abstract hidden">
+            <p>To improve the efficiency and sustainability of learning deep models, we propose CREST, the first scalable framework with rigorous theoretical guarantees to identify the most valuable examples for training non-convex models, particularly deep networks. To guarantee convergence to a stationary point of a non-convex function, CREST models the non-convex loss as a series of quadratic functions and extracts a coreset for each quadratic sub-region. In addition, to ensure faster convergence of stochastic gradient methods such as (mini-batch) SGD, CREST iteratively extracts multiple mini-batch coresets from larger random subsets of training data, to ensure nearly-unbiased gradients with small variances. Finally, to further improve scalability and efficiency, CREST identifies and excludes the examples that are learned from the coreset selection pipeline. Our extensive experiments on several deep networks trained on vision and NLP datasets, including CIFAR-10, CIFAR-100, TinyImageNet, and SNLI, confirm that CREST speeds up training deep networks on very large datasets, by 1.7x to 2.5x with minimum loss in the performance. By analyzing the learning difficulty of the subsets selected by CREST, we show that deep models benefit the most by learning from subsets of increasing difficulty levels.</p>
+          </div>
+<!-- Hidden bibtex block -->
+          <div class="bibtex hidden">
+            <figure class="highlight"><pre><code class="language-bibtex" data-lang="bibtex"><span class="nc">@article</span><span class="p">{</span><span class="nl">yang2023towards</span><span class="p">,</span>
+  <span class="na">title</span> <span class="p">=</span> <span class="s">{Towards Sustainable Learning: Coresets for Data-efficient Deep Learning}</span><span class="p">,</span>
+  <span class="na">author</span> <span class="p">=</span> <span class="s">{Yang, Yu and Kang, Hao and Mirzasoleiman, Baharan}</span><span class="p">,</span>
+  <span class="na">journal</span> <span class="p">=</span> <span class="s">{International Conference on Machine Learning (ICML)}</span><span class="p">,</span>
+  <span class="na">year</span> <span class="p">=</span> <span class="s">{2023}</span><span class="p">,</span>
+  <span class="na">efficient</span> <span class="p">=</span> <span class="s">{true}</span>
+<span class="p">}</span></code></pre></figure>
+          </div>
+        </div>
+      </div>
+</li>
+<li>
+<!-- _layouts/bib.html -->
+      <div class="row">
+        <div class="col-sm-2 abbr"><abbr class="badge">HotStorage</abbr></div>
+
+        <!-- Entry bib key -->
+        <div id="prakriya23nessa" class="col-sm-8">
+        <!-- Title -->
+        <div class="title">NeSSA: Near-Storage Data Selection for Accelerated Machine Learning Training</div>
+        <!-- Author -->
+        <div class="author">
+        
+
+        Neha Prakriya, <a href="https://sites.google.com/g.ucla.edu/yuyang/home" rel="external nofollow noopener" target="_blank">Yu Yang</a>, <a href="https://baharanm.github.io/">Baharan Mirzasoleiman</a>, Cho-Jui Hsieh, and Jason Cong</div>
+
+        <!-- Journal/Book title and date -->
+        
+        
+        <div class="periodical">
+          <em>ACM Workshop on Hot Topics in Storage and File Systems (HotStorage)</em>, 2023
+        </div>
+        <div class="periodical">
+          
+        </div>
+
+          <!-- Links/Buttons -->
+          <div class="links">
+            <a class="abstract btn btn-sm z-depth-0" role="button">Abs</a>
+            <a class="bibtex btn btn-sm z-depth-0" role="button">Bib</a>
+            <a href="/assets/pdf/prakriya23nessa.pdf" class="btn btn-sm z-depth-0" role="button">PDF</a>
+          </div>
+          
+          <div class="badges">
+            <span class="altmetric-embed" data-hide-no-mentions="true" data-hide-less-than="15" data-badge-type="2" data-badge-popover="right"></span>
+              <span class="__dimensions_badge_embed__" data-pmid="" data-hide-zero-citations="true" data-style="small_rectangle" data-legend="hover-right" style="margin-bottom: 3px;"></span>
+          </div>
+
+          <!-- Hidden abstract block -->
+          <div class="abstract hidden">
+            <p>Large-scale machine learning (ML) models rely on extremely large datasets to learn their exponentially growing number of parameters. While these models achieve unprecedented success, the increase in training time and hardware resources required is unsustainable. Further, we find that as dataset sizes increase, data movement becomes a significant com- ponent of overall training time. We propose NeSSA, a novel SmartSSD+GPU training architecture to intelligently select important subsets of large datasets near-storage, such that training on the subset mimics training on the full dataset with a very small loss in accuracy. To the best of our knowl- edge, this is the first work to propose such a near-storage data selection model for efficient ML training. We have evalu- ated our method for the CIFAR-10, SVHN, CINIC-10, CIFAR- 100, TinyImageNet, and ImageNet-100 datasets. We also test across ResNet-20, ResNet-18, and ResNet-50 models.</p>
+          </div>
+<!-- Hidden bibtex block -->
+          <div class="bibtex hidden">
+            <figure class="highlight"><pre><code class="language-bibtex" data-lang="bibtex"><span class="nc">@article</span><span class="p">{</span><span class="nl">prakriya23nessa</span><span class="p">,</span>
+  <span class="na">title</span> <span class="p">=</span> <span class="s">{NeSSA: Near-Storage Data Selection for Accelerated Machine Learning Training}</span><span class="p">,</span>
+  <span class="na">author</span> <span class="p">=</span> <span class="s">{Prakriya, Neha and Yang, Yu and Mirzasoleiman, Baharan and Hsieh, Cho-Jui and Cong, Jason}</span><span class="p">,</span>
+  <span class="na">journal</span> <span class="p">=</span> <span class="s">{ACM Workshop on Hot Topics in Storage and File Systems (HotStorage)}</span><span class="p">,</span>
+  <span class="na">year</span> <span class="p">=</span> <span class="s">{2023}</span><span class="p">,</span>
+  <span class="na">efficient</span> <span class="p">=</span> <span class="s">{true}</span>
+<span class="p">}</span></code></pre></figure>
+          </div>
+        </div>
+      </div>
+</li>
+<li>
+<!-- _layouts/bib.html -->
+      <div class="row">
+        <div class="col-sm-2 abbr"><abbr class="badge" style="background-color:#CC2375"><a href="https://icml.cc/" rel="external nofollow noopener" target="_blank">NeurIPS</a></abbr></div>
+
+        <!-- Entry bib key -->
+        <div id="liudata" class="col-sm-8">
+        <!-- Title -->
+        <div class="title">Data-Efficient Augmentation for Training Neural Networks</div>
+        <!-- Author -->
+        <div class="author">
+        
+
+        Tian Yu Liu, and <a href="https://baharanm.github.io/">Baharan Mirzasoleiman</a>
+</div>
+
+        <!-- Journal/Book title and date -->
+        
+        
+        <div class="periodical">
+          <em>Advances in Neural Information Processing Systems (NeurIPS)</em>, 2022
+        </div>
+        <div class="periodical">
+          
+        </div>
+
+          <!-- Links/Buttons -->
+          <div class="links">
+            <a class="abstract btn btn-sm z-depth-0" role="button">Abs</a>
+            <a class="bibtex btn btn-sm z-depth-0" role="button">Bib</a>
+            <a href="/assets/pdf/liu22augmentation.pdf" class="btn btn-sm z-depth-0" role="button">PDF</a>
+            <a href="/assets/pdf/liu22augmentation_long.pdf" class="btn btn-sm z-depth-0" role="button">Supp</a>
+            <a href="https://github.com/tianyu139/data-efficient-augmentation" class="btn btn-sm z-depth-0" role="button" rel="external nofollow noopener" target="_blank">Code</a>
+          </div>
+          
+          <div class="badges">
+            <span class="altmetric-embed" data-hide-no-mentions="true" data-hide-less-than="15" data-badge-type="2" data-badge-popover="right"></span>
+              <span class="__dimensions_badge_embed__" data-pmid="" data-hide-zero-citations="true" data-style="small_rectangle" data-legend="hover-right" style="margin-bottom: 3px;"></span>
+          </div>
+
+          <!-- Hidden abstract block -->
+          <div class="abstract hidden">
+            <p>Data augmentation is essential to achieve state-of-the-art performance in many deep learning applications. However, the most effective augmentation techniques become computationally prohibitive for even medium-sized datasets. To address this, we propose a rigorous technique to select subsets of data points that when augmented, closely capture the training dynamics of full data augmentation. We first show that data augmentation, modeled as additive perturbations, improves learning and generalization by relatively enlarging and perturbing the smaller singular values of the network Jacobian, while preserving its prominent directions. This prevents overfitting and enhances learning the harder to learn information. Then, we propose a framework to iteratively extract small subsets of training data that when augmented, closely capture the alignment of the fully augmented Jacobian with labels/residuals. We prove that stochastic gradient descent applied to the augmented subsets found by our approach has similar training dynamics to that of fully augmented data. Our experiments demonstrate that our method achieves 6.3x speedup on CIFAR10 and 2.2x speedup on SVHN, and outperforms the baselines by up to 10% across various subset sizes. Similarly, on TinyImageNet and ImageNet, our method beats the baselines by up to 8%, while achieving up to 3.3x speedup across various subset sizes. Finally, training on and augmenting 50% subsets using our method on a version of CIFAR10 corrupted with label noise even outperforms using the full dataset.</p>
+          </div>
+<!-- Hidden bibtex block -->
+          <div class="bibtex hidden">
+            <figure class="highlight"><pre><code class="language-bibtex" data-lang="bibtex"><span class="nc">@article</span><span class="p">{</span><span class="nl">liudata</span><span class="p">,</span>
+  <span class="na">title</span> <span class="p">=</span> <span class="s">{Data-Efficient Augmentation for Training Neural Networks}</span><span class="p">,</span>
+  <span class="na">author</span> <span class="p">=</span> <span class="s">{Liu, Tian Yu and Mirzasoleiman, Baharan}</span><span class="p">,</span>
+  <span class="na">journal</span> <span class="p">=</span> <span class="s">{Advances in Neural Information Processing Systems (NeurIPS)}</span><span class="p">,</span>
+  <span class="na">year</span> <span class="p">=</span> <span class="s">{2022}</span><span class="p">,</span>
+  <span class="na">efficient</span> <span class="p">=</span> <span class="s">{true}</span>
+<span class="p">}</span></code></pre></figure>
+          </div>
+        </div>
+      </div>
+</li>
+<li>
+<!-- _layouts/bib.html -->
+      <div class="row">
+        <div class="col-sm-2 abbr"><abbr class="badge" style="background-color:#00369f"><a href="https://icml.cc/" rel="external nofollow noopener" target="_blank">ICML</a></abbr></div>
+
+        <!-- Entry bib key -->
+        <div id="pooladzandi2022adaptive" class="col-sm-8">
+        <!-- Title -->
+        <div class="title">Adaptive second order coresets for data-efficient machine learning</div>
+        <!-- Author -->
+        <div class="author">
+        
+
+        Omead Pooladzandi, David Davini, and <a href="https://baharanm.github.io/">Baharan Mirzasoleiman</a>
+</div>
+
+        <!-- Journal/Book title and date -->
+        
+        
+        <div class="periodical">
+          <em>International Conference on Machine Learning (ICML)</em>, 2022
+        </div>
+        <div class="periodical">
+          
+        </div>
+
+          <!-- Links/Buttons -->
+          <div class="links">
+            <a class="abstract btn btn-sm z-depth-0" role="button">Abs</a>
+            <a class="bibtex btn btn-sm z-depth-0" role="button">Bib</a>
+            <a href="/assets/pdf/pooladzandi22adaptive.pdf" class="btn btn-sm z-depth-0" role="button">PDF</a>
+            <a href="/assets/pdf/pooladzandi22adaptive_long.pdf" class="btn btn-sm z-depth-0" role="button">Supp</a>
+          </div>
+          
+          <div class="badges">
+            <span class="altmetric-embed" data-hide-no-mentions="true" data-hide-less-than="15" data-badge-type="2" data-badge-popover="right"></span>
+              <span class="__dimensions_badge_embed__" data-pmid="" data-hide-zero-citations="true" data-style="small_rectangle" data-legend="hover-right" style="margin-bottom: 3px;"></span>
+          </div>
+
+          <!-- Hidden abstract block -->
+          <div class="abstract hidden">
+            <p>Training machine learning models on massive datasets incurs substantial computational costs. To alleviate such costs, there has been a sustained effort to develop data-efficient training methods that can carefully select subsets of the training examples that generalize on par with the full training data. However, existing methods are limited in providing theoretical guarantees for the quality of the models trained on the extracted subsets, and may perform poorly in practice. We propose AdaCore, a method that leverages the geometry of the data to extract subsets of the training examples for efficient machine learning. The key idea behind our method is to dynamically approximate the curvature of the loss function via an exponentially-averaged estimate of the Hessian to select weighted subsets (coresets) that provide a close approximation of the full gradient preconditioned with the Hessian. We prove rigorous guarantees for the convergence of various first and second-order methods applied to the subsets chosen by AdaCore. Our extensive experiments show that AdaCore extracts coresets with higher quality compared to baselines and speeds up training of convex and non-convex machine learning models, such as logistic regression and neural networks, by over 2.9 x over the full data and 4.5 x over random subsets.</p>
+          </div>
+<!-- Hidden bibtex block -->
+          <div class="bibtex hidden">
+            <figure class="highlight"><pre><code class="language-bibtex" data-lang="bibtex"><span class="nc">@article</span><span class="p">{</span><span class="nl">pooladzandi2022adaptive</span><span class="p">,</span>
+  <span class="na">title</span> <span class="p">=</span> <span class="s">{Adaptive second order coresets for data-efficient machine learning}</span><span class="p">,</span>
+  <span class="na">author</span> <span class="p">=</span> <span class="s">{Pooladzandi, Omead and Davini, David and Mirzasoleiman, Baharan}</span><span class="p">,</span>
+  <span class="na">journal</span> <span class="p">=</span> <span class="s">{International Conference on Machine Learning (ICML)}</span><span class="p">,</span>
+  <span class="na">pages</span> <span class="p">=</span> <span class="s">{17848--17869}</span><span class="p">,</span>
+  <span class="na">year</span> <span class="p">=</span> <span class="s">{2022}</span><span class="p">,</span>
+  <span class="na">organization</span> <span class="p">=</span> <span class="s">{PMLR}</span><span class="p">,</span>
+  <span class="na">efficient</span> <span class="p">=</span> <span class="s">{true}</span>
+<span class="p">}</span></code></pre></figure>
+          </div>
+        </div>
+      </div>
+</li>
+<li>
+<!-- _layouts/bib.html -->
+      <div class="row">
+        <div class="col-sm-2 abbr"><abbr class="badge" style="background-color:#00369f"><a href="https://icml.cc/" rel="external nofollow noopener" target="_blank">ICML</a></abbr></div>
+
+        <!-- Entry bib key -->
+        <div id="mirzasoleiman2020coresets" class="col-sm-8">
+        <!-- Title -->
+        <div class="title">Coresets for data-efficient training of machine learning models</div>
+        <!-- Author -->
+        <div class="author">
+        
+
+        <a href="https://baharanm.github.io/">Baharan Mirzasoleiman</a>, Jeff Bilmes, and Jure Leskovec</div>
+
+        <!-- Journal/Book title and date -->
+        
+        
+        <div class="periodical">
+          <em>International Conference on Machine Learning (ICML)</em>, 2020
+        </div>
+        <div class="periodical">
+          
+        </div>
+
+          <!-- Links/Buttons -->
+          <div class="links">
+            <a class="abstract btn btn-sm z-depth-0" role="button">Abs</a>
+            <a class="bibtex btn btn-sm z-depth-0" role="button">Bib</a>
+            <a href="/assets/pdf/mirzasoleiman20data.pdf" class="btn btn-sm z-depth-0" role="button">PDF</a>
+            <a href="/assets/pdf/mirzasoleiman20data_long.pdf" class="btn btn-sm z-depth-0" role="button">Supp</a>
+            <a href="https://github.com/baharanm/craig" class="btn btn-sm z-depth-0" role="button" rel="external nofollow noopener" target="_blank">Code</a>
+          </div>
+          
+          <div class="badges">
+            <span class="altmetric-embed" data-hide-no-mentions="true" data-hide-less-than="15" data-badge-type="2" data-badge-popover="right"></span>
+              <span class="__dimensions_badge_embed__" data-pmid="" data-hide-zero-citations="true" data-style="small_rectangle" data-legend="hover-right" style="margin-bottom: 3px;"></span>
+          </div>
+
+          <!-- Hidden abstract block -->
+          <div class="abstract hidden">
+            <p>Incremental gradient (IG) methods, such as stochastic gradient descent and its variants are commonly used for large scale optimization in machine learning. Despite the sustained effort to make IG methods more data-efficient, it remains an open question how to select a training data subset that can theoretically and practically perform on par with the full dataset. Here we develop CRAIG, a method to select a weighted subset (or coreset) of training data that closely estimates the full gradient by maximizing a submodular function. We prove that applying IG to this subset is guaranteed to converge to the (near) optimal solution with the same convergence rate as that of IG for convex optimization. As a result, CRAIG achieves a speedup that is inversely proportional to the size of the subset. To our knowledge, this is the first rigorous method for data-efficient training of general machine learning models. Our extensive set of experiments show that CRAIG, while achieving practically the same solution, speeds up various IG methods by up to 6x for logistic regression and 3x for training deep neural networks.</p>
+          </div>
+<!-- Hidden bibtex block -->
+          <div class="bibtex hidden">
+            <figure class="highlight"><pre><code class="language-bibtex" data-lang="bibtex"><span class="nc">@article</span><span class="p">{</span><span class="nl">mirzasoleiman2020coresets</span><span class="p">,</span>
+  <span class="na">title</span> <span class="p">=</span> <span class="s">{Coresets for data-efficient training of machine learning models}</span><span class="p">,</span>
+  <span class="na">author</span> <span class="p">=</span> <span class="s">{Mirzasoleiman, Baharan and Bilmes, Jeff and Leskovec, Jure}</span><span class="p">,</span>
+  <span class="na">journal</span> <span class="p">=</span> <span class="s">{International Conference on Machine Learning (ICML)}</span><span class="p">,</span>
+  <span class="na">pages</span> <span class="p">=</span> <span class="s">{6950--6960}</span><span class="p">,</span>
+  <span class="na">year</span> <span class="p">=</span> <span class="s">{2020}</span><span class="p">,</span>
+  <span class="na">organization</span> <span class="p">=</span> <span class="s">{PMLR}</span><span class="p">,</span>
+  <span class="na">efficient</span> <span class="p">=</span> <span class="s">{true}</span>
+<span class="p">}</span></code></pre></figure>
+          </div>
+        </div>
+      </div>
+</li>
+</ol>
 </div>
 
 

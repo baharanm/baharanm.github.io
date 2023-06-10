@@ -10,7 +10,7 @@
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <title>Robustness agains Data Poisoning Attacks | Baharan  Mirzasoleiman</title>
+    <title>Data Poisoning | Baharan  Mirzasoleiman</title>
     <meta name="author" content="Baharan  Mirzasoleiman">
     <meta name="description" content="Robust traing against data poisoning">
     <meta name="keywords" content="machine learning, data selection, optimization">
@@ -137,7 +137,7 @@
         <div class="post">
 
           <header class="post-header">
-            <h1 class="post-title">Robustness agains Data Poisoning Attacks</h1>
+            <h1 class="post-title">Data Poisoning</h1>
             <p class="post-description">Robust traing against data poisoning</p>
           </header>
 
@@ -147,19 +147,203 @@ test-time examples. Powerful attacks generate poisons that visually look innocen
 
 <p>We develop powerful defense methods to traing neural networks robust against data poisoning attacks. We consider this problem in supervised setting as well as multimodal language-image pretraining.</p>
 
+<div class="row justify-content-sm-center">
+	<div class="col-sm-8 mt-3 mt-md-0">
+	    <figure>
+
+  <picture>
+    
+
+    <!-- Fallback to the original file -->
+    <img src="/assets/img/poison.png" class="img-fluid rounded z-depth-1" width="auto" height="auto" title="example image" onerror="this.onerror=null; $('.responsive-img-srcset').remove();">
+
+  </picture>
+
+</figure>
+
+	</div>
+</div>
+<!-- <div class="caption">
+    This image can also have a caption. It's like magic.
+</div> -->
+
 <p>Checkout the following papers to know more:</p>
 
-<ul>
-  <li>
-    <p><a href="/assets/pdf/yang22poisons_long">Not All Poisons are Created Equal: Robust Training against Data Poisoning</a>, ICML 2022</p>
-  </li>
-  <li>
-    <p><a href="/assets/pdf/liu22friendly_long.pdf">Friendly Noise against Adversarial Noise: A Powerful Defense against Data Poisoning Attacks</a>, NeurIPS 2022</p>
-  </li>
-  <li>
-    <p><a href="https://arxiv.org/pdf/2303.06854" rel="external nofollow noopener" target="_blank">Robust Contrastive Language-Image Pretraining against Data Poisoning and Backdoor Attacks</a>, ArXiv Preprint, 2022</p>
-  </li>
-</ul>
+<div class="publications">
+<ol class="bibliography">
+<li>
+<!-- _layouts/bib.html -->
+      <div class="row">
+        <div class="col-sm-2 abbr"><abbr class="badge">ArXiv</abbr></div>
+
+        <!-- Entry bib key -->
+        <div id="yang2023robust" class="col-sm-8">
+        <!-- Title -->
+        <div class="title">Robust Contrastive Language-Image Pretraining against Data Poisoning and Backdoor Attacks</div>
+        <!-- Author -->
+        <div class="author">
+        
+
+        Wenhan Yang, and <a href="https://baharanm.github.io/">Baharan Mirzasoleiman</a>
+</div>
+
+        <!-- Journal/Book title and date -->
+        
+        
+        <div class="periodical">
+          <em>arXiv preprint arXiv:2303.06854</em>, Preprints
+        </div>
+        <div class="periodical">
+          
+        </div>
+
+          <!-- Links/Buttons -->
+          <div class="links">
+            <a class="abstract btn btn-sm z-depth-0" role="button">Abs</a>
+            <a href="http://arxiv.org/abs/2303.06854" class="btn btn-sm z-depth-0" role="button" rel="external nofollow noopener" target="_blank">arXiv</a>
+            <a class="bibtex btn btn-sm z-depth-0" role="button">Bib</a>
+          </div>
+          
+          <div class="badges">
+            <span class="altmetric-embed" data-hide-no-mentions="true" data-hide-less-than="15" data-badge-type="2" data-badge-popover="right"></span>
+              <span class="__dimensions_badge_embed__" data-pmid="" data-hide-zero-citations="true" data-style="small_rectangle" data-legend="hover-right" style="margin-bottom: 3px;"></span>
+          </div>
+
+          <!-- Hidden abstract block -->
+          <div class="abstract hidden">
+            <p>Contrastive vision-language representation learning has achieved state-of-the-art performance for zero-shot classification, by learning from millions of image-caption pairs crawled from the internet. However, the massive data that powers large multimodal models such as CLIP, makes them extremely vulnerable to various types of adversarial attacks, including targeted and backdoor data poisoning attacks. Despite this vulnerability, robust contrastive vision-language pretraining against adversarial attacks has remained unaddressed. In this work, we propose RoCLIP, the first effective method for robust pretraining and fine-tuning multimodal vision-language models. RoCLIP effectively breaks the association between poisoned image-caption pairs by considering a pool of random examples, and (1) matching every image with the text that is most similar to its caption in the pool, and (2) matching every caption with the image that is most similar to its image in the pool. Our extensive experiments show that our method renders state-of-the-art targeted data poisoning and backdoor attacks ineffective during pre-training or fine-tuning of CLIP. In particular, RoCLIP decreases the poison and backdoor attack success rates down to 0% during pre-training and 1%-4% during fine-tuning, and effectively improves the model’s performance.</p>
+          </div>
+<!-- Hidden bibtex block -->
+          <div class="bibtex hidden">
+            <figure class="highlight"><pre><code class="language-bibtex" data-lang="bibtex"><span class="nc">@article</span><span class="p">{</span><span class="nl">yang2023robust</span><span class="p">,</span>
+  <span class="na">title</span> <span class="p">=</span> <span class="s">{Robust Contrastive Language-Image Pretraining against Data Poisoning and Backdoor Attacks}</span><span class="p">,</span>
+  <span class="na">author</span> <span class="p">=</span> <span class="s">{Yang, Wenhan and Mirzasoleiman, Baharan}</span><span class="p">,</span>
+  <span class="na">journal</span> <span class="p">=</span> <span class="s">{arXiv preprint arXiv:2303.06854}</span><span class="p">,</span>
+  <span class="na">year</span> <span class="p">=</span> <span class="s">{Preprints}</span><span class="p">,</span>
+  <span class="na">poison</span> <span class="p">=</span> <span class="s">{true}</span>
+<span class="p">}</span></code></pre></figure>
+          </div>
+        </div>
+      </div>
+</li>
+<li>
+<!-- _layouts/bib.html -->
+      <div class="row">
+        <div class="col-sm-2 abbr"><abbr class="badge" style="background-color:#CC2375"><a href="https://icml.cc/" rel="external nofollow noopener" target="_blank">NeurIPS</a></abbr></div>
+
+        <!-- Entry bib key -->
+        <div id="liufriendly" class="col-sm-8">
+        <!-- Title -->
+        <div class="title">Friendly Noise against Adversarial Noise: A Powerful Defense against Data Poisoning Attack</div>
+        <!-- Author -->
+        <div class="author">
+        
+
+        Tian Yu Liu, <a href="https://sites.google.com/g.ucla.edu/yuyang/home" rel="external nofollow noopener" target="_blank">Yu Yang</a>, and <a href="https://baharanm.github.io/">Baharan Mirzasoleiman</a>
+</div>
+
+        <!-- Journal/Book title and date -->
+        
+        
+        <div class="periodical">
+          <em>Advances in Neural Information Processing Systems (NeurIPS)</em>, 2022
+        </div>
+        <div class="periodical">
+          
+        </div>
+
+          <!-- Links/Buttons -->
+          <div class="links">
+            <a class="abstract btn btn-sm z-depth-0" role="button">Abs</a>
+            <a class="bibtex btn btn-sm z-depth-0" role="button">Bib</a>
+            <a href="/assets/pdf/liu22friendly.pdf" class="btn btn-sm z-depth-0" role="button">PDF</a>
+            <a href="/assets/pdf/liu22friendly_long.pdf" class="btn btn-sm z-depth-0" role="button">Supp</a>
+            <a href="https://github.com/tianyu139/friendly-noise" class="btn btn-sm z-depth-0" role="button" rel="external nofollow noopener" target="_blank">Code</a>
+          </div>
+          
+          <div class="badges">
+            <span class="altmetric-embed" data-hide-no-mentions="true" data-hide-less-than="15" data-badge-type="2" data-badge-popover="right"></span>
+              <span class="__dimensions_badge_embed__" data-pmid="" data-hide-zero-citations="true" data-style="small_rectangle" data-legend="hover-right" style="margin-bottom: 3px;"></span>
+          </div>
+
+          <!-- Hidden abstract block -->
+          <div class="abstract hidden">
+            <p>A powerful category of (invisible) data poisoning attacks modify a subset of training examples by small adversarial perturbations to change the prediction of certain test-time data. Existing defense mechanisms are not desirable to deploy in practice, as they often either drastically harm the generalization performance, or are attack-specific, and prohibitively slow to apply. Here, we propose a simple but highly effective approach that unlike existing methods breaks various types of invisible poisoning attacks with the slightest drop in the generalization performance. We make the key observation that attacks introduce local sharp regions of high training loss, which when minimized, results in learning the adversarial perturbations and makes the attack successful. To break poisoning attacks, our key idea is to alleviate the sharp loss regions introduced by poisons. To do so, our approach comprises two components: an optimized friendly noise that is generated to maximally perturb examples without degrading the performance, and a randomly varying noise component. The combination of both components builds a very light-weight but extremely effective defense against the most powerful triggerless targeted and hidden-trigger backdoor poisoning attacks, including Gradient Matching, Bulls-eye Polytope, and Sleeper Agent. We show that our friendly noise is transferable to other architectures, and adaptive attacks cannot break our defense due to its random noise component.</p>
+          </div>
+<!-- Hidden bibtex block -->
+          <div class="bibtex hidden">
+            <figure class="highlight"><pre><code class="language-bibtex" data-lang="bibtex"><span class="nc">@article</span><span class="p">{</span><span class="nl">liufriendly</span><span class="p">,</span>
+  <span class="na">title</span> <span class="p">=</span> <span class="s">{Friendly Noise against Adversarial Noise: A Powerful Defense against Data Poisoning Attack}</span><span class="p">,</span>
+  <span class="na">author</span> <span class="p">=</span> <span class="s">{Liu, Tian Yu and Yang, Yu and Mirzasoleiman, Baharan}</span><span class="p">,</span>
+  <span class="na">journal</span> <span class="p">=</span> <span class="s">{Advances in Neural Information Processing Systems (NeurIPS)}</span><span class="p">,</span>
+  <span class="na">year</span> <span class="p">=</span> <span class="s">{2022}</span><span class="p">,</span>
+  <span class="na">poison</span> <span class="p">=</span> <span class="s">{true}</span>
+<span class="p">}</span></code></pre></figure>
+          </div>
+        </div>
+      </div>
+</li>
+<li>
+<!-- _layouts/bib.html -->
+      <div class="row">
+        <div class="col-sm-2 abbr"><abbr class="badge" style="background-color:#00369f"><a href="https://icml.cc/" rel="external nofollow noopener" target="_blank">ICML</a></abbr></div>
+
+        <!-- Entry bib key -->
+        <div id="yang2022not" class="col-sm-8">
+        <!-- Title -->
+        <div class="title">Not all poisons are created equal: Robust training against data poisoning</div>
+        <!-- Author -->
+        <div class="author">
+        
+
+        <a href="https://sites.google.com/g.ucla.edu/yuyang/home" rel="external nofollow noopener" target="_blank">Yu Yang</a>, Tian Yu Liu, and <a href="https://baharanm.github.io/">Baharan Mirzasoleiman</a>
+</div>
+
+        <!-- Journal/Book title and date -->
+        
+        
+        <div class="periodical">
+          <em>International Conference on Machine Learning (ICML)</em>, 2022
+        </div>
+        <div class="periodical">
+          
+        </div>
+
+          <!-- Links/Buttons -->
+          <div class="links">
+            <a class="abstract btn btn-sm z-depth-0" role="button">Abs</a>
+            <a class="bibtex btn btn-sm z-depth-0" role="button">Bib</a>
+            <a href="/assets/pdf/yang22poisons.pdf" class="btn btn-sm z-depth-0" role="button">PDF</a>
+            <a href="/assets/pdf/yang22poisons_long.pdf" class="btn btn-sm z-depth-0" role="button">Supp</a>
+            <a href="https://github.com/BigML-CS-UCLA/EPIC" class="btn btn-sm z-depth-0" role="button" rel="external nofollow noopener" target="_blank">Code</a>
+          </div>
+          
+          <div class="badges">
+            <span class="altmetric-embed" data-hide-no-mentions="true" data-hide-less-than="15" data-badge-type="2" data-badge-popover="right"></span>
+              <span class="__dimensions_badge_embed__" data-pmid="" data-hide-zero-citations="true" data-style="small_rectangle" data-legend="hover-right" style="margin-bottom: 3px;"></span>
+          </div>
+
+          <!-- Hidden abstract block -->
+          <div class="abstract hidden">
+            <p>Data poisoning causes misclassification of test time target examples, by injecting maliciously crafted samples in the training data. Existing defenses are often effective only against a specific type of targeted attack, significantly degrade the generalization performance, or are prohibitive for standard deep learning pipelines. In this work, we propose an efficient defense mechanism that significantly reduces the success rate of various data poisoning attacks, and provides theoretical guarantees for the performance of the model. Targeted attacks work by adding bounded perturbations to a randomly selected subset of training data to match the targets’ gradient or representation. We show that: (i) under bounded perturbations, only a number of poisons can be optimized to have a gradient that is close enough to that of the target and make the attack successful; (ii) such effective poisons move away from their original class and get isolated in the gradient space; (iii) dropping examples in low-density gradient regions during training can successfully eliminate the effective poisons, and guarantees similar training dynamics to that of training on full data. Our extensive experiments show that our method significantly decreases the success rate of state-of-the-art targeted attacks, including Gradient Matching and Bullseye Polytope, and easily scales to large datasets.</p>
+          </div>
+<!-- Hidden bibtex block -->
+          <div class="bibtex hidden">
+            <figure class="highlight"><pre><code class="language-bibtex" data-lang="bibtex"><span class="nc">@article</span><span class="p">{</span><span class="nl">yang2022not</span><span class="p">,</span>
+  <span class="na">title</span> <span class="p">=</span> <span class="s">{Not all poisons are created equal: Robust training against data poisoning}</span><span class="p">,</span>
+  <span class="na">author</span> <span class="p">=</span> <span class="s">{Yang, Yu and Liu, Tian Yu and Mirzasoleiman, Baharan}</span><span class="p">,</span>
+  <span class="na">journal</span> <span class="p">=</span> <span class="s">{International Conference on Machine Learning (ICML)}</span><span class="p">,</span>
+  <span class="na">pages</span> <span class="p">=</span> <span class="s">{25154--25165}</span><span class="p">,</span>
+  <span class="na">year</span> <span class="p">=</span> <span class="s">{2022}</span><span class="p">,</span>
+  <span class="na">organization</span> <span class="p">=</span> <span class="s">{PMLR}</span><span class="p">,</span>
+  <span class="na">poison</span> <span class="p">=</span> <span class="s">{true}</span>
+<span class="p">}</span></code></pre></figure>
+          </div>
+        </div>
+      </div>
+</li>
+</ol>
+</div>
 
           </article>
 
