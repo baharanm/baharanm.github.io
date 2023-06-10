@@ -4,3 +4,20 @@
 
 "PhysRev":
   url: https://journals.aps.org/
+
+"ICML":
+  url: https://icml.cc/
+  color: "#00369f"
+
+"NeurIPS":
+  url: https://icml.cc/
+  color: "#CC2375" #"#95C02B" #"#2BB0C0"
+
+"AISTATS":
+  url: https://aistats.org/
+  color: "#95C02B" #"#2BB0C0"
+
+"AAAI":
+  url: https://aaai.org/
+  color: "#C0C40D" #"#2BB0C0"
+

@@ -1,12 +1,15 @@
 github_users:
-  - torvalds
-  - alshedivat
+  # - bigml-cs-ucla
+  # - sjoshi804
+  # - baharanm
 
 github_repos:
-  - alshedivat/al-folio
-  - twbs/bootstrap
-  - jekyll/jekyll
-  - jquery/jquery
-  - FortAwesome/Font-Awesome
-  - jpswalsh/academicons
-  - mathjax/MathJax
+  # - alshedivat/al-folio
+  # - twbs/bootstrap
+  # - jekyll/jekyll
+  # - jquery/jquery
+  # - FortAwesome/Font-Awesome
+  # - jpswalsh/academicons
+  # - mathjax/MathJax
+  - BigML-CS-UCLA/sas-data-efficient-contrastive-learning
+  - BigML-CS-UCLA/EPIC
