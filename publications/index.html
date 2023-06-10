@@ -149,6 +149,73 @@
         <div class="col-sm-2 abbr"><abbr class="badge">ArXiv</abbr></div>
 
         <!-- Entry bib key -->
+        <div id="yang2023eliminating" class="col-sm-8">
+        <!-- Title -->
+        <div class="title">Identifying Spurious Biases Early in Training through the Lens of Simplicity Bias</div>
+        <!-- Author -->
+        <div class="author">
+        
+
+        Yu Yang, Eric Gan, Gintare Karolina Dziugaite, and
+          <span class="more-authors" title="click to view 1 more author" onclick="
+                var element = $(this);
+                element.attr('title', '');
+                var more_authors_text = element.text() == '1 more author' ? 'Baharan Mirzasoleiman' : '1 more author';
+                var cursorPosition = 0;
+                var textAdder = setInterval(function(){
+                  element.text(more_authors_text.substring(0, cursorPosition + 1));
+                  if (++cursorPosition == more_authors_text.length){
+                    clearInterval(textAdder);
+                  }
+              }, '10');
+              ">1 more author</span>
+</div>
+
+        <!-- Journal/Book title and date -->
+        
+        
+        <div class="periodical">
+          <em>arXiv preprint arXiv:2305.18761</em>, Preprints
+        </div>
+        <div class="periodical">
+          
+        </div>
+
+          <!-- Links/Buttons -->
+          <div class="links">
+            <a class="abstract btn btn-sm z-depth-0" role="button">Abs</a>
+            <a href="http://arxiv.org/abs/2305.18761" class="btn btn-sm z-depth-0" role="button" rel="external nofollow noopener" target="_blank">arXiv</a>
+            <a class="bibtex btn btn-sm z-depth-0" role="button">Bib</a>
+          </div>
+          
+          <div class="badges">
+            <span class="altmetric-embed" data-hide-no-mentions="true" data-hide-less-than="15" data-badge-type="2" data-badge-popover="right"></span>
+              <span class="__dimensions_badge_embed__" data-pmid="" data-hide-zero-citations="true" data-style="small_rectangle" data-legend="hover-right" style="margin-bottom: 3px;"></span>
+          </div>
+
+          <!-- Hidden abstract block -->
+          <div class="abstract hidden">
+            <p>Neural networks trained with (stochastic) gradient descent have an inductive bias towards learning simpler solutions. This makes them highly prone to learning simple spurious features that are highly correlated with a label instead of the predictive but more complex core features. In this work, we show that, interestingly, the simplicity bias of gradient descent can be leveraged to identify spurious correlations, early in training. First, we prove on a two-layer neural network, that groups of examples with high spurious correlation are separable based on the model’s output, in the initial training iterations. We further show that if spurious features have a small enough noise-to-signal ratio, the network’s output on the majority of examples in a class will be almost exclusively determined by the spurious features and will be nearly invariant to the core feature. Finally, we propose SPARE, which separates large groups with spurious correlations early in training, and utilizes importance sampling to alleviate the spurious correlation, by balancing the group sizes. We show that SPARE achieves up to 5.6% higher worst-group accuracy than state-of-the-art methods, while being up to 12x faster. We also show the applicability of SPARE to discover and mitigate spurious correlations in Restricted ImageNet.</p>
+          </div>
+<!-- Hidden bibtex block -->
+          <div class="bibtex hidden">
+            <figure class="highlight"><pre><code class="language-bibtex" data-lang="bibtex"><span class="nc">@article</span><span class="p">{</span><span class="nl">yang2023eliminating</span><span class="p">,</span>
+  <span class="na">title</span> <span class="p">=</span> <span class="s">{Identifying Spurious Biases Early in Training through the Lens of Simplicity Bias}</span><span class="p">,</span>
+  <span class="na">author</span> <span class="p">=</span> <span class="s">{Yang, Yu and Gan, Eric and Dziugaite, Gintare Karolina and Mirzasoleiman, Baharan}</span><span class="p">,</span>
+  <span class="na">journal</span> <span class="p">=</span> <span class="s">{arXiv preprint arXiv:2305.18761}</span><span class="p">,</span>
+  <span class="na">year</span> <span class="p">=</span> <span class="s">{Preprints}</span><span class="p">,</span>
+  <span class="na">spurious</span> <span class="p">=</span> <span class="s">{true}</span>
+<span class="p">}</span></code></pre></figure>
+          </div>
+        </div>
+      </div>
+</li>
+<li>
+<!-- _layouts/bib.html -->
+      <div class="row">
+        <div class="col-sm-2 abbr"><abbr class="badge">ArXiv</abbr></div>
+
+        <!-- Entry bib key -->
         <div id="xue2023eliminating" class="col-sm-8">
         <!-- Title -->
         <div class="title">Eliminating Spurious Correlations from Pre-trained Models via Data Mixing</div>
@@ -203,7 +270,8 @@
   <span class="na">title</span> <span class="p">=</span> <span class="s">{Eliminating Spurious Correlations from Pre-trained Models via Data Mixing}</span><span class="p">,</span>
   <span class="na">author</span> <span class="p">=</span> <span class="s">{Xue, Yihao and Payani, Ali and Yang, Yu and Mirzasoleiman, Baharan}</span><span class="p">,</span>
   <span class="na">journal</span> <span class="p">=</span> <span class="s">{arXiv preprint arXiv:2305.14521}</span><span class="p">,</span>
-  <span class="na">year</span> <span class="p">=</span> <span class="s">{Preprints}</span>
+  <span class="na">year</span> <span class="p">=</span> <span class="s">{Preprints}</span><span class="p">,</span>
+  <span class="na">spurious</span> <span class="p">=</span> <span class="s">{true}</span>
 <span class="p">}</span></code></pre></figure>
           </div>
         </div>
@@ -256,7 +324,77 @@
   <span class="na">title</span> <span class="p">=</span> <span class="s">{Robust Contrastive Language-Image Pretraining against Data Poisoning and Backdoor Attacks}</span><span class="p">,</span>
   <span class="na">author</span> <span class="p">=</span> <span class="s">{Yang, Wenhan and Mirzasoleiman, Baharan}</span><span class="p">,</span>
   <span class="na">journal</span> <span class="p">=</span> <span class="s">{arXiv preprint arXiv:2303.06854}</span><span class="p">,</span>
-  <span class="na">year</span> <span class="p">=</span> <span class="s">{Preprints}</span>
+  <span class="na">year</span> <span class="p">=</span> <span class="s">{Preprints}</span><span class="p">,</span>
+  <span class="na">poison</span> <span class="p">=</span> <span class="s">{true}</span>
+<span class="p">}</span></code></pre></figure>
+          </div>
+        </div>
+      </div>
+</li>
+<li>
+<!-- _layouts/bib.html -->
+      <div class="row">
+        <div class="col-sm-2 abbr"><abbr class="badge">ArXiv</abbr></div>
+
+        <!-- Entry bib key -->
+        <div id="deng2023robust" class="col-sm-8">
+        <!-- Title -->
+        <div class="title">Robust Learning with Progressive Data Expansion Against Spurious
+  Correlation</div>
+        <!-- Author -->
+        <div class="author">
+        
+
+        Yihe Deng,  Yang, Baharan Mirzasoleiman, and
+          <span class="more-authors" title="click to view 1 more author" onclick="
+                var element = $(this);
+                element.attr('title', '');
+                var more_authors_text = element.text() == '1 more author' ? 'Quanquan Gu' : '1 more author';
+                var cursorPosition = 0;
+                var textAdder = setInterval(function(){
+                  element.text(more_authors_text.substring(0, cursorPosition + 1));
+                  if (++cursorPosition == more_authors_text.length){
+                    clearInterval(textAdder);
+                  }
+              }, '10');
+              ">1 more author</span>
+</div>
+
+        <!-- Journal/Book title and date -->
+        
+        
+        <div class="periodical">
+          <em>arXiv preprint arXiv:2306.04949</em>, Preprints
+        </div>
+        <div class="periodical">
+          
+        </div>
+
+          <!-- Links/Buttons -->
+          <div class="links">
+            <a class="abstract btn btn-sm z-depth-0" role="button">Abs</a>
+            <a href="http://arxiv.org/abs/2306.04949" class="btn btn-sm z-depth-0" role="button" rel="external nofollow noopener" target="_blank">arXiv</a>
+            <a class="bibtex btn btn-sm z-depth-0" role="button">Bib</a>
+          </div>
+          
+          <div class="badges">
+            <span class="altmetric-embed" data-hide-no-mentions="true" data-hide-less-than="15" data-badge-type="2" data-badge-popover="right"></span>
+              <span class="__dimensions_badge_embed__" data-pmid="" data-hide-zero-citations="true" data-style="small_rectangle" data-legend="hover-right" style="margin-bottom: 3px;"></span>
+          </div>
+
+          <!-- Hidden abstract block -->
+          <div class="abstract hidden">
+            <p>While deep learning models have shown remarkable performance in various tasks, they are susceptible to learning non-generalizable spurious features rather than the core features that are genuinely correlated to the true label. In this paper, beyond existing analyses of linear models, we theoretically examine the learning process of a two-layer nonlinear convolutional neural network in the presence of spurious features. Our analysis suggests that imbalanced data groups and easily learnable spurious features can lead to the dominance of spurious features during the learning process. In light of this, we propose a new training algorithm called PDE that efficiently enhances the model’s robustness for a better worst-group performance. PDE begins with a group-balanced subset of training data and progressively expands it to facilitate the learning of the core features. Experiments on synthetic and real-world benchmark datasets confirm the superior performance of our method on models such as ResNets and Transformers. On average, our method achieves a 2.8% improvement in worst-group accuracy compared with the state-of-the-art method, while enjoying up to 10x faster training efficiency.</p>
+          </div>
+<!-- Hidden bibtex block -->
+          <div class="bibtex hidden">
+            <figure class="highlight"><pre><code class="language-bibtex" data-lang="bibtex"><span class="nc">@article</span><span class="p">{</span><span class="nl">deng2023robust</span><span class="p">,</span>
+  <span class="na">title</span> <span class="p">=</span> <span class="s">{Robust Learning with Progressive Data Expansion Against Spurious
+    Correlation}</span><span class="p">,</span>
+  <span class="na">author</span> <span class="p">=</span> <span class="s">{Deng, Yihe and Yang and Mirzasoleiman, Baharan and Gu, Quanquan}</span><span class="p">,</span>
+  <span class="na">journal</span> <span class="p">=</span> <span class="s">{arXiv preprint arXiv:2306.04949}</span><span class="p">,</span>
+  <span class="na">year</span> <span class="p">=</span> <span class="s">{Preprints}</span><span class="p">,</span>
+  <span class="na">spurious</span> <span class="p">=</span> <span class="s">{true}</span>
 <span class="p">}</span></code></pre></figure>
           </div>
         </div>
@@ -362,7 +500,8 @@
   <span class="na">title</span> <span class="p">=</span> <span class="s">{The Final Ascent: When Bigger Models Generalize Worse on Noisy-Labeled Data}</span><span class="p">,</span>
   <span class="na">author</span> <span class="p">=</span> <span class="s">{Xue, Yihao and Whitecross, Kyle and Mirzasoleiman, Baharan}</span><span class="p">,</span>
   <span class="na">journal</span> <span class="p">=</span> <span class="s">{arXiv preprint arXiv:2208.08003}</span><span class="p">,</span>
-  <span class="na">year</span> <span class="p">=</span> <span class="s">{Preprints}</span>
+  <span class="na">year</span> <span class="p">=</span> <span class="s">{Preprints}</span><span class="p">,</span>
+  <span class="na">noise</span> <span class="p">=</span> <span class="s">{true}</span>
 <span class="p">}</span></code></pre></figure>
           </div>
         </div>
@@ -413,8 +552,9 @@
           <!-- Links/Buttons -->
           <div class="links">
             <a class="abstract btn btn-sm z-depth-0" role="button">Abs</a>
-            <a href="http://arxiv.org/abs/2304.03916" class="btn btn-sm z-depth-0" role="button" rel="external nofollow noopener" target="_blank">arXiv</a>
             <a class="bibtex btn btn-sm z-depth-0" role="button">Bib</a>
+            <a href="/assets/pdf/yang23mitigating.pdf" class="btn btn-sm z-depth-0" role="button">PDF</a>
+            <a href="/assets/pdf/yang23mitigating_long.pdf" class="btn btn-sm z-depth-0" role="button">Supp</a>
           </div>
           
           <div class="badges">
@@ -432,7 +572,8 @@
   <span class="na">title</span> <span class="p">=</span> <span class="s">{Mitigating Spurious Correlations in Multi-modal Models during Fine-tuning}</span><span class="p">,</span>
   <span class="na">author</span> <span class="p">=</span> <span class="s">{Yang, Yu and Nushi, Besmira and Palangi, Hamid and Mirzasoleiman, Baharan}</span><span class="p">,</span>
   <span class="na">journal</span> <span class="p">=</span> <span class="s">{International Conference on Machine Learning (ICML)}</span><span class="p">,</span>
-  <span class="na">year</span> <span class="p">=</span> <span class="s">{2023}</span>
+  <span class="na">year</span> <span class="p">=</span> <span class="s">{2023}</span><span class="p">,</span>
+  <span class="na">spurious</span> <span class="p">=</span> <span class="s">{true}</span>
 <span class="p">}</span></code></pre></figure>
           </div>
         </div>
@@ -446,7 +587,7 @@
         <!-- Entry bib key -->
         <div id="joshi2023data" class="col-sm-8">
         <!-- Title -->
-        <div class="title">Data-Efficient Contrastive Self-supervised Learning: Easy Examples Contribute the Most</div>
+        <div class="title">Data-Efficient Contrastive Self-supervised Learning: Most Beneficial Examples for Supervised Learning Contribute the Least</div>
         <!-- Author -->
         <div class="author">
         
@@ -466,10 +607,11 @@
           <!-- Links/Buttons -->
           <div class="links">
             <a class="abstract btn btn-sm z-depth-0" role="button">Abs</a>
-            <a href="http://arxiv.org/abs/2302.09195" class="btn btn-sm z-depth-0" role="button" rel="external nofollow noopener" target="_blank">arXiv</a>
             <a class="bibtex btn btn-sm z-depth-0" role="button">Bib</a>
-            <a href="https://github.com/sjoshi804/sas-data-efficient-contrastive-learning" class="btn btn-sm z-depth-0" role="button" rel="external nofollow noopener" target="_blank">Code</a>
-            <a href="https://sjoshi804.github.io/data-efficient-contrastive-learning/" class="btn btn-sm z-depth-0" role="button" rel="external nofollow noopener" target="_blank">Website</a>
+            <a href="/assets/pdf/joshi23data.pdf" class="btn btn-sm z-depth-0" role="button">PDF</a>
+            <a href="/assets/pdf/joshi23data_long.pdf" class="btn btn-sm z-depth-0" role="button">Supp</a>
+            <a href="https://github.com/BigML-CS-UCLA/sas-data-efficient-contrastive-learning" class="btn btn-sm z-depth-0" role="button" rel="external nofollow noopener" target="_blank">Code</a>
+            <a href="https://baharanm.github.io/blog/2023/data-CL/" class="btn btn-sm z-depth-0" role="button" rel="external nofollow noopener" target="_blank">Website</a>
           </div>
           
           <div class="badges">
@@ -484,10 +626,11 @@
 <!-- Hidden bibtex block -->
           <div class="bibtex hidden">
             <figure class="highlight"><pre><code class="language-bibtex" data-lang="bibtex"><span class="nc">@article</span><span class="p">{</span><span class="nl">joshi2023data</span><span class="p">,</span>
-  <span class="na">title</span> <span class="p">=</span> <span class="s">{Data-Efficient Contrastive Self-supervised Learning: Easy Examples Contribute the Most}</span><span class="p">,</span>
+  <span class="na">title</span> <span class="p">=</span> <span class="s">{Data-Efficient Contrastive Self-supervised Learning: Most Beneficial Examples for Supervised Learning Contribute the Least}</span><span class="p">,</span>
   <span class="na">author</span> <span class="p">=</span> <span class="s">{Joshi, Siddharth and Mirzasoleiman, Baharan}</span><span class="p">,</span>
   <span class="na">journal</span> <span class="p">=</span> <span class="s">{International Conference on Machine Learning (ICML)}</span><span class="p">,</span>
-  <span class="na">year</span> <span class="p">=</span> <span class="s">{2023}</span>
+  <span class="na">year</span> <span class="p">=</span> <span class="s">{2023}</span><span class="p">,</span>
+  <span class="na">efficient</span> <span class="p">=</span> <span class="s">{true}</span>
 <span class="p">}</span></code></pre></figure>
           </div>
         </div>
@@ -536,6 +679,7 @@
             <a class="abstract btn btn-sm z-depth-0" role="button">Abs</a>
             <a class="bibtex btn btn-sm z-depth-0" role="button">Bib</a>
             <a href="/assets/pdf/xue23which_long.pdf" class="btn btn-sm z-depth-0" role="button">PDF</a>
+            <a href="https://baharanm.github.io/blog/2023/CC-FS/" class="btn btn-sm z-depth-0" role="button" rel="external nofollow noopener" target="_blank">Website</a>
           </div>
           
           <div class="badges">
@@ -588,6 +732,8 @@
           <div class="links">
             <a class="abstract btn btn-sm z-depth-0" role="button">Abs</a>
             <a class="bibtex btn btn-sm z-depth-0" role="button">Bib</a>
+            <a href="/assets/pdf/yang23sustainable.pdf" class="btn btn-sm z-depth-0" role="button">PDF</a>
+            <a href="/assets/pdf/yang23sustainable.pdf" class="btn btn-sm z-depth-0" role="button">Supp</a>
           </div>
           
           <div class="badges">
@@ -597,7 +743,7 @@
 
           <!-- Hidden abstract block -->
           <div class="abstract hidden">
-            <p>To improve the efficiency and sustainability of learning deep models, we propose CREST, the first scalable framework with rigorous theoretical guarantees to identify the most valuable examples for training non-convex models, particularly deep networks. To guarantee convergence to a stationary point of a non-convex function, CREST models the non-convex loss as a series of quadratic functions and extracts a coreset for each quadratic sub-region. In addition, to ensure faster convergence of stochastic gradient methods such as (mini-batch) SGD, CREST iteratively extracts multiple mini-batch coresets from larger random subsets of training data, to ensure nearly-unbiased gradients with small variances. Finally, to further improve scalability and efficiency, CREST identifies and excludes the examples that are learned from the coreset selection pipeline. Our extensive experiments on several deep networks trained on vision and NLP datasets, including CIFAR-10, CIFAR-100, TinyImageNet, and SNLI confirm that CREST speeds up training deep networks on very large datasets, by around 2x to 2.5x with minimum loss in performance. Analyzing the importance of various groups of examples reveals that CREST shifts focus from easy to difficult examples during learning non-convex mode</p>
+            <p>To improve the efficiency and sustainability of learning deep models, we propose CREST, the first scalable framework with rigorous theoretical guarantees to identify the most valuable examples for training non-convex models, particularly deep networks. To guarantee convergence to a stationary point of a non-convex function, CREST models the non-convex loss as a series of quadratic functions and extracts a coreset for each quadratic sub-region. In addition, to ensure faster convergence of stochastic gradient methods such as (mini-batch) SGD, CREST iteratively extracts multiple mini-batch coresets from larger random subsets of training data, to ensure nearly-unbiased gradients with small variances. Finally, to further improve scalability and efficiency, CREST identifies and excludes the examples that are learned from the coreset selection pipeline. Our extensive experiments on several deep networks trained on vision and NLP datasets, including CIFAR-10, CIFAR-100, TinyImageNet, and SNLI, confirm that CREST speeds up training deep networks on very large datasets, by 1.7x to 2.5x with minimum loss in the performance. By analyzing the learning difficulty of the subsets selected by CREST, we show that deep models benefit the most by learning from subsets of increasing difficulty levels.</p>
           </div>
 <!-- Hidden bibtex block -->
           <div class="bibtex hidden">
@@ -605,7 +751,75 @@
   <span class="na">title</span> <span class="p">=</span> <span class="s">{Towards Sustainable Learning: Coresets for Data-efficient Deep Learning}</span><span class="p">,</span>
   <span class="na">author</span> <span class="p">=</span> <span class="s">{Yang, Yu and Kang, Hao and Mirzasoleiman, Baharan}</span><span class="p">,</span>
   <span class="na">journal</span> <span class="p">=</span> <span class="s">{International Conference on Machine Learning (ICML)}</span><span class="p">,</span>
-  <span class="na">year</span> <span class="p">=</span> <span class="s">{2023}</span>
+  <span class="na">year</span> <span class="p">=</span> <span class="s">{2023}</span><span class="p">,</span>
+  <span class="na">efficient</span> <span class="p">=</span> <span class="s">{true}</span>
+<span class="p">}</span></code></pre></figure>
+          </div>
+        </div>
+      </div>
+</li>
+<li>
+<!-- _layouts/bib.html -->
+      <div class="row">
+        <div class="col-sm-2 abbr"><abbr class="badge">HotStorage</abbr></div>
+
+        <!-- Entry bib key -->
+        <div id="prakriya23nessa" class="col-sm-8">
+        <!-- Title -->
+        <div class="title">NeSSA: Near-Storage Data Selection for Accelerated Machine Learning Training</div>
+        <!-- Author -->
+        <div class="author">
+        
+
+        Neha Prakriya, Yu Yang, Baharan Mirzasoleiman, and
+          <span class="more-authors" title="click to view 2 more authors" onclick="
+                var element = $(this);
+                element.attr('title', '');
+                var more_authors_text = element.text() == '2 more authors' ? 'Cho-Jui Hsieh, Jason Cong' : '2 more authors';
+                var cursorPosition = 0;
+                var textAdder = setInterval(function(){
+                  element.text(more_authors_text.substring(0, cursorPosition + 1));
+                  if (++cursorPosition == more_authors_text.length){
+                    clearInterval(textAdder);
+                  }
+              }, '10');
+              ">2 more authors</span>
+</div>
+
+        <!-- Journal/Book title and date -->
+        
+        
+        <div class="periodical">
+          <em>ACM Workshop on Hot Topics in Storage and File Systems (HotStorage)</em>, 2023
+        </div>
+        <div class="periodical">
+          
+        </div>
+
+          <!-- Links/Buttons -->
+          <div class="links">
+            <a class="abstract btn btn-sm z-depth-0" role="button">Abs</a>
+            <a class="bibtex btn btn-sm z-depth-0" role="button">Bib</a>
+            <a href="/assets/pdf/prakriya23nessa.pdf" class="btn btn-sm z-depth-0" role="button">PDF</a>
+          </div>
+          
+          <div class="badges">
+            <span class="altmetric-embed" data-hide-no-mentions="true" data-hide-less-than="15" data-badge-type="2" data-badge-popover="right"></span>
+              <span class="__dimensions_badge_embed__" data-pmid="" data-hide-zero-citations="true" data-style="small_rectangle" data-legend="hover-right" style="margin-bottom: 3px;"></span>
+          </div>
+
+          <!-- Hidden abstract block -->
+          <div class="abstract hidden">
+            <p>Large-scale machine learning (ML) models rely on extremely large datasets to learn their exponentially growing number of parameters. While these models achieve unprecedented success, the increase in training time and hardware resources required is unsustainable. Further, we find that as dataset sizes increase, data movement becomes a significant com- ponent of overall training time. We propose NeSSA, a novel SmartSSD+GPU training architecture to intelligently select important subsets of large datasets near-storage, such that training on the subset mimics training on the full dataset with a very small loss in accuracy. To the best of our knowl- edge, this is the first work to propose such a near-storage data selection model for efficient ML training. We have evalu- ated our method for the CIFAR-10, SVHN, CINIC-10, CIFAR- 100, TinyImageNet, and ImageNet-100 datasets. We also test across ResNet-20, ResNet-18, and ResNet-50 models.</p>
+          </div>
+<!-- Hidden bibtex block -->
+          <div class="bibtex hidden">
+            <figure class="highlight"><pre><code class="language-bibtex" data-lang="bibtex"><span class="nc">@article</span><span class="p">{</span><span class="nl">prakriya23nessa</span><span class="p">,</span>
+  <span class="na">title</span> <span class="p">=</span> <span class="s">{NeSSA: Near-Storage Data Selection for Accelerated Machine Learning Training}</span><span class="p">,</span>
+  <span class="na">author</span> <span class="p">=</span> <span class="s">{Prakriya, Neha and Yang, Yu and Mirzasoleiman, Baharan and Hsieh, Cho-Jui and Cong, Jason}</span><span class="p">,</span>
+  <span class="na">journal</span> <span class="p">=</span> <span class="s">{ACM Workshop on Hot Topics in Storage and File Systems (HotStorage)}</span><span class="p">,</span>
+  <span class="na">year</span> <span class="p">=</span> <span class="s">{2023}</span><span class="p">,</span>
+  <span class="na">efficient</span> <span class="p">=</span> <span class="s">{true}</span>
 <span class="p">}</span></code></pre></figure>
           </div>
         </div>
@@ -643,7 +857,7 @@
         
         
         <div class="periodical">
-          <em>In International Conference on Artificial Intelligence and Statistics</em>, 2023
+          <em>International Conference on Artificial Intelligence and Statistics (AISTATS)</em>, 2023
         </div>
         <div class="periodical">
           
@@ -668,10 +882,10 @@
           </div>
 <!-- Hidden bibtex block -->
           <div class="bibtex hidden">
-            <figure class="highlight"><pre><code class="language-bibtex" data-lang="bibtex"><span class="nc">@inproceedings</span><span class="p">{</span><span class="nl">becker2023high</span><span class="p">,</span>
+            <figure class="highlight"><pre><code class="language-bibtex" data-lang="bibtex"><span class="nc">@article</span><span class="p">{</span><span class="nl">becker2023high</span><span class="p">,</span>
   <span class="na">title</span> <span class="p">=</span> <span class="s">{High Probability Bounds for Stochastic Continuous Submodular Maximization}</span><span class="p">,</span>
   <span class="na">author</span> <span class="p">=</span> <span class="s">{Becker, Evan and Gao, Jingdong and Zadouri, Ted and Mirzasoleiman, Baharan}</span><span class="p">,</span>
-  <span class="na">booktitle</span> <span class="p">=</span> <span class="s">{International Conference on Artificial Intelligence and Statistics}</span><span class="p">,</span>
+  <span class="na">journal</span> <span class="p">=</span> <span class="s">{International Conference on Artificial Intelligence and Statistics (AISTATS)}</span><span class="p">,</span>
   <span class="na">pages</span> <span class="p">=</span> <span class="s">{5958--5979}</span><span class="p">,</span>
   <span class="na">year</span> <span class="p">=</span> <span class="s">{2023}</span><span class="p">,</span>
   <span class="na">organization</span> <span class="p">=</span> <span class="s">{PMLR}</span><span class="p">,</span>
@@ -721,8 +935,8 @@
           <!-- Links/Buttons -->
           <div class="links">
             <a class="abstract btn btn-sm z-depth-0" role="button">Abs</a>
-            <a href="http://arxiv.org/abs/2303.14267" class="btn btn-sm z-depth-0" role="button" rel="external nofollow noopener" target="_blank">arXiv</a>
             <a class="bibtex btn btn-sm z-depth-0" role="button">Bib</a>
+            <a href="/assets/pdf/fazeli23self.pdf" class="btn btn-sm z-depth-0" role="button">PDF</a>
             <a href="https://github.com/shayanfazeli/tabluence" class="btn btn-sm z-depth-0" role="button" rel="external nofollow noopener" target="_blank">Code</a>
           </div>
           
@@ -742,6 +956,73 @@
   <span class="na">author</span> <span class="p">=</span> <span class="s">{Fazeli, Shayan and Levine, Lionel and Beikzadeh, Mehrab and Mirzasoleiman, Baharan and Zadeh, Bita and Peris, Tara and Sarrafzadeh, Majid}</span><span class="p">,</span>
   <span class="na">journal</span> <span class="p">=</span> <span class="s">{IEEE Conference on Digital Health (ICDH)}</span><span class="p">,</span>
   <span class="na">year</span> <span class="p">=</span> <span class="s">{2023}</span><span class="p">,</span>
+<span class="p">}</span></code></pre></figure>
+          </div>
+        </div>
+      </div>
+</li>
+<li>
+<!-- _layouts/bib.html -->
+      <div class="row">
+        <div class="col-sm-2 abbr"><abbr class="badge">TKDE</abbr></div>
+
+        <!-- Entry bib key -->
+        <div id="ali2023fairness" class="col-sm-8">
+        <!-- Title -->
+        <div class="title">On the fairness of time-critical influence maximization in social networks</div>
+        <!-- Author -->
+        <div class="author">
+        
+
+        Junaid Ali, Mahmoudreza Babaei, Abhijnan Chakraborty, and
+          <span class="more-authors" title="click to view 3 more authors" onclick="
+                var element = $(this);
+                element.attr('title', '');
+                var more_authors_text = element.text() == '3 more authors' ? 'Baharan Mirzasoleiman, Krishna Gummadi, Adish Singla' : '3 more authors';
+                var cursorPosition = 0;
+                var textAdder = setInterval(function(){
+                  element.text(more_authors_text.substring(0, cursorPosition + 1));
+                  if (++cursorPosition == more_authors_text.length){
+                    clearInterval(textAdder);
+                  }
+              }, '10');
+              ">3 more authors</span>
+</div>
+
+        <!-- Journal/Book title and date -->
+        
+        
+        <div class="periodical">
+          <em>IEEE Transactions on Knowledge and Data Engineering (TKDE)</em>, 2023
+        </div>
+        <div class="periodical">
+          
+        </div>
+
+          <!-- Links/Buttons -->
+          <div class="links">
+            <a class="abstract btn btn-sm z-depth-0" role="button">Abs</a>
+            <a class="bibtex btn btn-sm z-depth-0" role="button">Bib</a>
+            <a href="/assets/pdf/Ali23fairness.pdf" class="btn btn-sm z-depth-0" role="button">PDF</a>
+          </div>
+          
+          <div class="badges">
+            <span class="altmetric-embed" data-hide-no-mentions="true" data-hide-less-than="15" data-badge-type="2" data-badge-popover="right"></span>
+              <span class="__dimensions_badge_embed__" data-pmid="" data-hide-zero-citations="true" data-style="small_rectangle" data-legend="hover-right" style="margin-bottom: 3px;"></span>
+          </div>
+
+          <!-- Hidden abstract block -->
+          <div class="abstract hidden">
+            <p>Influence maximization has found applications in a wide range of real-world problems, for instance, viral marketing of products in an online social network, and propagation of valuable information such as job vacancy advertisements. While existing algorithmic techniques usually aim at maximizing the total number of people influenced, the population often comprises several socially salient groups, e.g., based on gender or race. As a result, these techniques could lead to disparity across different groups in receiving important information. Furthermore, in many applications, the spread of influence is time-critical, i.e., it is only beneficial to be influenced before a deadline. As we show in this paper, such time-criticality of information could further exacerbate the disparity of influence across groups. This dis- parity could have far-reaching consequences, impacting people’s prosperity and putting minority groups at a big disadvantage. In this work, we propose a notion of group fairness in time- critical influence maximization. We introduce surrogate objective functions to solve the influence maximization problem under fair- ness considerations. By exploiting the submodularity structure of our objectives, we provide computationally efficient algorithms with guarantees that are effective in enforcing fairness during the propagation process. Extensive experiments on synthetic and real-world datasets demonstrate the efficacy of our proposal.</p>
+          </div>
+<!-- Hidden bibtex block -->
+          <div class="bibtex hidden">
+            <figure class="highlight"><pre><code class="language-bibtex" data-lang="bibtex"><span class="nc">@article</span><span class="p">{</span><span class="nl">ali2023fairness</span><span class="p">,</span>
+  <span class="na">title</span> <span class="p">=</span> <span class="s">{On the fairness of time-critical influence maximization in social networks}</span><span class="p">,</span>
+  <span class="na">author</span> <span class="p">=</span> <span class="s">{Ali, Junaid and Babaei, Mahmoudreza and Chakraborty, Abhijnan and Mirzasoleiman, Baharan and Gummadi, Krishna and Singla, Adish}</span><span class="p">,</span>
+  <span class="na">journal</span> <span class="p">=</span> <span class="s">{IEEE Transactions on Knowledge and Data Engineering (TKDE)}</span><span class="p">,</span>
+  <span class="na">year</span> <span class="p">=</span> <span class="s">{2023}</span><span class="p">,</span>
+  <span class="na">publisher</span> <span class="p">=</span> <span class="s">{IEEE}</span><span class="p">,</span>
 <span class="p">}</span></code></pre></figure>
           </div>
         </div>
@@ -770,7 +1051,7 @@
         
         
         <div class="periodical">
-          <em>In Advances in Neural Information Processing Systems</em>, 2022
+          <em>Advances in Neural Information Processing Systems (NeurIPS)</em>, 2022
         </div>
         <div class="periodical">
           
@@ -796,11 +1077,12 @@
           </div>
 <!-- Hidden bibtex block -->
           <div class="bibtex hidden">
-            <figure class="highlight"><pre><code class="language-bibtex" data-lang="bibtex"><span class="nc">@inproceedings</span><span class="p">{</span><span class="nl">liufriendly</span><span class="p">,</span>
+            <figure class="highlight"><pre><code class="language-bibtex" data-lang="bibtex"><span class="nc">@article</span><span class="p">{</span><span class="nl">liufriendly</span><span class="p">,</span>
   <span class="na">title</span> <span class="p">=</span> <span class="s">{Friendly Noise against Adversarial Noise: A Powerful Defense against Data Poisoning Attack}</span><span class="p">,</span>
   <span class="na">author</span> <span class="p">=</span> <span class="s">{Liu, Tian Yu and Yang, Yu and Mirzasoleiman, Baharan}</span><span class="p">,</span>
-  <span class="na">booktitle</span> <span class="p">=</span> <span class="s">{Advances in Neural Information Processing Systems}</span><span class="p">,</span>
-  <span class="na">year</span> <span class="p">=</span> <span class="s">{2022}</span>
+  <span class="na">journal</span> <span class="p">=</span> <span class="s">{Advances in Neural Information Processing Systems (NeurIPS)}</span><span class="p">,</span>
+  <span class="na">year</span> <span class="p">=</span> <span class="s">{2022}</span><span class="p">,</span>
+  <span class="na">poison</span> <span class="p">=</span> <span class="s">{true}</span>
 <span class="p">}</span></code></pre></figure>
           </div>
         </div>
@@ -825,7 +1107,7 @@
         
         
         <div class="periodical">
-          <em>In Advances in Neural Information Processing Systems</em>, 2022
+          <em>Advances in Neural Information Processing Systems (NeurIPS)</em>, 2022
         </div>
         <div class="periodical">
           
@@ -835,7 +1117,8 @@
           <div class="links">
             <a class="abstract btn btn-sm z-depth-0" role="button">Abs</a>
             <a class="bibtex btn btn-sm z-depth-0" role="button">Bib</a>
-            <a href="/assets/pdf/liu22augmentation_long.pdf" class="btn btn-sm z-depth-0" role="button">PDF</a>
+            <a href="/assets/pdf/liu22augmentation.pdf" class="btn btn-sm z-depth-0" role="button">PDF</a>
+            <a href="/assets/pdf/liu22augmentation_long.pdf" class="btn btn-sm z-depth-0" role="button">Supp</a>
             <a href="https://github.com/tianyu139/data-efficient-augmentation" class="btn btn-sm z-depth-0" role="button" rel="external nofollow noopener" target="_blank">Code</a>
           </div>
           
@@ -850,11 +1133,12 @@
           </div>
 <!-- Hidden bibtex block -->
           <div class="bibtex hidden">
-            <figure class="highlight"><pre><code class="language-bibtex" data-lang="bibtex"><span class="nc">@inproceedings</span><span class="p">{</span><span class="nl">liudata</span><span class="p">,</span>
+            <figure class="highlight"><pre><code class="language-bibtex" data-lang="bibtex"><span class="nc">@article</span><span class="p">{</span><span class="nl">liudata</span><span class="p">,</span>
   <span class="na">title</span> <span class="p">=</span> <span class="s">{Data-Efficient Augmentation for Training Neural Networks}</span><span class="p">,</span>
   <span class="na">author</span> <span class="p">=</span> <span class="s">{Liu, Tian Yu and Mirzasoleiman, Baharan}</span><span class="p">,</span>
-  <span class="na">booktitle</span> <span class="p">=</span> <span class="s">{Advances in Neural Information Processing Systems}</span><span class="p">,</span>
-  <span class="na">year</span> <span class="p">=</span> <span class="s">{2022}</span>
+  <span class="na">journal</span> <span class="p">=</span> <span class="s">{Advances in Neural Information Processing Systems (NeurIPS)}</span><span class="p">,</span>
+  <span class="na">year</span> <span class="p">=</span> <span class="s">{2022}</span><span class="p">,</span>
+  <span class="na">efficient</span> <span class="p">=</span> <span class="s">{true}</span>
 <span class="p">}</span></code></pre></figure>
           </div>
         </div>
@@ -879,7 +1163,7 @@
         
         
         <div class="periodical">
-          <em>In International Conference on Machine Learning</em>, 2022
+          <em>International Conference on Machine Learning (ICML)</em>, 2022
         </div>
         <div class="periodical">
           
@@ -889,8 +1173,9 @@
           <div class="links">
             <a class="abstract btn btn-sm z-depth-0" role="button">Abs</a>
             <a class="bibtex btn btn-sm z-depth-0" role="button">Bib</a>
-            <a href="/assets/pdf/yang22poisons_long.pdf" class="btn btn-sm z-depth-0" role="button">PDF</a>
-            <a href="https://github.com/YuYang0901/effective-poison-identification" class="btn btn-sm z-depth-0" role="button" rel="external nofollow noopener" target="_blank">Code</a>
+            <a href="/assets/pdf/yang22poisons.pdf" class="btn btn-sm z-depth-0" role="button">PDF</a>
+            <a href="/assets/pdf/yang22poisons_long.pdf" class="btn btn-sm z-depth-0" role="button">Supp</a>
+            <a href="https://github.com/BigML-CS-UCLA/EPIC" class="btn btn-sm z-depth-0" role="button" rel="external nofollow noopener" target="_blank">Code</a>
           </div>
           
           <div class="badges">
@@ -904,13 +1189,14 @@
           </div>
 <!-- Hidden bibtex block -->
           <div class="bibtex hidden">
-            <figure class="highlight"><pre><code class="language-bibtex" data-lang="bibtex"><span class="nc">@inproceedings</span><span class="p">{</span><span class="nl">yang2022not</span><span class="p">,</span>
+            <figure class="highlight"><pre><code class="language-bibtex" data-lang="bibtex"><span class="nc">@article</span><span class="p">{</span><span class="nl">yang2022not</span><span class="p">,</span>
   <span class="na">title</span> <span class="p">=</span> <span class="s">{Not all poisons are created equal: Robust training against data poisoning}</span><span class="p">,</span>
   <span class="na">author</span> <span class="p">=</span> <span class="s">{Yang, Yu and Liu, Tian Yu and Mirzasoleiman, Baharan}</span><span class="p">,</span>
-  <span class="na">booktitle</span> <span class="p">=</span> <span class="s">{International Conference on Machine Learning}</span><span class="p">,</span>
+  <span class="na">journal</span> <span class="p">=</span> <span class="s">{International Conference on Machine Learning (ICML)}</span><span class="p">,</span>
   <span class="na">pages</span> <span class="p">=</span> <span class="s">{25154--25165}</span><span class="p">,</span>
   <span class="na">year</span> <span class="p">=</span> <span class="s">{2022}</span><span class="p">,</span>
   <span class="na">organization</span> <span class="p">=</span> <span class="s">{PMLR}</span><span class="p">,</span>
+  <span class="na">poison</span> <span class="p">=</span> <span class="s">{true}</span>
 <span class="p">}</span></code></pre></figure>
           </div>
         </div>
@@ -935,7 +1221,7 @@
         
         
         <div class="periodical">
-          <em>In International Conference on Machine Learning</em>, 2022
+          <em>International Conference on Machine Learning (ICML)</em>, 2022
         </div>
         <div class="periodical">
           
@@ -945,7 +1231,8 @@
           <div class="links">
             <a class="abstract btn btn-sm z-depth-0" role="button">Abs</a>
             <a class="bibtex btn btn-sm z-depth-0" role="button">Bib</a>
-            <a href="/assets/pdf/pooladzandi22adaptive_long.pdf" class="btn btn-sm z-depth-0" role="button">PDF</a>
+            <a href="/assets/pdf/pooladzandi22adaptive.pdf" class="btn btn-sm z-depth-0" role="button">PDF</a>
+            <a href="/assets/pdf/pooladzandi22adaptive_long.pdf" class="btn btn-sm z-depth-0" role="button">Supp</a>
           </div>
           
           <div class="badges">
@@ -959,13 +1246,14 @@
           </div>
 <!-- Hidden bibtex block -->
           <div class="bibtex hidden">
-            <figure class="highlight"><pre><code class="language-bibtex" data-lang="bibtex"><span class="nc">@inproceedings</span><span class="p">{</span><span class="nl">pooladzandi2022adaptive</span><span class="p">,</span>
+            <figure class="highlight"><pre><code class="language-bibtex" data-lang="bibtex"><span class="nc">@article</span><span class="p">{</span><span class="nl">pooladzandi2022adaptive</span><span class="p">,</span>
   <span class="na">title</span> <span class="p">=</span> <span class="s">{Adaptive second order coresets for data-efficient machine learning}</span><span class="p">,</span>
   <span class="na">author</span> <span class="p">=</span> <span class="s">{Pooladzandi, Omead and Davini, David and Mirzasoleiman, Baharan}</span><span class="p">,</span>
-  <span class="na">booktitle</span> <span class="p">=</span> <span class="s">{International Conference on Machine Learning}</span><span class="p">,</span>
+  <span class="na">journal</span> <span class="p">=</span> <span class="s">{International Conference on Machine Learning (ICML)}</span><span class="p">,</span>
   <span class="na">pages</span> <span class="p">=</span> <span class="s">{17848--17869}</span><span class="p">,</span>
   <span class="na">year</span> <span class="p">=</span> <span class="s">{2022}</span><span class="p">,</span>
   <span class="na">organization</span> <span class="p">=</span> <span class="s">{PMLR}</span><span class="p">,</span>
+  <span class="na">efficient</span> <span class="p">=</span> <span class="s">{true}</span>
 <span class="p">}</span></code></pre></figure>
           </div>
         </div>
@@ -990,7 +1278,7 @@
         
         
         <div class="periodical">
-          <em>In International Conference on Machine Learning</em>, 2022
+          <em>International Conference on Machine Learning (ICML)</em>, 2022
         </div>
         <div class="periodical">
           
@@ -1000,7 +1288,8 @@
           <div class="links">
             <a class="abstract btn btn-sm z-depth-0" role="button">Abs</a>
             <a class="bibtex btn btn-sm z-depth-0" role="button">Bib</a>
-            <a href="/assets/pdf/xue22investigating_long.pdf" class="btn btn-sm z-depth-0" role="button">PDF</a>
+            <a href="/assets/pdf/xue22investigating.pdf" class="btn btn-sm z-depth-0" role="button">PDF</a>
+            <a href="/assets/pdf/xue22investigating_long.pdf" class="btn btn-sm z-depth-0" role="button">Supp</a>
           </div>
           
           <div class="badges">
@@ -1014,13 +1303,14 @@
           </div>
 <!-- Hidden bibtex block -->
           <div class="bibtex hidden">
-            <figure class="highlight"><pre><code class="language-bibtex" data-lang="bibtex"><span class="nc">@inproceedings</span><span class="p">{</span><span class="nl">xue2022investigating</span><span class="p">,</span>
+            <figure class="highlight"><pre><code class="language-bibtex" data-lang="bibtex"><span class="nc">@article</span><span class="p">{</span><span class="nl">xue2022investigating</span><span class="p">,</span>
   <span class="na">title</span> <span class="p">=</span> <span class="s">{Investigating why contrastive learning benefits robustness against label noise}</span><span class="p">,</span>
   <span class="na">author</span> <span class="p">=</span> <span class="s">{Xue, Yihao and Whitecross, Kyle and Mirzasoleiman, Baharan}</span><span class="p">,</span>
-  <span class="na">booktitle</span> <span class="p">=</span> <span class="s">{International Conference on Machine Learning}</span><span class="p">,</span>
+  <span class="na">journal</span> <span class="p">=</span> <span class="s">{International Conference on Machine Learning (ICML)}</span><span class="p">,</span>
   <span class="na">pages</span> <span class="p">=</span> <span class="s">{24851--24871}</span><span class="p">,</span>
   <span class="na">year</span> <span class="p">=</span> <span class="s">{2022}</span><span class="p">,</span>
   <span class="na">organization</span> <span class="p">=</span> <span class="s">{PMLR}</span><span class="p">,</span>
+  <span class="na">noise</span> <span class="p">=</span> <span class="s">{true}</span>
 <span class="p">}</span></code></pre></figure>
           </div>
         </div>
@@ -1058,7 +1348,7 @@
         
         
         <div class="periodical">
-          <em>Neurips 2022 SyntheticData4ML Workshop</em>, 2022
+          <em>Neurips SyntheticData4ML Workshop</em>, 2022
         </div>
         <div class="periodical">
           
@@ -1085,7 +1375,7 @@
             <figure class="highlight"><pre><code class="language-bibtex" data-lang="bibtex"><span class="nc">@article</span><span class="p">{</span><span class="nl">pooladzandi2023generating</span><span class="p">,</span>
   <span class="na">title</span> <span class="p">=</span> <span class="s">{Generating High Fidelity Synthetic Data via Coreset selection and Entropic Regularization}</span><span class="p">,</span>
   <span class="na">author</span> <span class="p">=</span> <span class="s">{Pooladzandi, Omead and Khosravi, Pasha and Nijkamp, Erik and Mirzasoleiman, Baharan}</span><span class="p">,</span>
-  <span class="na">journal</span> <span class="p">=</span> <span class="s">{Neurips 2022 SyntheticData4ML Workshop}</span><span class="p">,</span>
+  <span class="na">journal</span> <span class="p">=</span> <span class="s">{Neurips SyntheticData4ML Workshop}</span><span class="p">,</span>
   <span class="na">year</span> <span class="p">=</span> <span class="s">{2022}</span><span class="p">,</span>
 <span class="p">}</span></code></pre></figure>
           </div>
@@ -1124,7 +1414,7 @@
         
         
         <div class="periodical">
-          <em>In 2022 IEEE International Conference on Bioinformatics and Biomedicine (BIBM)</em>, 2022
+          <em>IEEE International Conference on Bioinformatics and Biomedicine (BIBM)</em>, 2022
         </div>
         <div class="periodical">
           
@@ -1149,10 +1439,10 @@
           </div>
 <!-- Hidden bibtex block -->
           <div class="bibtex hidden">
-            <figure class="highlight"><pre><code class="language-bibtex" data-lang="bibtex"><span class="nc">@inproceedings</span><span class="p">{</span><span class="nl">fazeli2022passive</span><span class="p">,</span>
+            <figure class="highlight"><pre><code class="language-bibtex" data-lang="bibtex"><span class="nc">@article</span><span class="p">{</span><span class="nl">fazeli2022passive</span><span class="p">,</span>
   <span class="na">title</span> <span class="p">=</span> <span class="s">{Passive Monitoring of Physiological Precursors of Stress Leveraging Smartwatch Data}</span><span class="p">,</span>
   <span class="na">author</span> <span class="p">=</span> <span class="s">{Fazeli, Shayan and Levine, Lionel and Beikzadeh, Mehrab and Mirzasoleiman, Baharan and Zadeh, Bita and Peris, Tara and Sarrafzadeh, Majid}</span><span class="p">,</span>
-  <span class="na">booktitle</span> <span class="p">=</span> <span class="s">{2022 IEEE International Conference on Bioinformatics and Biomedicine (BIBM)}</span><span class="p">,</span>
+  <span class="na">journal</span> <span class="p">=</span> <span class="s">{IEEE International Conference on Bioinformatics and Biomedicine (BIBM)}</span><span class="p">,</span>
   <span class="na">pages</span> <span class="p">=</span> <span class="s">{2893--2899}</span><span class="p">,</span>
   <span class="na">year</span> <span class="p">=</span> <span class="s">{2022}</span><span class="p">,</span>
   <span class="na">organization</span> <span class="p">=</span> <span class="s">{IEEE}</span><span class="p">,</span>
@@ -1193,7 +1483,7 @@
         
         
         <div class="periodical">
-          <em></em> 2022
+          <em>ACM conference on Equity and Access in Algorithms, Mechanisms, and Optimization (EAAMO)</em>, 2022
         </div>
         <div class="periodical">
           
@@ -1220,7 +1510,7 @@
             <figure class="highlight"><pre><code class="language-bibtex" data-lang="bibtex"><span class="nc">@article</span><span class="p">{</span><span class="nl">babaeitowards</span><span class="p">,</span>
   <span class="na">title</span> <span class="p">=</span> <span class="s">{Towards Balanced Information Propagation in Social Media}</span><span class="p">,</span>
   <span class="na">author</span> <span class="p">=</span> <span class="s">{Babaei, Mahmoudreza and Mirzasoleiman, Baharan and Joo, Jungseock and Weller, Adrian}</span><span class="p">,</span>
-  <span class="na">booktitle</span> <span class="p">=</span> <span class="s">{ACM conference on Equity and Access in Algorithms, Mechanisms, and Optimization (EAAMO)}</span><span class="p">,</span>
+  <span class="na">journal</span> <span class="p">=</span> <span class="s">{ACM conference on Equity and Access in Algorithms, Mechanisms, and Optimization (EAAMO)}</span><span class="p">,</span>
   <span class="na">year</span> <span class="p">=</span> <span class="s">{2022}</span><span class="p">,</span>
 <span class="p">}</span></code></pre></figure>
           </div>
@@ -1246,7 +1536,7 @@
         
         
         <div class="periodical">
-          <em></em> 2022
+          <em>ICML Workshop on Computational Biology (CompBio)</em>, 2022
         </div>
         <div class="periodical">
           
@@ -1273,6 +1563,7 @@
             <figure class="highlight"><pre><code class="language-bibtex" data-lang="bibtex"><span class="nc">@article</span><span class="p">{</span><span class="nl">palovicspurification</span><span class="p">,</span>
   <span class="na">title</span> <span class="p">=</span> <span class="s">{Purification of single-cell transcriptomics data with coreset selection}</span><span class="p">,</span>
   <span class="na">author</span> <span class="p">=</span> <span class="s">{P{\'a}lovics, R{\'o}bert and Wyss-Coray, Tony and Mirzasoleiman, Baharan}</span><span class="p">,</span>
+  <span class="na">journal</span> <span class="p">=</span> <span class="s">{ICML Workshop on Computational Biology (CompBio)}</span><span class="p">,</span>
   <span class="na">year</span> <span class="p">=</span> <span class="s">{2022}</span><span class="p">,</span>
 <span class="p">}</span></code></pre></figure>
           </div>
@@ -1298,7 +1589,7 @@
         
         
         <div class="periodical">
-          <em>In Companion Proceedings of the Web Conference 2022</em>, 2022
+          <em>Temporal Web Analytics Workshop (TempWeb)</em>, 2022
         </div>
         <div class="periodical">
           
@@ -1322,10 +1613,10 @@
           </div>
 <!-- Hidden bibtex block -->
           <div class="bibtex hidden">
-            <figure class="highlight"><pre><code class="language-bibtex" data-lang="bibtex"><span class="nc">@inproceedings</span><span class="p">{</span><span class="nl">porter2022analytical</span><span class="p">,</span>
+            <figure class="highlight"><pre><code class="language-bibtex" data-lang="bibtex"><span class="nc">@article</span><span class="p">{</span><span class="nl">porter2022analytical</span><span class="p">,</span>
   <span class="na">title</span> <span class="p">=</span> <span class="s">{Analytical Models for Motifs in Temporal Networks}</span><span class="p">,</span>
   <span class="na">author</span> <span class="p">=</span> <span class="s">{Porter, Alexandra and Mirzasoleiman, Baharan and Leskovec, Jure}</span><span class="p">,</span>
-  <span class="na">booktitle</span> <span class="p">=</span> <span class="s">{Companion Proceedings of the Web Conference 2022}</span><span class="p">,</span>
+  <span class="na">journal</span> <span class="p">=</span> <span class="s">{Temporal Web Analytics Workshop (TempWeb)}</span><span class="p">,</span>
   <span class="na">pages</span> <span class="p">=</span> <span class="s">{903--909}</span><span class="p">,</span>
   <span class="na">year</span> <span class="p">=</span> <span class="s">{2022}</span><span class="p">,</span>
 <span class="p">}</span></code></pre></figure>
@@ -1352,7 +1643,7 @@
         
         
         <div class="periodical">
-          <em>In Sparsity in Neural Networks Workshop (SNN)</em>, 2022
+          <em>Sparsity in Neural Networks Workshop (SNN)</em>, 2022
         </div>
         <div class="periodical">
           
@@ -1376,20 +1667,16 @@
           </div>
 <!-- Hidden bibtex block -->
           <div class="bibtex hidden">
-            <figure class="highlight"><pre><code class="language-bibtex" data-lang="bibtex"><span class="nc">@inproceedings</span><span class="p">{</span><span class="nl">liu2022low</span><span class="p">,</span>
+            <figure class="highlight"><pre><code class="language-bibtex" data-lang="bibtex"><span class="nc">@article</span><span class="p">{</span><span class="nl">liu2022low</span><span class="p">,</span>
   <span class="na">title</span> <span class="p">=</span> <span class="s">{Low Rank Pruning via Output Perturbation}</span><span class="p">,</span>
   <span class="na">author</span> <span class="p">=</span> <span class="s">{Liu, Yuhan and Joshi, Siddharth and Mirzasoleiman, Baharan}</span><span class="p">,</span>
-  <span class="na">booktitle</span> <span class="p">=</span> <span class="s">{Sparsity in Neural Networks Workshop (SNN)}</span><span class="p">,</span>
+  <span class="na">journal</span> <span class="p">=</span> <span class="s">{Sparsity in Neural Networks Workshop (SNN)}</span><span class="p">,</span>
   <span class="na">year</span> <span class="p">=</span> <span class="s">{2022}</span><span class="p">,</span>
 <span class="p">}</span></code></pre></figure>
           </div>
         </div>
       </div>
 </li>
-</ol>
-
-  <h2 class="year">2021</h2>
-  <ol class="bibliography">
 <li>
 <!-- _layouts/bib.html -->
       <div class="row">
@@ -1422,7 +1709,7 @@
         
         
         <div class="periodical">
-          <em>In Proceedings of the AAAI Conference on Artificial Intelligence</em>, 2021
+          <em>AAAI Conference on Artificial Intelligence (AAAI)</em>, 2022
         </div>
         <div class="periodical">
           
@@ -1447,14 +1734,14 @@
           </div>
 <!-- Hidden bibtex block -->
           <div class="bibtex hidden">
-            <figure class="highlight"><pre><code class="language-bibtex" data-lang="bibtex"><span class="nc">@inproceedings</span><span class="p">{</span><span class="nl">khajehnejad2022crosswalk</span><span class="p">,</span>
+            <figure class="highlight"><pre><code class="language-bibtex" data-lang="bibtex"><span class="nc">@article</span><span class="p">{</span><span class="nl">khajehnejad2022crosswalk</span><span class="p">,</span>
   <span class="na">title</span> <span class="p">=</span> <span class="s">{Crosswalk: Fairness-enhanced node representation learning}</span><span class="p">,</span>
   <span class="na">author</span> <span class="p">=</span> <span class="s">{Khajehnejad, Ahmad and Khajehnejad, Moein and Babaei, Mahmoudreza and Gummadi, Krishna P and Weller, Adrian and Mirzasoleiman, Baharan}</span><span class="p">,</span>
-  <span class="na">booktitle</span> <span class="p">=</span> <span class="s">{Proceedings of the AAAI Conference on Artificial Intelligence}</span><span class="p">,</span>
+  <span class="na">journal</span> <span class="p">=</span> <span class="s">{AAAI Conference on Artificial Intelligence (AAAI)}</span><span class="p">,</span>
   <span class="na">volume</span> <span class="p">=</span> <span class="s">{36}</span><span class="p">,</span>
   <span class="na">number</span> <span class="p">=</span> <span class="s">{11}</span><span class="p">,</span>
   <span class="na">pages</span> <span class="p">=</span> <span class="s">{11963--11970}</span><span class="p">,</span>
-  <span class="na">year</span> <span class="p">=</span> <span class="s">{2021}</span><span class="p">,</span>
+  <span class="na">year</span> <span class="p">=</span> <span class="s">{2022}</span><span class="p">,</span>
 <span class="p">}</span></code></pre></figure>
           </div>
         </div>
@@ -1463,10 +1750,10 @@
 <li>
 <!-- _layouts/bib.html -->
       <div class="row">
-        <div class="col-sm-2 abbr"><abbr class="badge">TKDE</abbr></div>
+        <div class="col-sm-2 abbr"><abbr class="badge">ICDE</abbr></div>
 
         <!-- Entry bib key -->
-        <div id="ali2021fairness" class="col-sm-8">
+        <div id="ali2022fairness" class="col-sm-8">
         <!-- Title -->
         <div class="title">On the fairness of time-critical influence maximization in social networks</div>
         <!-- Author -->
@@ -1492,7 +1779,7 @@
         
         
         <div class="periodical">
-          <em>IEEE Transactions on Knowledge and Data Engineering (TKDE)</em>, 2021
+          <em>IEEE International Conference on Data Engineering (ICDE)</em>, 2022
         </div>
         <div class="periodical">
           
@@ -1502,7 +1789,7 @@
           <div class="links">
             <a class="abstract btn btn-sm z-depth-0" role="button">Abs</a>
             <a class="bibtex btn btn-sm z-depth-0" role="button">Bib</a>
-            <a href="/assets/pdf/Ali22fairness.pdf" class="btn btn-sm z-depth-0" role="button">PDF</a>
+            <a href="/assets/pdf/Ali22fairness_abs.pdf" class="btn btn-sm z-depth-0" role="button">PDF</a>
           </div>
           
           <div class="badges">
@@ -1512,15 +1799,15 @@
 
           <!-- Hidden abstract block -->
           <div class="abstract hidden">
-            <p>Influence maximization has found applications in a wide range of real-world problems, for instance, viral marketing of products in an online social network, and propagation of valuable information such as job vacancy advertisements. While existing algorithmic techniques usually aim at maximizing the total number of people influenced, the population often comprises several socially salient groups, e.g., based on gender or race. As a result, these techniques could lead to disparity across different groups in receiving important information. Furthermore, in many applications, the spread of influence is time-critical, i.e., it is only beneficial to be influenced before a deadline. As we show in this paper, such time-criticality of information could further exacerbate the disparity of influence across groups. This disparity could have far-reaching consequences, impacting people’s prosperity and putting minority groups at a big disadvantage. In this work, we propose a notion of group fairness in time-critical influence maximization . We introduce surrogate objective functions to solve the influence maximization problem under fairness considerations. By exploiting the submodularity structure of our objectives, we provide computationally efficient algorithms with guarantees that are effective in enforcing fairness during the propagation process. Extensive experiments on synthetic and real-world datasets demonstrate the efficacy of our proposal.</p>
+            <p>Influence maximization has found applications in a wide range of real-world problems, for instance, viral marketing of products in an online social network, and propagation of valuable information such as job vacancy advertisements. While existing algorithmic techniques usually aim at maximizing the total number of people influenced, the population often comprises several socially salient groups, e.g., based on gender or race. As a result, these techniques could lead to disparity across different groups in receiving important information. Furthermore, in many applications, the spread of influence is time-critical, i.e., it is only beneficial to be influenced before a deadline. As we show in this paper, such time-criticality of information could further exacerbate the disparity of influence across groups. This dis- parity could have far-reaching consequences, impacting people’s prosperity and putting minority groups at a big disadvantage. In this work, we propose a notion of group fairness in time- critical influence maximization. We introduce surrogate objective functions to solve the influence maximization problem under fair- ness considerations. By exploiting the submodularity structure of our objectives, we provide computationally efficient algorithms with guarantees that are effective in enforcing fairness during the propagation process. Extensive experiments on synthetic and real-world datasets demonstrate the efficacy of our proposal.</p>
           </div>
 <!-- Hidden bibtex block -->
           <div class="bibtex hidden">
-            <figure class="highlight"><pre><code class="language-bibtex" data-lang="bibtex"><span class="nc">@article</span><span class="p">{</span><span class="nl">ali2021fairness</span><span class="p">,</span>
+            <figure class="highlight"><pre><code class="language-bibtex" data-lang="bibtex"><span class="nc">@article</span><span class="p">{</span><span class="nl">ali2022fairness</span><span class="p">,</span>
   <span class="na">title</span> <span class="p">=</span> <span class="s">{On the fairness of time-critical influence maximization in social networks}</span><span class="p">,</span>
   <span class="na">author</span> <span class="p">=</span> <span class="s">{Ali, Junaid and Babaei, Mahmoudreza and Chakraborty, Abhijnan and Mirzasoleiman, Baharan and Gummadi, Krishna and Singla, Adish}</span><span class="p">,</span>
-  <span class="na">journal</span> <span class="p">=</span> <span class="s">{IEEE Transactions on Knowledge and Data Engineering (TKDE)}</span><span class="p">,</span>
-  <span class="na">year</span> <span class="p">=</span> <span class="s">{2021}</span><span class="p">,</span>
+  <span class="na">journal</span> <span class="p">=</span> <span class="s">{IEEE International Conference on Data Engineering (ICDE)}</span><span class="p">,</span>
+  <span class="na">year</span> <span class="p">=</span> <span class="s">{2022}</span><span class="p">,</span>
   <span class="na">publisher</span> <span class="p">=</span> <span class="s">{IEEE}</span><span class="p">,</span>
 <span class="p">}</span></code></pre></figure>
           </div>
@@ -1528,6 +1815,9 @@
       </div>
 </li>
 </ol>
+
+  <h2 class="year">2021</h2>
+  <ol class="bibliography"></ol>
 
   <h2 class="year">2020</h2>
   <ol class="bibliography">
@@ -1550,7 +1840,7 @@
         
         
         <div class="periodical">
-          <em>In Conference on Uncertainty in Artificial Intelligence</em>, 2020
+          <em>Conference on Uncertainty in Artificial Intelligence (UAI)</em>, 2020
         </div>
         <div class="periodical">
           
@@ -1575,10 +1865,10 @@
           </div>
 <!-- Hidden bibtex block -->
           <div class="bibtex hidden">
-            <figure class="highlight"><pre><code class="language-bibtex" data-lang="bibtex"><span class="nc">@inproceedings</span><span class="p">{</span><span class="nl">vahidian2020coresets</span><span class="p">,</span>
+            <figure class="highlight"><pre><code class="language-bibtex" data-lang="bibtex"><span class="nc">@article</span><span class="p">{</span><span class="nl">vahidian2020coresets</span><span class="p">,</span>
   <span class="na">title</span> <span class="p">=</span> <span class="s">{Coresets for estimating means and mean square error with limited greedy samples}</span><span class="p">,</span>
   <span class="na">author</span> <span class="p">=</span> <span class="s">{Vahidian, Saeed and Mirzasoleiman, Baharan and Cloninger, Alexander}</span><span class="p">,</span>
-  <span class="na">booktitle</span> <span class="p">=</span> <span class="s">{Conference on Uncertainty in Artificial Intelligence}</span><span class="p">,</span>
+  <span class="na">journal</span> <span class="p">=</span> <span class="s">{Conference on Uncertainty in Artificial Intelligence (UAI)}</span><span class="p">,</span>
   <span class="na">pages</span> <span class="p">=</span> <span class="s">{350--359}</span><span class="p">,</span>
   <span class="na">year</span> <span class="p">=</span> <span class="s">{2020}</span><span class="p">,</span>
   <span class="na">organization</span> <span class="p">=</span> <span class="s">{PMLR}</span><span class="p">,</span>
@@ -1606,7 +1896,7 @@
         
         
         <div class="periodical">
-          <em>In International Conference on Machine Learning</em>, 2020
+          <em>International Conference on Machine Learning (ICML)</em>, 2020
         </div>
         <div class="periodical">
           
@@ -1632,13 +1922,14 @@
           </div>
 <!-- Hidden bibtex block -->
           <div class="bibtex hidden">
-            <figure class="highlight"><pre><code class="language-bibtex" data-lang="bibtex"><span class="nc">@inproceedings</span><span class="p">{</span><span class="nl">mirzasoleiman2020coresets</span><span class="p">,</span>
+            <figure class="highlight"><pre><code class="language-bibtex" data-lang="bibtex"><span class="nc">@article</span><span class="p">{</span><span class="nl">mirzasoleiman2020coresets</span><span class="p">,</span>
   <span class="na">title</span> <span class="p">=</span> <span class="s">{Coresets for data-efficient training of machine learning models}</span><span class="p">,</span>
   <span class="na">author</span> <span class="p">=</span> <span class="s">{Mirzasoleiman, Baharan and Bilmes, Jeff and Leskovec, Jure}</span><span class="p">,</span>
-  <span class="na">booktitle</span> <span class="p">=</span> <span class="s">{International Conference on Machine Learning}</span><span class="p">,</span>
+  <span class="na">journal</span> <span class="p">=</span> <span class="s">{International Conference on Machine Learning (ICML)}</span><span class="p">,</span>
   <span class="na">pages</span> <span class="p">=</span> <span class="s">{6950--6960}</span><span class="p">,</span>
   <span class="na">year</span> <span class="p">=</span> <span class="s">{2020}</span><span class="p">,</span>
   <span class="na">organization</span> <span class="p">=</span> <span class="s">{PMLR}</span><span class="p">,</span>
+  <span class="na">efficient</span> <span class="p">=</span> <span class="s">{true}</span>
 <span class="p">}</span></code></pre></figure>
           </div>
         </div>
@@ -1663,7 +1954,7 @@
         
         
         <div class="periodical">
-          <em>Advances in Neural Information Processing Systems</em>, 2020
+          <em>Advances in Neural Information Processing Systems (NeurIPS)</em>, 2020
         </div>
         <div class="periodical">
           
@@ -1692,10 +1983,11 @@
             <figure class="highlight"><pre><code class="language-bibtex" data-lang="bibtex"><span class="nc">@article</span><span class="p">{</span><span class="nl">mirzasoleiman2020coresett</span><span class="p">,</span>
   <span class="na">title</span> <span class="p">=</span> <span class="s">{Coresets for robust training of deep neural networks against noisy labels}</span><span class="p">,</span>
   <span class="na">author</span> <span class="p">=</span> <span class="s">{Mirzasoleiman, Baharan and Cao, Kaidi and Leskovec, Jure}</span><span class="p">,</span>
-  <span class="na">journal</span> <span class="p">=</span> <span class="s">{Advances in Neural Information Processing Systems}</span><span class="p">,</span>
+  <span class="na">journal</span> <span class="p">=</span> <span class="s">{Advances in Neural Information Processing Systems (NeurIPS)}</span><span class="p">,</span>
   <span class="na">volume</span> <span class="p">=</span> <span class="s">{33}</span><span class="p">,</span>
   <span class="na">pages</span> <span class="p">=</span> <span class="s">{11465--11477}</span><span class="p">,</span>
   <span class="na">year</span> <span class="p">=</span> <span class="s">{2020}</span><span class="p">,</span>
+  <span class="na">noise</span> <span class="p">=</span> <span class="s">{true}</span>
 <span class="p">}</span></code></pre></figure>
           </div>
         </div>
@@ -1733,7 +2025,7 @@
         
         
         <div class="periodical">
-          <em>In International Conference on Learning Representations</em>, 2020
+          <em>International Conference on Learning Representations (ICLR)</em>, 2020
         </div>
         <div class="periodical">
           
@@ -1758,10 +2050,10 @@
           </div>
 <!-- Hidden bibtex block -->
           <div class="bibtex hidden">
-            <figure class="highlight"><pre><code class="language-bibtex" data-lang="bibtex"><span class="nc">@inproceedings</span><span class="p">{</span><span class="nl">colemanselection</span><span class="p">,</span>
+            <figure class="highlight"><pre><code class="language-bibtex" data-lang="bibtex"><span class="nc">@article</span><span class="p">{</span><span class="nl">colemanselection</span><span class="p">,</span>
   <span class="na">title</span> <span class="p">=</span> <span class="s">{Selection via Proxy: Efficient Data Selection for Deep Learning}</span><span class="p">,</span>
   <span class="na">author</span> <span class="p">=</span> <span class="s">{Coleman, Cody and Yeh, Christopher and Mussmann, Stephen and Mirzasoleiman, Baharan and Bailis, Peter and Liang, Percy and Leskovec, Jure and Zaharia, Matei}</span><span class="p">,</span>
-  <span class="na">booktitle</span> <span class="p">=</span> <span class="s">{International Conference on Learning Representations}</span><span class="p">,</span>
+  <span class="na">journal</span> <span class="p">=</span> <span class="s">{International Conference on Learning Representations (ICLR)}</span><span class="p">,</span>
   <span class="na">year</span> <span class="p">=</span> <span class="s">{2020}</span><span class="p">,</span>
 <span class="p">}</span></code></pre></figure>
           </div>
@@ -1791,7 +2083,7 @@
         
         
         <div class="periodical">
-          <em>In Proceedings of the AAAI Conference on Artificial Intelligence</em>, 2018
+          <em>AAAI Conference on Artificial Intelligence (AAAI)</em>, 2018
         </div>
         <div class="periodical">
           
@@ -1816,10 +2108,10 @@
           </div>
 <!-- Hidden bibtex block -->
           <div class="bibtex hidden">
-            <figure class="highlight"><pre><code class="language-bibtex" data-lang="bibtex"><span class="nc">@inproceedings</span><span class="p">{</span><span class="nl">mirzasoleiman2018streaming</span><span class="p">,</span>
+            <figure class="highlight"><pre><code class="language-bibtex" data-lang="bibtex"><span class="nc">@article</span><span class="p">{</span><span class="nl">mirzasoleiman2018streaming</span><span class="p">,</span>
   <span class="na">title</span> <span class="p">=</span> <span class="s">{Streaming non-monotone submodular maximization: Personalized video summarization on the fly}</span><span class="p">,</span>
   <span class="na">author</span> <span class="p">=</span> <span class="s">{Mirzasoleiman, Baharan and Jegelka, Stefanie and Krause, Andreas}</span><span class="p">,</span>
-  <span class="na">booktitle</span> <span class="p">=</span> <span class="s">{Proceedings of the AAAI Conference on Artificial Intelligence}</span><span class="p">,</span>
+  <span class="na">journal</span> <span class="p">=</span> <span class="s">{AAAI Conference on Artificial Intelligence (AAAI)}</span><span class="p">,</span>
   <span class="na">volume</span> <span class="p">=</span> <span class="s">{32}</span><span class="p">,</span>
   <span class="na">number</span> <span class="p">=</span> <span class="s">{1}</span><span class="p">,</span>
   <span class="na">year</span> <span class="p">=</span> <span class="s">{2018}</span><span class="p">,</span>
@@ -1860,7 +2152,7 @@
         
         
         <div class="periodical">
-          <em>Advances in Neural Information Processing Systems</em>, 2018
+          <em>Advances in Neural Information Processing Systems (NeurIPS)</em>, 2018
         </div>
         <div class="periodical">
           
@@ -1887,7 +2179,7 @@
             <figure class="highlight"><pre><code class="language-bibtex" data-lang="bibtex"><span class="nc">@article</span><span class="p">{</span><span class="nl">ghalebi2018dynamic</span><span class="p">,</span>
   <span class="na">title</span> <span class="p">=</span> <span class="s">{Dynamic network model from partial observations}</span><span class="p">,</span>
   <span class="na">author</span> <span class="p">=</span> <span class="s">{Ghalebi, Elahe and Mirzasoleiman, Baharan and Grosu, Radu and Leskovec, Jure}</span><span class="p">,</span>
-  <span class="na">journal</span> <span class="p">=</span> <span class="s">{Advances in Neural Information Processing Systems}</span><span class="p">,</span>
+  <span class="na">journal</span> <span class="p">=</span> <span class="s">{Advances in Neural Information Processing Systems (NeurIPS)}</span><span class="p">,</span>
   <span class="na">volume</span> <span class="p">=</span> <span class="s">{31}</span><span class="p">,</span>
   <span class="na">year</span> <span class="p">=</span> <span class="s">{2018}</span><span class="p">,</span>
 <span class="p">}</span></code></pre></figure>
@@ -1918,7 +2210,7 @@
         
         
         <div class="periodical">
-          <em>In International Conference on Machine Learning</em>, 2017
+          <em>International Conference on Machine Learning (ICML)</em>, 2017
         </div>
         <div class="periodical">
           
@@ -1943,10 +2235,10 @@
           </div>
 <!-- Hidden bibtex block -->
           <div class="bibtex hidden">
-            <figure class="highlight"><pre><code class="language-bibtex" data-lang="bibtex"><span class="nc">@inproceedings</span><span class="p">{</span><span class="nl">mirzasoleiman2017deletion</span><span class="p">,</span>
+            <figure class="highlight"><pre><code class="language-bibtex" data-lang="bibtex"><span class="nc">@article</span><span class="p">{</span><span class="nl">mirzasoleiman2017deletion</span><span class="p">,</span>
   <span class="na">title</span> <span class="p">=</span> <span class="s">{Deletion-robust submodular maximization: Data summarization with “the right to be forgotten”}</span><span class="p">,</span>
   <span class="na">author</span> <span class="p">=</span> <span class="s">{Mirzasoleiman, Baharan and Karbasi, Amin and Krause, Andreas}</span><span class="p">,</span>
-  <span class="na">booktitle</span> <span class="p">=</span> <span class="s">{International Conference on Machine Learning}</span><span class="p">,</span>
+  <span class="na">journal</span> <span class="p">=</span> <span class="s">{International Conference on Machine Learning (ICML)}</span><span class="p">,</span>
   <span class="na">pages</span> <span class="p">=</span> <span class="s">{2449--2458}</span><span class="p">,</span>
   <span class="na">year</span> <span class="p">=</span> <span class="s">{2017}</span><span class="p">,</span>
   <span class="na">organization</span> <span class="p">=</span> <span class="s">{PMLR}</span><span class="p">,</span>
@@ -1987,7 +2279,7 @@
         
         
         <div class="periodical">
-          <em>In Artificial Intelligence and Statistics</em>, 2017
+          <em>Artificial Intelligence and Statistics (AISTATS)</em>, 2017
         </div>
         <div class="periodical">
           
@@ -2012,10 +2304,10 @@
           </div>
 <!-- Hidden bibtex block -->
           <div class="bibtex hidden">
-            <figure class="highlight"><pre><code class="language-bibtex" data-lang="bibtex"><span class="nc">@inproceedings</span><span class="p">{</span><span class="nl">bian2017guaranteed</span><span class="p">,</span>
+            <figure class="highlight"><pre><code class="language-bibtex" data-lang="bibtex"><span class="nc">@article</span><span class="p">{</span><span class="nl">bian2017guaranteed</span><span class="p">,</span>
   <span class="na">title</span> <span class="p">=</span> <span class="s">{Guaranteed non-convex optimization: Submodular maximization over continuous domains}</span><span class="p">,</span>
   <span class="na">author</span> <span class="p">=</span> <span class="s">{Bian, Andrew An and Mirzasoleiman, Baharan and Buhmann, Joachim and Krause, Andreas}</span><span class="p">,</span>
-  <span class="na">booktitle</span> <span class="p">=</span> <span class="s">{Artificial Intelligence and Statistics}</span><span class="p">,</span>
+  <span class="na">journal</span> <span class="p">=</span> <span class="s">{Artificial Intelligence and Statistics (AISTATS)}</span><span class="p">,</span>
   <span class="na">pages</span> <span class="p">=</span> <span class="s">{111--120}</span><span class="p">,</span>
   <span class="na">year</span> <span class="p">=</span> <span class="s">{2017}</span><span class="p">,</span>
   <span class="na">organization</span> <span class="p">=</span> <span class="s">{PMLR}</span><span class="p">,</span>
@@ -2060,7 +2352,7 @@
         
         
         <div class="periodical">
-          <em>In International Conference on Machine Learning</em>, 2016
+          <em>International Conference on Machine Learning (ICML)</em>, 2016
         </div>
         <div class="periodical">
           
@@ -2085,10 +2377,10 @@
           </div>
 <!-- Hidden bibtex block -->
           <div class="bibtex hidden">
-            <figure class="highlight"><pre><code class="language-bibtex" data-lang="bibtex"><span class="nc">@inproceedings</span><span class="p">{</span><span class="nl">balkanski2016learning</span><span class="p">,</span>
+            <figure class="highlight"><pre><code class="language-bibtex" data-lang="bibtex"><span class="nc">@article</span><span class="p">{</span><span class="nl">balkanski2016learning</span><span class="p">,</span>
   <span class="na">title</span> <span class="p">=</span> <span class="s">{Learning sparse combinatorial representations via two-stage submodular maximization}</span><span class="p">,</span>
   <span class="na">author</span> <span class="p">=</span> <span class="s">{Balkanski, Eric and Mirzasoleiman, Baharan and Krause, Andreas and Singer, Yaron}</span><span class="p">,</span>
-  <span class="na">booktitle</span> <span class="p">=</span> <span class="s">{International Conference on Machine Learning}</span><span class="p">,</span>
+  <span class="na">journal</span> <span class="p">=</span> <span class="s">{International Conference on Machine Learning (ICML)}</span><span class="p">,</span>
   <span class="na">pages</span> <span class="p">=</span> <span class="s">{2207--2216}</span><span class="p">,</span>
   <span class="na">year</span> <span class="p">=</span> <span class="s">{2016}</span><span class="p">,</span>
   <span class="na">organization</span> <span class="p">=</span> <span class="s">{PMLR}</span><span class="p">,</span>
@@ -2116,7 +2408,7 @@
         
         
         <div class="periodical">
-          <em>In International Conference on Machine Learning</em>, 2016
+          <em>International Conference on Machine Learning (ICML)</em>, 2016
         </div>
         <div class="periodical">
           
@@ -2141,10 +2433,10 @@
           </div>
 <!-- Hidden bibtex block -->
           <div class="bibtex hidden">
-            <figure class="highlight"><pre><code class="language-bibtex" data-lang="bibtex"><span class="nc">@inproceedings</span><span class="p">{</span><span class="nl">mirzasoleiman2016fast</span><span class="p">,</span>
+            <figure class="highlight"><pre><code class="language-bibtex" data-lang="bibtex"><span class="nc">@article</span><span class="p">{</span><span class="nl">mirzasoleiman2016fast</span><span class="p">,</span>
   <span class="na">title</span> <span class="p">=</span> <span class="s">{Fast constrained submodular maximization: Personalized data summarization}</span><span class="p">,</span>
   <span class="na">author</span> <span class="p">=</span> <span class="s">{Mirzasoleiman, Baharan and Badanidiyuru, Ashwinkumar and Karbasi, Amin}</span><span class="p">,</span>
-  <span class="na">booktitle</span> <span class="p">=</span> <span class="s">{International Conference on Machine Learning}</span><span class="p">,</span>
+  <span class="na">journal</span> <span class="p">=</span> <span class="s">{International Conference on Machine Learning (ICML)}</span><span class="p">,</span>
   <span class="na">pages</span> <span class="p">=</span> <span class="s">{1358--1367}</span><span class="p">,</span>
   <span class="na">year</span> <span class="p">=</span> <span class="s">{2016}</span><span class="p">,</span>
   <span class="na">organization</span> <span class="p">=</span> <span class="s">{PMLR}</span><span class="p">,</span>
@@ -2172,7 +2464,7 @@
         
         
         <div class="periodical">
-          <em>Advances in Neural Information Processing Systems</em>, 2016
+          <em>Advances in Neural Information Processing Systems (NeurIPS)</em>, 2016
         </div>
         <div class="periodical">
           
@@ -2200,7 +2492,7 @@
             <figure class="highlight"><pre><code class="language-bibtex" data-lang="bibtex"><span class="nc">@article</span><span class="p">{</span><span class="nl">mirzasoleiman2016fasu</span><span class="p">,</span>
   <span class="na">title</span> <span class="p">=</span> <span class="s">{Fast distributed submodular cover: Public-private data summarization}</span><span class="p">,</span>
   <span class="na">author</span> <span class="p">=</span> <span class="s">{Mirzasoleiman, Baharan and Zadimoghaddam, Morteza and Karbasi, Amin}</span><span class="p">,</span>
-  <span class="na">journal</span> <span class="p">=</span> <span class="s">{Advances in Neural Information Processing Systems}</span><span class="p">,</span>
+  <span class="na">journal</span> <span class="p">=</span> <span class="s">{Advances in Neural Information Processing Systems (NeurIPS)}</span><span class="p">,</span>
   <span class="na">volume</span> <span class="p">=</span> <span class="s">{29}</span><span class="p">,</span>
   <span class="na">year</span> <span class="p">=</span> <span class="s">{2016}</span><span class="p">,</span>
 <span class="p">}</span></code></pre></figure>
@@ -2240,7 +2532,7 @@
         
         
         <div class="periodical">
-          <em>The Journal of Machine Learning Research</em>, 2016
+          <em>The Journal of Machine Learning Research (JMLR)</em>, 2016
         </div>
         <div class="periodical">
           
@@ -2267,7 +2559,7 @@
             <figure class="highlight"><pre><code class="language-bibtex" data-lang="bibtex"><span class="nc">@article</span><span class="p">{</span><span class="nl">mirzasoleiman2016distributed</span><span class="p">,</span>
   <span class="na">title</span> <span class="p">=</span> <span class="s">{Distributed submodular maximization}</span><span class="p">,</span>
   <span class="na">author</span> <span class="p">=</span> <span class="s">{Mirzasoleiman, Baharan and Karbasi, Amin and Sarkar, Rik and Krause, Andreas}</span><span class="p">,</span>
-  <span class="na">journal</span> <span class="p">=</span> <span class="s">{The Journal of Machine Learning Research}</span><span class="p">,</span>
+  <span class="na">journal</span> <span class="p">=</span> <span class="s">{The Journal of Machine Learning Research (JMLR)}</span><span class="p">,</span>
   <span class="na">volume</span> <span class="p">=</span> <span class="s">{17}</span><span class="p">,</span>
   <span class="na">number</span> <span class="p">=</span> <span class="s">{1}</span><span class="p">,</span>
   <span class="na">pages</span> <span class="p">=</span> <span class="s">{8330--8373}</span><span class="p">,</span>
@@ -2314,7 +2606,7 @@
         
         
         <div class="periodical">
-          <em>In Proceedings of the AAAI Conference on Artificial Intelligence</em>, 2015
+          <em>AAAI Conference on Artificial Intelligence (AAAI)</em>, 2015
         </div>
         <div class="periodical">
           
@@ -2338,10 +2630,10 @@
           </div>
 <!-- Hidden bibtex block -->
           <div class="bibtex hidden">
-            <figure class="highlight"><pre><code class="language-bibtex" data-lang="bibtex"><span class="nc">@inproceedings</span><span class="p">{</span><span class="nl">mirzasoleiman2015lazier</span><span class="p">,</span>
+            <figure class="highlight"><pre><code class="language-bibtex" data-lang="bibtex"><span class="nc">@article</span><span class="p">{</span><span class="nl">mirzasoleiman2015lazier</span><span class="p">,</span>
   <span class="na">title</span> <span class="p">=</span> <span class="s">{Lazier than lazy greedy}</span><span class="p">,</span>
   <span class="na">author</span> <span class="p">=</span> <span class="s">{Mirzasoleiman, Baharan and Badanidiyuru, Ashwinkumar and Karbasi, Amin and Vondr{\'a}k, Jan and Krause, Andreas}</span><span class="p">,</span>
-  <span class="na">booktitle</span> <span class="p">=</span> <span class="s">{Proceedings of the AAAI Conference on Artificial Intelligence}</span><span class="p">,</span>
+  <span class="na">journal</span> <span class="p">=</span> <span class="s">{AAAI Conference on Artificial Intelligence (AAAI)}</span><span class="p">,</span>
   <span class="na">volume</span> <span class="p">=</span> <span class="s">{29}</span><span class="p">,</span>
   <span class="na">number</span> <span class="p">=</span> <span class="s">{1}</span><span class="p">,</span>
   <span class="na">year</span> <span class="p">=</span> <span class="s">{2015}</span><span class="p">,</span>
@@ -2382,7 +2674,7 @@
         
         
         <div class="periodical">
-          <em>Advances in Neural Information Processing Systems</em>, 2015
+          <em>Advances in Neural Information Processing Systems (NeurIPS)</em>, 2015
         </div>
         <div class="periodical">
           
@@ -2410,7 +2702,7 @@
             <figure class="highlight"><pre><code class="language-bibtex" data-lang="bibtex"><span class="nc">@article</span><span class="p">{</span><span class="nl">mirzasoleiman2015distributed</span><span class="p">,</span>
   <span class="na">title</span> <span class="p">=</span> <span class="s">{Distributed submodular cover: Succinctly summarizing massive data}</span><span class="p">,</span>
   <span class="na">author</span> <span class="p">=</span> <span class="s">{Mirzasoleiman, Baharan and Karbasi, Amin and Badanidiyuru, Ashwinkumar and Krause, Andreas}</span><span class="p">,</span>
-  <span class="na">journal</span> <span class="p">=</span> <span class="s">{Advances in Neural Information Processing Systems}</span><span class="p">,</span>
+  <span class="na">journal</span> <span class="p">=</span> <span class="s">{Advances in Neural Information Processing Systems (NeurIPS)}</span><span class="p">,</span>
   <span class="na">volume</span> <span class="p">=</span> <span class="s">{28}</span><span class="p">,</span>
   <span class="na">year</span> <span class="p">=</span> <span class="s">{2015}</span><span class="p">,</span>
 <span class="p">}</span></code></pre></figure>
@@ -2454,7 +2746,7 @@
         
         
         <div class="periodical">
-          <em>In Proceedings of the 20th ACM SIGKDD international conference on Knowledge discovery and data mining</em>, 2014
+          <em>ACM SIGKDD international conference on Knowledge discovery and data mining (KDD)</em>, 2014
         </div>
         <div class="periodical">
           
@@ -2479,10 +2771,10 @@
           </div>
 <!-- Hidden bibtex block -->
           <div class="bibtex hidden">
-            <figure class="highlight"><pre><code class="language-bibtex" data-lang="bibtex"><span class="nc">@inproceedings</span><span class="p">{</span><span class="nl">badanidiyuru2014streaming</span><span class="p">,</span>
+            <figure class="highlight"><pre><code class="language-bibtex" data-lang="bibtex"><span class="nc">@article</span><span class="p">{</span><span class="nl">badanidiyuru2014streaming</span><span class="p">,</span>
   <span class="na">title</span> <span class="p">=</span> <span class="s">{Streaming submodular maximization: Massive data summarization on the fly}</span><span class="p">,</span>
   <span class="na">author</span> <span class="p">=</span> <span class="s">{Badanidiyuru, Ashwinkumar and Mirzasoleiman, Baharan and Karbasi, Amin and Krause, Andreas}</span><span class="p">,</span>
-  <span class="na">booktitle</span> <span class="p">=</span> <span class="s">{Proceedings of the 20th ACM SIGKDD international conference on Knowledge discovery and data mining}</span><span class="p">,</span>
+  <span class="na">journal</span> <span class="p">=</span> <span class="s">{ACM SIGKDD international conference on Knowledge discovery and data mining (KDD)}</span><span class="p">,</span>
   <span class="na">pages</span> <span class="p">=</span> <span class="s">{671--680}</span><span class="p">,</span>
   <span class="na">year</span> <span class="p">=</span> <span class="s">{2014}</span><span class="p">,</span>
 <span class="p">}</span></code></pre></figure>
@@ -2509,7 +2801,7 @@
         
         
         <div class="periodical">
-          <em>In Sixth IEEE International Workshop on Network Science for Communication Networks (NetSciCom), Toronto, Canada</em>, 2014
+          <em>IEEE International Workshop on Network Science for Communication Networks (NetSciCom)</em>, 2014
         </div>
         <div class="periodical">
           
@@ -2533,10 +2825,10 @@
           </div>
 <!-- Hidden bibtex block -->
           <div class="bibtex hidden">
-            <figure class="highlight"><pre><code class="language-bibtex" data-lang="bibtex"><span class="nc">@inproceedings</span><span class="p">{</span><span class="nl">mirzasoleiman2014modeling</span><span class="p">,</span>
+            <figure class="highlight"><pre><code class="language-bibtex" data-lang="bibtex"><span class="nc">@article</span><span class="p">{</span><span class="nl">mirzasoleiman2014modeling</span><span class="p">,</span>
   <span class="na">title</span> <span class="p">=</span> <span class="s">{Modeling the impact of user awareness on immunization strategies}</span><span class="p">,</span>
   <span class="na">author</span> <span class="p">=</span> <span class="s">{Mirzasoleiman, Baharan and Rabiee, Hamid R and Salehi, Mostafa}</span><span class="p">,</span>
-  <span class="na">booktitle</span> <span class="p">=</span> <span class="s">{Sixth IEEE International Workshop on Network Science for Communication Networks (NetSciCom), Toronto, Canada}</span><span class="p">,</span>
+  <span class="na">journal</span> <span class="p">=</span> <span class="s">{IEEE International Workshop on Network Science for Communication Networks (NetSciCom)}</span><span class="p">,</span>
   <span class="na">year</span> <span class="p">=</span> <span class="s">{2014}</span><span class="p">,</span>
 <span class="p">}</span></code></pre></figure>
           </div>
@@ -2579,7 +2871,7 @@
         
         
         <div class="periodical">
-          <em>Social Network Analysis and Mining</em>, 2013
+          <em>Social Network Analysis and Mining (SNAM)</em>, 2013
         </div>
         <div class="periodical">
           
@@ -2606,7 +2898,7 @@
             <figure class="highlight"><pre><code class="language-bibtex" data-lang="bibtex"><span class="nc">@article</span><span class="p">{</span><span class="nl">babaei2013revenue</span><span class="p">,</span>
   <span class="na">title</span> <span class="p">=</span> <span class="s">{Revenue maximization in social networks through discounting}</span><span class="p">,</span>
   <span class="na">author</span> <span class="p">=</span> <span class="s">{Babaei, Mahmoudreza and Mirzasoleiman, Baharan and Jalili, Mahdi and Safari, Mohammad Ali}</span><span class="p">,</span>
-  <span class="na">journal</span> <span class="p">=</span> <span class="s">{Social Network Analysis and Mining}</span><span class="p">,</span>
+  <span class="na">journal</span> <span class="p">=</span> <span class="s">{Social Network Analysis and Mining (SNAM)}</span><span class="p">,</span>
   <span class="na">volume</span> <span class="p">=</span> <span class="s">{3}</span><span class="p">,</span>
   <span class="na">pages</span> <span class="p">=</span> <span class="s">{1249--1262}</span><span class="p">,</span>
   <span class="na">year</span> <span class="p">=</span> <span class="s">{2013}</span><span class="p">,</span>
@@ -2648,7 +2940,7 @@
         
         
         <div class="periodical">
-          <em>Advances in Neural Information Processing Systems</em>, 2013
+          <em>Advances in Neural Information Processing Systems (NeurIPS)</em>, 2013
         </div>
         <div class="periodical">
           
@@ -2676,7 +2968,7 @@
             <figure class="highlight"><pre><code class="language-bibtex" data-lang="bibtex"><span class="nc">@article</span><span class="p">{</span><span class="nl">mirzasoleiman2013distributed</span><span class="p">,</span>
   <span class="na">title</span> <span class="p">=</span> <span class="s">{Distributed submodular maximization: Identifying representative elements in massive data}</span><span class="p">,</span>
   <span class="na">author</span> <span class="p">=</span> <span class="s">{Mirzasoleiman, Baharan and Karbasi, Amin and Sarkar, Rik and Krause, Andreas}</span><span class="p">,</span>
-  <span class="na">journal</span> <span class="p">=</span> <span class="s">{Advances in Neural Information Processing Systems}</span><span class="p">,</span>
+  <span class="na">journal</span> <span class="p">=</span> <span class="s">{Advances in Neural Information Processing Systems (NeurIPS)}</span><span class="p">,</span>
   <span class="na">volume</span> <span class="p">=</span> <span class="s">{26}</span><span class="p">,</span>
   <span class="na">year</span> <span class="p">=</span> <span class="s">{2013}</span><span class="p">,</span>
 <span class="p">}</span></code></pre></figure>
@@ -2906,7 +3198,7 @@
         
         
         <div class="periodical">
-          <em>Proc. IEEE International Conference on Communications (ICC)</em>, 2011
+          <em>IEEE International Conference on Communications (ICC)</em>, 2011
         </div>
         <div class="periodical">
           
@@ -2933,7 +3225,7 @@
             <figure class="highlight"><pre><code class="language-bibtex" data-lang="bibtex"><span class="nc">@article</span><span class="p">{</span><span class="nl">mirzasoleiman2011failurf</span><span class="p">,</span>
   <span class="na">title</span> <span class="p">=</span> <span class="s">{Reuse-Attack Mitigation in Wireless Sensor Networks}</span><span class="p">,</span>
   <span class="na">author</span> <span class="p">=</span> <span class="s">{Shafiei, Hossein and Khonsari, Ahmad and Mirzasoleiman, Baharan and Ould-Khaoua, Mohammad}</span><span class="p">,</span>
-  <span class="na">journal</span> <span class="p">=</span> <span class="s">{Proc. IEEE International Conference on Communications (ICC)}</span><span class="p">,</span>
+  <span class="na">journal</span> <span class="p">=</span> <span class="s">{IEEE International Conference on Communications (ICC)}</span><span class="p">,</span>
   <span class="na">year</span> <span class="p">=</span> <span class="s">{2011}</span><span class="p">,</span>
 <span class="p">}</span></code></pre></figure>
           </div>
@@ -2975,7 +3267,7 @@
         
         
         <div class="periodical">
-          <em>In 2009 IEEE International Symposium on Parallel and Distributed Processing with Applications</em>, 2009
+          <em>IEEE International Symposium on Parallel and Distributed Processing with Applications (ISPA)</em>, 2009
         </div>
         <div class="periodical">
           
@@ -2999,10 +3291,10 @@
           </div>
 <!-- Hidden bibtex block -->
           <div class="bibtex hidden">
-            <figure class="highlight"><pre><code class="language-bibtex" data-lang="bibtex"><span class="nc">@inproceedings</span><span class="p">{</span><span class="nl">jafari2009utility</span><span class="p">,</span>
+            <figure class="highlight"><pre><code class="language-bibtex" data-lang="bibtex"><span class="nc">@article</span><span class="p">{</span><span class="nl">jafari2009utility</span><span class="p">,</span>
   <span class="na">title</span> <span class="p">=</span> <span class="s">{Utility proportional optimization flow control for overlay multicast}</span><span class="p">,</span>
   <span class="na">author</span> <span class="p">=</span> <span class="s">{Jafari, Ali and Shafiei, Hosein and Mirzasoleiman, Baharan and Sepidnam, Ghodrat}</span><span class="p">,</span>
-  <span class="na">booktitle</span> <span class="p">=</span> <span class="s">{2009 IEEE International Symposium on Parallel and Distributed Processing with Applications}</span><span class="p">,</span>
+  <span class="na">journal</span> <span class="p">=</span> <span class="s">{IEEE International Symposium on Parallel and Distributed Processing with Applications (ISPA)}</span><span class="p">,</span>
   <span class="na">pages</span> <span class="p">=</span> <span class="s">{401--407}</span><span class="p">,</span>
   <span class="na">year</span> <span class="p">=</span> <span class="s">{2009}</span><span class="p">,</span>
   <span class="na">organization</span> <span class="p">=</span> <span class="s">{IEEE}</span><span class="p">,</span>
