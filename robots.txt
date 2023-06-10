@@ -1,4 +1,4 @@
 User-agent: *
 Disallow:
 
-Sitemap: https://bigml.github.io/sitemap.xml
+Sitemap: https://baharanm.github.io/sitemap.xml
