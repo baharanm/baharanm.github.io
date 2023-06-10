@@ -41,7 +41,7 @@ horizontal: false
 - Bruce Qu (not graduated yet)
 - Arnav Jain (not graduated yet)
 - David Davini (not graduated yet)
-- Tang Mohan (not graduated)
+- Tang Mohan (not graduated yet)
 - Victor Li (not graduated yet)
 - Jiayi Ni (not graduated yet)
 - Yuetong Xu (now PhD student at MIT)
@@ -52,8 +52,8 @@ horizontal: false
 - Yuhan Liu, Graduated (now at Quant Trader)
 
 <h5>Master Students</h5>
-- Tedi Zaduri (now PhD student at Princeton)
 - Zhaoqian Wang (graduating)
+- Tedi Zaduri (now PhD student at Princeton)
 - Yuchen Liu (now at Meta)
 - Srinath Naik Ajmeera (now at Amazon)
 - Ayushi Agrawal (now at Google)
