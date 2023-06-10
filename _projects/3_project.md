@@ -2,7 +2,7 @@
 layout: page
 title: Data Poisoning
 description: Robust traing against data poisoning
-img: assets/img/attack.png
+img: assets/img/poison_project.png
 # redirect: assets/img/attack.png
 importance: 3
 category: robustness
