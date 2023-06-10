@@ -1,10 +1,10 @@
 ---
 layout: page
-title: Robustness agains Spurious Correlations
+title: Spurious Correlations
 description: Robust traing against spurious correlations
 img: assets/img/spurious.png
 importance: 3
-category: work
+category: robustness
 ---
 
 <!-- Spurious correlations that degrade model generalization or lead the model to be right for the wrong reasons are one of the main robustness concerns for real-world deployments.  -->
@@ -13,10 +13,17 @@ Neural networks are known to exploit spurious correlations in the training data:
 
 We develop methods to mitigate the effect of spurious correlations during training neural networks. We consider robust training in supervised scenario, and mitigating spurious correlations from supervised or multimodal pretrained models during fine-tuning.
 
+<div class="row justify-content-sm-center">
+	<div class="col-sm-10 mt-3 mt-md-0">
+	    {% include figure.html path="assets/img/spurious_in.png" title="example image" class="img-fluid rounded z-depth-1" %}
+	</div>
+</div>
+<!-- <div class="caption">
+    This image can also have a caption. It's like magic.
+</div> -->
+
 Checkout the following papers to know more:
 
-- [Mitigating Spurious Correlations in Multi-modal Models during Fine-tuning](https://arxiv.org/pdf/2304.03916), ICML 2023
-
-- [Eliminating Spurious Correlations from Pre-trained Models via Data Mixing](http://arxiv.org/abs/2305.14521), ArXiv preprint 2023
-
-- [Identifying Spurious Biases Early in Training through the Lens of Simplicity Bias](), ArXiv preprint 2023
+<div class="publications">
+{% bibliography -f {{ site.scholar.bibliography }} -q @*[spurious=true]* %}
+</div>
