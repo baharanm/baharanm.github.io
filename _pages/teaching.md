@@ -16,11 +16,11 @@ nav_order: 5
 <h2>Talks</h2>
 <div class="row mt-3">
     <div class="col-sm mt-3 mt-md-0">
-        {% include video.html path="https://www.youtube.com/watch?v=Bmn8SNojTlA" class="img-fluid rounded z-depth-1" %}
+        {% include video.html path="https://www.youtube.com/embed/Bmn8SNojTlA" class="img-fluid rounded z-depth-1" %}
         Data-efficient machine learning
     </div>
     <div class="col-sm mt-3 mt-md-0">
-        {% include video.html path="https://www.youtube.com/watch?v=0XOlT8afiWE" class="img-fluid rounded z-depth-1" %}
+        {% include video.html path="https://www.youtube.com/embed/0XOlT8afiWE" class="img-fluid rounded z-depth-1" %}
         Data-efficient and robust learning against label noise
     </div>
 </div>
@@ -28,7 +28,7 @@ nav_order: 5
 
 <div class="row justify-content-sm-center">
     <!-- <div class="col-sm mt-3 mt-md-0"> -->
-        {% include video.html path="https://www.youtube.com/watch?v=LszEyqfhW3I" class="img-fluid rounded z-depth-1" %}
+        {% include video.html path="https://www.youtube.com/embed/LszEyqfhW3I" class="img-fluid rounded z-depth-1" %}
         Data-efficient and robust learning against label noise and data poisoning attacks
     <!-- </div> -->
 </div>
