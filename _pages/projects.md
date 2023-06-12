@@ -2,12 +2,14 @@
 layout: page
 title: Projects
 permalink: /projects/
-description: <h5>We aim to address sustainability, reliability, and efficiency of machine learning, by selecting the most relevant data for training, among other techniques.</h5>
+# description: <h6>We aim to address <b>sustainability, reliability, and efficiency</b> of machine learning, by selecting the most relevant data for training, among other techniques.</h6>
 nav: true
 nav_order: 2
 display_categories: [efficiency, robustness]
 horizontal: false
 ---
+
+We aim to address <span style="color:#DF5279"><b>sustainability, reliability, and efficiency</b></span> of machine learning, by selecting the most relevant data for training, among other techniques.
 
 <!-- pages/projects.md -->
 <div class="projects">

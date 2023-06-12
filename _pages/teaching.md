@@ -2,7 +2,7 @@
 layout: page
 permalink: /teaching/
 title: Teaching 
-# description: Materials for courses you taught. Replace this text with your description.
+# description: Teaching & Talks
 nav: true
 nav_order: 5
 ---
@@ -13,7 +13,7 @@ nav_order: 5
 
 ---
 
-<h2>Talks</h2>
+<h1>Talks</h1>
 <div class="row mt-3">
     <div class="col-sm mt-3 mt-md-0">
         {% include video.html path="https://www.youtube.com/embed/Bmn8SNojTlA" class="img-fluid rounded z-depth-1" %}
