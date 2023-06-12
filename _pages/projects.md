@@ -1,6 +1,6 @@
 ---
 layout: page
-title: projects
+title: Projects
 permalink: /projects/
 description: <h5>We aim to address sustainability, reliability, and efficiency of machine learning, by selecting the most relevant data for training, among other techniques.</h5>
 nav: true

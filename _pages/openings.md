@@ -1,10 +1,10 @@
 ---
 layout: page
 permalink: /openings/
-title: openings
+title: Openings
 # description: Materials for courses you taught. Replace this text with your description.
 nav: true
-nav_order: 5
+nav_order: 4
 ---
 
 Thank you for your interest in joining BigML!
