@@ -539,6 +539,13 @@ footer.sticky-bottom {
   }
 }
 
+.news {
+  table, th, td {
+    padding-top: 1px !important;
+    padding-bottom: 0px !important;
+    vertical-align: middle;
+  }
+}
 
 // Publications
 
@@ -564,9 +571,9 @@ footer.sticky-bottom {
   h2.year {
     color: var(--global-divider-color);
     border-top: 1px solid var(--global-divider-color);
-    padding-top: 1rem;
+    padding-top: 0.5rem;
     margin-top: -1rem;
-    margin-bottom: -2rem;
+    margin-bottom: 0.2rem;
     text-align: right;
   }
 
@@ -576,7 +583,7 @@ footer.sticky-bottom {
     margin-top: 0;
 
     li {
-      margin-bottom: 0rem;
+      margin-bottom: -0.2rem;
 
       .preview {
         width: 100%;
@@ -658,7 +665,7 @@ footer.sticky-bottom {
       }
 
       .badges {
-        padding-bottom: 0.5rem;
+        padding-bottom: 0.0rem;
         span {
           display: inline-block;
           color: $black-color;
