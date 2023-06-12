@@ -76,7 +76,7 @@ blockquote {
 
 .caption {
   font-size: 0.875rem;
-  margin-top: 0.75rem;
+  margin-top: 0.1rem;
   margin-bottom: 1.5rem;
   text-align: center;
 }
@@ -565,7 +565,7 @@ footer.sticky-bottom {
     color: var(--global-divider-color);
     border-top: 1px solid var(--global-divider-color);
     padding-top: 1rem;
-    margin-top: 2rem;
+    margin-top: -1rem;
     margin-bottom: -2rem;
     text-align: right;
   }
@@ -576,7 +576,7 @@ footer.sticky-bottom {
     margin-top: 0;
 
     li {
-      margin-bottom: 1rem;
+      margin-bottom: 0rem;
 
       .preview {
         width: 100%;
