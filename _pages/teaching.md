@@ -1,18 +1,38 @@
 ---
 layout: page
 permalink: /teaching/
-title: Teaching
+title: Teaching 
 # description: Materials for courses you taught. Replace this text with your description.
 nav: true
 nav_order: 5
 ---
 
-<h5>Undergraduate course:</h5> Data Science Fundamentals (CSM 148), Winter 2021-2023
+<b>Undergraduate course:</b> [Data Science Fundamentals (CSM 148)](https://bruinlearn.ucla.edu/courses/153936), Winter 2021-2023<br />
+<b>Graduate course:</b> [Large-scale Machine Learning (CS 260D)](https://bruinlearn.ucla.edu/courses/140120), Fall 2021-2022<br />
+<b>Graduate seminar:</b> [Efficient and Robust Machine Learning (CS 269)](https://bruinlearn.ucla.edu/courses/125609/), Fall 2021, Spring 2022-2023
 
 ---
 
-<h5>Graduate course:</h5> Large-scale Machine Learning (CS 260D), Fall 2021-2022
+<h2>Talks</h2>
+<div class="row mt-3">
+    <div class="col-sm mt-3 mt-md-0">
+        {% include video.html path="https://www.youtube.com/watch?v=Bmn8SNojTlA" class="img-fluid rounded z-depth-1" %}
+        Data-efficient machine learning
+    </div>
+    <div class="col-sm mt-3 mt-md-0">
+        {% include video.html path="https://www.youtube.com/watch?v=0XOlT8afiWE" class="img-fluid rounded z-depth-1" %}
+        Data-efficient and robust learning against label noise
+    </div>
+</div>
+<br />
 
----
-
-<h5>Advanced graduate course:</h5> Efficient and Robust Machine Learning (CS 269), Fall 2021, Spring 2022-2023
+<div class="row justify-content-sm-center">
+    <!-- <div class="col-sm mt-3 mt-md-0"> -->
+        {% include video.html path="https://www.youtube.com/watch?v=LszEyqfhW3I" class="img-fluid rounded z-depth-1" %}
+        Data-efficient and robust learning against label noise and data poisoning attacks
+    <!-- </div> -->
+</div>
+<!-- <div class="caption">
+    A simple, elegant caption looks good between video rows, after each row, or doesn't have to be there at all.
+</div>
+ -->
