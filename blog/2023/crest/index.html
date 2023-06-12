@@ -10,9 +10,9 @@
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <title>2023 | Baharan  Mirzasoleiman</title>
+    <title>Coresets for Data-efficient Deep Learning | Baharan  Mirzasoleiman</title>
     <meta name="author" content="Baharan  Mirzasoleiman">
-    <meta name="description" content="">
+    <meta name="description" content="Towards Sustainable Learning">
     <meta name="keywords" content="machine learning, data selection, optimization">
 
 
@@ -38,7 +38,7 @@
     <link rel="shortcut icon" href="data:image/svg+xml,&lt;svg%20xmlns=%22http://www.w3.org/2000/svg%22%20viewBox=%220%200%20100%20100%22&gt;&lt;text%20y=%22.9em%22%20font-size=%2290%22&gt;%E2%9A%9B%EF%B8%8F&lt;/text&gt;&lt;/svg&gt;">
     
     <link rel="stylesheet" href="/assets/css/main.css">
-    <link rel="canonical" href="https://baharanm.github.io/blog/2023/">
+    <link rel="canonical" href="https://baharanm.github.io/blog/2023/crest/">
 
     <!-- Dark Mode -->
     
@@ -88,8 +88,8 @@
               <li class="nav-item ">
                 <a class="nav-link" href="/projects/">projects</a>
               </li>
-              <li class="nav-item active">
-                <a class="nav-link" href="/repositories/"><span class="sr-only">(current)</span></a>
+              <li class="nav-item ">
+                <a class="nav-link" href="/repositories/"></a>
               </li>
               <li class="nav-item ">
                 <a class="nav-link" href="/bigml/">BigML</a>
@@ -133,42 +133,256 @@
     <!-- Content -->
     <div class="container mt-5">
       
-        <div class="post">
+        <!-- _layouts/post.html -->
+
+<div class="post">
 
   <header class="post-header">
-    <h1 class="post-title"> <i class="fas fa-calendar fa-sm"></i> 2023 </h1>
-    <p class="post-description"> an archive of posts from this year </p>
+    <h1 class="post-title">Coresets for Data-efficient Deep Learning</h1>
+    <p class="post-meta">June 11, 2023</p>
+    <p class="post-tags">
+      <a href="/blog/2023"> <i class="fas fa-calendar fa-sm"></i> 2023 </a>
+        ·  
+        <a href="/blog/category/data-efficiency">
+          <i class="fas fa-tag fa-sm"></i> data-efficiency</a>  
+          
+
+    </p>
   </header>
 
-  <article>
-    <div class="table-responsive">
-      <table class="table table-sm table-borderless">
-        
-        <tr>
-          <th scope="row">Jun 11, 2023</th>
-          <td>
-              <a class="post-link" href="/blog/2023/crest/">Coresets for Data-efficient Deep Learning</a>
-          </td>
-        </tr>
-      
-        <tr>
-          <th scope="row">Jun 8, 2023</th>
-          <td>
-              <a class="post-link" href="/blog/2023/CC-FS/">Which Features are Learned by Contrastive Learning?</a>
-          </td>
-        </tr>
-      
-        <tr>
-          <th scope="row">May 13, 2023</th>
-          <td>
-              <a class="post-link" href="/blog/2023/data-CL/">Data-Efficient Contrastive Self-supervised Learning</a>
-          </td>
-        </tr>
-      
-      </table>
+  <article class="post-content">
+    
+    <div id="markdown-content">
+      <p>To improve the efficiency and sustainability of learning deep models, we propose <b>CREST, the first scalable framework with rigorous theoretical guarantees to identify the most valuable examples for training non-convex models</b>, particularly deep networks. To guarantee convergence to a stationary point of a non-convex function, CREST models the non-convex loss as a series of quadratic functions and extracts a coreset for each quadratic sub-region. In addition, to ensure faster convergence of stochastic gradient methods such as (mini-batch) SGD, CREST iteratively extracts multiple mini-batch coresets from larger random subsets of training data, to ensure nearly-unbiased gradients with small variances. Finally, to further improve scalability and efficiency, CREST identifies and excludes the examples that are learned from the coreset selection pipeline. Our extensive experiments on several deep networks trained on vision and NLP datasets, including CIFAR-10, CIFAR-100, TinyImageNet, and SNLI, confirm that CREST speeds up training deep networks on very large datasets, by 1.7x to 2.5x with minimum loss in the performance. By analyzing the learning difficulty of the subsets selected by CREST, we show that deep models benefit the most by learning from subsets of increasing difficulty levels.</p>
+
+<p>Read the full article here: <a href="../../../assets/pdf/yang23sustainable.pdf">paper</a></p>
+
+<h3>Background: Coresets for Efficient Training</h3>
+<div class="row mt-3">
+    <div class="col-sm mt-3 mt-md-0">
+        When training machine learning models, not all examples are equally important or necessary for achieving good performance. By selecting the most relevant data for training, we can improve the efficiency of the training process.<br><br>
+        <a href="../../../assets/pdf/mirzasoleiman20data.pdf">Recent research</a> has shown that for strongly convex models (linear and ridge regression, and regularized support vector machines), one <b>weighted subset (coreset)</b> is enough to (1) upper bound the gradient error during the entire training, and (2) guarantee convergence for (Incremental) Gradient Descent.
+    </div>
+    <div class="col-sm mt-3 mt-md-0">
+        <figure>
+
+  <picture>
+    
+
+    <!-- Fallback to the original file -->
+    <img src="/assets/img/efficient.png" class="img-fluid rounded z-depth-1" width="auto" height="auto" title="example image" onerror="this.onerror=null; $('.responsive-img-srcset').remove();">
+
+  </picture>
+
+</figure>
+
+    </div>
+</div>
+
+<p><br></p>
+
+<h3>Extracting Coresets for Deep Neural Networks is Challenging!</h3>
+<p>Because (mini-batch) SGD needs mini-batches with small bias and variance to converge to a stationary point, there are two challenges of extracting coresets for deep models:</p>
+
+<div class="row mt-3">
+    <div class="col-sm mt-3 mt-md-0">
+            <h5>
+<b>Non-convex Loss</b> → <b>High Bias</b>
+</h5>
+            Loss and gradient change rapidly because of the non-convexity of the loss function → One subset cannot upper bound the gradient during the entire training
+    </div>
+    <div class="col-sm mt-3 mt-md-0">
+        <h5>
+<b>Stochastic Gradient</b> → <b>High Variance</b>
+</h5>
+        One weighted subset selected from the full data has large variance when trained on with mini-batches
+    </div>
+</div>
+
+<p><br></p>
+
+<h3>Introducing CREST: <ins>C</ins>o<ins>re</ins>sets for <ins>St</ins>ochastic Gradient Descent</h3>
+<h4>Modeling the non-convex loss as a <span style="color:#DF5279">piece-wise quadratic</span>
+</h4>
+<ol>
+  <li>Select one coreset at $w$</li>
+  <li>Model a quadratic function with Taylor expansion of \(\mathcal{L}(w)\)</li>
+  <li>Train on the selected subset as long as the quadratic function has a small approximation error</li>
+</ol>
+
+<h4>Selecting <s>a single coreset</s> <span style="color:#DF5279">mini-batch coresets</span> from <span style="color:#DF5279">random subsets</span> of all data</h4>
+<div class="row mt-3">
+    <div class="col-sm mt-3 mt-md-0">
+        Instead of one coreset, we want to find multiple mini-batch coresets from larger random subsets to have smaller variance.
+        Each of the mini-batch coresets is nearly unbiased as long as the quadratic approximation is still valid.
+    </div>
+    <div class="col-sm mt-3 mt-md-0">
+        <figure>
+
+  <picture>
+    
+
+    <!-- Fallback to the original file -->
+    <img src="/assets/img/multiple.gif" class="img-fluid rounded z-depth-1" width="auto" height="auto" title="example image" onerror="this.onerror=null; $('.responsive-img-srcset').remove();">
+
+  </picture>
+
+</figure>
+
+    </div>
+</div>
+
+<h3> Theoritical Results </h3>
+<p><b>Theorem (Informal).</b> Assuming a bounded variance \(\sigma^2\) on the stochastic gradient, if the gradient bias of mini-batch coresets is bounded by the gradient norm</p>
+
+<ol>
+  <li>the selected coresets have small gradient error at beginning of region</li>
+  <li>small \(\tau\) ensures the error remains small during the region 
+training with stochastic gradient descent on mini-batch coresets found by CREST from random subset of size \(r\) converges to a stationary point in the following number of iterations:</li>
+</ol>
+<div class="row justify-content-sm-center">
+    $$\mathcal{O}(\frac{L(\mathcal{L}(w_0)-\mathcal{L}^*)}{\nu^2}(1+\frac{\sigma^2}{r\nu^2}))$$
+</div>
+<p><br></p>
+
+<h3>Emprical Results</h3>
+<h4>CREST outperforms state-of-the-art coreset selection baselines</h4>
+<div class="row">
+    <div class="col-sm mt-3 mt-md-0">
+        <figure>
+
+  <picture>
+    
+
+    <!-- Fallback to the original file -->
+    <img src="/assets/img/table.png" class="img-fluid rounded z-depth-1" width="auto" height="auto" title="example image" onerror="this.onerror=null; $('.responsive-img-srcset').remove();">
+
+  </picture>
+
+</figure>
+
+    </div>
+</div>
+<p><br></p>
+
+<h4>CREST speedups training on image and language data</h4>
+<div class="row">
+    <div class="col-sm mt-3 mt-md-0">
+        <figure>
+
+  <picture>
+    
+
+    <!-- Fallback to the original file -->
+    <img src="/assets/img/speedup.png" class="img-fluid rounded z-depth-1" width="auto" height="auto" title="example image" onerror="this.onerror=null; $('.responsive-img-srcset').remove();">
+
+  </picture>
+
+</figure>
+
+    </div>
+</div>
+<p><br></p>
+
+<h3>CREST reveals what data is good for deep models</h3>
+
+<h4>Deep models needs data of increasing difficulty</h4>
+
+<div class="row justify-content-sm-center">
+    <figure>
+
+  <picture>
+    
+
+    <!-- Fallback to the original file -->
+    <img src="/assets/img/forgetting.png" class="img-fluid rounded z-depth-1" width="auto" height="auto" title="example image" onerror="this.onerror=null; $('.responsive-img-srcset').remove();">
+
+  </picture>
+
+</figure>
+
+</div>
+
+<h4> BibTeX </h4>
+
+<div class="language-html highlighter-rouge"><div class="highlight"><pre class="highlight"><code>@inproceedings{yang2023towards,
+      title={Towards Sustainable Learning: Coresets for Data-efficient Deep Learning},
+      author={Yang, Yu and Kang, Hao and Mirzasoleiman, Baharan},
+      booktitle={Proceedings of the 40th International Conference on Machine Learning},
+      year={2023}
+    }
+</code></pre></div></div>
+
+<h4> Code </h4>
+<div class="repositories d-flex flex-wrap flex-md-row flex-column justify-content-between align-items-center">
+  
+
+
+
+<div class="repo p-2 text-center">
+  <a href="https://github.com/BigML-CS-UCLA/Crest" rel="external nofollow noopener" target="_blank">
+    <img class="repo-img-light w-100" alt="BigML-CS-UCLA/Crest" src="https://github-readme-stats.vercel.app/api/pin/?username=BigML-CS-UCLA&amp;repo=Crest&amp;theme=default&amp;show_owner=true">
+    <img class="repo-img-dark w-100" alt="BigML-CS-UCLA/Crest" src="https://github-readme-stats.vercel.app/api/pin/?username=BigML-CS-UCLA&amp;repo=Crest&amp;theme=dark&amp;show_owner=true">
+  </a>
+</div>
+
+</div>
+
+
     </div>
   </article>
 
+
+  
+    
+    <br>
+    <hr>
+    <br>
+    <ul class="list-disc pl-8"></ul>
+
+    <!-- Adds related posts to the end of an article -->
+    <h2 class="text-3xl font-semibold mb-4 mt-12">Enjoy Reading This Article?</h2>
+    <p class="mb-2">Here are some more articles you might like to read next:</p>
+  
+
+  <li class="my-2">
+    <a class="text-pink-700 underline font-semibold hover:text-pink-800" href="/blog/2023/CC-FS/">Which Features are Learned by Contrastive Learning?</a>
+  </li>
+
+  
+
+  <li class="my-2">
+    <a class="text-pink-700 underline font-semibold hover:text-pink-800" href="/blog/2023/data-CL/">Data-Efficient Contrastive Self-supervised Learning</a>
+  </li>
+
+<div id="giscus_thread" style="max-width: 800px; margin: 0 auto;">
+  <script>
+    let giscusTheme = localStorage.getItem("theme");
+    let giscusAttributes = {
+        "src": "https://giscus.app/client.js",
+        "data-repo": "alshedivat/al-folio",
+        "data-repo-id": "MDEwOlJlcG9zaXRvcnk2MDAyNDM2NQ==",
+        "data-category": "Comments",
+        "data-category-id": "DIC_kwDOA5PmLc4CTBt6",
+        "data-mapping": "title",
+        "data-strict": "1",
+        "data-reactions-enabled": "1",
+        "data-emit-metadata": "0",
+        "data-input-position": "bottom",
+        "data-theme": giscusTheme,
+        "data-lang": "en",
+        "crossorigin": "anonymous",
+        "async": "",
+    };
+
+
+    let giscusScript = document.createElement("script");
+    Object.entries(giscusAttributes).forEach(([key, value]) => giscusScript.setAttribute(key, value));
+    document.getElementById("giscus_thread").appendChild(giscusScript);
+  </script>
+  <noscript>Please enable JavaScript to view the <a href="http://giscus.app/?ref_noscript" rel="external nofollow noopener" target="_blank">comments powered by giscus.</a>
+</noscript>
+</div>
 </div>
 
       
