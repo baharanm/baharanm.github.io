@@ -86,7 +86,7 @@
             {%- endunless -%}
           {%- endfor -%}
           , and
-          <span
+          <span 
               class="more-authors"
               title="click to view {{more_authors_hide}}"
               onclick="
@@ -132,6 +132,9 @@
         <div class="periodical">
           {{ entry.note | strip }}
         </div>
+        {%- if entry.award %}
+          <div lass="award"><b><span style="color:#DF5279">{{entry.award}}</span></b></div>
+        {%- endif %}
 
           <!-- Links/Buttons -->
           <div class="links">
@@ -184,6 +187,9 @@
           {%- if entry.website %}
             <a href="{{ entry.website }}" class="btn btn-sm z-depth-0" role="button">Website</a>
           {%- endif %}
+          <!-- {%- if entry.award %}
+            <div lass="award"><b><span style="color:#DF5279">{{entry.award}}</span></b></div>
+          {%- endif %} -->
           </div>
           {% if site.badges %}
           <div class="badges">
