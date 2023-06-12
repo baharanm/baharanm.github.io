@@ -4,7 +4,7 @@ title: BigML
 permalink: /bigml/
 # description: </h3>PhD students:</h3>
 nav: true
-nav_order: 4
+nav_order: 3
 display_categories: [work, fun]
 horizontal: false
 ---
@@ -30,7 +30,7 @@ horizontal: false
    </div>
    <div class="col-sm-4 mt-3 mt-md-0">
        {% include figure.html path="assets/img/Hanger.jpeg" title="example image" class="img-fluid rounded z-depth-1" %}
-       <a href="https://www.linkedin.com/in/wenhan-yang-6413981b4/">Hanger Yang</a>
+       <a href="https://sites.google.com/view/hangeryang/home/">Hanger Yang</a>
    </div>
 </div>
 
