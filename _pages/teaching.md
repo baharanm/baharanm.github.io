@@ -1,7 +1,7 @@
 ---
 layout: page
 permalink: /teaching/
-title: Teaching 
+title: Teaching & Talks
 # description: Teaching & Talks
 nav: true
 nav_order: 5
