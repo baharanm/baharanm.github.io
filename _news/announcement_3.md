@@ -7,4 +7,4 @@ related_posts: false
 
 <!-- A simple inline announcement with Markdown emoji! :sparkles: :smile: -->
 
-I will give a keynote at [KDD’23 resource-efficient learning workshop](https://ncsu-dk-lab.github.io/workshops/relkd@2023/), in Long Beach
+Upcoming keynote at [KDD’23 resource-efficient learning workshop](https://ncsu-dk-lab.github.io/workshops/relkd@2023/)

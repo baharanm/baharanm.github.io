@@ -7,4 +7,6 @@ related_posts: false
 
 <!-- A simple inline announcement with Markdown emoji! :sparkles: :smile: -->
 
-I am co-organizing the 3rd [Sparsity in Neural Network Workshop at ICLR](https://www.sparseneural.net/)
+Co-organizing the [3rd Sparsity in Neural Network Workshop at ICLR](https://www.sparseneural.net/), continuing our efforts at <br />
+[2nd Sparsity in Neural Network Workshop](https://sites.google.com/view/sparsity-workshop-2022), and
+[1st Sparsity in Neural Network Workshop](https://sites.google.com/view/sparsity-workshop-2021/)
