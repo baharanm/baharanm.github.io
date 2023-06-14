@@ -17,11 +17,13 @@ nav_order: 5
 <div class="row mt-3">
     <div class="col-sm mt-3 mt-md-0">
         {% include video.html path="https://www.youtube.com/embed/Bmn8SNojTlA" class="img-fluid rounded z-depth-1" %}
-        Data-efficient machine learning
+        Data-efficient machine learning <br />
+        <a href="https://mlsys.stanford.edu/">Stanford MLSys Seminar</a>
     </div>
     <div class="col-sm mt-3 mt-md-0">
         {% include video.html path="https://www.youtube.com/embed/0XOlT8afiWE" class="img-fluid rounded z-depth-1" %}
-        Data-efficient and robust learning against label noise
+        Data-efficient and robust learning against label noise <br />
+        <a href="https://tractable-probabilistic-modeling.github.io/tpm2022/">UAI TPM workshop</a>
     </div>
 </div>
 <br />
@@ -29,7 +31,8 @@ nav_order: 5
 <div class="row justify-content-sm-center">
     <!-- <div class="col-sm mt-3 mt-md-0"> -->
         {% include video.html path="https://www.youtube.com/embed/LszEyqfhW3I" class="img-fluid rounded z-depth-1" %}
-        Data-efficient and robust learning against label noise and data poisoning attacks
+        Data-efficient and robust learning against label noise and data poisoning attacks <br />
+        <a href="https://www.youtube.com/playlist?list=PLExMLJgvoXpizhYU-phqbTFiRNNkICJ_L">Vanderbilt University Machine Learning Seminar</a>
     <!-- </div> -->
 </div>
 <!-- <div class="caption">
