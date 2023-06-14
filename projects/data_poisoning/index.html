@@ -10,9 +10,9 @@
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <title>Label Noise | Baharan  Mirzasoleiman</title>
+    <title>Data Poisoning | Baharan  Mirzasoleiman</title>
     <meta name="author" content="Baharan  Mirzasoleiman">
-    <meta name="description" content="Robust traing against label nosie">
+    <meta name="description" content="Robust traing against data poisoning">
     <meta name="keywords" content="machine learning, data selection, optimization">
 
 
@@ -38,7 +38,7 @@
     <link rel="shortcut icon" href="data:image/svg+xml,&lt;svg%20xmlns=%22http://www.w3.org/2000/svg%22%20viewBox=%220%200%20100%20100%22&gt;&lt;text%20y=%22.9em%22%20font-size=%2290%22&gt;%F0%9F%8C%B1&lt;/text&gt;&lt;/svg&gt;">
     
     <link rel="stylesheet" href="/assets/css/main.css">
-    <link rel="canonical" href="https://baharanm.github.io/projects/2_project/">
+    <link rel="canonical" href="https://baharanm.github.io/projects/data_poisoning/">
 
     <!-- Dark Mode -->
     
@@ -130,24 +130,25 @@
         <div class="post">
 
           <header class="post-header">
-            <h1 class="post-title">Label Noise</h1>
-            <p class="post-description">Robust traing against label nosie</p>
+            <h1 class="post-title">Data Poisoning</h1>
+            <p class="post-description">Robust traing against data poisoning</p>
           </header>
 
           <article>
-            <p>The success of deep neural networks relies heavily on the quality of training data, and in particular accurate labels of the training examples. However, maintaining label quality becomes very expensive for large datasets, and hence mislabeled data points are ubiquitous in large real-world datasets. As deep neural networks have the capacity to essentially memorize any (even random) labeling of the data, noisy labels have a drastic effect on the generalization performance of deep neural networks. Therefore, it becomes crucial to develop methods with strong theoretical guarantees for robust training of neural networks against noisy labels. Such guarantees become of the utmost importance in safety-critical systems, such as aircraft, autonomous cars, and medical devices.</p>
+            <p>Big datasets empower modern over-parameterized deep learning systems. Such datasets are often scraped from the internet or other public and user-provided sources. An adversary can easily insert a subset of malicious examples into the data collected from public sources to harm the model’s behavior at test time. As a result, deep learning systems trained on public data are extremely vulnerable to data poisoning attacks. Such attacks modify a subset of training examples under small (and potentially invisible) adversarial perturbations, with the aim of changing the model’s prediction on specific
+test-time examples. Powerful attacks generate poisons that visually look innocent and are seemingly properly labeled. This makes them hard to detect even by expert observers. Hence, data poisoning attacks are arguably one of the most concerning threats to modern deep learning systems.</p>
 
-<p>We develop principled techniques with strong theoretical guarantees for robust training of neural networks against noisy labels. We consider the effect of data, model, and pretraining on robustness against label noise.</p>
+<p>We develop powerful defense methods to traing neural networks robust against data poisoning attacks. We consider this problem in supervised setting as well as multimodal language-image pretraining.</p>
 
 <div class="row justify-content-sm-center">
-	<div class="col-sm-12 mt-3 mt-md-0">
+	<div class="col-sm-8 mt-3 mt-md-0">
 	    <figure>
 
   <picture>
     
 
     <!-- Fallback to the original file -->
-    <img src="/assets/img/label_noise.png" class="img-fluid rounded z-depth-1" width="auto" height="auto" title="label noise" onerror="this.onerror=null; $('.responsive-img-srcset').remove();">
+    <img src="/assets/img/poison.png" class="img-fluid rounded z-depth-1" width="auto" height="auto" title="poison" onerror="this.onerror=null; $('.responsive-img-srcset').remove();">
 
   </picture>
 
@@ -155,9 +156,9 @@
 
 	</div>
 </div>
-<div class="caption">
-    Examples of Noisy Labels. Source: https://arxiv.org/pdf/1711.00583v1.pdf
-</div>
+<!-- <div class="caption">
+    This image can also have a caption. It's like magic.
+</div> -->
 
 <p>Checkout the following papers to know more:</p>
 
@@ -169,21 +170,21 @@
         <div class="col-sm-2 abbr"><abbr class="badge">ArXiv</abbr></div>
 
         <!-- Entry bib key -->
-        <div id="xue2022final" class="col-sm-10">
+        <div id="yang2023robust" class="col-sm-10">
         <!-- Title -->
-        <div class="title">The Final Ascent: When Bigger Models Generalize Worse on Noisy-Labeled Data</div>
+        <div class="title">Robust Contrastive Language-Image Pretraining against Data Poisoning and Backdoor Attacks</div>
         <!-- Author -->
         <div class="author">
         
 
-        <a href="https://sites.google.com/g.ucla.edu/yihao-xue/home" rel="external nofollow noopener" target="_blank">Yihao Xue</a>, Kyle Whitecross, and <a href="https://baharanm.github.io/">Baharan Mirzasoleiman</a>
+        <a href="https://sites.google.com/view/hangeryang/home" rel="external nofollow noopener" target="_blank">Wenhan Yang.</a>, and <a href="https://baharanm.github.io/">Baharan Mirzasoleiman</a>
 </div>
 
         <!-- Journal/Book title and date -->
         
         
         <div class="periodical">
-          <em>arXiv preprint arXiv:2208.08003</em>, Preprints
+          <em>arXiv preprint arXiv:2303.06854</em>, Preprints
         </div>
         <div class="periodical">
           
@@ -192,7 +193,7 @@
           <!-- Links/Buttons -->
           <div class="links">
             <a class="abstract btn btn-sm z-depth-0" role="button">Abs</a>
-            <a href="http://arxiv.org/abs/2208.08003" class="btn btn-sm z-depth-0" role="button" rel="external nofollow noopener" target="_blank">arXiv</a>
+            <a href="http://arxiv.org/abs/2303.06854" class="btn btn-sm z-depth-0" role="button" rel="external nofollow noopener" target="_blank">arXiv</a>
             <a class="bibtex btn btn-sm z-depth-0" role="button">Bib</a>
           <!-- -->
           </div>
@@ -204,75 +205,16 @@
 
           <!-- Hidden abstract block -->
           <div class="abstract hidden">
-            <p>Increasing the size of overparameterized neural networks has been shown to improve their generalization performance. However, real-world datasets often contain a significant fraction of noisy labels, which can drastically harm the performance of the models trained on them. In this work, we study how neural networks’ test loss changes with model size when the training set contains noisy labels. We show that under a sufficiently large noise-to-sample size ratio, generalization error eventually increases with model size. First, we provide a theoretical analysis on random feature regression and show that this phenomenon occurs as the variance of the generalization loss experiences a second ascent under large noise-to-sample size ratio. Then, we present extensive empirical evidence confirming that our theoretical results hold for neural networks. Furthermore, we empirically observe that the adverse effect of network size is more pronounced when robust training methods are employed to learn from noisy-labeled data. Our results have important practical implications: First, larger models should be employed with extra care, particularly when trained on smaller dataset or using robust learning methods. Second, a large sample size can alleviate the effect of noisy labels and allow larger models to achieve a superior performance even under noise.</p>
+            <p>Contrastive vision-language representation learning has achieved state-of-the-art performance for zero-shot classification, by learning from millions of image-caption pairs crawled from the internet. However, the massive data that powers large multimodal models such as CLIP, makes them extremely vulnerable to various types of adversarial attacks, including targeted and backdoor data poisoning attacks. Despite this vulnerability, robust contrastive vision-language pretraining against adversarial attacks has remained unaddressed. In this work, we propose RoCLIP, the first effective method for robust pretraining and fine-tuning multimodal vision-language models. RoCLIP effectively breaks the association between poisoned image-caption pairs by considering a pool of random examples, and (1) matching every image with the text that is most similar to its caption in the pool, and (2) matching every caption with the image that is most similar to its image in the pool. Our extensive experiments show that our method renders state-of-the-art targeted data poisoning and backdoor attacks ineffective during pre-training or fine-tuning of CLIP. In particular, RoCLIP decreases the poison and backdoor attack success rates down to 0% during pre-training and 1%-4% during fine-tuning, and effectively improves the model’s performance.</p>
           </div>
 <!-- Hidden bibtex block -->
           <div class="bibtex hidden">
-            <figure class="highlight"><pre><code class="language-bibtex" data-lang="bibtex"><span class="nc">@article</span><span class="p">{</span><span class="nl">xue2022final</span><span class="p">,</span>
-  <span class="na">title</span> <span class="p">=</span> <span class="s">{The Final Ascent: When Bigger Models Generalize Worse on Noisy-Labeled Data}</span><span class="p">,</span>
-  <span class="na">author</span> <span class="p">=</span> <span class="s">{Xue, Yihao and Whitecross, Kyle and Mirzasoleiman, Baharan}</span><span class="p">,</span>
-  <span class="na">journal</span> <span class="p">=</span> <span class="s">{arXiv preprint arXiv:2208.08003}</span><span class="p">,</span>
+            <figure class="highlight"><pre><code class="language-bibtex" data-lang="bibtex"><span class="nc">@article</span><span class="p">{</span><span class="nl">yang2023robust</span><span class="p">,</span>
+  <span class="na">title</span> <span class="p">=</span> <span class="s">{Robust Contrastive Language-Image Pretraining against Data Poisoning and Backdoor Attacks}</span><span class="p">,</span>
+  <span class="na">author</span> <span class="p">=</span> <span class="s">{Yang., Wenhan and Mirzasoleiman, Baharan}</span><span class="p">,</span>
+  <span class="na">journal</span> <span class="p">=</span> <span class="s">{arXiv preprint arXiv:2303.06854}</span><span class="p">,</span>
   <span class="na">year</span> <span class="p">=</span> <span class="s">{Preprints}</span><span class="p">,</span>
-  <span class="na">noise</span> <span class="p">=</span> <span class="s">{true}</span>
-<span class="p">}</span></code></pre></figure>
-          </div>
-        </div>
-      </div>
-</li>
-<li>
-<!-- _layouts/bib.html -->
-      <div class="row">
-        <div class="col-sm-2 abbr"><abbr class="badge" style="background-color:#00369f"><a href="https://icml.cc/" rel="external nofollow noopener" target="_blank">ICML</a></abbr></div>
-
-        <!-- Entry bib key -->
-        <div id="xue2022investigating" class="col-sm-10">
-        <!-- Title -->
-        <div class="title">Investigating why contrastive learning benefits robustness against label noise</div>
-        <!-- Author -->
-        <div class="author">
-        
-
-        <a href="https://sites.google.com/g.ucla.edu/yihao-xue/home" rel="external nofollow noopener" target="_blank">Yihao Xue</a>, Kyle Whitecross, and <a href="https://baharanm.github.io/">Baharan Mirzasoleiman</a>
-</div>
-
-        <!-- Journal/Book title and date -->
-        
-        
-        <div class="periodical">
-          <em>International Conference on Machine Learning (ICML)</em>, 2022
-        </div>
-        <div class="periodical">
-          
-        </div>
-
-          <!-- Links/Buttons -->
-          <div class="links">
-            <a class="abstract btn btn-sm z-depth-0" role="button">Abs</a>
-            <a class="bibtex btn btn-sm z-depth-0" role="button">Bib</a>
-            <a href="/assets/pdf/xue22investigating.pdf" class="btn btn-sm z-depth-0" role="button">PDF</a>
-            <a href="/assets/pdf/xue22investigating_long.pdf" class="btn btn-sm z-depth-0" role="button">Supp</a>
-          <!-- -->
-          </div>
-          
-          <div class="badges">
-            <span class="altmetric-embed" data-hide-no-mentions="true" data-hide-less-than="15" data-badge-type="2" data-badge-popover="right"></span>
-              <span class="__dimensions_badge_embed__" data-pmid="" data-hide-zero-citations="true" data-style="small_rectangle" data-legend="hover-right" style="margin-bottom: 3px;"></span>
-          </div>
-
-          <!-- Hidden abstract block -->
-          <div class="abstract hidden">
-            <p>Self-supervised Contrastive Learning (CL) has been recently shown to be very effective in preventing deep networks from overfitting noisy labels. Despite its empirical success, the theoretical understanding of the effect of contrastive learning on boosting robustness is very limited. In this work, we rigorously prove that the representation matrix learned by contrastive learning boosts robustness, by having:(i) one prominent singular value corresponding to each sub-class in the data, and significantly smaller remaining singular values; and (ii) a large alignment between the prominent singular vectors and the clean labels of each sub-class. The above properties enable a linear layer trained on such representations to effectively learn the clean labels without overfitting the noise. We further show that the low-rank structure of the Jacobian of deep networks pre-trained with contrastive learning allows them to achieve a superior performance initially, when fine-tuned on noisy labels. Finally, we demonstrate that the initial robustness provided by contrastive learning enables robust training methods to achieve state-of-the-art performance under extreme noise levels, eg, an average of 27.18% and 15.58% increase in accuracy on CIFAR-10 and CIFAR-100 with 80% symmetric noisy labels, and 4.11% increase in accuracy on WebVision.</p>
-          </div>
-<!-- Hidden bibtex block -->
-          <div class="bibtex hidden">
-            <figure class="highlight"><pre><code class="language-bibtex" data-lang="bibtex"><span class="nc">@article</span><span class="p">{</span><span class="nl">xue2022investigating</span><span class="p">,</span>
-  <span class="na">title</span> <span class="p">=</span> <span class="s">{Investigating why contrastive learning benefits robustness against label noise}</span><span class="p">,</span>
-  <span class="na">author</span> <span class="p">=</span> <span class="s">{Xue, Yihao and Whitecross, Kyle and Mirzasoleiman, Baharan}</span><span class="p">,</span>
-  <span class="na">journal</span> <span class="p">=</span> <span class="s">{International Conference on Machine Learning (ICML)}</span><span class="p">,</span>
-  <span class="na">pages</span> <span class="p">=</span> <span class="s">{24851--24871}</span><span class="p">,</span>
-  <span class="na">year</span> <span class="p">=</span> <span class="s">{2022}</span><span class="p">,</span>
-  <span class="na">organization</span> <span class="p">=</span> <span class="s">{PMLR}</span><span class="p">,</span>
-  <span class="na">noise</span> <span class="p">=</span> <span class="s">{true}</span>
+  <span class="na">poison</span> <span class="p">=</span> <span class="s">{true}</span>
 <span class="p">}</span></code></pre></figure>
           </div>
         </div>
@@ -284,20 +226,21 @@
         <div class="col-sm-2 abbr"><abbr class="badge" style="background-color:#CC2375"><a href="https://icml.cc/" rel="external nofollow noopener" target="_blank">NeurIPS</a></abbr></div>
 
         <!-- Entry bib key -->
-        <div id="mirzasoleiman2020coresett" class="col-sm-10">
+        <div id="liufriendly" class="col-sm-10">
         <!-- Title -->
-        <div class="title">Coresets for robust training of deep neural networks against noisy labels</div>
+        <div class="title">Friendly Noise against Adversarial Noise: A Powerful Defense against Data Poisoning Attack</div>
         <!-- Author -->
         <div class="author">
         
 
-        <a href="https://baharanm.github.io/">Baharan Mirzasoleiman</a>, Kaidi Cao, and Jure Leskovec</div>
+        Tian Yu Liu, <a href="https://sites.google.com/g.ucla.edu/yuyang/home" rel="external nofollow noopener" target="_blank">Yu Yang</a>, and <a href="https://baharanm.github.io/">Baharan Mirzasoleiman</a>
+</div>
 
         <!-- Journal/Book title and date -->
         
         
         <div class="periodical">
-          <em>Advances in Neural Information Processing Systems (NeurIPS)</em>, 2020
+          <em>Advances in Neural Information Processing Systems (NeurIPS)</em>, 2022
         </div>
         <div class="periodical">
           
@@ -307,9 +250,9 @@
           <div class="links">
             <a class="abstract btn btn-sm z-depth-0" role="button">Abs</a>
             <a class="bibtex btn btn-sm z-depth-0" role="button">Bib</a>
-            <a href="/assets/pdf/mirzasoleiman20coresets.pdf" class="btn btn-sm z-depth-0" role="button">PDF</a>
-            <a href="/assets/pdf/mirzasoleiman20coresets_long.pdf" class="btn btn-sm z-depth-0" role="button">Supp</a>
-            <a href="https://github.com/snap-stanford/crust" class="btn btn-sm z-depth-0" role="button" rel="external nofollow noopener" target="_blank">Code</a>
+            <a href="/assets/pdf/liu22friendly.pdf" class="btn btn-sm z-depth-0" role="button">PDF</a>
+            <a href="/assets/pdf/liu22friendly_long.pdf" class="btn btn-sm z-depth-0" role="button">Supp</a>
+            <a href="https://github.com/tianyu139/friendly-noise" class="btn btn-sm z-depth-0" role="button" rel="external nofollow noopener" target="_blank">Code</a>
           <!-- -->
           </div>
           
@@ -320,18 +263,79 @@
 
           <!-- Hidden abstract block -->
           <div class="abstract hidden">
-            <p>Modern neural networks have the capacity to overfit noisy labels frequently found in real-world datasets. Although great progress has been made, existing techniques are very limited in providing theoretical guarantees for the performance of the neural networks trained with noisy labels. To tackle this challenge, we propose a novel approach with strong theoretical guarantees for robust training of neural networks trained with noisy labels. The key idea behind our method is to select subsets of clean data points that provide an approximately low-rank Jacobian matrix. We then prove that gradient descent applied to the subsets cannot overfit the noisy labels, without regularization or early stopping. Our extensive experiments corroborate our theory and demonstrate that deep networks trained on our subsets achieve a significantly superior performance, e.g., 7% increase in accuracy on mini Webvision with 50% noisy labels, compared to state-of-the art.</p>
+            <p>A powerful category of (invisible) data poisoning attacks modify a subset of training examples by small adversarial perturbations to change the prediction of certain test-time data. Existing defense mechanisms are not desirable to deploy in practice, as they often either drastically harm the generalization performance, or are attack-specific, and prohibitively slow to apply. Here, we propose a simple but highly effective approach that unlike existing methods breaks various types of invisible poisoning attacks with the slightest drop in the generalization performance. We make the key observation that attacks introduce local sharp regions of high training loss, which when minimized, results in learning the adversarial perturbations and makes the attack successful. To break poisoning attacks, our key idea is to alleviate the sharp loss regions introduced by poisons. To do so, our approach comprises two components: an optimized friendly noise that is generated to maximally perturb examples without degrading the performance, and a randomly varying noise component. The combination of both components builds a very light-weight but extremely effective defense against the most powerful triggerless targeted and hidden-trigger backdoor poisoning attacks, including Gradient Matching, Bulls-eye Polytope, and Sleeper Agent. We show that our friendly noise is transferable to other architectures, and adaptive attacks cannot break our defense due to its random noise component.</p>
           </div>
 <!-- Hidden bibtex block -->
           <div class="bibtex hidden">
-            <figure class="highlight"><pre><code class="language-bibtex" data-lang="bibtex"><span class="nc">@article</span><span class="p">{</span><span class="nl">mirzasoleiman2020coresett</span><span class="p">,</span>
-  <span class="na">title</span> <span class="p">=</span> <span class="s">{Coresets for robust training of deep neural networks against noisy labels}</span><span class="p">,</span>
-  <span class="na">author</span> <span class="p">=</span> <span class="s">{Mirzasoleiman, Baharan and Cao, Kaidi and Leskovec, Jure}</span><span class="p">,</span>
+            <figure class="highlight"><pre><code class="language-bibtex" data-lang="bibtex"><span class="nc">@article</span><span class="p">{</span><span class="nl">liufriendly</span><span class="p">,</span>
+  <span class="na">title</span> <span class="p">=</span> <span class="s">{Friendly Noise against Adversarial Noise: A Powerful Defense against Data Poisoning Attack}</span><span class="p">,</span>
+  <span class="na">author</span> <span class="p">=</span> <span class="s">{Liu, Tian Yu and Yang, Yu and Mirzasoleiman, Baharan}</span><span class="p">,</span>
   <span class="na">journal</span> <span class="p">=</span> <span class="s">{Advances in Neural Information Processing Systems (NeurIPS)}</span><span class="p">,</span>
-  <span class="na">volume</span> <span class="p">=</span> <span class="s">{33}</span><span class="p">,</span>
-  <span class="na">pages</span> <span class="p">=</span> <span class="s">{11465--11477}</span><span class="p">,</span>
-  <span class="na">year</span> <span class="p">=</span> <span class="s">{2020}</span><span class="p">,</span>
-  <span class="na">noise</span> <span class="p">=</span> <span class="s">{true}</span>
+  <span class="na">year</span> <span class="p">=</span> <span class="s">{2022}</span><span class="p">,</span>
+  <span class="na">poison</span> <span class="p">=</span> <span class="s">{true}</span>
+<span class="p">}</span></code></pre></figure>
+          </div>
+        </div>
+      </div>
+</li>
+<li>
+<!-- _layouts/bib.html -->
+      <div class="row">
+        <div class="col-sm-2 abbr"><abbr class="badge" style="background-color:#00369f"><a href="https://icml.cc/" rel="external nofollow noopener" target="_blank">ICML</a></abbr></div>
+
+        <!-- Entry bib key -->
+        <div id="yang2022not" class="col-sm-10">
+        <!-- Title -->
+        <div class="title">Not all poisons are created equal: Robust training against data poisoning</div>
+        <!-- Author -->
+        <div class="author">
+        
+
+        <a href="https://sites.google.com/g.ucla.edu/yuyang/home" rel="external nofollow noopener" target="_blank">Yu Yang</a>, Tian Yu Liu, and <a href="https://baharanm.github.io/">Baharan Mirzasoleiman</a>
+</div>
+
+        <!-- Journal/Book title and date -->
+        
+        
+        <div class="periodical">
+          <em>International Conference on Machine Learning (ICML)</em>, 2022
+        </div>
+        <div class="periodical">
+          
+        </div>
+          <div lass="award"><b><span style="color:#DF5279">Oral presentation (top 2%)</span></b></div>
+
+          <!-- Links/Buttons -->
+          <div class="links">
+            <a class="abstract btn btn-sm z-depth-0" role="button">Abs</a>
+            <a class="bibtex btn btn-sm z-depth-0" role="button">Bib</a>
+            <a href="/assets/pdf/yang22poisons.pdf" class="btn btn-sm z-depth-0" role="button">PDF</a>
+            <a href="/assets/pdf/yang22poisons_long.pdf" class="btn btn-sm z-depth-0" role="button">Supp</a>
+            <a href="https://github.com/BigML-CS-UCLA/EPIC" class="btn btn-sm z-depth-0" role="button" rel="external nofollow noopener" target="_blank">Code</a>
+          <!--
+            <div lass="award"><b><span style="color:#DF5279">Oral presentation (top 2%)</span></b></div> -->
+          </div>
+          
+          <div class="badges">
+            <span class="altmetric-embed" data-hide-no-mentions="true" data-hide-less-than="15" data-badge-type="2" data-badge-popover="right"></span>
+              <span class="__dimensions_badge_embed__" data-pmid="" data-hide-zero-citations="true" data-style="small_rectangle" data-legend="hover-right" style="margin-bottom: 3px;"></span>
+          </div>
+
+          <!-- Hidden abstract block -->
+          <div class="abstract hidden">
+            <p>Data poisoning causes misclassification of test time target examples, by injecting maliciously crafted samples in the training data. Existing defenses are often effective only against a specific type of targeted attack, significantly degrade the generalization performance, or are prohibitive for standard deep learning pipelines. In this work, we propose an efficient defense mechanism that significantly reduces the success rate of various data poisoning attacks, and provides theoretical guarantees for the performance of the model. Targeted attacks work by adding bounded perturbations to a randomly selected subset of training data to match the targets’ gradient or representation. We show that: (i) under bounded perturbations, only a number of poisons can be optimized to have a gradient that is close enough to that of the target and make the attack successful; (ii) such effective poisons move away from their original class and get isolated in the gradient space; (iii) dropping examples in low-density gradient regions during training can successfully eliminate the effective poisons, and guarantees similar training dynamics to that of training on full data. Our extensive experiments show that our method significantly decreases the success rate of state-of-the-art targeted attacks, including Gradient Matching and Bullseye Polytope, and easily scales to large datasets.</p>
+          </div>
+<!-- Hidden bibtex block -->
+          <div class="bibtex hidden">
+            <figure class="highlight"><pre><code class="language-bibtex" data-lang="bibtex"><span class="nc">@article</span><span class="p">{</span><span class="nl">yang2022not</span><span class="p">,</span>
+  <span class="na">title</span> <span class="p">=</span> <span class="s">{Not all poisons are created equal: Robust training against data poisoning}</span><span class="p">,</span>
+  <span class="na">author</span> <span class="p">=</span> <span class="s">{Yang, Yu and Liu, Tian Yu and Mirzasoleiman, Baharan}</span><span class="p">,</span>
+  <span class="na">journal</span> <span class="p">=</span> <span class="s">{International Conference on Machine Learning (ICML)}</span><span class="p">,</span>
+  <span class="na">pages</span> <span class="p">=</span> <span class="s">{25154--25165}</span><span class="p">,</span>
+  <span class="na">year</span> <span class="p">=</span> <span class="s">{2022}</span><span class="p">,</span>
+  <span class="na">organization</span> <span class="p">=</span> <span class="s">{PMLR}</span><span class="p">,</span>
+  <span class="na">poison</span> <span class="p">=</span> <span class="s">{true}</span><span class="p">,</span>
+  <span class="na">award</span> <span class="p">=</span> <span class="s">{Oral presentation (top 2%)}</span>
 <span class="p">}</span></code></pre></figure>
           </div>
         </div>
@@ -339,7 +343,6 @@
 </li>
 </ol>
 </div>
-
 
           </article>
 

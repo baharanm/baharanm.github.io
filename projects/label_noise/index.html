@@ -10,9 +10,9 @@
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <title>Spurious Correlations | Baharan  Mirzasoleiman</title>
+    <title>Label Noise | Baharan  Mirzasoleiman</title>
     <meta name="author" content="Baharan  Mirzasoleiman">
-    <meta name="description" content="Robust traing against spurious correlations">
+    <meta name="description" content="Robust traing against label nosie">
     <meta name="keywords" content="machine learning, data selection, optimization">
 
 
@@ -38,7 +38,7 @@
     <link rel="shortcut icon" href="data:image/svg+xml,&lt;svg%20xmlns=%22http://www.w3.org/2000/svg%22%20viewBox=%220%200%20100%20100%22&gt;&lt;text%20y=%22.9em%22%20font-size=%2290%22&gt;%F0%9F%8C%B1&lt;/text&gt;&lt;/svg&gt;">
     
     <link rel="stylesheet" href="/assets/css/main.css">
-    <link rel="canonical" href="https://baharanm.github.io/projects/4_project/">
+    <link rel="canonical" href="https://baharanm.github.io/projects/label_noise/">
 
     <!-- Dark Mode -->
     
@@ -130,26 +130,24 @@
         <div class="post">
 
           <header class="post-header">
-            <h1 class="post-title">Spurious Correlations</h1>
-            <p class="post-description">Robust traing against spurious correlations</p>
+            <h1 class="post-title">Label Noise</h1>
+            <p class="post-description">Robust traing against label nosie</p>
           </header>
 
           <article>
-            <!-- Spurious correlations that degrade model generalization or lead the model to be right for the wrong reasons are one of the main robustness concerns for real-world deployments.  -->
+            <p>The success of deep neural networks relies heavily on the quality of training data, and in particular accurate labels of the training examples. However, maintaining label quality becomes very expensive for large datasets, and hence mislabeled data points are ubiquitous in large real-world datasets. As deep neural networks have the capacity to essentially memorize any (even random) labeling of the data, noisy labels have a drastic effect on the generalization performance of deep neural networks. Therefore, it becomes crucial to develop methods with strong theoretical guarantees for robust training of neural networks against noisy labels. Such guarantees become of the utmost importance in safety-critical systems, such as aircraft, autonomous cars, and medical devices.</p>
 
-<p>Neural networks are known to exploit spurious correlations in the training data: certain attributes that may correlate with certain categories during training, but are not predictive of the categories in general. For example, if the majority of lighter images co-occur with flame, the model may learn to associate the flame with the lighter category, rather than relying on the lighter to make the prediction. Similarly, a toxicity classifier may learn to spuriously associate toxicity with the mention of certain demographics in the text. Such biases degrade models’ worst-group test performance on minority groups that do not exhibit the spurious correlation.</p>
-
-<p>We develop methods to mitigate the effect of spurious correlations during training neural networks. We consider robust training in supervised scenario, and mitigating spurious correlations from supervised or multimodal pretrained models during fine-tuning.</p>
+<p>We develop principled techniques with strong theoretical guarantees for robust training of neural networks against noisy labels. We consider the effect of data, model, and pretraining on robustness against label noise.</p>
 
 <div class="row justify-content-sm-center">
-	<div class="col-sm-10 mt-3 mt-md-0">
+	<div class="col-sm-12 mt-3 mt-md-0">
 	    <figure>
 
   <picture>
     
 
     <!-- Fallback to the original file -->
-    <img src="/assets/img/spurious_in.png" class="img-fluid rounded z-depth-1" width="auto" height="auto" title="spurious" onerror="this.onerror=null; $('.responsive-img-srcset').remove();">
+    <img src="/assets/img/label_noise.png" class="img-fluid rounded z-depth-1" width="auto" height="auto" title="label noise" onerror="this.onerror=null; $('.responsive-img-srcset').remove();">
 
   </picture>
 
@@ -157,9 +155,9 @@
 
 	</div>
 </div>
-<!-- <div class="caption">
-    This image can also have a caption. It's like magic.
-</div> -->
+<div class="caption">
+    Examples of Noisy Labels. Source: https://arxiv.org/pdf/1711.00583v1.pdf
+</div>
 
 <p>Checkout the following papers to know more:</p>
 
@@ -171,21 +169,21 @@
         <div class="col-sm-2 abbr"><abbr class="badge">ArXiv</abbr></div>
 
         <!-- Entry bib key -->
-        <div id="yang2023eliminating" class="col-sm-10">
+        <div id="xue2022final" class="col-sm-10">
         <!-- Title -->
-        <div class="title">Identifying Spurious Biases Early in Training through the Lens of Simplicity Bias</div>
+        <div class="title">The Final Ascent: When Bigger Models Generalize Worse on Noisy-Labeled Data</div>
         <!-- Author -->
         <div class="author">
         
 
-        <a href="https://sites.google.com/g.ucla.edu/yuyang/home" rel="external nofollow noopener" target="_blank">Yu Yang</a>, Eric Gan, Gintare Karolina Dziugaite, and <a href="https://baharanm.github.io/">Baharan Mirzasoleiman</a>
+        <a href="https://sites.google.com/g.ucla.edu/yihao-xue/home" rel="external nofollow noopener" target="_blank">Yihao Xue</a>, Kyle Whitecross, and <a href="https://baharanm.github.io/">Baharan Mirzasoleiman</a>
 </div>
 
         <!-- Journal/Book title and date -->
         
         
         <div class="periodical">
-          <em>arXiv preprint arXiv:2305.18761</em>, Preprints
+          <em>arXiv preprint arXiv:2208.08003</em>, Preprints
         </div>
         <div class="periodical">
           
@@ -194,7 +192,7 @@
           <!-- Links/Buttons -->
           <div class="links">
             <a class="abstract btn btn-sm z-depth-0" role="button">Abs</a>
-            <a href="http://arxiv.org/abs/2305.18761" class="btn btn-sm z-depth-0" role="button" rel="external nofollow noopener" target="_blank">arXiv</a>
+            <a href="http://arxiv.org/abs/2208.08003" class="btn btn-sm z-depth-0" role="button" rel="external nofollow noopener" target="_blank">arXiv</a>
             <a class="bibtex btn btn-sm z-depth-0" role="button">Bib</a>
           <!-- -->
           </div>
@@ -206,129 +204,16 @@
 
           <!-- Hidden abstract block -->
           <div class="abstract hidden">
-            <p>Neural networks trained with (stochastic) gradient descent have an inductive bias towards learning simpler solutions. This makes them highly prone to learning simple spurious features that are highly correlated with a label instead of the predictive but more complex core features. In this work, we show that, interestingly, the simplicity bias of gradient descent can be leveraged to identify spurious correlations, early in training. First, we prove on a two-layer neural network, that groups of examples with high spurious correlation are separable based on the model’s output, in the initial training iterations. We further show that if spurious features have a small enough noise-to-signal ratio, the network’s output on the majority of examples in a class will be almost exclusively determined by the spurious features and will be nearly invariant to the core feature. Finally, we propose SPARE, which separates large groups with spurious correlations early in training, and utilizes importance sampling to alleviate the spurious correlation, by balancing the group sizes. We show that SPARE achieves up to 5.6% higher worst-group accuracy than state-of-the-art methods, while being up to 12x faster. We also show the applicability of SPARE to discover and mitigate spurious correlations in Restricted ImageNet.</p>
+            <p>Increasing the size of overparameterized neural networks has been shown to improve their generalization performance. However, real-world datasets often contain a significant fraction of noisy labels, which can drastically harm the performance of the models trained on them. In this work, we study how neural networks’ test loss changes with model size when the training set contains noisy labels. We show that under a sufficiently large noise-to-sample size ratio, generalization error eventually increases with model size. First, we provide a theoretical analysis on random feature regression and show that this phenomenon occurs as the variance of the generalization loss experiences a second ascent under large noise-to-sample size ratio. Then, we present extensive empirical evidence confirming that our theoretical results hold for neural networks. Furthermore, we empirically observe that the adverse effect of network size is more pronounced when robust training methods are employed to learn from noisy-labeled data. Our results have important practical implications: First, larger models should be employed with extra care, particularly when trained on smaller dataset or using robust learning methods. Second, a large sample size can alleviate the effect of noisy labels and allow larger models to achieve a superior performance even under noise.</p>
           </div>
 <!-- Hidden bibtex block -->
           <div class="bibtex hidden">
-            <figure class="highlight"><pre><code class="language-bibtex" data-lang="bibtex"><span class="nc">@article</span><span class="p">{</span><span class="nl">yang2023eliminating</span><span class="p">,</span>
-  <span class="na">title</span> <span class="p">=</span> <span class="s">{Identifying Spurious Biases Early in Training through the Lens of Simplicity Bias}</span><span class="p">,</span>
-  <span class="na">author</span> <span class="p">=</span> <span class="s">{Yang, Yu and Gan, Eric and Dziugaite, Gintare Karolina and Mirzasoleiman, Baharan}</span><span class="p">,</span>
-  <span class="na">journal</span> <span class="p">=</span> <span class="s">{arXiv preprint arXiv:2305.18761}</span><span class="p">,</span>
+            <figure class="highlight"><pre><code class="language-bibtex" data-lang="bibtex"><span class="nc">@article</span><span class="p">{</span><span class="nl">xue2022final</span><span class="p">,</span>
+  <span class="na">title</span> <span class="p">=</span> <span class="s">{The Final Ascent: When Bigger Models Generalize Worse on Noisy-Labeled Data}</span><span class="p">,</span>
+  <span class="na">author</span> <span class="p">=</span> <span class="s">{Xue, Yihao and Whitecross, Kyle and Mirzasoleiman, Baharan}</span><span class="p">,</span>
+  <span class="na">journal</span> <span class="p">=</span> <span class="s">{arXiv preprint arXiv:2208.08003}</span><span class="p">,</span>
   <span class="na">year</span> <span class="p">=</span> <span class="s">{Preprints}</span><span class="p">,</span>
-  <span class="na">spurious</span> <span class="p">=</span> <span class="s">{true}</span>
-<span class="p">}</span></code></pre></figure>
-          </div>
-        </div>
-      </div>
-</li>
-<li>
-<!-- _layouts/bib.html -->
-      <div class="row">
-        <div class="col-sm-2 abbr"><abbr class="badge">ArXiv</abbr></div>
-
-        <!-- Entry bib key -->
-        <div id="xue2023eliminating" class="col-sm-10">
-        <!-- Title -->
-        <div class="title">Eliminating Spurious Correlations from Pre-trained Models via Data Mixing</div>
-        <!-- Author -->
-        <div class="author">
-        
-
-        <a href="https://sites.google.com/g.ucla.edu/yihao-xue/home" rel="external nofollow noopener" target="_blank">Yihao Xue</a>, Ali Payani, <a href="https://sites.google.com/g.ucla.edu/yuyang/home" rel="external nofollow noopener" target="_blank">Yu Yang</a>, and <a href="https://baharanm.github.io/">Baharan Mirzasoleiman</a>
-</div>
-
-        <!-- Journal/Book title and date -->
-        
-        
-        <div class="periodical">
-          <em>arXiv preprint arXiv:2305.14521</em>, Preprints
-        </div>
-        <div class="periodical">
-          
-        </div>
-
-          <!-- Links/Buttons -->
-          <div class="links">
-            <a class="abstract btn btn-sm z-depth-0" role="button">Abs</a>
-            <a href="http://arxiv.org/abs/2305.14521" class="btn btn-sm z-depth-0" role="button" rel="external nofollow noopener" target="_blank">arXiv</a>
-            <a class="bibtex btn btn-sm z-depth-0" role="button">Bib</a>
-          <!-- -->
-          </div>
-          
-          <div class="badges">
-            <span class="altmetric-embed" data-hide-no-mentions="true" data-hide-less-than="15" data-badge-type="2" data-badge-popover="right"></span>
-              <span class="__dimensions_badge_embed__" data-pmid="" data-hide-zero-citations="true" data-style="small_rectangle" data-legend="hover-right" style="margin-bottom: 3px;"></span>
-          </div>
-
-          <!-- Hidden abstract block -->
-          <div class="abstract hidden">
-            <p>Machine learning models pre-trained on large datasets have achieved remarkable convergence and robustness properties. However, these models often exploit spurious correlations between certain attributes and labels, which are prevalent in the majority of examples within specific categories but are not predictive of these categories in general. The learned spurious correlations may persist even after fine-tuning on new data, which degrades models’ performance on examples that do not exhibit the spurious correlation. In this work, we propose a simple and highly effective method to eliminate spurious correlations from pre-trained models. The key idea of our method is to leverage a small set of examples with spurious attributes, and balance the spurious attributes across all classes via data mixing. We theoretically confirm the effectiveness of our method, and empirically demonstrate its state-of-the-art performance on various vision and NLP tasks, including eliminating spurious correlations from pre-trained ResNet50 on Waterbirds and CelebA, adversarially pre-trained ResNet50 on ImageNet, and BERT pre-trained on CivilComments.</p>
-          </div>
-<!-- Hidden bibtex block -->
-          <div class="bibtex hidden">
-            <figure class="highlight"><pre><code class="language-bibtex" data-lang="bibtex"><span class="nc">@article</span><span class="p">{</span><span class="nl">xue2023eliminating</span><span class="p">,</span>
-  <span class="na">title</span> <span class="p">=</span> <span class="s">{Eliminating Spurious Correlations from Pre-trained Models via Data Mixing}</span><span class="p">,</span>
-  <span class="na">author</span> <span class="p">=</span> <span class="s">{Xue, Yihao and Payani, Ali and Yang, Yu and Mirzasoleiman, Baharan}</span><span class="p">,</span>
-  <span class="na">journal</span> <span class="p">=</span> <span class="s">{arXiv preprint arXiv:2305.14521}</span><span class="p">,</span>
-  <span class="na">year</span> <span class="p">=</span> <span class="s">{Preprints}</span><span class="p">,</span>
-  <span class="na">spurious</span> <span class="p">=</span> <span class="s">{true}</span>
-<span class="p">}</span></code></pre></figure>
-          </div>
-        </div>
-      </div>
-</li>
-<li>
-<!-- _layouts/bib.html -->
-      <div class="row">
-        <div class="col-sm-2 abbr"><abbr class="badge">ArXiv</abbr></div>
-
-        <!-- Entry bib key -->
-        <div id="deng2023robust" class="col-sm-10">
-        <!-- Title -->
-        <div class="title">Robust Learning with Progressive Data Expansion Against Spurious
-  Correlation</div>
-        <!-- Author -->
-        <div class="author">
-        
-
-        Yihe Deng*, <a href="https://sites.google.com/g.ucla.edu/yuyang/home" rel="external nofollow noopener" target="_blank">Yu Yang*</a>, <a href="https://baharanm.github.io/">Baharan Mirzasoleiman</a>, and Quanquan Gu</div>
-
-        <!-- Journal/Book title and date -->
-        
-        
-        <div class="periodical">
-          <em>arXiv preprint arXiv:2306.04949</em>, Preprints
-        </div>
-        <div class="periodical">
-          
-        </div>
-
-          <!-- Links/Buttons -->
-          <div class="links">
-            <a class="abstract btn btn-sm z-depth-0" role="button">Abs</a>
-            <a href="http://arxiv.org/abs/2306.04949" class="btn btn-sm z-depth-0" role="button" rel="external nofollow noopener" target="_blank">arXiv</a>
-            <a class="bibtex btn btn-sm z-depth-0" role="button">Bib</a>
-          <!-- -->
-          </div>
-          
-          <div class="badges">
-            <span class="altmetric-embed" data-hide-no-mentions="true" data-hide-less-than="15" data-badge-type="2" data-badge-popover="right"></span>
-              <span class="__dimensions_badge_embed__" data-pmid="" data-hide-zero-citations="true" data-style="small_rectangle" data-legend="hover-right" style="margin-bottom: 3px;"></span>
-          </div>
-
-          <!-- Hidden abstract block -->
-          <div class="abstract hidden">
-            <p>While deep learning models have shown remarkable performance in various tasks, they are susceptible to learning non-generalizable spurious features rather than the core features that are genuinely correlated to the true label. In this paper, beyond existing analyses of linear models, we theoretically examine the learning process of a two-layer nonlinear convolutional neural network in the presence of spurious features. Our analysis suggests that imbalanced data groups and easily learnable spurious features can lead to the dominance of spurious features during the learning process. In light of this, we propose a new training algorithm called PDE that efficiently enhances the model’s robustness for a better worst-group performance. PDE begins with a group-balanced subset of training data and progressively expands it to facilitate the learning of the core features. Experiments on synthetic and real-world benchmark datasets confirm the superior performance of our method on models such as ResNets and Transformers. On average, our method achieves a 2.8% improvement in worst-group accuracy compared with the state-of-the-art method, while enjoying up to 10x faster training efficiency.</p>
-          </div>
-<!-- Hidden bibtex block -->
-          <div class="bibtex hidden">
-            <figure class="highlight"><pre><code class="language-bibtex" data-lang="bibtex"><span class="nc">@article</span><span class="p">{</span><span class="nl">deng2023robust</span><span class="p">,</span>
-  <span class="na">title</span> <span class="p">=</span> <span class="s">{Robust Learning with Progressive Data Expansion Against Spurious
-    Correlation}</span><span class="p">,</span>
-  <span class="na">author</span> <span class="p">=</span> <span class="s">{Deng*, Yihe and Yang*, Yu and Mirzasoleiman, Baharan and Gu, Quanquan}</span><span class="p">,</span>
-  <span class="na">journal</span> <span class="p">=</span> <span class="s">{arXiv preprint arXiv:2306.04949}</span><span class="p">,</span>
-  <span class="na">year</span> <span class="p">=</span> <span class="s">{Preprints}</span><span class="p">,</span>
-  <span class="na">spurious</span> <span class="p">=</span> <span class="s">{true}</span>
+  <span class="na">noise</span> <span class="p">=</span> <span class="s">{true}</span>
 <span class="p">}</span></code></pre></figure>
           </div>
         </div>
@@ -340,21 +225,21 @@
         <div class="col-sm-2 abbr"><abbr class="badge" style="background-color:#00369f"><a href="https://icml.cc/" rel="external nofollow noopener" target="_blank">ICML</a></abbr></div>
 
         <!-- Entry bib key -->
-        <div id="yang2023mitigating" class="col-sm-10">
+        <div id="xue2022investigating" class="col-sm-10">
         <!-- Title -->
-        <div class="title">Mitigating Spurious Correlations in Multi-modal Models during Fine-tuning</div>
+        <div class="title">Investigating why contrastive learning benefits robustness against label noise</div>
         <!-- Author -->
         <div class="author">
         
 
-        <a href="https://sites.google.com/g.ucla.edu/yuyang/home" rel="external nofollow noopener" target="_blank">Yu Yang</a>, Besmira Nushi, Hamid Palangi, and <a href="https://baharanm.github.io/">Baharan Mirzasoleiman</a>
+        <a href="https://sites.google.com/g.ucla.edu/yihao-xue/home" rel="external nofollow noopener" target="_blank">Yihao Xue</a>, Kyle Whitecross, and <a href="https://baharanm.github.io/">Baharan Mirzasoleiman</a>
 </div>
 
         <!-- Journal/Book title and date -->
         
         
         <div class="periodical">
-          <em>International Conference on Machine Learning (ICML)</em>, 2023
+          <em>International Conference on Machine Learning (ICML)</em>, 2022
         </div>
         <div class="periodical">
           
@@ -364,8 +249,8 @@
           <div class="links">
             <a class="abstract btn btn-sm z-depth-0" role="button">Abs</a>
             <a class="bibtex btn btn-sm z-depth-0" role="button">Bib</a>
-            <a href="/assets/pdf/yang23mitigating.pdf" class="btn btn-sm z-depth-0" role="button">PDF</a>
-            <a href="/assets/pdf/yang23mitigating_long.pdf" class="btn btn-sm z-depth-0" role="button">Supp</a>
+            <a href="/assets/pdf/xue22investigating.pdf" class="btn btn-sm z-depth-0" role="button">PDF</a>
+            <a href="/assets/pdf/xue22investigating_long.pdf" class="btn btn-sm z-depth-0" role="button">Supp</a>
           <!-- -->
           </div>
           
@@ -376,16 +261,77 @@
 
           <!-- Hidden abstract block -->
           <div class="abstract hidden">
-            <p>Spurious correlations that degrade model generalization or lead the model to be right for the wrong reasons are one of the main robustness concerns for real-world deployments. However, mitigating these correlations during pre-training for large-scale models can be costly and impractical, particularly for those without access to high-performance computing resources. This paper proposes a novel approach to address spurious correlations during fine-tuning for a given domain of interest. With a focus on multi-modal models (e.g., CLIP), the proposed method leverages different modalities in these models to detect and explicitly set apart spurious attributes from the affected class, achieved through a multi-modal contrastive loss function that expresses spurious relationships through language. Our experimental results and in-depth visualizations on CLIP show that such an intervention can effectively i) improve the model’s accuracy when spurious attributes are not present, and ii) directs the model’s activation maps towards the actual class rather than the spurious attribute when present. In particular, on the Waterbirds dataset, our algorithm achieved a worst-group accuracy 23% higher than ERM on CLIP with a ResNet-50 backbone, and 32% higher on CLIP with a ViT backbone, while maintaining the same average accuracy as ERM.</p>
+            <p>Self-supervised Contrastive Learning (CL) has been recently shown to be very effective in preventing deep networks from overfitting noisy labels. Despite its empirical success, the theoretical understanding of the effect of contrastive learning on boosting robustness is very limited. In this work, we rigorously prove that the representation matrix learned by contrastive learning boosts robustness, by having:(i) one prominent singular value corresponding to each sub-class in the data, and significantly smaller remaining singular values; and (ii) a large alignment between the prominent singular vectors and the clean labels of each sub-class. The above properties enable a linear layer trained on such representations to effectively learn the clean labels without overfitting the noise. We further show that the low-rank structure of the Jacobian of deep networks pre-trained with contrastive learning allows them to achieve a superior performance initially, when fine-tuned on noisy labels. Finally, we demonstrate that the initial robustness provided by contrastive learning enables robust training methods to achieve state-of-the-art performance under extreme noise levels, eg, an average of 27.18% and 15.58% increase in accuracy on CIFAR-10 and CIFAR-100 with 80% symmetric noisy labels, and 4.11% increase in accuracy on WebVision.</p>
           </div>
 <!-- Hidden bibtex block -->
           <div class="bibtex hidden">
-            <figure class="highlight"><pre><code class="language-bibtex" data-lang="bibtex"><span class="nc">@article</span><span class="p">{</span><span class="nl">yang2023mitigating</span><span class="p">,</span>
-  <span class="na">title</span> <span class="p">=</span> <span class="s">{Mitigating Spurious Correlations in Multi-modal Models during Fine-tuning}</span><span class="p">,</span>
-  <span class="na">author</span> <span class="p">=</span> <span class="s">{Yang, Yu and Nushi, Besmira and Palangi, Hamid and Mirzasoleiman, Baharan}</span><span class="p">,</span>
+            <figure class="highlight"><pre><code class="language-bibtex" data-lang="bibtex"><span class="nc">@article</span><span class="p">{</span><span class="nl">xue2022investigating</span><span class="p">,</span>
+  <span class="na">title</span> <span class="p">=</span> <span class="s">{Investigating why contrastive learning benefits robustness against label noise}</span><span class="p">,</span>
+  <span class="na">author</span> <span class="p">=</span> <span class="s">{Xue, Yihao and Whitecross, Kyle and Mirzasoleiman, Baharan}</span><span class="p">,</span>
   <span class="na">journal</span> <span class="p">=</span> <span class="s">{International Conference on Machine Learning (ICML)}</span><span class="p">,</span>
-  <span class="na">year</span> <span class="p">=</span> <span class="s">{2023}</span><span class="p">,</span>
-  <span class="na">spurious</span> <span class="p">=</span> <span class="s">{true}</span>
+  <span class="na">pages</span> <span class="p">=</span> <span class="s">{24851--24871}</span><span class="p">,</span>
+  <span class="na">year</span> <span class="p">=</span> <span class="s">{2022}</span><span class="p">,</span>
+  <span class="na">organization</span> <span class="p">=</span> <span class="s">{PMLR}</span><span class="p">,</span>
+  <span class="na">noise</span> <span class="p">=</span> <span class="s">{true}</span>
+<span class="p">}</span></code></pre></figure>
+          </div>
+        </div>
+      </div>
+</li>
+<li>
+<!-- _layouts/bib.html -->
+      <div class="row">
+        <div class="col-sm-2 abbr"><abbr class="badge" style="background-color:#CC2375"><a href="https://icml.cc/" rel="external nofollow noopener" target="_blank">NeurIPS</a></abbr></div>
+
+        <!-- Entry bib key -->
+        <div id="mirzasoleiman2020coresett" class="col-sm-10">
+        <!-- Title -->
+        <div class="title">Coresets for robust training of deep neural networks against noisy labels</div>
+        <!-- Author -->
+        <div class="author">
+        
+
+        <a href="https://baharanm.github.io/">Baharan Mirzasoleiman</a>, Kaidi Cao, and Jure Leskovec</div>
+
+        <!-- Journal/Book title and date -->
+        
+        
+        <div class="periodical">
+          <em>Advances in Neural Information Processing Systems (NeurIPS)</em>, 2020
+        </div>
+        <div class="periodical">
+          
+        </div>
+
+          <!-- Links/Buttons -->
+          <div class="links">
+            <a class="abstract btn btn-sm z-depth-0" role="button">Abs</a>
+            <a class="bibtex btn btn-sm z-depth-0" role="button">Bib</a>
+            <a href="/assets/pdf/mirzasoleiman20coresets.pdf" class="btn btn-sm z-depth-0" role="button">PDF</a>
+            <a href="/assets/pdf/mirzasoleiman20coresets_long.pdf" class="btn btn-sm z-depth-0" role="button">Supp</a>
+            <a href="https://github.com/snap-stanford/crust" class="btn btn-sm z-depth-0" role="button" rel="external nofollow noopener" target="_blank">Code</a>
+          <!-- -->
+          </div>
+          
+          <div class="badges">
+            <span class="altmetric-embed" data-hide-no-mentions="true" data-hide-less-than="15" data-badge-type="2" data-badge-popover="right"></span>
+              <span class="__dimensions_badge_embed__" data-pmid="" data-hide-zero-citations="true" data-style="small_rectangle" data-legend="hover-right" style="margin-bottom: 3px;"></span>
+          </div>
+
+          <!-- Hidden abstract block -->
+          <div class="abstract hidden">
+            <p>Modern neural networks have the capacity to overfit noisy labels frequently found in real-world datasets. Although great progress has been made, existing techniques are very limited in providing theoretical guarantees for the performance of the neural networks trained with noisy labels. To tackle this challenge, we propose a novel approach with strong theoretical guarantees for robust training of neural networks trained with noisy labels. The key idea behind our method is to select subsets of clean data points that provide an approximately low-rank Jacobian matrix. We then prove that gradient descent applied to the subsets cannot overfit the noisy labels, without regularization or early stopping. Our extensive experiments corroborate our theory and demonstrate that deep networks trained on our subsets achieve a significantly superior performance, e.g., 7% increase in accuracy on mini Webvision with 50% noisy labels, compared to state-of-the art.</p>
+          </div>
+<!-- Hidden bibtex block -->
+          <div class="bibtex hidden">
+            <figure class="highlight"><pre><code class="language-bibtex" data-lang="bibtex"><span class="nc">@article</span><span class="p">{</span><span class="nl">mirzasoleiman2020coresett</span><span class="p">,</span>
+  <span class="na">title</span> <span class="p">=</span> <span class="s">{Coresets for robust training of deep neural networks against noisy labels}</span><span class="p">,</span>
+  <span class="na">author</span> <span class="p">=</span> <span class="s">{Mirzasoleiman, Baharan and Cao, Kaidi and Leskovec, Jure}</span><span class="p">,</span>
+  <span class="na">journal</span> <span class="p">=</span> <span class="s">{Advances in Neural Information Processing Systems (NeurIPS)}</span><span class="p">,</span>
+  <span class="na">volume</span> <span class="p">=</span> <span class="s">{33}</span><span class="p">,</span>
+  <span class="na">pages</span> <span class="p">=</span> <span class="s">{11465--11477}</span><span class="p">,</span>
+  <span class="na">year</span> <span class="p">=</span> <span class="s">{2020}</span><span class="p">,</span>
+  <span class="na">noise</span> <span class="p">=</span> <span class="s">{true}</span>
 <span class="p">}</span></code></pre></figure>
           </div>
         </div>
@@ -393,6 +339,7 @@
 </li>
 </ol>
 </div>
+
 
           </article>
 

@@ -10,9 +10,9 @@
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <title>Data Poisoning | Baharan  Mirzasoleiman</title>
+    <title>Spurious Correlations | Baharan  Mirzasoleiman</title>
     <meta name="author" content="Baharan  Mirzasoleiman">
-    <meta name="description" content="Robust traing against data poisoning">
+    <meta name="description" content="Robust traing against spurious correlations">
     <meta name="keywords" content="machine learning, data selection, optimization">
 
 
@@ -38,7 +38,7 @@
     <link rel="shortcut icon" href="data:image/svg+xml,&lt;svg%20xmlns=%22http://www.w3.org/2000/svg%22%20viewBox=%220%200%20100%20100%22&gt;&lt;text%20y=%22.9em%22%20font-size=%2290%22&gt;%F0%9F%8C%B1&lt;/text&gt;&lt;/svg&gt;">
     
     <link rel="stylesheet" href="/assets/css/main.css">
-    <link rel="canonical" href="https://baharanm.github.io/projects/3_project/">
+    <link rel="canonical" href="https://baharanm.github.io/projects/spurious/">
 
     <!-- Dark Mode -->
     
@@ -130,25 +130,26 @@
         <div class="post">
 
           <header class="post-header">
-            <h1 class="post-title">Data Poisoning</h1>
-            <p class="post-description">Robust traing against data poisoning</p>
+            <h1 class="post-title">Spurious Correlations</h1>
+            <p class="post-description">Robust traing against spurious correlations</p>
           </header>
 
           <article>
-            <p>Big datasets empower modern over-parameterized deep learning systems. Such datasets are often scraped from the internet or other public and user-provided sources. An adversary can easily insert a subset of malicious examples into the data collected from public sources to harm the model’s behavior at test time. As a result, deep learning systems trained on public data are extremely vulnerable to data poisoning attacks. Such attacks modify a subset of training examples under small (and potentially invisible) adversarial perturbations, with the aim of changing the model’s prediction on specific
-test-time examples. Powerful attacks generate poisons that visually look innocent and are seemingly properly labeled. This makes them hard to detect even by expert observers. Hence, data poisoning attacks are arguably one of the most concerning threats to modern deep learning systems.</p>
+            <!-- Spurious correlations that degrade model generalization or lead the model to be right for the wrong reasons are one of the main robustness concerns for real-world deployments.  -->
 
-<p>We develop powerful defense methods to traing neural networks robust against data poisoning attacks. We consider this problem in supervised setting as well as multimodal language-image pretraining.</p>
+<p>Neural networks are known to exploit spurious correlations in the training data: certain attributes that may correlate with certain categories during training, but are not predictive of the categories in general. For example, if the majority of lighter images co-occur with flame, the model may learn to associate the flame with the lighter category, rather than relying on the lighter to make the prediction. Similarly, a toxicity classifier may learn to spuriously associate toxicity with the mention of certain demographics in the text. Such biases degrade models’ worst-group test performance on minority groups that do not exhibit the spurious correlation.</p>
+
+<p>We develop methods to mitigate the effect of spurious correlations during training neural networks. We consider robust training in supervised scenario, and mitigating spurious correlations from supervised or multimodal pretrained models during fine-tuning.</p>
 
 <div class="row justify-content-sm-center">
-	<div class="col-sm-8 mt-3 mt-md-0">
+	<div class="col-sm-10 mt-3 mt-md-0">
 	    <figure>
 
   <picture>
     
 
     <!-- Fallback to the original file -->
-    <img src="/assets/img/poison.png" class="img-fluid rounded z-depth-1" width="auto" height="auto" title="poison" onerror="this.onerror=null; $('.responsive-img-srcset').remove();">
+    <img src="/assets/img/spurious_in.png" class="img-fluid rounded z-depth-1" width="auto" height="auto" title="spurious" onerror="this.onerror=null; $('.responsive-img-srcset').remove();">
 
   </picture>
 
@@ -170,21 +171,21 @@ test-time examples. Powerful attacks generate poisons that visually look innocen
         <div class="col-sm-2 abbr"><abbr class="badge">ArXiv</abbr></div>
 
         <!-- Entry bib key -->
-        <div id="yang2023robust" class="col-sm-10">
+        <div id="yang2023eliminating" class="col-sm-10">
         <!-- Title -->
-        <div class="title">Robust Contrastive Language-Image Pretraining against Data Poisoning and Backdoor Attacks</div>
+        <div class="title">Identifying Spurious Biases Early in Training through the Lens of Simplicity Bias</div>
         <!-- Author -->
         <div class="author">
         
 
-        <a href="https://sites.google.com/view/hangeryang/home" rel="external nofollow noopener" target="_blank">Wenhan Yang.</a>, and <a href="https://baharanm.github.io/">Baharan Mirzasoleiman</a>
+        <a href="https://sites.google.com/g.ucla.edu/yuyang/home" rel="external nofollow noopener" target="_blank">Yu Yang</a>, Eric Gan, Gintare Karolina Dziugaite, and <a href="https://baharanm.github.io/">Baharan Mirzasoleiman</a>
 </div>
 
         <!-- Journal/Book title and date -->
         
         
         <div class="periodical">
-          <em>arXiv preprint arXiv:2303.06854</em>, Preprints
+          <em>arXiv preprint arXiv:2305.18761</em>, Preprints
         </div>
         <div class="periodical">
           
@@ -193,7 +194,7 @@ test-time examples. Powerful attacks generate poisons that visually look innocen
           <!-- Links/Buttons -->
           <div class="links">
             <a class="abstract btn btn-sm z-depth-0" role="button">Abs</a>
-            <a href="http://arxiv.org/abs/2303.06854" class="btn btn-sm z-depth-0" role="button" rel="external nofollow noopener" target="_blank">arXiv</a>
+            <a href="http://arxiv.org/abs/2305.18761" class="btn btn-sm z-depth-0" role="button" rel="external nofollow noopener" target="_blank">arXiv</a>
             <a class="bibtex btn btn-sm z-depth-0" role="button">Bib</a>
           <!-- -->
           </div>
@@ -205,16 +206,16 @@ test-time examples. Powerful attacks generate poisons that visually look innocen
 
           <!-- Hidden abstract block -->
           <div class="abstract hidden">
-            <p>Contrastive vision-language representation learning has achieved state-of-the-art performance for zero-shot classification, by learning from millions of image-caption pairs crawled from the internet. However, the massive data that powers large multimodal models such as CLIP, makes them extremely vulnerable to various types of adversarial attacks, including targeted and backdoor data poisoning attacks. Despite this vulnerability, robust contrastive vision-language pretraining against adversarial attacks has remained unaddressed. In this work, we propose RoCLIP, the first effective method for robust pretraining and fine-tuning multimodal vision-language models. RoCLIP effectively breaks the association between poisoned image-caption pairs by considering a pool of random examples, and (1) matching every image with the text that is most similar to its caption in the pool, and (2) matching every caption with the image that is most similar to its image in the pool. Our extensive experiments show that our method renders state-of-the-art targeted data poisoning and backdoor attacks ineffective during pre-training or fine-tuning of CLIP. In particular, RoCLIP decreases the poison and backdoor attack success rates down to 0% during pre-training and 1%-4% during fine-tuning, and effectively improves the model’s performance.</p>
+            <p>Neural networks trained with (stochastic) gradient descent have an inductive bias towards learning simpler solutions. This makes them highly prone to learning simple spurious features that are highly correlated with a label instead of the predictive but more complex core features. In this work, we show that, interestingly, the simplicity bias of gradient descent can be leveraged to identify spurious correlations, early in training. First, we prove on a two-layer neural network, that groups of examples with high spurious correlation are separable based on the model’s output, in the initial training iterations. We further show that if spurious features have a small enough noise-to-signal ratio, the network’s output on the majority of examples in a class will be almost exclusively determined by the spurious features and will be nearly invariant to the core feature. Finally, we propose SPARE, which separates large groups with spurious correlations early in training, and utilizes importance sampling to alleviate the spurious correlation, by balancing the group sizes. We show that SPARE achieves up to 5.6% higher worst-group accuracy than state-of-the-art methods, while being up to 12x faster. We also show the applicability of SPARE to discover and mitigate spurious correlations in Restricted ImageNet.</p>
           </div>
 <!-- Hidden bibtex block -->
           <div class="bibtex hidden">
-            <figure class="highlight"><pre><code class="language-bibtex" data-lang="bibtex"><span class="nc">@article</span><span class="p">{</span><span class="nl">yang2023robust</span><span class="p">,</span>
-  <span class="na">title</span> <span class="p">=</span> <span class="s">{Robust Contrastive Language-Image Pretraining against Data Poisoning and Backdoor Attacks}</span><span class="p">,</span>
-  <span class="na">author</span> <span class="p">=</span> <span class="s">{Yang., Wenhan and Mirzasoleiman, Baharan}</span><span class="p">,</span>
-  <span class="na">journal</span> <span class="p">=</span> <span class="s">{arXiv preprint arXiv:2303.06854}</span><span class="p">,</span>
+            <figure class="highlight"><pre><code class="language-bibtex" data-lang="bibtex"><span class="nc">@article</span><span class="p">{</span><span class="nl">yang2023eliminating</span><span class="p">,</span>
+  <span class="na">title</span> <span class="p">=</span> <span class="s">{Identifying Spurious Biases Early in Training through the Lens of Simplicity Bias}</span><span class="p">,</span>
+  <span class="na">author</span> <span class="p">=</span> <span class="s">{Yang, Yu and Gan, Eric and Dziugaite, Gintare Karolina and Mirzasoleiman, Baharan}</span><span class="p">,</span>
+  <span class="na">journal</span> <span class="p">=</span> <span class="s">{arXiv preprint arXiv:2305.18761}</span><span class="p">,</span>
   <span class="na">year</span> <span class="p">=</span> <span class="s">{Preprints}</span><span class="p">,</span>
-  <span class="na">poison</span> <span class="p">=</span> <span class="s">{true}</span>
+  <span class="na">spurious</span> <span class="p">=</span> <span class="s">{true}</span>
 <span class="p">}</span></code></pre></figure>
           </div>
         </div>
@@ -223,24 +224,24 @@ test-time examples. Powerful attacks generate poisons that visually look innocen
 <li>
 <!-- _layouts/bib.html -->
       <div class="row">
-        <div class="col-sm-2 abbr"><abbr class="badge" style="background-color:#CC2375"><a href="https://icml.cc/" rel="external nofollow noopener" target="_blank">NeurIPS</a></abbr></div>
+        <div class="col-sm-2 abbr"><abbr class="badge">ArXiv</abbr></div>
 
         <!-- Entry bib key -->
-        <div id="liufriendly" class="col-sm-10">
+        <div id="xue2023eliminating" class="col-sm-10">
         <!-- Title -->
-        <div class="title">Friendly Noise against Adversarial Noise: A Powerful Defense against Data Poisoning Attack</div>
+        <div class="title">Eliminating Spurious Correlations from Pre-trained Models via Data Mixing</div>
         <!-- Author -->
         <div class="author">
         
 
-        Tian Yu Liu, <a href="https://sites.google.com/g.ucla.edu/yuyang/home" rel="external nofollow noopener" target="_blank">Yu Yang</a>, and <a href="https://baharanm.github.io/">Baharan Mirzasoleiman</a>
+        <a href="https://sites.google.com/g.ucla.edu/yihao-xue/home" rel="external nofollow noopener" target="_blank">Yihao Xue</a>, Ali Payani, <a href="https://sites.google.com/g.ucla.edu/yuyang/home" rel="external nofollow noopener" target="_blank">Yu Yang</a>, and <a href="https://baharanm.github.io/">Baharan Mirzasoleiman</a>
 </div>
 
         <!-- Journal/Book title and date -->
         
         
         <div class="periodical">
-          <em>Advances in Neural Information Processing Systems (NeurIPS)</em>, 2022
+          <em>arXiv preprint arXiv:2305.14521</em>, Preprints
         </div>
         <div class="periodical">
           
@@ -249,10 +250,8 @@ test-time examples. Powerful attacks generate poisons that visually look innocen
           <!-- Links/Buttons -->
           <div class="links">
             <a class="abstract btn btn-sm z-depth-0" role="button">Abs</a>
+            <a href="http://arxiv.org/abs/2305.14521" class="btn btn-sm z-depth-0" role="button" rel="external nofollow noopener" target="_blank">arXiv</a>
             <a class="bibtex btn btn-sm z-depth-0" role="button">Bib</a>
-            <a href="/assets/pdf/liu22friendly.pdf" class="btn btn-sm z-depth-0" role="button">PDF</a>
-            <a href="/assets/pdf/liu22friendly_long.pdf" class="btn btn-sm z-depth-0" role="button">Supp</a>
-            <a href="https://github.com/tianyu139/friendly-noise" class="btn btn-sm z-depth-0" role="button" rel="external nofollow noopener" target="_blank">Code</a>
           <!-- -->
           </div>
           
@@ -263,16 +262,73 @@ test-time examples. Powerful attacks generate poisons that visually look innocen
 
           <!-- Hidden abstract block -->
           <div class="abstract hidden">
-            <p>A powerful category of (invisible) data poisoning attacks modify a subset of training examples by small adversarial perturbations to change the prediction of certain test-time data. Existing defense mechanisms are not desirable to deploy in practice, as they often either drastically harm the generalization performance, or are attack-specific, and prohibitively slow to apply. Here, we propose a simple but highly effective approach that unlike existing methods breaks various types of invisible poisoning attacks with the slightest drop in the generalization performance. We make the key observation that attacks introduce local sharp regions of high training loss, which when minimized, results in learning the adversarial perturbations and makes the attack successful. To break poisoning attacks, our key idea is to alleviate the sharp loss regions introduced by poisons. To do so, our approach comprises two components: an optimized friendly noise that is generated to maximally perturb examples without degrading the performance, and a randomly varying noise component. The combination of both components builds a very light-weight but extremely effective defense against the most powerful triggerless targeted and hidden-trigger backdoor poisoning attacks, including Gradient Matching, Bulls-eye Polytope, and Sleeper Agent. We show that our friendly noise is transferable to other architectures, and adaptive attacks cannot break our defense due to its random noise component.</p>
+            <p>Machine learning models pre-trained on large datasets have achieved remarkable convergence and robustness properties. However, these models often exploit spurious correlations between certain attributes and labels, which are prevalent in the majority of examples within specific categories but are not predictive of these categories in general. The learned spurious correlations may persist even after fine-tuning on new data, which degrades models’ performance on examples that do not exhibit the spurious correlation. In this work, we propose a simple and highly effective method to eliminate spurious correlations from pre-trained models. The key idea of our method is to leverage a small set of examples with spurious attributes, and balance the spurious attributes across all classes via data mixing. We theoretically confirm the effectiveness of our method, and empirically demonstrate its state-of-the-art performance on various vision and NLP tasks, including eliminating spurious correlations from pre-trained ResNet50 on Waterbirds and CelebA, adversarially pre-trained ResNet50 on ImageNet, and BERT pre-trained on CivilComments.</p>
           </div>
 <!-- Hidden bibtex block -->
           <div class="bibtex hidden">
-            <figure class="highlight"><pre><code class="language-bibtex" data-lang="bibtex"><span class="nc">@article</span><span class="p">{</span><span class="nl">liufriendly</span><span class="p">,</span>
-  <span class="na">title</span> <span class="p">=</span> <span class="s">{Friendly Noise against Adversarial Noise: A Powerful Defense against Data Poisoning Attack}</span><span class="p">,</span>
-  <span class="na">author</span> <span class="p">=</span> <span class="s">{Liu, Tian Yu and Yang, Yu and Mirzasoleiman, Baharan}</span><span class="p">,</span>
-  <span class="na">journal</span> <span class="p">=</span> <span class="s">{Advances in Neural Information Processing Systems (NeurIPS)}</span><span class="p">,</span>
-  <span class="na">year</span> <span class="p">=</span> <span class="s">{2022}</span><span class="p">,</span>
-  <span class="na">poison</span> <span class="p">=</span> <span class="s">{true}</span>
+            <figure class="highlight"><pre><code class="language-bibtex" data-lang="bibtex"><span class="nc">@article</span><span class="p">{</span><span class="nl">xue2023eliminating</span><span class="p">,</span>
+  <span class="na">title</span> <span class="p">=</span> <span class="s">{Eliminating Spurious Correlations from Pre-trained Models via Data Mixing}</span><span class="p">,</span>
+  <span class="na">author</span> <span class="p">=</span> <span class="s">{Xue, Yihao and Payani, Ali and Yang, Yu and Mirzasoleiman, Baharan}</span><span class="p">,</span>
+  <span class="na">journal</span> <span class="p">=</span> <span class="s">{arXiv preprint arXiv:2305.14521}</span><span class="p">,</span>
+  <span class="na">year</span> <span class="p">=</span> <span class="s">{Preprints}</span><span class="p">,</span>
+  <span class="na">spurious</span> <span class="p">=</span> <span class="s">{true}</span>
+<span class="p">}</span></code></pre></figure>
+          </div>
+        </div>
+      </div>
+</li>
+<li>
+<!-- _layouts/bib.html -->
+      <div class="row">
+        <div class="col-sm-2 abbr"><abbr class="badge">ArXiv</abbr></div>
+
+        <!-- Entry bib key -->
+        <div id="deng2023robust" class="col-sm-10">
+        <!-- Title -->
+        <div class="title">Robust Learning with Progressive Data Expansion Against Spurious
+  Correlation</div>
+        <!-- Author -->
+        <div class="author">
+        
+
+        Yihe Deng*, <a href="https://sites.google.com/g.ucla.edu/yuyang/home" rel="external nofollow noopener" target="_blank">Yu Yang*</a>, <a href="https://baharanm.github.io/">Baharan Mirzasoleiman</a>, and Quanquan Gu</div>
+
+        <!-- Journal/Book title and date -->
+        
+        
+        <div class="periodical">
+          <em>arXiv preprint arXiv:2306.04949</em>, Preprints
+        </div>
+        <div class="periodical">
+          
+        </div>
+
+          <!-- Links/Buttons -->
+          <div class="links">
+            <a class="abstract btn btn-sm z-depth-0" role="button">Abs</a>
+            <a href="http://arxiv.org/abs/2306.04949" class="btn btn-sm z-depth-0" role="button" rel="external nofollow noopener" target="_blank">arXiv</a>
+            <a class="bibtex btn btn-sm z-depth-0" role="button">Bib</a>
+          <!-- -->
+          </div>
+          
+          <div class="badges">
+            <span class="altmetric-embed" data-hide-no-mentions="true" data-hide-less-than="15" data-badge-type="2" data-badge-popover="right"></span>
+              <span class="__dimensions_badge_embed__" data-pmid="" data-hide-zero-citations="true" data-style="small_rectangle" data-legend="hover-right" style="margin-bottom: 3px;"></span>
+          </div>
+
+          <!-- Hidden abstract block -->
+          <div class="abstract hidden">
+            <p>While deep learning models have shown remarkable performance in various tasks, they are susceptible to learning non-generalizable spurious features rather than the core features that are genuinely correlated to the true label. In this paper, beyond existing analyses of linear models, we theoretically examine the learning process of a two-layer nonlinear convolutional neural network in the presence of spurious features. Our analysis suggests that imbalanced data groups and easily learnable spurious features can lead to the dominance of spurious features during the learning process. In light of this, we propose a new training algorithm called PDE that efficiently enhances the model’s robustness for a better worst-group performance. PDE begins with a group-balanced subset of training data and progressively expands it to facilitate the learning of the core features. Experiments on synthetic and real-world benchmark datasets confirm the superior performance of our method on models such as ResNets and Transformers. On average, our method achieves a 2.8% improvement in worst-group accuracy compared with the state-of-the-art method, while enjoying up to 10x faster training efficiency.</p>
+          </div>
+<!-- Hidden bibtex block -->
+          <div class="bibtex hidden">
+            <figure class="highlight"><pre><code class="language-bibtex" data-lang="bibtex"><span class="nc">@article</span><span class="p">{</span><span class="nl">deng2023robust</span><span class="p">,</span>
+  <span class="na">title</span> <span class="p">=</span> <span class="s">{Robust Learning with Progressive Data Expansion Against Spurious
+    Correlation}</span><span class="p">,</span>
+  <span class="na">author</span> <span class="p">=</span> <span class="s">{Deng*, Yihe and Yang*, Yu and Mirzasoleiman, Baharan and Gu, Quanquan}</span><span class="p">,</span>
+  <span class="na">journal</span> <span class="p">=</span> <span class="s">{arXiv preprint arXiv:2306.04949}</span><span class="p">,</span>
+  <span class="na">year</span> <span class="p">=</span> <span class="s">{Preprints}</span><span class="p">,</span>
+  <span class="na">spurious</span> <span class="p">=</span> <span class="s">{true}</span>
 <span class="p">}</span></code></pre></figure>
           </div>
         </div>
@@ -284,36 +340,33 @@ test-time examples. Powerful attacks generate poisons that visually look innocen
         <div class="col-sm-2 abbr"><abbr class="badge" style="background-color:#00369f"><a href="https://icml.cc/" rel="external nofollow noopener" target="_blank">ICML</a></abbr></div>
 
         <!-- Entry bib key -->
-        <div id="yang2022not" class="col-sm-10">
+        <div id="yang2023mitigating" class="col-sm-10">
         <!-- Title -->
-        <div class="title">Not all poisons are created equal: Robust training against data poisoning</div>
+        <div class="title">Mitigating Spurious Correlations in Multi-modal Models during Fine-tuning</div>
         <!-- Author -->
         <div class="author">
         
 
-        <a href="https://sites.google.com/g.ucla.edu/yuyang/home" rel="external nofollow noopener" target="_blank">Yu Yang</a>, Tian Yu Liu, and <a href="https://baharanm.github.io/">Baharan Mirzasoleiman</a>
+        <a href="https://sites.google.com/g.ucla.edu/yuyang/home" rel="external nofollow noopener" target="_blank">Yu Yang</a>, Besmira Nushi, Hamid Palangi, and <a href="https://baharanm.github.io/">Baharan Mirzasoleiman</a>
 </div>
 
         <!-- Journal/Book title and date -->
         
         
         <div class="periodical">
-          <em>International Conference on Machine Learning (ICML)</em>, 2022
+          <em>International Conference on Machine Learning (ICML)</em>, 2023
         </div>
         <div class="periodical">
           
         </div>
-          <div lass="award"><b><span style="color:#DF5279">Oral presentation (top 2%)</span></b></div>
 
           <!-- Links/Buttons -->
           <div class="links">
             <a class="abstract btn btn-sm z-depth-0" role="button">Abs</a>
             <a class="bibtex btn btn-sm z-depth-0" role="button">Bib</a>
-            <a href="/assets/pdf/yang22poisons.pdf" class="btn btn-sm z-depth-0" role="button">PDF</a>
-            <a href="/assets/pdf/yang22poisons_long.pdf" class="btn btn-sm z-depth-0" role="button">Supp</a>
-            <a href="https://github.com/BigML-CS-UCLA/EPIC" class="btn btn-sm z-depth-0" role="button" rel="external nofollow noopener" target="_blank">Code</a>
-          <!--
-            <div lass="award"><b><span style="color:#DF5279">Oral presentation (top 2%)</span></b></div> -->
+            <a href="/assets/pdf/yang23mitigating.pdf" class="btn btn-sm z-depth-0" role="button">PDF</a>
+            <a href="/assets/pdf/yang23mitigating_long.pdf" class="btn btn-sm z-depth-0" role="button">Supp</a>
+          <!-- -->
           </div>
           
           <div class="badges">
@@ -323,19 +376,16 @@ test-time examples. Powerful attacks generate poisons that visually look innocen
 
           <!-- Hidden abstract block -->
           <div class="abstract hidden">
-            <p>Data poisoning causes misclassification of test time target examples, by injecting maliciously crafted samples in the training data. Existing defenses are often effective only against a specific type of targeted attack, significantly degrade the generalization performance, or are prohibitive for standard deep learning pipelines. In this work, we propose an efficient defense mechanism that significantly reduces the success rate of various data poisoning attacks, and provides theoretical guarantees for the performance of the model. Targeted attacks work by adding bounded perturbations to a randomly selected subset of training data to match the targets’ gradient or representation. We show that: (i) under bounded perturbations, only a number of poisons can be optimized to have a gradient that is close enough to that of the target and make the attack successful; (ii) such effective poisons move away from their original class and get isolated in the gradient space; (iii) dropping examples in low-density gradient regions during training can successfully eliminate the effective poisons, and guarantees similar training dynamics to that of training on full data. Our extensive experiments show that our method significantly decreases the success rate of state-of-the-art targeted attacks, including Gradient Matching and Bullseye Polytope, and easily scales to large datasets.</p>
+            <p>Spurious correlations that degrade model generalization or lead the model to be right for the wrong reasons are one of the main robustness concerns for real-world deployments. However, mitigating these correlations during pre-training for large-scale models can be costly and impractical, particularly for those without access to high-performance computing resources. This paper proposes a novel approach to address spurious correlations during fine-tuning for a given domain of interest. With a focus on multi-modal models (e.g., CLIP), the proposed method leverages different modalities in these models to detect and explicitly set apart spurious attributes from the affected class, achieved through a multi-modal contrastive loss function that expresses spurious relationships through language. Our experimental results and in-depth visualizations on CLIP show that such an intervention can effectively i) improve the model’s accuracy when spurious attributes are not present, and ii) directs the model’s activation maps towards the actual class rather than the spurious attribute when present. In particular, on the Waterbirds dataset, our algorithm achieved a worst-group accuracy 23% higher than ERM on CLIP with a ResNet-50 backbone, and 32% higher on CLIP with a ViT backbone, while maintaining the same average accuracy as ERM.</p>
           </div>
 <!-- Hidden bibtex block -->
           <div class="bibtex hidden">
-            <figure class="highlight"><pre><code class="language-bibtex" data-lang="bibtex"><span class="nc">@article</span><span class="p">{</span><span class="nl">yang2022not</span><span class="p">,</span>
-  <span class="na">title</span> <span class="p">=</span> <span class="s">{Not all poisons are created equal: Robust training against data poisoning}</span><span class="p">,</span>
-  <span class="na">author</span> <span class="p">=</span> <span class="s">{Yang, Yu and Liu, Tian Yu and Mirzasoleiman, Baharan}</span><span class="p">,</span>
+            <figure class="highlight"><pre><code class="language-bibtex" data-lang="bibtex"><span class="nc">@article</span><span class="p">{</span><span class="nl">yang2023mitigating</span><span class="p">,</span>
+  <span class="na">title</span> <span class="p">=</span> <span class="s">{Mitigating Spurious Correlations in Multi-modal Models during Fine-tuning}</span><span class="p">,</span>
+  <span class="na">author</span> <span class="p">=</span> <span class="s">{Yang, Yu and Nushi, Besmira and Palangi, Hamid and Mirzasoleiman, Baharan}</span><span class="p">,</span>
   <span class="na">journal</span> <span class="p">=</span> <span class="s">{International Conference on Machine Learning (ICML)}</span><span class="p">,</span>
-  <span class="na">pages</span> <span class="p">=</span> <span class="s">{25154--25165}</span><span class="p">,</span>
-  <span class="na">year</span> <span class="p">=</span> <span class="s">{2022}</span><span class="p">,</span>
-  <span class="na">organization</span> <span class="p">=</span> <span class="s">{PMLR}</span><span class="p">,</span>
-  <span class="na">poison</span> <span class="p">=</span> <span class="s">{true}</span><span class="p">,</span>
-  <span class="na">award</span> <span class="p">=</span> <span class="s">{Oral presentation (top 2%)}</span>
+  <span class="na">year</span> <span class="p">=</span> <span class="s">{2023}</span><span class="p">,</span>
+  <span class="na">spurious</span> <span class="p">=</span> <span class="s">{true}</span>
 <span class="p">}</span></code></pre></figure>
           </div>
         </div>
