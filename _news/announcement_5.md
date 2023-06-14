@@ -14,5 +14,5 @@ Vanderbilt University [Machine Learning Seminar](https://www.youtube.com/playlis
 [ICML DataPerf Workshop](https://sites.google.com/view/dataperf2022), UT Austin ECE 
 [Colloquia Seminar](https://www.ece.utexas.edu/events/efficient-and-robust-learning-massive-datasets), [Stanfod MLSys seminar](https://mlsys.stanford.edu/), and
 <!-- <a href="https://www.youtube.com/watch?v=Bmn8SNojTlA"><img src="assets/img/youtube3.png" alt="Watch" style="width:33px;height:30px"></a> -->
-[ICML SubsetML Workshop](https://sites.google.com/view/sparsity-workshop-2021) summarizing our efforts on data selection for efficient and robust learning. You can watch some here <a href="http://127.0.0.1:4000/teaching/"><img src="assets/img/youtube3.png" alt="Watch" style="width:33px;height:30px"></a>
+[ICML SubsetML Workshop](https://sites.google.com/view/sparsity-workshop-2021) summarizing our efforts on data selection for efficient and robust learning. You can watch some here <a href="http://127.0.0.1:4000/teaching/"><img src="assets/img/youtube3.png" alt="Watch" style="width:30px;height:30px"></a>
 <!-- Some talks are available [here](http://127.0.0.1:4000/teaching/). -->
