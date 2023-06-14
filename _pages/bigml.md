@@ -12,25 +12,37 @@ horizontal: false
 
 <h5>PhD students:</h5>
 
+<!-- # Tweet
+An example of displaying a tweet:
+{% twitter https://twitter.com/rubygems/status/518821243320287232 %}
+ -->
 
 <div class="row justify-content-sm-center">
    <div class="col-sm-4 mt-3 mt-md-0">
-       {% include figure.html path="assets/img/Yu.jpeg" title="example image" class="img-fluid rounded z-depth-1" %}
-       <a href="https://sites.google.com/g.ucla.edu/yuyang/home">Yu Yang</a>
+       <a href="https://sites.google.com/g.ucla.edu/yuyang/" >{% include figure.html path="assets/img/Yu.jpeg" title="Yu Yang" class="img-fluid rounded z-depth-1" %}</a>
+       <div style="text-align: center">
+         <h6><a href="https://sites.google.com/g.ucla.edu/yuyang/">Yu Yang</a></h6>
+       </div>
    </div>
    <div class="col-sm-4 mt-3 mt-md-0">
-       {% include figure.html path="assets/img/Yihao.jpeg" title="example image" class="img-fluid rounded z-depth-1" %}
-       <a href="https://sites.google.com/g.ucla.edu/yihao-xue/home">Yihao Xue</a>
+       <a href="https://sites.google.com/g.ucla.edu/yihao-xue/">{% include figure.html path="assets/img/Yihao.jpeg" title="Yihao Xue" class="img-fluid rounded z-depth-1" %}</a>
+       <div style="text-align: center">
+            <h6><a href="https://sites.google.com/g.ucla.edu/yihao-xue/">Yihao Xue</a></h6>
+        </div>
    </div>
 </div>
 <div class="row justify-content-sm-center">
    <div class="col-sm-4 mt-3 mt-md-0">
-       {% include figure.html path="assets/img/Sid.jpeg" title="example image" class="img-fluid rounded z-depth-1" %}
-       <a href="https://sjoshi804.github.io/">Siddharth Joshi</a>
+       <a href="https://sjoshi804.github.io/">{% include figure.html path="assets/img/Sid.jpeg" title="Siddharth Joshi" class="img-fluid rounded z-depth-1" %}</a>
+       <div style="text-align: center">
+            <h6><a href="https://sjoshi804.github.io/">Siddharth Joshi</a></h6>
+        </div>
    </div>
    <div class="col-sm-4 mt-3 mt-md-0">
-       {% include figure.html path="assets/img/Hanger.jpeg" title="example image" class="img-fluid rounded z-depth-1" %}
-       <a href="https://sites.google.com/view/hangeryang/home/">Wenhan Yang</a>
+       <a href="https://sites.google.com/view/hangeryang/">{% include figure.html path="assets/img/Hanger.jpeg" title="Wenhan Yang" class="img-fluid rounded z-depth-1" %}</a>
+       <div style="text-align: center">
+           <h6><a href="https://sites.google.com/view/hangeryang/">Wenhan Yang</a></h6>
+       </div>
    </div>
 </div>
 
