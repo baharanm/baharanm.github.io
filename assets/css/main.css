@@ -544,7 +544,7 @@ footer.sticky-bottom {
 .news table, .news th, .news td {
   padding-top: 1px !important;
   padding-bottom: 0px !important;
-  vertical-align: middle;
+  vertical-align: top;
 }
 
 .publications {
