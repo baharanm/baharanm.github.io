@@ -13,7 +13,7 @@ We develop principled techniques with strong theoretical guarantees for robust t
 
 <div class="row justify-content-sm-center">
 	<div class="col-sm-12 mt-3 mt-md-0">
-	    {% include figure.html path="assets/img/label_noise.png" title="example image" class="img-fluid rounded z-depth-1" %}
+	    {% include figure.html path="assets/img/label_noise.png" title="label noise" class="img-fluid rounded z-depth-1" %}
 	</div>
 </div>
 <div class="caption">

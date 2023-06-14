@@ -15,7 +15,7 @@ We develop methods to mitigate the effect of spurious correlations during traini
 
 <div class="row justify-content-sm-center">
 	<div class="col-sm-10 mt-3 mt-md-0">
-	    {% include figure.html path="assets/img/spurious_in.png" title="example image" class="img-fluid rounded z-depth-1" %}
+	    {% include figure.html path="assets/img/spurious_in.png" title="spurious" class="img-fluid rounded z-depth-1" %}
 	</div>
 </div>
 <!-- <div class="caption">
