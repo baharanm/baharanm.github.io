@@ -156,7 +156,7 @@ table th {
 a,
 table.table a {
   color: var(--global-theme-color);
-  font-weight: bolder;
+  font-weight: 400;
 }
 a:hover,
 table.table a:hover {
