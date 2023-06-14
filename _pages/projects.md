@@ -9,13 +9,20 @@ display_categories: [efficiency, robustness]
 horizontal: false
 ---
 
-We aim to address <span style="color:#DF5279"><b>sustainability, reliability, and efficiency</b></span> of machine learning, by selecting the most relevant data for training, among other techniques.
+We aim to address <span class="emp"><b>sustainability, reliability, and efficiency</b></span> of machine learning, by selecting the most relevant data for training, among other techniques.
+
 
 <!-- pages/projects.md -->
 <div class="projects">
 {%- if site.enable_project_categories and page.display_categories %}
   <!-- Display categorized projects -->
   {%- for category in page.display_categories %}
+  {%- if category == 'efficiency' %}
+    <a id="efficiency"></a>
+  {%- endif -%}
+  {%- if category == 'robustness' %}
+    <a id="robustness"></a>
+  {%- endif -%}
   <h2 class="category">{{ category }}</h2>
   {%- assign categorized_projects = site.projects | where: "category", category -%}
   {%- assign sorted_projects = categorized_projects | sort: "importance" %}
