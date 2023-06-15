@@ -2,7 +2,7 @@
 layout: page
 title: Data Poisoning
 description: Robust traing against data poisoning
-img: assets/img/poison_project.png
+img: assets/img/projects/poison_project.png
 # redirect: assets/img/attack.png
 importance: 3
 category: robustness
@@ -15,7 +15,7 @@ We develop powerful defense methods to traing neural networks robust against dat
 
 <div class="row justify-content-sm-center">
 	<div class="col-sm-8 mt-3 mt-md-0">
-	    {% include figure.html path="assets/img/poison.png" title="poison" class="img-fluid rounded z-depth-1" %}
+	    {% include figure.html path="assets/img/projects/poison.png" title="poison" class="img-fluid rounded z-depth-1" %}
 	</div>
 </div>
 <!-- <div class="caption">
