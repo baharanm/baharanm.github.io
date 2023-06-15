@@ -8,8 +8,9 @@ nav_order: 2
 display_categories: [efficiency, robustness]
 horizontal: false
 ---
+<!-- We aim to address <span class="emp"><b>sustainability, reliability, and efficiency</b></span> of machine learning, by selecting the most relevant data for training, among other techniques. -->
 
-We aim to address <span class="emp"><b>sustainability, reliability, and efficiency</b></span> of machine learning, by selecting the most relevant data for training, among other techniques.
+We aim to address [sustainability and efficiency](#efficiency), as well as [reliability and robustness](#robustness) of learning from large datasets. Our research mainly focuses on addressing the above problems by selecting the most relevant data for training. But we also work on finding better models and developing better training methods.
 
 
 <!-- pages/projects.md -->
