@@ -601,6 +601,7 @@ footer.sticky-bottom {
 }
 .publications ol.bibliography li .abbr abbr a {
   color: white;
+  font-weight: bolder;
 }
 .publications ol.bibliography li .abbr abbr a:hover {
   text-decoration: none;
