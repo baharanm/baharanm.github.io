@@ -29,6 +29,6 @@ I am currently recruiting undergraduate, masters, and PhD students as well as po
 
 <h5><b>UCLA Undergraduate and Master Students</b></h5>
 
-- If you are a current or admitted undergraduate or masters at UCLA, please submit your info through [this form](https://forms.gle/hfgoVrGxoMABiRRj9), and we will contact you. 
+- If you are a current or admitted undergraduate or masters at UCLA, please submit your info through [this form](https://forms.gle/hfgoVrGxoMABiRRj9), and we will contact you.
 
 I may not be able to respond to all individual emails about admissions to masters or PhD programs, but I will make sure to read your email and application materials.
