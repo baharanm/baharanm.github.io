@@ -1,4 +1,4 @@
-<?xml version="1.0" encoding="utf-8"?><feed xmlns="http://www.w3.org/2005/Atom" xml:lang="en"><generator uri="https://jekyllrb.com/" version="4.3.2">Jekyll</generator><link href="https://baharanm.github.io/feed.xml" rel="self" type="application/atom+xml" /><link href="https://baharanm.github.io/" rel="alternate" type="text/html" hreflang="en" /><updated>2023-06-15T03:31:40+00:00</updated><id>https://baharanm.github.io/feed.xml</id><title type="html">blank</title><entry><title type="html">Coresets for Data-efficient Deep Learning</title><link href="https://baharanm.github.io/blog/2023/crest/" rel="alternate" type="text/html" title="Coresets for Data-efficient Deep Learning" /><published>2023-06-11T19:53:00+00:00</published><updated>2023-06-11T19:53:00+00:00</updated><id>https://baharanm.github.io/blog/2023/crest</id><content type="html" xml:base="https://baharanm.github.io/blog/2023/crest/"><![CDATA[<p>To improve the efficiency and sustainability of learning deep models, we propose <b>CREST, the first scalable framework with rigorous theoretical guarantees to identify the most valuable examples for training non-convex models</b>, particularly deep networks. To guarantee convergence to a stationary point of a non-convex function, CREST models the non-convex loss as a series of quadratic functions and extracts a coreset for each quadratic sub-region. In addition, to ensure faster convergence of stochastic gradient methods such as (mini-batch) SGD, CREST iteratively extracts multiple mini-batch coresets from larger random subsets of training data, to ensure nearly-unbiased gradients with small variances. Finally, to further improve scalability and efficiency, CREST identifies and excludes the examples that are learned from the coreset selection pipeline. Our extensive experiments on several deep networks trained on vision and NLP datasets, including CIFAR-10, CIFAR-100, TinyImageNet, and SNLI, confirm that CREST speeds up training deep networks on very large datasets, by 1.7x to 2.5x with minimum loss in the performance. By analyzing the learning difficulty of the subsets selected by CREST, we show that deep models benefit the most by learning from subsets of increasing difficulty levels.</p>
+<?xml version="1.0" encoding="utf-8"?><feed xmlns="http://www.w3.org/2005/Atom" xml:lang="en"><generator uri="https://jekyllrb.com/" version="4.3.2">Jekyll</generator><link href="https://baharanm.github.io/feed.xml" rel="self" type="application/atom+xml" /><link href="https://baharanm.github.io/" rel="alternate" type="text/html" hreflang="en" /><updated>2023-06-15T03:31:57+00:00</updated><id>https://baharanm.github.io/feed.xml</id><title type="html">blank</title><entry><title type="html">Coresets for Data-efficient Deep Learning</title><link href="https://baharanm.github.io/blog/2023/crest/" rel="alternate" type="text/html" title="Coresets for Data-efficient Deep Learning" /><published>2023-06-11T19:53:00+00:00</published><updated>2023-06-11T19:53:00+00:00</updated><id>https://baharanm.github.io/blog/2023/crest</id><content type="html" xml:base="https://baharanm.github.io/blog/2023/crest/"><![CDATA[<p>To improve the efficiency and sustainability of learning deep models, we propose <b>CREST, the first scalable framework with rigorous theoretical guarantees to identify the most valuable examples for training non-convex models</b>, particularly deep networks. To guarantee convergence to a stationary point of a non-convex function, CREST models the non-convex loss as a series of quadratic functions and extracts a coreset for each quadratic sub-region. In addition, to ensure faster convergence of stochastic gradient methods such as (mini-batch) SGD, CREST iteratively extracts multiple mini-batch coresets from larger random subsets of training data, to ensure nearly-unbiased gradients with small variances. Finally, to further improve scalability and efficiency, CREST identifies and excludes the examples that are learned from the coreset selection pipeline. Our extensive experiments on several deep networks trained on vision and NLP datasets, including CIFAR-10, CIFAR-100, TinyImageNet, and SNLI, confirm that CREST speeds up training deep networks on very large datasets, by 1.7x to 2.5x with minimum loss in the performance. By analyzing the learning difficulty of the subsets selected by CREST, we show that deep models benefit the most by learning from subsets of increasing difficulty levels.</p>
 
 <p>Read the full article here: <a href="../../../assets/pdf/yang23sustainable.pdf">paper</a></p>
 
@@ -63,7 +63,7 @@
     
 
     <!-- Fallback to the original file -->
-    <img src="/assets/img/multiple.gif" class="img-fluid rounded z-depth-1" width="auto" height="auto" title="example image" onerror="this.onerror=null; $('.responsive-img-srcset').remove();" />
+    <img src="/assets/img/blog/multiple.gif" class="img-fluid rounded z-depth-1" width="auto" height="auto" title="multiple" onerror="this.onerror=null; $('.responsive-img-srcset').remove();" />
 
   </picture>
 
@@ -95,7 +95,7 @@ training with stochastic gradient descent on mini-batch coresets found by CREST 
     
 
     <!-- Fallback to the original file -->
-    <img src="/assets/img/table.png" class="img-fluid rounded z-depth-1" width="auto" height="auto" title="example image" onerror="this.onerror=null; $('.responsive-img-srcset').remove();" />
+    <img src="/assets/img/blog/table.png" class="img-fluid rounded z-depth-1" width="auto" height="auto" title="table" onerror="this.onerror=null; $('.responsive-img-srcset').remove();" />
 
   </picture>
 
@@ -114,7 +114,7 @@ training with stochastic gradient descent on mini-batch coresets found by CREST 
     
 
     <!-- Fallback to the original file -->
-    <img src="/assets/img/speedup.png" class="img-fluid rounded z-depth-1" width="auto" height="auto" title="example image" onerror="this.onerror=null; $('.responsive-img-srcset').remove();" />
+    <img src="/assets/img/blog/speedup.png" class="img-fluid rounded z-depth-1" width="auto" height="auto" title="speedup" onerror="this.onerror=null; $('.responsive-img-srcset').remove();" />
 
   </picture>
 
@@ -135,7 +135,7 @@ training with stochastic gradient descent on mini-batch coresets found by CREST 
     
 
     <!-- Fallback to the original file -->
-    <img src="/assets/img/forgetting.png" class="img-fluid rounded z-depth-1" width="auto" height="auto" title="example image" onerror="this.onerror=null; $('.responsive-img-srcset').remove();" />
+    <img src="/assets/img/blog/forgetting.png" class="img-fluid rounded z-depth-1" width="auto" height="auto" title="forgetting" onerror="this.onerror=null; $('.responsive-img-srcset').remove();" />
 
   </picture>
 
@@ -166,7 +166,7 @@ training with stochastic gradient descent on mini-batch coresets found by CREST 
   </a>
 </div>
 
-</div>]]></content><author><name></name></author><category term="data-efficiency" /><summary type="html"><![CDATA[Towards Sustainable Learning]]></summary></entry><entry><title type="html">Which Features are Learned by Contrastive Learning?</title><link href="https://baharanm.github.io/blog/2023/CC-FS/" rel="alternate" type="text/html" title="Which Features are Learned by Contrastive Learning?" /><published>2023-06-08T19:53:00+00:00</published><updated>2023-06-08T19:53:00+00:00</updated><id>https://baharanm.github.io/blog/2023/CC-FS</id><content type="html" xml:base="https://baharanm.github.io/blog/2023/CC-FS/"><![CDATA[<p>Contrastive learning (CL) has emerged as a powerful technique for representation learning, with or without label supervision. However, supervised CL is prone to collapsing representations of subclasses within a class by not capturing all their features, and unsupervised CL may suppress harder class-relevant features by focusing on learning easy class-irrelevant features; both significantly compromise representation quality. Yet, there is no theoretical understanding of class collapse or feature suppression at test time. We provide the first unified theoretically rigorous framework to determine which features are learnt by CL. Our analysis indicate that, perhaps surprisingly, bias of (stochastic) gradient descent towards finding simpler solutions is a key factor in collapsing subclass representations and suppressing harder class-relevant features. Moreover, we present increasing embedding dimensionality and improving the quality of data augmentations as two theoretically motivated solutions to feature suppression. We also provide the first theoretical explanation for why, when supervised and unsupervised CL are employed together, higher-quality representations are obtained, even using commonly-used stochastic gradient methods.</p>
+</div>]]></content><author><name></name></author><category term="data-efficiency" /><summary type="html"><![CDATA[Towards Sustainable Learning]]></summary></entry><entry><title type="html">Which Features are Learnt by Contrastive Learning?</title><link href="https://baharanm.github.io/blog/2023/CC-FS/" rel="alternate" type="text/html" title="Which Features are Learnt by Contrastive Learning?" /><published>2023-06-08T19:53:00+00:00</published><updated>2023-06-08T19:53:00+00:00</updated><id>https://baharanm.github.io/blog/2023/CC-FS</id><content type="html" xml:base="https://baharanm.github.io/blog/2023/CC-FS/"><![CDATA[<p>Contrastive learning (CL) has emerged as a powerful technique for representation learning, with or without label supervision. However, supervised CL is prone to collapsing representations of subclasses within a class by not capturing all their features, and unsupervised CL may suppress harder class-relevant features by focusing on learning easy class-irrelevant features; both significantly compromise representation quality. Yet, there is no theoretical understanding of class collapse or feature suppression at test time. We provide the first unified theoretically rigorous framework to determine which features are learnt by CL. Our analysis indicate that, perhaps surprisingly, bias of (stochastic) gradient descent towards finding simpler solutions is a key factor in collapsing subclass representations and suppressing harder class-relevant features. Moreover, we present increasing embedding dimensionality and improving the quality of data augmentations as two theoretically motivated solutions to feature suppression. We also provide the first theoretical explanation for why, when supervised and unsupervised CL are employed together, higher-quality representations are obtained, even using commonly-used stochastic gradient methods.</p>
 
 <div class="row">
     <div class="col-sm mt-3 mt-md-0">
@@ -176,7 +176,7 @@ training with stochastic gradient descent on mini-batch coresets found by CREST 
     
 
     <!-- Fallback to the original file -->
-    <img src="/assets/img/example_cc_fs.png" class="img-fluid rounded z-depth-1" width="auto" height="auto" title="example image" onerror="this.onerror=null; $('.responsive-img-srcset').remove();" />
+    <img src="/assets/img/blog/example_cc_fs.png" class="img-fluid rounded z-depth-1" width="auto" height="auto" title="example_cc_fs" onerror="this.onerror=null; $('.responsive-img-srcset').remove();" />
 
   </picture>
 
@@ -203,7 +203,7 @@ training with stochastic gradient descent on mini-batch coresets found by CREST 
     
 
     <!-- Fallback to the original file -->
-    <img src="/assets/img/not_all.png" class="img-fluid rounded z-depth-1" width="auto" height="auto" title="example image" onerror="this.onerror=null; $('.responsive-img-srcset').remove();" />
+    <img src="/assets/img/blog/not_all.png" class="img-fluid rounded z-depth-1" width="auto" height="auto" title="not_all" onerror="this.onerror=null; $('.responsive-img-srcset').remove();" />
 
   </picture>
 
@@ -219,7 +219,7 @@ training with stochastic gradient descent on mini-batch coresets found by CREST 
     
 
     <!-- Fallback to the original file -->
-    <img src="/assets/img/fs.png" class="img-fluid rounded z-depth-1" width="auto" height="auto" title="example image" onerror="this.onerror=null; $('.responsive-img-srcset').remove();" />
+    <img src="/assets/img/blog/fs.png" class="img-fluid rounded z-depth-1" width="auto" height="auto" title="feature suppression" onerror="this.onerror=null; $('.responsive-img-srcset').remove();" />
 
   </picture>
 
@@ -240,7 +240,7 @@ training with stochastic gradient descent on mini-batch coresets found by CREST 
     
 
     <!-- Fallback to the original file -->
-    <img src="/assets/img/cc.png" class="img-fluid rounded z-depth-1" width="auto" height="auto" title="example image" onerror="this.onerror=null; $('.responsive-img-srcset').remove();" />
+    <img src="/assets/img/blog/cc.png" class="img-fluid rounded z-depth-1" width="auto" height="auto" title="class collapse" onerror="this.onerror=null; $('.responsive-img-srcset').remove();" />
 
   </picture>
 
@@ -280,7 +280,7 @@ training with stochastic gradient descent on mini-batch coresets found by CREST 
     
 
     <!-- Fallback to the original file -->
-    <img src="/assets/img/discard-pct.png" class="img-fluid rounded z-depth-1" width="auto" height="auto" title="example image" onerror="this.onerror=null; $('.responsive-img-srcset').remove();" />
+    <img src="/assets/img/blog/discard-pct.png" class="img-fluid rounded z-depth-1" width="auto" height="auto" title="discard-pct" onerror="this.onerror=null; $('.responsive-img-srcset').remove();" />
 
   </picture>
 
