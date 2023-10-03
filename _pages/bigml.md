@@ -30,18 +30,24 @@ An example of displaying a tweet:
             <h6><a href="https://sites.google.com/g.ucla.edu/yihao-xue/">Yihao Xue</a></h6>
         </div>
    </div>
-</div>
-<div class="row justify-content-sm-center">
    <div class="col-sm-4 mt-3 mt-md-0">
        <a href="https://sjoshi804.github.io/">{% include figure.html path="assets/img/group/Sid.jpeg" title="Siddharth Joshi" class="img-fluid rounded z-depth-1" %}</a>
        <div style="text-align: center">
             <h6><a href="https://sjoshi804.github.io/">Siddharth Joshi</a></h6>
         </div>
    </div>
+</div>
+<div class="row justify-content-sm-center">
    <div class="col-sm-4 mt-3 mt-md-0">
        <a href="https://sites.google.com/view/hangeryang/">{% include figure.html path="assets/img/group/Hanger.jpeg" title="Wenhan Yang" class="img-fluid rounded z-depth-1" %}</a>
        <div style="text-align: center">
            <h6><a href="https://sites.google.com/view/hangeryang/">Wenhan Yang</a></h6>
+       </div>
+   </div>
+   <div class="col-sm-4 mt-3 mt-md-0">
+       <a href="https://hsgser.github.io/">{% include figure.html path="assets/img/group/Dang.jpg" title="Dang Nguyen" class="img-fluid rounded z-depth-1" %}</a>
+       <div style="text-align: center">
+           <h6><a href="https://hsgser.github.io/">Dang Nguyen</a></h6>
        </div>
    </div>
 </div>
@@ -51,9 +57,10 @@ An example of displaying a tweet:
 - Kyle Whitecross (not graduated yet)
 - Eric Gan (not graduated yet)
 - Bruce Qu (not graduated yet)
+- Jiayi Ni (not graduated yet)
 - Arnav Jain (not graduated yet)
 - David Davini (not graduated yet)
-- Tang Mohan (not graduated yet)
+<!-- - Tang Mohan (not graduated yet)  -->
 - Victor Li (not graduated yet)
 - Jiayi Ni (not graduated yet)
 - Yuetong Xu (now PhD student at MIT)
