@@ -5,4 +5,4 @@ inline: true
 related_posts: false
 ---
 
-Co-organizing the [2nd New Frontiers in Adversarial Machine Learning](https://advml-frontier.github.io/), Join us in Hawaii! 
+Co-organizing the [2nd New Frontiers in Adversarial Machine Learning](https://advml-frontier.github.io/)
