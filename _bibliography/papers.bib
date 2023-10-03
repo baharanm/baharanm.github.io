@@ -3,6 +3,7 @@
 
 @string{aps = {American Physical Society,}}
 
+
 @article{joshi2023spuco,
   bibtex_show={true},
   abbr={ArXiv},
@@ -41,30 +42,6 @@
   spurious={true}
 }
 
-@article{yang2023robust,
-  bibtex_show={true},
-  abbr={ArXiv},
-  title={Robust Contrastive Language-Image Pretraining against Data Poisoning and Backdoor Attacks},
-  abstract={Contrastive vision-language representation learning has achieved state-of-the-art performance for zero-shot classification, by learning from millions of image-caption pairs crawled from the internet. However, the massive data that powers large multimodal models such as CLIP, makes them extremely vulnerable to various types of adversarial attacks, including targeted and backdoor data poisoning attacks. Despite this vulnerability, robust contrastive vision-language pretraining against adversarial attacks has remained unaddressed. In this work, we propose RoCLIP, the first effective method for robust pretraining {and fine-tuning} multimodal vision-language models. RoCLIP effectively breaks the association between poisoned image-caption pairs by considering a pool of random examples, and (1) matching every image with the text that is most similar to its caption in the pool, and (2) matching every caption with the image that is most similar to its image in the pool. Our extensive experiments show that our method renders state-of-the-art targeted data poisoning and backdoor attacks ineffective during pre-training or fine-tuning of CLIP. In particular, RoCLIP decreases the poison and backdoor attack success rates down to 0\% during pre-training and 1\%-4\% during fine-tuning, and effectively improves the model's performance.},
-  arxiv={2303.06854},
-  author={Yang., Wenhan and Mirzasoleiman, Baharan},
-  journal={arXiv preprint arXiv:2303.06854},
-  year={Preprints},
-  poison={true}
-}
-
-@article{deng2023robust,
-  bibtex_show={true},
-  abbr={ArXiv},
-  title={Robust Learning with Progressive Data Expansion Against Spurious
-  Correlation},
-  abstract={While deep learning models have shown remarkable performance in various tasks, they are susceptible to learning non-generalizable spurious features rather than the core features that are genuinely correlated to the true label. In this paper, beyond existing analyses of linear models, we theoretically examine the learning process of a two-layer nonlinear convolutional neural network in the presence of spurious features. Our analysis suggests that imbalanced data groups and easily learnable spurious features can lead to the dominance of spurious features during the learning process. In light of this, we propose a new training algorithm called PDE that efficiently enhances the model's robustness for a better worst-group performance. PDE begins with a group-balanced subset of training data and progressively expands it to facilitate the learning of the core features. Experiments on synthetic and real-world benchmark datasets confirm the superior performance of our method on models such as ResNets and Transformers. On average, our method achieves a 2.8% improvement in worst-group accuracy compared with the state-of-the-art method, while enjoying up to 10x faster training efficiency.},
-  author={Deng*, Yihe and Yang*, Yu and Mirzasoleiman, Baharan and Gu, Quanquan},
-  journal={arXiv preprint arXiv:2306.04949},
-  arxiv={2306.04949},
-  year={Preprints},
-  spurious={true}
-}
 
 @article{yang2023contrastive,
   bibtex_show={true},
@@ -90,6 +67,31 @@
   noise={true}
 }
 ##############################################################
+
+@article{yang2023robust,
+  bibtex_show={true},
+  abbr={NeurIPS},
+  title={Robust Contrastive Language-Image Pretraining against Data Poisoning and Backdoor Attacks},
+  abstract={Contrastive vision-language representation learning has achieved state-of-the-art performance for zero-shot classification, by learning from millions of image-caption pairs crawled from the internet. However, the massive data that powers large multimodal models such as CLIP, makes them extremely vulnerable to various types of adversarial attacks, including targeted and backdoor data poisoning attacks. Despite this vulnerability, robust contrastive vision-language pretraining against adversarial attacks has remained unaddressed. In this work, we propose RoCLIP, the first effective method for robust pretraining {and fine-tuning} multimodal vision-language models. RoCLIP effectively breaks the association between poisoned image-caption pairs by considering a pool of random examples, and (1) matching every image with the text that is most similar to its caption in the pool, and (2) matching every caption with the image that is most similar to its image in the pool. Our extensive experiments show that our method renders state-of-the-art targeted data poisoning and backdoor attacks ineffective during pre-training or fine-tuning of CLIP. In particular, RoCLIP decreases the poison and backdoor attack success rates down to 0\% during pre-training and 1\%-4\% during fine-tuning, and effectively improves the model's performance.},
+  pdf={https://arxiv.org/pdf/2303.06854},
+  author={Yang., Wenhan and Mirzasoleiman, Baharan},
+  journal={Advances in Neural Information Processing Systems (NeurIPS)},
+  year={2023},
+  poison={true}
+}
+
+@article{deng2023robust,
+  bibtex_show={true},
+  abbr={NeurIPS},
+  title={Robust Learning with Progressive Data Expansion Against Spurious
+  Correlation},
+  abstract={While deep learning models have shown remarkable performance in various tasks, they are susceptible to learning non-generalizable spurious features rather than the core features that are genuinely correlated to the true label. In this paper, beyond existing analyses of linear models, we theoretically examine the learning process of a two-layer nonlinear convolutional neural network in the presence of spurious features. Our analysis suggests that imbalanced data groups and easily learnable spurious features can lead to the dominance of spurious features during the learning process. In light of this, we propose a new training algorithm called PDE that efficiently enhances the model's robustness for a better worst-group performance. PDE begins with a group-balanced subset of training data and progressively expands it to facilitate the learning of the core features. Experiments on synthetic and real-world benchmark datasets confirm the superior performance of our method on models such as ResNets and Transformers. On average, our method achieves a 2.8% improvement in worst-group accuracy compared with the state-of-the-art method, while enjoying up to 10x faster training efficiency.},
+  author={Deng*, Yihe and Yang*, Yu and Mirzasoleiman, Baharan and Gu, Quanquan},
+  journal={Advances in Neural Information Processing Systems (NeurIPS)},
+  pdf={https://arxiv.org/pdf/2306.04949},
+  year={2023},
+  spurious={true}
+}
 
 @article{yang2023mitigating,
   bibtex_show={true},
@@ -366,7 +368,7 @@
   journal={IEEE International Conference on Data Engineering (ICDE)},
   year={2022},
   publisher={IEEE},
-  pdf={Ali22fairness_abs.pdf}
+  pdf={ali22fairness_abs.pdf}
 }
 
 @article{vahidian2020coresets,
