@@ -39,9 +39,9 @@ An example of displaying a tweet:
 </div>
 <div class="row justify-content-sm-center">
    <div class="col-sm-4 mt-3 mt-md-0">
-       <a href="https://sites.google.com/view/hangeryang/">{% include figure.html path="assets/img/group/Hanger.jpeg" title="Wenhan Yang" class="img-fluid rounded z-depth-1" %}</a>
+       <a href="https://sites.google.com/g.ucla.edu/wenhan-yang/home">{% include figure.html path="assets/img/group/Hanger.jpeg" title="Wenhan Yang" class="img-fluid rounded z-depth-1" %}</a>
        <div style="text-align: center">
-           <h6><a href="https://sites.google.com/view/hangeryang/">Wenhan Yang</a></h6>
+           <h6><a href="https://sites.google.com/g.ucla.edu/wenhan-yang/home">Wenhan Yang</a></h6>
        </div>
    </div>
    <div class="col-sm-4 mt-3 mt-md-0">
