@@ -4,6 +4,51 @@
 @string{aps = {American Physical Society,}}
 
 
+@article{chen2023distillation,
+  bibtex_show={true},
+  abbr={ArXiv},
+  title={Data Distillation Can Be Like Vodka: Distilling More Times For Better Quality},
+  abstract={Dataset distillation aims to minimize the time and memory needed for training deep networks on large datasets, by creating a small set of synthetic images that has a similar generalization performance to that of the full dataset. However, current dataset distillation techniques fall short, showing a notable performance gap when compared to training on the original data. In this work, we are the first to argue that using just one synthetic subset for distillation will not yield optimal generalization performance. This is because the training dynamics of deep networks drastically change during the training. Hence, multiple synthetic subsets are required to capture the training dynamics at different phases of training. To address this issue, we propose Progressive Dataset Distillation (PDD). PDD synthesizes multiple small sets of synthetic images, each conditioned on the previous sets, and trains the model on the cumulative union of these subsets without requiring additional training time. Our extensive experiments show that PDD can effectively improve the performance of existing dataset distillation methods by up to 4.3\%. In addition, our method for the first time enable generating considerably larger synthetic datasets.},
+  author={Chen, Xuxi and Yang, Yu and Wang, Zhangyang and Mirzasoleiman, Baharan},
+  journal={arXiv preprint arXiv:2310.06982},
+  arxiv={2310.06982},
+  year={Preprints}
+}
+
+@article{watson2023inference,
+  bibtex_show={true},
+  abbr={ArXiv},
+  title={Inference and Interference: The Role of Clipping, Pruning and Loss Landscapes in Differentially Private Stochastic Gradient Descent},
+  abstract={Differentially private stochastic gradient descent (DP-SGD) is known to have poorer training and test performance on large neural networks, compared to ordinary stochastic gradient descent (SGD). In this paper, we perform a detailed study and comparison of the two processes and unveil several new insights. By comparing the behavior of the two processes separately in early and late epochs, we find that while DP-SGD makes slower progress in early stages, it is the behavior in the later stages that determines the end result. This separate analysis of the clipping and noise addition steps of DP-SGD shows that while noise introduces errors to the process, gradient descent can recover from these errors when it is not clipped, and clipping appears to have a larger impact than noise. These effects are amplified in higher dimensions (large neural networks), where the loss basin occupies a lower dimensional space. We argue theoretically and using extensive experiments that magnitude pruning can be a suitable dimension reduction technique in this regard, and find that heavy pruning can improve the test accuracy of DPSGD.},
+  author={Watson, Lauren and Gan, Eric and Dantam, Mohan and Mirzasoleiman, Baharan and Sarkar, Rik},
+  journal={arXiv preprint arXiv:2311.06839},
+  arxiv={2311.06839},
+  year={Preprints}
+}
+
+@article{yang2023safe,
+  bibtex_show={true},
+  abbr={ArXiv},
+  title={Better Safe than Sorry: Pre-training CLIP against Targeted Data Poisoning and Backdoor Attacks},
+  abstract={Contrastive Language-Image Pre-training (CLIP) on large image-caption datasets has achieved remarkable success in zero-shot classification and enabled transferability to new domains. However, CLIP is extremely more vulnerable to targeted data poisoning and backdoor attacks, compared to supervised learning. Perhaps surprisingly, poisoning 0.0001% of CLIP pre-training data is enough to make targeted data poisoning attacks successful. This is four orders of magnitude smaller than what is required to poison supervised models. Despite this vulnerability, existing methods are very limited in defending CLIP models during pre-training. In this work, we propose a strong defense, SAFECLIP, to safely pre-train CLIP against targeted data poisoning and backdoor attacks. SAFECLIP warms up the model by applying unimodal contrastive learning (CL) on image and text modalities separately. Then, it carefully divides the data into safe and risky subsets. SAFECLIP trains on the risky data by applying unimodal CL to image and text modalities separately, and trains on the safe data using the CLIP loss. By gradually increasing the size of the safe subset during the training, SAFECLIP effectively breaks targeted data poisoning and backdoor attacks without harming the CLIP performance. Our extensive experiments show that SAFECLIP decrease the attack success rate of targeted data poisoning attacks from 93.75\% to 0\% and that of the backdoor attacks from 100% to 0%, without harming the CLIP performance on various datasets.},
+  author={Yang., Wenhan and Gao, Jingdong and Mirzasoleiman, Baharan},
+  journal={arXiv preprint arXiv:2310.05862},
+  arxiv={2310.05862},
+  year={Preprints},
+  poison={true}
+}
+
+@article{xu2023ordering,
+  bibtex_show={true},
+  abbr={ArXiv},
+  title={Data Ordering to Speed Up Convergence of Incremental Gradient Methods},
+  abstract={Incremental gradient (IG) methods are popular tools for training machine learning models. Among the existing variants, Stochastic Gradient Descent (SGD) with shuffling is widely adopted due to its faster empirical convergence. Recently, the superior convergence properties of SGD with shuffling over SGD with replacement have been theoretically proven. Nevertheless, it remains an open question if we can find an optimal deterministic ordering of the examples that can further improve the convergence of IG. In this work, we prove that ordering examples based on their gradient norm at the beginning of every epoch effectively improves the convergence of IG with decreasing learning rate, when training (strongly) convex models closer to optimum. Then, we propose two methods to order examples based on their gradient norm. Finally, we prove that our methods can be applied to find mini-batches for improving the convergence of mini-batch SGD, when training non-convex functions, close to a stationary point. We apply our proposed orderings to training linear regression models, as well as a 7-layer neural network on Fashion MNIST, and training ResNet20 on CIFAR10. Our extensive experiments confirm the effectiveness of our proposed methods in various settings.},
+  author={Xu, Yuetong and Mirzasoleiman, Baharan},
+  journal={arXiv preprint arXiv:2306.15848},
+  arxiv={2306.15848},
+  year={Preprints}
+}
+
 @article{joshi2023spuco,
   bibtex_show={true},
   abbr={ArXiv},
@@ -71,10 +116,11 @@
 @article{yang2023robust,
   bibtex_show={true},
   abbr={NeurIPS},
-  title={Robust Contrastive Language-Image Pretraining against Data Poisoning and Backdoor Attacks},
-  abstract={Contrastive vision-language representation learning has achieved state-of-the-art performance for zero-shot classification, by learning from millions of image-caption pairs crawled from the internet. However, the massive data that powers large multimodal models such as CLIP, makes them extremely vulnerable to various types of adversarial attacks, including targeted and backdoor data poisoning attacks. Despite this vulnerability, robust contrastive vision-language pretraining against adversarial attacks has remained unaddressed. In this work, we propose RoCLIP, the first effective method for robust pretraining {and fine-tuning} multimodal vision-language models. RoCLIP effectively breaks the association between poisoned image-caption pairs by considering a pool of random examples, and (1) matching every image with the text that is most similar to its caption in the pool, and (2) matching every caption with the image that is most similar to its image in the pool. Our extensive experiments show that our method renders state-of-the-art targeted data poisoning and backdoor attacks ineffective during pre-training or fine-tuning of CLIP. In particular, RoCLIP decreases the poison and backdoor attack success rates down to 0\% during pre-training and 1\%-4\% during fine-tuning, and effectively improves the model's performance.},
-  pdf={https://arxiv.org/pdf/2303.06854},
-  author={Yang., Wenhan and Mirzasoleiman, Baharan},
+  title={Robust Contrastive Language-Image Pre-training against Data Poisoning and Backdoor Attacks},
+  abstract={Contrastive vision-language representation learning has achieved state-of-the-art performance for zero-shot classification, by learning from millions of image- caption pairs crawled from the internet. However, the massive data that powers large multimodal models such as CLIP, makes them extremely vulnerable to various types of targeted data poisoning and backdoor attacks. Despite this vulnerability, robust contrastive vision-language pre-training against such attacks has remained unaddressed. In this work, we propose ROCLIP, the first effective method for robust pre-training multimodal vision-language models against targeted data poi- soning and backdoor attacks. ROCLIP effectively breaks the association between poisoned image-caption pairs by considering a relatively large and varying pool of random captions, and matching every image with the text that is most similar to it in the pool instead of its own caption, every few epochs.It also leverages image and text augmentations to further strengthen the defense and improve the performance of the model. Our extensive experiments show that ROCLIP renders state-of-the-art targeted data poisoning and backdoor attacks ineffective during pre-training CLIP models. In particular, ROCLIP decreases the success rate for targeted data poisoning attacks from 93.75\% to 12.5\% and that of backdoor attacks down to 0\%, while improving the model’s linear probe performance by 10\% and maintains a similar zero shot performance compared to CLIP. By increasing the frequency of matching, ROCLIP is able to defend strong attacks, which add up to 1\% poisoned examples to the data, and successfully maintain a low attack success rate of 12.5%, while trading off the performance on some tasks.},
+  pdf={yang23robust.pdf},
+  supp={yang23robust_long.pdf},
+  author={Yang., Wenhan and Gao, Jingdong and Mirzasoleiman, Baharan},
   journal={Advances in Neural Information Processing Systems (NeurIPS)},
   year={2023},
   poison={true}
@@ -85,12 +131,28 @@
   abbr={NeurIPS},
   title={Robust Learning with Progressive Data Expansion Against Spurious
   Correlation},
-  abstract={While deep learning models have shown remarkable performance in various tasks, they are susceptible to learning non-generalizable spurious features rather than the core features that are genuinely correlated to the true label. In this paper, beyond existing analyses of linear models, we theoretically examine the learning process of a two-layer nonlinear convolutional neural network in the presence of spurious features. Our analysis suggests that imbalanced data groups and easily learnable spurious features can lead to the dominance of spurious features during the learning process. In light of this, we propose a new training algorithm called PDE that efficiently enhances the model's robustness for a better worst-group performance. PDE begins with a group-balanced subset of training data and progressively expands it to facilitate the learning of the core features. Experiments on synthetic and real-world benchmark datasets confirm the superior performance of our method on models such as ResNets and Transformers. On average, our method achieves a 2.8% improvement in worst-group accuracy compared with the state-of-the-art method, while enjoying up to 10x faster training efficiency.},
+  abstract={While deep learning models have shown remarkable performance in various tasks, they are susceptible to learning non-generalizable spurious features rather than the core features that are genuinely correlated to the true label. In this paper, beyond existing analyses of linear models, we theoretically examine the learning process of a two-layer nonlinear convolutional neural network in the presence of spurious features. Our analysis suggests that imbalanced data groups and easily learnable spurious features can lead to the dominance of spurious features during the learning process. In light of this, we propose a new training algorithm called PDE that efficiently enhances the model’s robustness for a better worst-group performance. PDE begins with a group-balanced subset of training data and progressively expands it to facilitate the learning of the core features. Experiments on synthetic and real-world benchmark datasets confirm the superior performance of our method on models such as ResNets and Transformers. On average, our method achieves a 2.8% improvement in worst-group accuracy compared with the state-of-the-art method, while enjoying up to 10⇥ faster training efficiency.},
   author={Deng*, Yihe and Yang*, Yu and Mirzasoleiman, Baharan and Gu, Quanquan},
   journal={Advances in Neural Information Processing Systems (NeurIPS)},
-  pdf={https://arxiv.org/pdf/2306.04949},
+  pdf={deng23robust.pdf},
+  supp={deng23robust_long.pdf},
   year={2023},
   spurious={true}
+}
+
+@article{kiss2023sleep,
+  bibtex_show={true},
+  abbr={J. Affect. Disord.},
+  title={Sleep, Brain Systems, and Persistent Stress in Early Adolescents During COVID-19: Insights from the ABCD Study},
+  abstract={Purpose: The first year of the COVID-19 pandemic constituted a major life stress event for many adolescents, associated with disrupted school, behaviors, social networks, and health concerns. However, pandemic-related stress was not equivalent for everyone and could have been influenced by pre-pandemic factors including brain structure and sleep, which both undergo substantial development during adolescence. Here, we analyzed clusters of perceived stress levels across the pandemic and determined developmentally relevant pre-pandemic risk factors in brain structure and sleep of persistently high stress during the first year of the COVID-19 pandemic. Methods: We investigated longitudinal changes in perceived stress at six timepoints across the first year of the pandemic (May 2020–March 2021) in 5559 adolescents (50\% female; age range: 11–14 years) in the United States (U.S.) participating in the Adolescent Brain Cognitive Development (ABCD) study. In 3141 of these ad- olescents, we fitted machine learning models to identify the most important pre-pandemic predictors from structural MRI brain measures and self-reported sleep data that were associated with persistently high stress across the first year of the pandemic.
+
+  Results: Patterns of perceived stress levels varied across the pandemic, with 5\% reporting persistently high stress. Our classifiers accurately detected persistently high stress (AUC > 0.7). Pre-pandemic brain structure, specif- ically cortical volume in temporal regions, and cortical thickness in multiple parietal and occipital regions, predicted persistent stress. Pre-pandemic sleep difficulties and short sleep duration were also strong predictors of persistent stress, along with more advanced pubertal stage.
+
+  Conclusions: Adolescents showed variable stress responses during the first year of the COVID-19 pandemic, and some reported persistently high stress across the whole first year. Vulnerability to persistent stress was evident in several brain structural and self-reported sleep measures, collected before the pandemic, suggesting the rele- vance of other pre-existing individual factors beyond pandemic-related factors, for persistently high stress responses.},
+  pdf={kiss23sleep.pdf},
+  author={Kiss, Orsolya and Qu, Zihan and Müller-Oehring, Eva M. and Baker, Fiona C. and Mirzasoleiman, Baharan},
+  journal={Journal of Affective Disorders},
+  year={2023}
 }
 
 @article{yang2023mitigating,
