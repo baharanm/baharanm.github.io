@@ -20,7 +20,7 @@ news: true  # includes a list of news items
 social: true  # includes social icons at the bottom of the page
 ---
 
-I am an Assistant Professor in [Computer Science Department](https://www.cs.ucla.edu/) at [UCLA](https://www.ucla.edu/), where I lead the [BigML](http://web.cs.ucla.edu/~baharan/research.htm) research group.
+I am an Assistant Professor in the [Computer Science Department](https://www.cs.ucla.edu/) at [UCLA](https://www.ucla.edu/), where I lead the [BigML](http://web.cs.ucla.edu/~baharan/research.htm) research group.
                     
 My research aims to address [sustainability, reliability, and efficiency](https://baharanm.github.io/projects/) of machine learning. I am mainly working on improving the <b>big data quality</b>, by developing theoretically rigorous methods to select the most beneficial data for [efficient](projects/#efficiency) and [robust](projects/#robustness) learning. Besides, I am also interested in improving the models and learning algorithms. The resulting methods are broadly applicable for learning from massive datasets across a wide range of applications, such as medical diagnosis and environment sensing.
 
