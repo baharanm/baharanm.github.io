@@ -54,15 +54,15 @@ An example of displaying a tweet:
 
 <br />
 <h5>Undergraduate Students</h5>
-- Kyle Whitecross (not graduated yet)
 - Eric Gan (not graduated yet)
-- Bruce Qu (not graduated yet)
 - Jiayi Ni (not graduated yet)
 - Arnav Jain (not graduated yet)
+- Paymon Haddad (not graduated yet)
 - David Davini (not graduated yet)
 <!-- - Tang Mohan (not graduated yet)  -->
 - Victor Li (not graduated yet)
-- Jiayi Ni (not graduated yet)
+- Bruce Qu (now MSc student at UCLA)
+- Kyle Whitecross (not at Kumo.AI)
 - Yuetong Xu (now PhD student at MIT)
 - Hao Kang (now PhD student at Georgia Tech)
 - Wenhan Yang, Graduated (now PhD student at UCLA)
@@ -71,7 +71,7 @@ An example of displaying a tweet:
 - Yuhan Liu, Graduated (now at Quant Trader)
 
 <h5>Master Students</h5>
-- Zhaoqian Wang (graduating)
+- Zhaoqian Wang 
 - Tedi Zaduri (now PhD student at Princeton)
 - Yuchen Liu (now at Meta)
 - Srinath Naik Ajmeera (now at Amazon)
