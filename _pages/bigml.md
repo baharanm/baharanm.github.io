@@ -68,7 +68,7 @@ An example of displaying a tweet:
 - Wenhan Yang, Graduated (now PhD student at UCLA)
 - Siddharth Joshi, Graduated (now PhD student at UCLA)
 - Tian Yu Liu, Graduated (now PhD student at UCLA)
-- Yuhan Liu, Graduated (now at Quant Trader)
+- Yuhan Liu, Graduated (now at Mission Capital)
 
 <h5>Master Students</h5>
 - Zhaoqian Wang 
