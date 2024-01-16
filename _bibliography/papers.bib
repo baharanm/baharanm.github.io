@@ -3,27 +3,6 @@
 
 @string{aps = {American Physical Society,}}
 
-@article{xue2023robustness,
-  bibtex_show={true},
-  abbr={ArXiv},
-  title={Understanding the Robustness of Multi-modal Contrastive Learning to Distribution Shift},
-  abstract={Recently, multimodal contrastive learning (MMCL) approaches, such as CLIP, have achieved a remarkable success in learning representations that are robust against distribution shift and generalize to new domains. Despite the empirical success, the mechanism behind learning such generalizable representations is not understood. In this work, we rigorously analyze this problem and uncover two mechanisms behind MMCL's robustness: \emph{intra-class contrasting}, which allows the model to learn features with a high variance, and \emph{inter-class feature sharing}, where annotated details in one class help learning other classes better. Both mechanisms prevent spurious features that are over-represented in the training data to overshadow the generalizable core features. This yields superior zero-shot classification accuracy under distribution shift. Furthermore, we theoretically demonstrate the benefits of using rich captions on robustness and explore the effect of annotating different types of details in the captions. We validate our theoretical findings through experiments, including a well-designed synthetic experiment and an experiment involving training CLIP on MS COCO and evaluating the model on variations of shifted ImageNet.},
-  author={Xue, Yihao and Joshi, Siddharth and Nguyen, Dang and Mirzasoleiman, Baharan},
-  journal={arXiv preprint arXiv:2310.04971},
-  arxiv={2310.04971},
-  year={Preprints}
-}
-
-@article{chen2023distillation,
-  bibtex_show={true},
-  abbr={ArXiv},
-  title={Data Distillation Can Be Like Vodka: Distilling More Times For Better Quality},
-  abstract={Dataset distillation aims to minimize the time and memory needed for training deep networks on large datasets, by creating a small set of synthetic images that has a similar generalization performance to that of the full dataset. However, current dataset distillation techniques fall short, showing a notable performance gap when compared to training on the original data. In this work, we are the first to argue that using just one synthetic subset for distillation will not yield optimal generalization performance. This is because the training dynamics of deep networks drastically change during the training. Hence, multiple synthetic subsets are required to capture the training dynamics at different phases of training. To address this issue, we propose Progressive Dataset Distillation (PDD). PDD synthesizes multiple small sets of synthetic images, each conditioned on the previous sets, and trains the model on the cumulative union of these subsets without requiring additional training time. Our extensive experiments show that PDD can effectively improve the performance of existing dataset distillation methods by up to 4.3\%. In addition, our method for the first time enable generating considerably larger synthetic datasets.},
-  author={Chen, Xuxi and Yang, Yu and Wang, Zhangyang and Mirzasoleiman, Baharan},
-  journal={arXiv preprint arXiv:2310.06982},
-  arxiv={2310.06982},
-  year={Preprints}
-}
 
 @article{watson2023inference,
   bibtex_show={true},
@@ -122,6 +101,41 @@
   noise={true}
 }
 ##############################################################
+
+@article{xue2024robustness,
+  bibtex_show={true},
+  abbr={ICLR},
+  title={Understanding the Robustness of Multi-modal Contrastive Learning to Distribution Shift},
+  abstract={Recently, multimodal contrastive learning (MMCL) approaches, such as CLIP, have achieved a remarkable success in learning representations that are robust against distribution shift and generalize to new domains. Despite the empirical success, the mechanism behind learning such generalizable representations is not understood. In this work, we rigorously analyze this problem and uncover two mechanisms behind MMCL's robustness: \emph{intra-class contrasting}, which allows the model to learn features with a high variance, and \emph{inter-class feature sharing}, where annotated details in one class help learning other classes better. Both mechanisms prevent spurious features that are over-represented in the training data to overshadow the generalizable core features. This yields superior zero-shot classification accuracy under distribution shift. Furthermore, we theoretically demonstrate the benefits of using rich captions on robustness and explore the effect of annotating different types of details in the captions. We validate our theoretical findings through experiments, including a well-designed synthetic experiment and an experiment involving training CLIP on MS COCO and evaluating the model on variations of shifted ImageNet.},
+  author={Xue, Yihao and Joshi, Siddharth and Nguyen, Dang and Mirzasoleiman, Baharan},
+  journal={International Conference on Learning Representations (ICLR)},
+  year={2024},
+  spurious={true}
+}
+
+@article{xue2024projection,
+  bibtex_show={true},
+  abbr={ICLR},
+  title={Investigating the Benefits of Projection Head for Representation Learning},
+  abstract={An effective technique for obtaining high-quality representations is adding a projection head on top of the encoder during training, then discarding it and using the pre-projection representations. Despite its proven practical effectiveness, the reason behind the success of this technique is poorly understood. The pre-projection representations are not directly optimized by the loss function, raising the question, what makes them better? In this work, we provide a rigorous theoretical answer to this question. We start by examining linear models trained with self-supervised contrastive loss. We reveal that the implicit bias of training algorithms leads to layerwise progressive feature weighting, where features become increasingly unequal as we go deeper into the layers. Consequently, lower layers tend to have more normalized and less specialized representations. We theoretically characterize scenarios where such representations are more beneficial, highlighting the intricate interplay between data augmentation and input features. Additionally, we demonstrate that introducing non-linearity into the network allows lower layers to learn features that are completely absent in higher layers. Finally, we demonstrate how this mechanism improves the robustness in supervised contrastive learning and supervised learning. We empirically validate our findings through various experiments on CIFAR-10/100, shifted versions of ImageNet, Waterbirds and CelebA datasets.},
+  author={Xue, Yihao and Gan, Eric and Joshi, Siddharth and Mirzasoleiman, Baharan},
+  journal={International Conference on Learning Representations (ICLR)},
+  arxiv={2310.06982},
+  year={2024},
+  spurious={true}
+}
+
+@article{chen2024distillation,
+  bibtex_show={true},
+  abbr={ICLR},
+  title={Data Distillation Can Be Like Vodka: Distilling More Times For Better Quality},
+  abstract={Dataset distillation aims to minimize the time and memory needed for training deep networks on large datasets, by creating a small set of synthetic images that has a similar generalization performance to that of the full dataset. However, current dataset distillation techniques fall short, showing a notable performance gap when compared to training on the original data. In this work, we are the first to argue that using just one synthetic subset for distillation will not yield optimal generalization performance. This is because the training dynamics of deep networks drastically change during the training. Hence, multiple synthetic subsets are required to capture the training dynamics at different phases of training. To address this issue, we propose Progressive Dataset Distillation (PDD). PDD synthesizes multiple small sets of synthetic images, each conditioned on the previous sets, and trains the model on the cumulative union of these subsets without requiring additional training time. Our extensive experiments show that PDD can effectively improve the performance of existing dataset distillation methods by up to 4.3\%. In addition, our method for the first time enable generating considerably larger synthetic datasets.},
+  author={Chen, Xuxi and Yang, Yu and Wang, Zhangyang and Mirzasoleiman, Baharan},
+  journal={International Conference on Learning Representations (ICLR)},
+  arxiv={2310.06982},
+  year={2024},
+  efficient={true}
+}
 
 @article{yang2023robust,
   bibtex_show={true},
