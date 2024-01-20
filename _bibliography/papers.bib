@@ -52,18 +52,6 @@
   spurious={true}
 }
 
-@article{yang2023eliminating,
-  bibtex_show={true},
-  abbr={ArXiv},
-  title={Identifying Spurious Biases Early in Training through the Lens of Simplicity Bias},
-  abstract={Neural networks trained with (stochastic) gradient descent have an inductive bias towards learning simpler solutions. This makes them highly prone to learning simple spurious features that are highly correlated with a label instead of the predictive but more complex core features. In this work, we show that, interestingly, the simplicity bias of gradient descent can be leveraged to identify spurious correlations, early in training. First, we prove on a two-layer neural network, that groups of examples with high spurious correlation are separable based on the model's output, in the initial training iterations. We further show that if spurious features have a small enough noise-to-signal ratio, the network's output on the majority of examples in a class will be almost exclusively determined by the spurious features and will be nearly invariant to the core feature. Finally, we propose SPARE, which separates large groups with spurious correlations early in training, and utilizes importance sampling to alleviate the spurious correlation, by balancing the group sizes. We show that SPARE achieves up to 5.6% higher worst-group accuracy than state-of-the-art methods, while being up to 12x faster. We also show the applicability of SPARE to discover and mitigate spurious correlations in Restricted ImageNet.},
-  author={Yang, Yu and Gan, Eric and Dziugaite, Gintare Karolina and Mirzasoleiman, Baharan},
-  journal={arXiv preprint arXiv:2305.18761},
-  arxiv={2305.18761},
-  year={Preprints},
-  spurious={true}
-}
-
 @article{xue2023eliminating,
   bibtex_show={true},
   abbr={ArXiv},
@@ -102,6 +90,29 @@
 }
 ##############################################################
 
+@article{joshi2024data,
+  bibtex_show={true},
+  abbr={AISTATS},
+  title={Data-Efficient Multi-Modal Learning: Prioritizing Data Quality Over Quantity},
+  abstract={Contrastive Language-Image Pre-training (CLIP) on large-scale image-caption datasets learns representations that can achieve remarkable zero-shot generalization. However, such models require a massive amount of pre-training data. Improving the quality of the pre-training data has been shown to be much more effective in improving CLIP's performance than increasing its volume. Nevertheless, finding a subset of image-caption pairs that provably generalizes on par with the full data when trained on, has remained an open question. In this work, we propose the first theoretically rigorous data selection method for CLIP. We show that subsets that best preserve the cross-covariance of the images and captions of the full data best preserve CLIP's generalization performance. Our extensive experiments on ConceptualCaptions3M demonstrates that subsets of size 5%-10% found by ClipCov over 150% and 40% the accuracy of the next best baseline on ImageNet and its shifted versions. Moreover, we show that our subset exhibits average relative performance improvement over the next best baseline of nearly 50% across 14 downstream datasets.},
+  author={Joshi, Siddharth and Jain, Arnav and Payani, Ali and Mirzasoleiman, Baharan},
+  journal={International Conference on Artificial Intelligence and Statistics (AISTATS)},
+  year={2024},
+  efficient={true}
+}
+
+@article{yang2024eliminating,
+  bibtex_show={true},
+  abbr={AISTATS},
+  title={Identifying Spurious Biases Early in Training through the Lens of Simplicity Bias},
+  abstract={Neural networks trained with (stochastic) gradient descent have an inductive bias towards learning simpler solutions. This makes them highly prone to learning spurious correlations in the training data, that may not hold at test time. In this work, we provide the first theoretical analysis of the effect of simplicity bias on learning spurious correlations. Notably, we show that examples with spurious features are provably separable based on the model’s output early in training. We further illustrate that if spurious features have a small enough noise-to-signal ratio, the network’s output on majority of examples is almost exclusively determined by the spurious features, leading to poor worst-group test accuracy. Finally, we propose SPARE, which identifies spurious correlations early in training, and utilizes importance sampling to alleviate their effect. Empirically, we demonstrate that SPARE outperforms state-of-the-art methods by up to 21.1% in worst-group accuracy, while being up to 12x faster. We also show the applicability of SPARE, as a highly effective but lightweight method, to discover spurious correlations.},
+  author={Yang, Yu and Gan, Eric and Dziugaite, Gintare Karolina and Mirzasoleiman, Baharan},
+  journal={International Conference on Artificial Intelligence and Statistics (AISTATS)},
+  arxiv={2305.18761},
+  year={2024},
+  spurious={true}
+}
+
 @article{xue2024robustness,
   bibtex_show={true},
   abbr={ICLR},
@@ -130,7 +141,7 @@
   abbr={ICLR},
   title={Data Distillation Can Be Like Vodka: Distilling More Times For Better Quality},
   abstract={Dataset distillation aims to minimize the time and memory needed for training deep networks on large datasets, by creating a small set of synthetic images that has a similar generalization performance to that of the full dataset. However, current dataset distillation techniques fall short, showing a notable performance gap when compared to training on the original data. In this work, we are the first to argue that using just one synthetic subset for distillation will not yield optimal generalization performance. This is because the training dynamics of deep networks drastically change during the training. Hence, multiple synthetic subsets are required to capture the training dynamics at different phases of training. To address this issue, we propose Progressive Dataset Distillation (PDD). PDD synthesizes multiple small sets of synthetic images, each conditioned on the previous sets, and trains the model on the cumulative union of these subsets without requiring additional training time. Our extensive experiments show that PDD can effectively improve the performance of existing dataset distillation methods by up to 4.3\%. In addition, our method for the first time enable generating considerably larger synthetic datasets.},
-  author={Chen, Xuxi and Yang, Yu and Wang, Zhangyang and Mirzasoleiman, Baharan},
+  author={Chen*, Xuxi and Yang*, Yu and Wang, Zhangyang and Mirzasoleiman, Baharan},
   journal={International Conference on Learning Representations (ICLR)},
   arxiv={2310.06982},
   year={2024},
