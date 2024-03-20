@@ -245,8 +245,10 @@
           <!-- Links/Buttons -->
           <div class="links">
             <a class="abstract btn btn-sm z-depth-0" role="button">Abs</a>
-            <a href="http://arxiv.org/abs/2310.06982" class="btn btn-sm z-depth-0" role="button" rel="external nofollow noopener" target="_blank">arXiv</a>
             <a class="bibtex btn btn-sm z-depth-0" role="button">Bib</a>
+            <a href="/assets/pdf/chen24_distillation.pdf" class="btn btn-sm z-depth-0" role="button">PDF</a>
+            <a href="/assets/pdf/chen24_distillation_long.pdf" class="btn btn-sm z-depth-0" role="button">Supp</a>
+            <a href="https://github.com/VITA-Group/ProgressiveDD" class="btn btn-sm z-depth-0" role="button" rel="external nofollow noopener" target="_blank">Code</a>
           <!-- -->
           </div>
           
@@ -257,7 +259,7 @@
 
           <!-- Hidden abstract block -->
           <div class="abstract hidden">
-            <p>Dataset distillation aims to minimize the time and memory needed for training deep networks on large datasets, by creating a small set of synthetic images that has a similar generalization performance to that of the full dataset. However, current dataset distillation techniques fall short, showing a notable performance gap when compared to training on the original data. In this work, we are the first to argue that using just one synthetic subset for distillation will not yield optimal generalization performance. This is because the training dynamics of deep networks drastically change during the training. Hence, multiple synthetic subsets are required to capture the training dynamics at different phases of training. To address this issue, we propose Progressive Dataset Distillation (PDD). PDD synthesizes multiple small sets of synthetic images, each conditioned on the previous sets, and trains the model on the cumulative union of these subsets without requiring additional training time. Our extensive experiments show that PDD can effectively improve the performance of existing dataset distillation methods by up to 4.3%. In addition, our method for the first time enable generating considerably larger synthetic datasets.</p>
+            <p>Dataset distillation aims to minimize the time and memory needed for training deep networks on large datasets, by creating a small set of synthetic images that has a similar generalization performance to that of the full dataset. However, current dataset distillation techniques fall short, showing a notable performance gap compared to training on the original data. In this work, we are the first to argue that the use of only one synthetic subset for distillation may not yield optimal generalization performance. This is because the training dynamics of deep networks drastically changes during training. Therefore, multiple synthetic subsets are required to capture the dynamics of training in different stages. To address this issue, we propose Progressive Dataset Distillation (PDD). PDD synthesizes multiple small sets of synthetic images, each conditioned on the previous sets, and trains the model on the cumulative union of these subsets without requiring additional training time. Our extensive experiments show that PDD can effectively improve the performance of existing dataset distillation methods by up to 4.3%. In addition, our method for the first time enables generating considerably larger synthetic datasets. Our codes are available at https://github.com/VITA-Group/ProgressiveDD.</p>
           </div>
 <!-- Hidden bibtex block -->
           <div class="bibtex hidden">

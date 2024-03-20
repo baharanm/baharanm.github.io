@@ -595,7 +595,7 @@
         <div class="col-sm-2 abbr"><abbr class="badge" style="background-color:#95C02B"><a href="https://aistats.org/" rel="external nofollow noopener" target="_blank">AISTATS</a></abbr></div>
 
         <!-- Entry bib key -->
-        <div id="yang2024eliminating" class="col-sm-10">
+        <div id="yang2024identifying" class="col-sm-10">
         <!-- Title -->
         <div class="title">Identifying Spurious Biases Early in Training through the Lens of Simplicity Bias</div>
         <!-- Author -->
@@ -618,8 +618,10 @@
           <!-- Links/Buttons -->
           <div class="links">
             <a class="abstract btn btn-sm z-depth-0" role="button">Abs</a>
-            <a href="http://arxiv.org/abs/2305.18761" class="btn btn-sm z-depth-0" role="button" rel="external nofollow noopener" target="_blank">arXiv</a>
             <a class="bibtex btn btn-sm z-depth-0" role="button">Bib</a>
+            <a href="/assets/pdf/yang24_simplicity.pdf" class="btn btn-sm z-depth-0" role="button">PDF</a>
+            <a href="/assets/pdf/yang24_simplicity_long.pdf" class="btn btn-sm z-depth-0" role="button">Supp</a>
+            <a href="https://github.com/BigML-CS-UCLA/SPARE" class="btn btn-sm z-depth-0" role="button" rel="external nofollow noopener" target="_blank">Code</a>
           <!-- -->
           </div>
           
@@ -630,11 +632,11 @@
 
           <!-- Hidden abstract block -->
           <div class="abstract hidden">
-            <p>Neural networks trained with (stochastic) gradient descent have an inductive bias towards learning simpler solutions. This makes them highly prone to learning spurious correlations in the training data, that may not hold at test time. In this work, we provide the first theoretical analysis of the effect of simplicity bias on learning spurious correlations. Notably, we show that examples with spurious features are provably separable based on the model’s output early in training. We further illustrate that if spurious features have a small enough noise-to-signal ratio, the network’s output on majority of examples is almost exclusively determined by the spurious features, leading to poor worst-group test accuracy. Finally, we propose SPARE, which identifies spurious correlations early in training, and utilizes importance sampling to alleviate their effect. Empirically, we demonstrate that SPARE outperforms state-of-the-art methods by up to 21.1% in worst-group accuracy, while being up to 12x faster. We also show the applicability of SPARE, as a highly effective but lightweight method, to discover spurious correlations.</p>
+            <p>Neural networks trained with (stochastic) gradient descent have an inductive bias towards learning simpler solutions. This makes them highly prone to learning spurious correlations in the training data, that may not hold at test time. In this work, we provide the first theo- retical analysis of the effect of simplicity bias on learning spurious correlations. Notably, we show that examples with spurious features are provably separable based on the model’s output early in training. We further illustrate that if spurious features have a small enough noise-to-signal ratio, the network’s output on majority of examples is almost exclusively determined by the spurious features, leading to poor worst-group test accuracy. Finally, we propose Spare, which identifies spurious correlations early in training, and utilizes importance sampling to alleviate their effect. Empirically, we demonstrate that Spare outperforms state-of-the-art methods by up to 21.1% in worst-group accuracy, while being up to 12x faster. We also show that Spare is a highly effective but lightweight method to discover spurious correlations. Code is available at https://github.com/BigML-CS-UCLA/SPARE.</p>
           </div>
 <!-- Hidden bibtex block -->
           <div class="bibtex hidden">
-            <figure class="highlight"><pre><code class="language-bibtex" data-lang="bibtex"><span class="nc">@article</span><span class="p">{</span><span class="nl">yang2024eliminating</span><span class="p">,</span>
+            <figure class="highlight"><pre><code class="language-bibtex" data-lang="bibtex"><span class="nc">@article</span><span class="p">{</span><span class="nl">yang2024identifying</span><span class="p">,</span>
   <span class="na">title</span> <span class="p">=</span> <span class="s">{Identifying Spurious Biases Early in Training through the Lens of Simplicity Bias}</span><span class="p">,</span>
   <span class="na">author</span> <span class="p">=</span> <span class="s">{Yang, Yu and Gan, Eric and Dziugaite, Gintare Karolina and Mirzasoleiman, Baharan}</span><span class="p">,</span>
   <span class="na">journal</span> <span class="p">=</span> <span class="s">{International Conference on Artificial Intelligence and Statistics (AISTATS)}</span><span class="p">,</span>
@@ -674,8 +676,10 @@
           <!-- Links/Buttons -->
           <div class="links">
             <a class="abstract btn btn-sm z-depth-0" role="button">Abs</a>
-            <a href="http://arxiv.org/abs/2310.04971" class="btn btn-sm z-depth-0" role="button" rel="external nofollow noopener" target="_blank">arXiv</a>
             <a class="bibtex btn btn-sm z-depth-0" role="button">Bib</a>
+            <a href="/assets/pdf/xue24_mmcl.pdf" class="btn btn-sm z-depth-0" role="button">PDF</a>
+            <a href="/assets/pdf/xue24_mmcl_long.pdf" class="btn btn-sm z-depth-0" role="button">Supp</a>
+            <a href="https://yihaoxue.github.io/mmcl-project-page/" class="btn btn-sm z-depth-0" role="button" rel="external nofollow noopener" target="_blank">Website</a>
           <!-- -->
           </div>
           
@@ -686,7 +690,7 @@
 
           <!-- Hidden abstract block -->
           <div class="abstract hidden">
-            <p>Recently, multimodal contrastive learning (MMCL) approaches, such as CLIP, have achieved a remarkable success in learning representations that are robust against distribution shift and generalize to new domains. Despite the empirical success, the mechanism behind learning such generalizable representations is not understood. In this work, we rigorously analyze this problem and uncover two mechanisms behind MMCL’s robustness: \emphintra-class contrasting, which allows the model to learn features with a high variance, and \emphinter-class feature sharing, where annotated details in one class help learning other classes better. Both mechanisms prevent spurious features that are over-represented in the training data to overshadow the generalizable core features. This yields superior zero-shot classification accuracy under distribution shift. Furthermore, we theoretically demonstrate the benefits of using rich captions on robustness and explore the effect of annotating different types of details in the captions. We validate our theoretical findings through experiments, including a well-designed synthetic experiment and an experiment involving training CLIP on MS COCO and evaluating the model on variations of shifted ImageNet.</p>
+            <p>Recently, multimodal contrastive learning (MMCL) approaches, such as CLIP (Radford et al., 2021), have achieved a remarkable success in learning representations that are robust against distribution shift and generalize to new domains. Despite the empirical success, the mechanism behind learning such generalizable representations is not understood. In this work, we rigorously analyze this problem and uncover two mechanisms behind MMCL’s robustness: intra-class contrasting, which allows the model to learn features with a high variance, and inter-class feature sharing, where annotated details in one class help learning other classes better. Both mechanisms prevent spurious features that are over-represented in the training data to overshadow the generalizable core features. This yields superior zero-shot classification accuracy under distribution shift. Furthermore, we theoretically demonstrate the benefits of using rich captions on robustness and explore the effect of annotating different types of details in the captions. We validate our theoretical findings through experiments, including a well-designed synthetic experiment and an experiment involving training CLIP models on MSCOCO (Lin et al., 2014)/Conceptual Captions (Sharma et al., 2018) and evaluating them on shifted ImageNets.</p>
           </div>
 <!-- Hidden bibtex block -->
           <div class="bibtex hidden">
@@ -731,6 +735,8 @@
           <div class="links">
             <a class="abstract btn btn-sm z-depth-0" role="button">Abs</a>
             <a class="bibtex btn btn-sm z-depth-0" role="button">Bib</a>
+            <a href="/assets/pdf/xue24_projection.pdf" class="btn btn-sm z-depth-0" role="button">PDF</a>
+            <a href="/assets/pdf/xue24_projection_long.pdf" class="btn btn-sm z-depth-0" role="button">Supp</a>
           <!-- -->
           </div>
           
@@ -741,7 +747,7 @@
 
           <!-- Hidden abstract block -->
           <div class="abstract hidden">
-            <p>An effective technique for obtaining high-quality representations is adding a projection head on top of the encoder during training, then discarding it and using the pre-projection representations. Despite its proven practical effectiveness, the reason behind the success of this technique is poorly understood. The pre-projection representations are not directly optimized by the loss function, raising the question, what makes them better? In this work, we provide a rigorous theoretical answer to this question. We start by examining linear models trained with self-supervised contrastive loss. We reveal that the implicit bias of training algorithms leads to layerwise progressive feature weighting, where features become increasingly unequal as we go deeper into the layers. Consequently, lower layers tend to have more normalized and less specialized representations. We theoretically characterize scenarios where such representations are more beneficial, highlighting the intricate interplay between data augmentation and input features. Additionally, we demonstrate that introducing non-linearity into the network allows lower layers to learn features that are completely absent in higher layers. Finally, we demonstrate how this mechanism improves the robustness in supervised contrastive learning and supervised learning. We empirically validate our findings through various experiments on CIFAR-10/100, shifted versions of ImageNet, Waterbirds and CelebA datasets.</p>
+            <p>An effective technique for obtaining high-quality representations is adding a projection head on top of the encoder during training, then discarding it and using the pre-projection representations. Despite its proven practical effectiveness, the reason behind the success of this technique is poorly understood. The pre-projection representations are not directly optimized by the loss function, raising the question: what makes them better? In this work, we provide a rigorous theoretical answer to this question. We start by examining linear models trained with self-supervised contrastive loss. We reveal that the implicit bias of training algorithms leads to layer-wise progressive feature weighting, where features become increasingly unequal as we go deeper into the layers. Consequently, lower layers tend to have more normal- ized and less specialized representations. We theoretically characterize scenarios where such representations are more beneficial, highlighting the intricate interplay between data augmentation and input features. Additionally, we demonstrate that introducing non-linearity into the network allows lower layers to learn features that are completely absent in higher layers. Finally, we show how this mechanism improves the robustness in supervised contrastive learning and supervised learning. We empirically validate our results through various experiments on CIFAR-10/100, UrbanCars and shifted versions of ImageNet. We also introduce a potential alternative to projection head, which offers a more interpretable and controllable design.</p>
           </div>
 <!-- Hidden bibtex block -->
           <div class="bibtex hidden">
@@ -785,8 +791,10 @@
           <!-- Links/Buttons -->
           <div class="links">
             <a class="abstract btn btn-sm z-depth-0" role="button">Abs</a>
-            <a href="http://arxiv.org/abs/2310.06982" class="btn btn-sm z-depth-0" role="button" rel="external nofollow noopener" target="_blank">arXiv</a>
             <a class="bibtex btn btn-sm z-depth-0" role="button">Bib</a>
+            <a href="/assets/pdf/chen24_distillation.pdf" class="btn btn-sm z-depth-0" role="button">PDF</a>
+            <a href="/assets/pdf/chen24_distillation_long.pdf" class="btn btn-sm z-depth-0" role="button">Supp</a>
+            <a href="https://github.com/VITA-Group/ProgressiveDD" class="btn btn-sm z-depth-0" role="button" rel="external nofollow noopener" target="_blank">Code</a>
           <!-- -->
           </div>
           
@@ -797,7 +805,7 @@
 
           <!-- Hidden abstract block -->
           <div class="abstract hidden">
-            <p>Dataset distillation aims to minimize the time and memory needed for training deep networks on large datasets, by creating a small set of synthetic images that has a similar generalization performance to that of the full dataset. However, current dataset distillation techniques fall short, showing a notable performance gap when compared to training on the original data. In this work, we are the first to argue that using just one synthetic subset for distillation will not yield optimal generalization performance. This is because the training dynamics of deep networks drastically change during the training. Hence, multiple synthetic subsets are required to capture the training dynamics at different phases of training. To address this issue, we propose Progressive Dataset Distillation (PDD). PDD synthesizes multiple small sets of synthetic images, each conditioned on the previous sets, and trains the model on the cumulative union of these subsets without requiring additional training time. Our extensive experiments show that PDD can effectively improve the performance of existing dataset distillation methods by up to 4.3%. In addition, our method for the first time enable generating considerably larger synthetic datasets.</p>
+            <p>Dataset distillation aims to minimize the time and memory needed for training deep networks on large datasets, by creating a small set of synthetic images that has a similar generalization performance to that of the full dataset. However, current dataset distillation techniques fall short, showing a notable performance gap compared to training on the original data. In this work, we are the first to argue that the use of only one synthetic subset for distillation may not yield optimal generalization performance. This is because the training dynamics of deep networks drastically changes during training. Therefore, multiple synthetic subsets are required to capture the dynamics of training in different stages. To address this issue, we propose Progressive Dataset Distillation (PDD). PDD synthesizes multiple small sets of synthetic images, each conditioned on the previous sets, and trains the model on the cumulative union of these subsets without requiring additional training time. Our extensive experiments show that PDD can effectively improve the performance of existing dataset distillation methods by up to 4.3%. In addition, our method for the first time enables generating considerably larger synthetic datasets. Our codes are available at https://github.com/VITA-Group/ProgressiveDD.</p>
           </div>
 <!-- Hidden bibtex block -->
           <div class="bibtex hidden">
