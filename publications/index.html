@@ -262,7 +262,7 @@
         <!-- Entry bib key -->
         <div id="xue2023eliminating" class="col-sm-10">
         <!-- Title -->
-        <div class="title">Eliminating Spurious Correlations from Pre-trained Models via Data Mixing</div>
+        <div class="title">Few-shot Adaption to Distribution Shifts By Mixing Source and Target Embeddings</div>
         <!-- Author -->
         <div class="author">
         
@@ -295,12 +295,12 @@
 
           <!-- Hidden abstract block -->
           <div class="abstract hidden">
-            <p>Machine learning models pre-trained on large datasets have achieved remarkable convergence and robustness properties. However, these models often exploit spurious correlations between certain attributes and labels, which are prevalent in the majority of examples within specific categories but are not predictive of these categories in general. The learned spurious correlations may persist even after fine-tuning on new data, which degrades models’ performance on examples that do not exhibit the spurious correlation. In this work, we propose a simple and highly effective method to eliminate spurious correlations from pre-trained models. The key idea of our method is to leverage a small set of examples with spurious attributes, and balance the spurious attributes across all classes via data mixing. We theoretically confirm the effectiveness of our method, and empirically demonstrate its state-of-the-art performance on various vision and NLP tasks, including eliminating spurious correlations from pre-trained ResNet50 on Waterbirds and CelebA, adversarially pre-trained ResNet50 on ImageNet, and BERT pre-trained on CivilComments.</p>
+            <p>Pretrained machine learning models need to be adapted to distribution shifts when deployed in new target environments. When obtaining labeled data from the target distribution is expensive, few-shot adaptation with only a few examples from the target distribution becomes essential. In this work, we propose MixPro, a lightweight and highly data-efficient approach for few-shot adaptation. MixPro first generates a relatively large dataset by mixing (linearly combining) pre-trained embeddings of large source data with those of the few target examples. This process preserves important features of both source and target distributions, while mitigating the specific noise in the small target data. Then, it trains a linear classifier on the mixed embeddings to effectively adapts the model to the target distribution without overfitting the small target data. Theoretically, we demonstrate the advantages of MixPro over previous methods. Our experiments, conducted across various model architectures on 8 datasets featuring different types of distribution shifts, reveal that MixPro can outperform baselines by up to 7%, with only 2-4 target examples.</p>
           </div>
 <!-- Hidden bibtex block -->
           <div class="bibtex hidden">
             <figure class="highlight"><pre><code class="language-bibtex" data-lang="bibtex"><span class="nc">@article</span><span class="p">{</span><span class="nl">xue2023eliminating</span><span class="p">,</span>
-  <span class="na">title</span> <span class="p">=</span> <span class="s">{Eliminating Spurious Correlations from Pre-trained Models via Data Mixing}</span><span class="p">,</span>
+  <span class="na">title</span> <span class="p">=</span> <span class="s">{Few-shot Adaption to Distribution Shifts By Mixing Source and Target Embeddings}</span><span class="p">,</span>
   <span class="na">author</span> <span class="p">=</span> <span class="s">{Xue, Yihao and Payani, Ali and Yang, Yu and Mirzasoleiman, Baharan}</span><span class="p">,</span>
   <span class="na">journal</span> <span class="p">=</span> <span class="s">{arXiv preprint arXiv:2305.14521}</span><span class="p">,</span>
   <span class="na">year</span> <span class="p">=</span> <span class="s">{Preprints}</span><span class="p">,</span>
