@@ -65,41 +65,37 @@
 }
 
 
+##############################################################
 @article{yang2023contrastive,
   bibtex_show={true},
-  abbr={ArXiv},
+  abbr={UAI},
   title={Graph Contrastive Learning under Heterophily},
-  arxiv={2303.06344},
   abstract={Graph Neural Networks are powerful tools for learning node representations when task-specific node labels are available. However, obtaining labels for graphs is expensive in many applications. This is particularly the case for large graphs. To address this, there has been a body of work to learn node representations in a self-supervised manner without labels. Contrastive learning (CL), has been particularly popular to learn representations in a self-supervised manner. In general, CL methods work by maximizing the similarity between representations of augmented views of the same example, and minimizing the similarity between augmented views of different examples. However, existing graph CL methods cannot learn high-quality representations under heterophily, where connected nodes tend to belong to different classes. This is because under heterophily, augmentations of the same example may not be similar to each other. In this work, we address the above problem by proposing the first graph CL method, HLCL, for learning node representations, under heterophily. HLCL uses a high-pass and a low-pass graph filter to generate different views of the same node. Then, it contrasts the two filtered views to learn the final node representations. Effectively, the high-pass filter captures the dissimilarity between nodes in a neighborhood and the low-pass filter captures the similarity between neighboring nodes.Contrasting the two filtered views allows HLCL to learn rich node representations for graphs, under heterophily and homophily.Empirically, HLCL outperforms state-of-the-art graph CL methods on benchmark heterophily datasets and large-scale real-world datasets by up to 10%.},
   author={Yang., Wenhan and Mirzasoleiman, Baharan},
-  journal={arXiv preprint arXiv:2303.06344},
+  journal={Conference on Uncertainty in Artificial Intelligence (UAI)},
   arxiv={2303.06344},
-  year={Preprints}
+  year={2024}
 }
 
 @article{xue2022final,
   bibtex_show={true},
-  abbr={ArXiv},
+  abbr={UAI},
   title={The Final Ascent: When Bigger Models Generalize Worse on Noisy-Labeled Data},
   abstract={Increasing the size of overparameterized neural networks has been shown to improve their generalization performance. However, real-world datasets often contain a significant fraction of noisy labels, which can drastically harm the performance of the models trained on them. In this work, we study how neural networks' test loss changes with model size when the training set contains noisy labels. We show that under a sufficiently large noise-to-sample size ratio, generalization error eventually increases with model size. First, we provide a theoretical analysis on random feature regression and show that this phenomenon occurs as the variance of the generalization loss experiences a second ascent under large noise-to-sample size ratio. Then, we present extensive empirical evidence confirming that our theoretical results hold for neural networks. Furthermore, we empirically observe that the adverse effect of network size is more pronounced when robust training methods are employed to learn from noisy-labeled data. Our results have important practical implications: First, larger models should be employed with extra care, particularly when trained on smaller dataset or using robust learning methods. Second, a large sample size can alleviate the effect of noisy labels and allow larger models to achieve a superior performance even under noise.},
   author={Xue, Yihao and Whitecross, Kyle and Mirzasoleiman, Baharan},
-  journal={arXiv preprint arXiv:2208.08003},
+  journal={Conference on Uncertainty in Artificial Intelligence (UAI)},
   arxiv={2208.08003},
-  year={Preprints},
+  year={2024},
   noise={true}
 }
-##############################################################
 
 @article{joshi2024data,
   bibtex_show={true},
   abbr={AISTATS},
   title={Data-Efficient Contrastive Multi-Modal Learning: Prioritizing Data Quality Over Quantity},
-  abstract={Contrastive Language-Image Pre-training (CLIP) on large-scale image-caption datasets learns representations that can achieve re- markable zero-shot generalization. However, such models require a massive amount of pre-training data. Improving the quality of the pre-training data has been shown to be much more e↵ective in improving CLIP’s performance than increasing its vol- ume. Nevertheless, finding small subsets of training data that provably generalize the best has remained an open question. In this work, we propose the first theo- retically rigorous data selection method for CLIP. We show that subsets that closely preserve the cross-covariance of the im- ages and captions of the full data prov- ably achieve a superior generalization per- formance. Our extensive experiments on ConceptualCaptions3M and ConceptualCap- tions12M demonstrate that subsets found by ClipCov achieve over 2.7x and 1.4x the ac- curacy of the next best baseline on ImageNet and its shifted versions. Moreover, we show that our subsets obtain 1.5x the average ac- curacy across 11 downstream datasets, of the next best baseline. The code is available at: https://github.com/BigML-CS-UCLA/clipcov-data-efficient-clip.},
+  abstract={Contrastive Language-Image Pre-training (CLIP) on large-scale image-caption datasets learns representations that can achieve remarkable zero-shot generalization. However, such models require a massive amount of pre-training data. Improving the quality of the pre-training data has been shown to be much more effective in improving CLIP's performance than increasing its volume. Nevertheless, finding a subset of image-caption pairs that provably generalizes on par with the full data when trained on, has remained an open question. In this work, we propose the first theoretically rigorous data selection method for CLIP. We show that subsets that best preserve the cross-covariance of the images and captions of the full data best preserve CLIP's generalization performance. Our extensive experiments on ConceptualCaptions3M demonstrates that subsets of size 5%-10% found by ClipCov over 150% and 40% the accuracy of the next best baseline on ImageNet and its shifted versions. Moreover, we show that our subset exhibits average relative performance improvement over the next best baseline of nearly 50% across 14 downstream datasets.},
   author={Joshi, Siddharth and Jain, Arnav and Payani, Ali and Mirzasoleiman, Baharan},
   journal={International Conference on Artificial Intelligence and Statistics (AISTATS)},
-  pdf={joshi24mmcl.pdf},
-  supp={joshi24mmcl_long.pdf},
-  code={https://github.com/BigML-CS-UCLA/clipcov-data-efficient-clip},
   year={2024},
   efficient={true}
 }
@@ -141,7 +137,6 @@
   journal={International Conference on Learning Representations (ICLR)},
   pdf={xue24_projection.pdf},
   supp={xue24_projection_long.pdf},
-  website={https://yihaoxue.github.io/projection-head-project-page/},
   year={2024},
   spurious={true}
 }
@@ -803,6 +798,7 @@
   title={Big data summarization using submodular functions},
   author={Mirzasoleiman, Baharan},
   year={Thesis},
+  pdf={baharan-thesis.pdf},
   school={ETH Zurich, 2017}
 }
 
