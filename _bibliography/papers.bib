@@ -15,17 +15,6 @@
   year={1900}
 }
 
-@article{yang2023safe,
-  bibtex_show={true},
-  abbr={ArXiv},
-  title={Better Safe than Sorry: Pre-training CLIP against Targeted Data Poisoning and Backdoor Attacks},
-  abstract={Contrastive Language-Image Pre-training (CLIP) on large image-caption datasets has achieved remarkable success in zero-shot classification and enabled transferability to new domains. However, CLIP is extremely more vulnerable to targeted data poisoning and backdoor attacks, compared to supervised learning. Perhaps surprisingly, poisoning 0.0001% of CLIP pre-training data is enough to make targeted data poisoning attacks successful. This is four orders of magnitude smaller than what is required to poison supervised models. Despite this vulnerability, existing methods are very limited in defending CLIP models during pre-training. In this work, we propose a strong defense, SAFECLIP, to safely pre-train CLIP against targeted data poisoning and backdoor attacks. SAFECLIP warms up the model by applying unimodal contrastive learning (CL) on image and text modalities separately. Then, it carefully divides the data into safe and risky subsets. SAFECLIP trains on the risky data by applying unimodal CL to image and text modalities separately, and trains on the safe data using the CLIP loss. By gradually increasing the size of the safe subset during the training, SAFECLIP effectively breaks targeted data poisoning and backdoor attacks without harming the CLIP performance. Our extensive experiments show that SAFECLIP decrease the attack success rate of targeted data poisoning attacks from 93.75\% to 0\% and that of the backdoor attacks from 100% to 0%, without harming the CLIP performance on various datasets.},
-  author={Yang., Wenhan and Gao, Jingdong and Mirzasoleiman, Baharan},
-  journal={arXiv preprint arXiv:2310.05862},
-  arxiv={2310.05862},
-  year={Preprints},
-  poison={true}
-}
 
 @article{xu2023ordering,
   bibtex_show={true},
@@ -52,20 +41,46 @@
   spurious={true}
 }
 
-@article{xue2023eliminating,
-  bibtex_show={true},
-  abbr={ArXiv},
-  title={Few-shot Adaption to Distribution Shifts By Mixing Source and Target Embeddings},
-  abstract={Pretrained machine learning models need to be adapted to distribution shifts when deployed in new target environments. When obtaining labeled data from the target distribution is expensive, few-shot adaptation with only a few examples from the target distribution becomes essential. In this work, we propose MixPro, a lightweight and highly data-efficient approach for few-shot adaptation. MixPro first generates a relatively large dataset by mixing (linearly combining) pre-trained embeddings of large source data with those of the few target examples. This process preserves important features of both source and target distributions, while mitigating the specific noise in the small target data. Then, it trains a linear classifier on the mixed embeddings to effectively adapts the model to the target distribution without overfitting the small target data. Theoretically, we demonstrate the advantages of MixPro over previous methods. Our experiments, conducted across various model architectures on 8 datasets featuring different types of distribution shifts, reveal that MixPro can outperform baselines by up to 7\%, with only 2-4 target examples.},
-  author={Xue, Yihao and Payani, Ali and Yang, Yu and Mirzasoleiman, Baharan},
-  journal={arXiv preprint arXiv:2305.14521},
-  arxiv={2305.14521},
-  year={Preprints},
-  spurious={true}
-}
+
 
 
 ##############################################################
+
+@article{yang2023safe,
+  bibtex_show={true},
+  abbr={ICML},
+  title={Better Safe than Sorry: Pre-training CLIP against Targeted Data Poisoning and Backdoor Attacks},
+  abstract={Contrastive Language-Image Pre-training (CLIP) on large image-caption datasets has achieved remarkable success in zero-shot classification and enabled transferability to new domains. However, CLIP is extremely more vulnerable to targeted data poisoning and backdoor attacks, compared to supervised learning. Perhaps surprisingly, poisoning 0.0001% of CLIP pre-training data is enough to make targeted data poisoning attacks successful. This is four orders of magnitude smaller than what is required to poison supervised models. Despite this vulnerability, existing methods are very limited in defending CLIP models during pre-training. In this work, we propose a strong defense, SAFECLIP, to safely pre-train CLIP against targeted data poisoning and backdoor attacks. SAFECLIP warms up the model by applying unimodal contrastive learning (CL) on image and text modalities separately. Then, it divides the data into safe and risky sets, by applying a Gaussian Mixture Model to the cosine similarity of image-caption pair representations. SAFECLIP pre-trains the model by applying the CLIP loss to the safe set and applying unimodal CL to image and text modalities of the risky set separately. By gradually increasing the size of the safe set during pre-training, SAFECLIP effectively breaks targeted data poisoning and backdoor attacks without harming the CLIP performance. Our extensive experiments on CC3M, Visual Genome and MSCOCO demonstrate that SAFECLIP significantly reduces the success rate of targeted data poisoning attacks from 93.75% to 0% and that of various backdoor attacks from up to 100% to 0%, without harming CLIP’s performance.},
+  author={Yang., Wenhan and Gao, Jingdong and Mirzasoleiman, Baharan},
+  journal={International Conference on Machine Learning (ICML)},
+  arxiv={2310.05862},
+  year={2024},
+  poison={true}
+}
+
+@article{xue2024fewshot,
+  bibtex_show={true},
+  abbr={ICML},
+  title={Pretrained machine learning models need to be adapted to distribution shifts when deployed in new target environments. When obtaining labeled data from the target distribution is expensive, few-shot adaptation with only a few examples from the target distribution becomes essential. In this work, we propose MixPro, a lightweight and highly data-efficient approach for few-shot adaptation. MixPro first generates a relatively large dataset by mixing (linearly combining) pre-trained embeddings of large source data with those of the few target examples. This process preserves important features of both source and target distributions, while mitigating the specific noise in the small target data. Then, it trains a linear classifier on the mixed embeddings to effectively adapts the model to the target distribution without overfitting the small target data. Theoretically, we demonstrate the advantages of MixPro over previous methods. Our experiments, conducted across various model architectures on 8 datasets featuring different types of distribution shifts, reveal that MixPro can outperform baselines by as much as 7%, with only 2-4 target examples.},
+  author={Xue, Yihao and Payani, Ali and Yang, Yu and Mirzasoleiman, Baharan},
+  journal={International Conference on Machine Learning (ICML)},
+  arxiv={2305.14521},
+  year={2024},
+  spurious={true}
+}
+
+@article{lu2024newrf,
+  bibtex_show={true},
+  abbr={ICML},
+  title={NeWRF: A Deep Learning Framework for Wireless Radiation Field Reconstruction and Channel Prediction},
+  abstract={We present NeWRF, a deep learning framework for predicting wireless channels. Wireless channel prediction is a long-standing problem in the wireless community and is a key technology for improving the coverage of wireless network deployments. Today, a wireless deployment is evaluated by a site survey which is a cumbersome process requiring an experienced engineer to perform extensive channel measurements. To reduce the cost of site surveys, we develop NeWRF, which is based on recent advances in Neural Radiance Fields (NeRF). NeWRF trains a neural network model with a sparse set of channel measurements, and predicts the wireless channel accurately in any location in the site. We introduce a series of techniques that integrate wireless propagation properties into the NeWRF framework to account for the fundamental differences between the behavior of light and wireless signals. We conduct extensive evaluations of our framework and show that our approach can accurately predict channels at unvisited locations with significantly lower measurement density than the prior state-of-the-art.},
+  author={Lu, Haofan and Vattheuer, Vattheuer and Mirzasoleiman, Baharan and Abari, Omid},
+  journal={International Conference on Machine Learning (ICML)},
+  arxiv={2403.03241},
+  year={2024},
+  spurious={true}
+}
+
 @article{yang2023contrastive,
   bibtex_show={true},
   abbr={UAI},
