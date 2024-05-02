@@ -139,7 +139,63 @@
             <!-- _pages/publications.md -->
 <div class="publications">
   <h2 class="year">Preprints</h2>
-  <ol class="bibliography"><li>
+  <ol class="bibliography">
+<li>
+<!-- _layouts/bib.html -->
+      <div class="row">
+        <div class="col-sm-2 abbr"><abbr class="badge">ArXiv</abbr></div>
+
+        <!-- Entry bib key -->
+        <div id="nguyen2024data" class="col-sm-10">
+        <!-- Title -->
+        <div class="title">Make the Most of Your Data: Changing the Training Data Distribution to Improve In-distribution Generalization Performance</div>
+        <!-- Author -->
+        <div class="author">
+        
+
+        <a href="https://hsgser.github.io/" rel="external nofollow noopener" target="_blank">Dang Nguyen</a>, Paymon Haddad, Eric Gan, and <a href="https://baharanm.github.io/">Baharan Mirzasoleiman</a>
+</div>
+
+        <!-- Journal/Book title and date -->
+        
+        
+        <div class="periodical">
+          <em>arXiv preprint arXiv:2306.11957</em>, Preprints
+        </div>
+        <div class="periodical">
+          
+        </div>
+
+          <!-- Links/Buttons -->
+          <div class="links">
+            <a class="abstract btn btn-sm z-depth-0" role="button">Abs</a>
+            <a href="http://arxiv.org/abs/2404.17768" class="btn btn-sm z-depth-0" role="button" rel="external nofollow noopener" target="_blank">arXiv</a>
+            <a class="bibtex btn btn-sm z-depth-0" role="button">Bib</a>
+          <!-- -->
+          </div>
+          
+          <div class="badges">
+            <span class="altmetric-embed" data-hide-no-mentions="true" data-hide-less-than="15" data-badge-type="2" data-badge-popover="right"></span>
+              <span class="__dimensions_badge_embed__" data-pmid="" data-hide-zero-citations="true" data-style="small_rectangle" data-legend="hover-right" style="margin-bottom: 3px;"></span>
+          </div>
+
+          <!-- Hidden abstract block -->
+          <div class="abstract hidden">
+            <p>Can we modify the training data distribution to encourage the underlying optimization method toward finding solutions with superior generalization performance on in-distribution data? In this work, we approach this question for the first time by comparing the inductive bias of gradient descent (GD) with that of sharpness-aware minimization (SAM). By studying a two-layer CNN, we prove that SAM learns easy and difficult features more uniformly, particularly in early epochs. That is, SAM is less susceptible to simplicity bias compared to GD. Based on this observation, we propose USEFUL, an algorithm that clusters examples based on the network output early in training and upsamples examples with no easy features to alleviate the pitfalls of the simplicity bias. We show empirically that modifying the training data distribution in this way effectively improves the generalization performance on the original data distribution when training with (S)GD by mimicking the training dynamics of SAM. Notably, we demonstrate that our method can be combined with SAM and existing data augmentation strategies to achieve, to the best of our knowledge, state-of-the-art performance for training ResNet18 on CIFAR10, STL10, CINIC10, Tiny-ImageNet; ResNet34 on CIFAR100; and VGG19 and DenseNet121 on CIFAR10.</p>
+          </div>
+<!-- Hidden bibtex block -->
+          <div class="bibtex hidden">
+            <figure class="highlight"><pre><code class="language-bibtex" data-lang="bibtex"><span class="nc">@article</span><span class="p">{</span><span class="nl">nguyen2024data</span><span class="p">,</span>
+  <span class="na">title</span> <span class="p">=</span> <span class="s">{Make the Most of Your Data: Changing the Training Data Distribution to Improve In-distribution Generalization Performance}</span><span class="p">,</span>
+  <span class="na">author</span> <span class="p">=</span> <span class="s">{Nguyen, Dang and Haddad, Paymon and Gan, Eric and and Mirzasoleiman, Baharan}</span><span class="p">,</span>
+  <span class="na">journal</span> <span class="p">=</span> <span class="s">{arXiv preprint arXiv:2306.11957}</span><span class="p">,</span>
+  <span class="na">year</span> <span class="p">=</span> <span class="s">{Preprints}</span>
+<span class="p">}</span></code></pre></figure>
+          </div>
+        </div>
+      </div>
+</li>
+<li>
 <!-- _layouts/bib.html -->
       <div class="row">
         <div class="col-sm-2 abbr"><abbr class="badge">ArXiv</abbr></div>
@@ -196,7 +252,8 @@
           </div>
         </div>
       </div>
-</li></ol>
+</li>
+</ol>
 
   <h2 class="year">2024</h2>
   <ol class="bibliography">
@@ -264,7 +321,7 @@
         <!-- Entry bib key -->
         <div id="xue2024fewshot" class="col-sm-10">
         <!-- Title -->
-        <div class="title">Pretrained machine learning models need to be adapted to distribution shifts when deployed in new target environments. When obtaining labeled data from the target distribution is expensive, few-shot adaptation with only a few examples from the target distribution becomes essential. In this work, we propose MixPro, a lightweight and highly data-efficient approach for few-shot adaptation. MixPro first generates a relatively large dataset by mixing (linearly combining) pre-trained embeddings of large source data with those of the few target examples. This process preserves important features of both source and target distributions, while mitigating the specific noise in the small target data. Then, it trains a linear classifier on the mixed embeddings to effectively adapts the model to the target distribution without overfitting the small target data. Theoretically, we demonstrate the advantages of MixPro over previous methods. Our experiments, conducted across various model architectures on 8 datasets featuring different types of distribution shifts, reveal that MixPro can outperform baselines by as much as 7%, with only 2-4 target examples.</div>
+        <div class="title">Few-shot Adaption to Distribution Shifts By Mixing Source and Target Embeddings</div>
         <!-- Author -->
         <div class="author">
         
@@ -284,6 +341,7 @@
 
           <!-- Links/Buttons -->
           <div class="links">
+            <a class="abstract btn btn-sm z-depth-0" role="button">Abs</a>
             <a href="http://arxiv.org/abs/2305.14521" class="btn btn-sm z-depth-0" role="button" rel="external nofollow noopener" target="_blank">arXiv</a>
             <a class="bibtex btn btn-sm z-depth-0" role="button">Bib</a>
           <!-- -->
@@ -294,10 +352,14 @@
               <span class="__dimensions_badge_embed__" data-pmid="" data-hide-zero-citations="true" data-style="small_rectangle" data-legend="hover-right" style="margin-bottom: 3px;"></span>
           </div>
 
-          <!-- Hidden bibtex block -->
+          <!-- Hidden abstract block -->
+          <div class="abstract hidden">
+            <p>Pretrained machine learning models need to be adapted to distribution shifts when deployed in new target environments. When obtaining labeled data from the target distribution is expensive, few-shot adaptation with only a few examples from the target distribution becomes essential. In this work, we propose MixPro, a lightweight and highly data-efficient approach for few-shot adaptation. MixPro first generates a relatively large dataset by mixing (linearly combining) pre-trained embeddings of large source data with those of the few target examples. This process preserves important features of both source and target distributions, while mitigating the specific noise in the small target data. Then, it trains a linear classifier on the mixed embeddings to effectively adapts the model to the target distribution without overfitting the small target data. Theoretically, we demonstrate the advantages of MixPro over previous methods. Our experiments, conducted across various model architectures on 8 datasets featuring different types of distribution shifts, reveal that MixPro can outperform baselines by as much as 7%, with only 2-4 target examples.</p>
+          </div>
+<!-- Hidden bibtex block -->
           <div class="bibtex hidden">
             <figure class="highlight"><pre><code class="language-bibtex" data-lang="bibtex"><span class="nc">@article</span><span class="p">{</span><span class="nl">xue2024fewshot</span><span class="p">,</span>
-  <span class="na">title</span> <span class="p">=</span> <span class="s">{Pretrained machine learning models need to be adapted to distribution shifts when deployed in new target environments. When obtaining labeled data from the target distribution is expensive, few-shot adaptation with only a few examples from the target distribution becomes essential. In this work, we propose MixPro, a lightweight and highly data-efficient approach for few-shot adaptation. MixPro first generates a relatively large dataset by mixing (linearly combining) pre-trained embeddings of large source data with those of the few target examples. This process preserves important features of both source and target distributions, while mitigating the specific noise in the small target data. Then, it trains a linear classifier on the mixed embeddings to effectively adapts the model to the target distribution without overfitting the small target data. Theoretically, we demonstrate the advantages of MixPro over previous methods. Our experiments, conducted across various model architectures on 8 datasets featuring different types of distribution shifts, reveal that MixPro can outperform baselines by as much as 7%, with only 2-4 target examples.}</span><span class="p">,</span>
+  <span class="na">title</span> <span class="p">=</span> <span class="s">{Few-shot Adaption to Distribution Shifts By Mixing Source and Target Embeddings}</span><span class="p">,</span>
   <span class="na">author</span> <span class="p">=</span> <span class="s">{Xue, Yihao and Payani, Ali and Yang, Yu and Mirzasoleiman, Baharan}</span><span class="p">,</span>
   <span class="na">journal</span> <span class="p">=</span> <span class="s">{International Conference on Machine Learning (ICML)}</span><span class="p">,</span>
   <span class="na">year</span> <span class="p">=</span> <span class="s">{2024}</span><span class="p">,</span>
@@ -355,8 +417,7 @@
   <span class="na">title</span> <span class="p">=</span> <span class="s">{NeWRF: A Deep Learning Framework for Wireless Radiation Field Reconstruction and Channel Prediction}</span><span class="p">,</span>
   <span class="na">author</span> <span class="p">=</span> <span class="s">{Lu, Haofan and Vattheuer, Vattheuer and Mirzasoleiman, Baharan and Abari, Omid}</span><span class="p">,</span>
   <span class="na">journal</span> <span class="p">=</span> <span class="s">{International Conference on Machine Learning (ICML)}</span><span class="p">,</span>
-  <span class="na">year</span> <span class="p">=</span> <span class="s">{2024}</span><span class="p">,</span>
-  <span class="na">spurious</span> <span class="p">=</span> <span class="s">{true}</span>
+  <span class="na">year</span> <span class="p">=</span> <span class="s">{2024}</span>
 <span class="p">}</span></code></pre></figure>
           </div>
         </div>
