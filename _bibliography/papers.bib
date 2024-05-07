@@ -112,14 +112,15 @@
   year={2024}
 }
 
-@article{xue2022final,
+@article{xue2024final,
   bibtex_show={true},
   abbr={UAI},
-  title={The Final Ascent: When Bigger Models Generalize Worse on Noisy-Labeled Data},
-  abstract={Increasing the size of overparameterized neural networks has been shown to improve their generalization performance. However, real-world datasets often contain a significant fraction of noisy labels, which can drastically harm the performance of the models trained on them. In this work, we study how neural networks' test loss changes with model size when the training set contains noisy labels. We show that under a sufficiently large noise-to-sample size ratio, generalization error eventually increases with model size. First, we provide a theoretical analysis on random feature regression and show that this phenomenon occurs as the variance of the generalization loss experiences a second ascent under large noise-to-sample size ratio. Then, we present extensive empirical evidence confirming that our theoretical results hold for neural networks. Furthermore, we empirically observe that the adverse effect of network size is more pronounced when robust training methods are employed to learn from noisy-labeled data. Our results have important practical implications: First, larger models should be employed with extra care, particularly when trained on smaller dataset or using robust learning methods. Second, a large sample size can alleviate the effect of noisy labels and allow larger models to achieve a superior performance even under noise.},
+  title={Investigating the Impact of Model Width and Density on Generalization in Presence of Label Noise},
+  abstract={Increasing the size of overparameterized neural networks has been a key in achieving state-of-the-art performance. This is captured by the double descent phenomenon, where the test loss follows a decreasing-increasing-decreasing pattern (or sometimes monotonically decreasing) as model width increases. However, the effect of label noise on the test loss curve has not been fully explored. In this work, we uncover an intriguing phenomenon where label noise leads to a final ascent in the originally observed double descent curve. Specifically, under a sufficiently large noise-to-sample-size ratio, optimal generalization is achieved at intermediate widths. Through theoretical analysis, we attribute this phenomenon to the shape transition of test loss variance induced by label noise. Furthermore, we extend the final ascent phenomenon to model density and provide the first theoretical characterization showing that reducing density by randomly dropping trainable parameters improves generalization under label noise. We also thoroughly examine the roles of regularization and sample size. Surprisingly, we find that larger l2 regularization and robust learning methods against label noise exacerbate the final ascent. We confirm the validity of our findings through extensive experiments on ReLu networks trained on MNIST, ResNets/ViTs trained on CIFAR-10/100, and InceptionResNet-v2 trained on Stanford Cars with real-world noisy labels.},
   author={Xue, Yihao and Whitecross, Kyle and Mirzasoleiman, Baharan},
   journal={Conference on Uncertainty in Artificial Intelligence (UAI)},
-  arxiv={2208.08003},
+  pdf={xue24final.pdf},
+  supp={xue24final_long.pdf},
   year={2024},
   award={Spotlight presentation},
   noise={true}
@@ -175,6 +176,7 @@
   journal={International Conference on Learning Representations (ICLR)},
   pdf={xue24_projection.pdf},
   supp={xue24_projection_long.pdf},
+  website={https://yihaoxue.github.io/projection-head-project-page/},
   year={2024},
   spurious={true}
 }
