@@ -539,9 +539,9 @@
         <div class="col-sm-2 abbr"><abbr class="badge">UAI</abbr></div>
 
         <!-- Entry bib key -->
-        <div id="xue2022final" class="col-sm-10">
+        <div id="xue2024final" class="col-sm-10">
         <!-- Title -->
-        <div class="title">The Final Ascent: When Bigger Models Generalize Worse on Noisy-Labeled Data</div>
+        <div class="title">Investigating the Impact of Model Width and Density on Generalization in Presence of Label Noise</div>
         <!-- Author -->
         <div class="author">
         
@@ -563,8 +563,9 @@
           <!-- Links/Buttons -->
           <div class="links">
             <a class="abstract btn btn-sm z-depth-0" role="button">Abs</a>
-            <a href="http://arxiv.org/abs/2208.08003" class="btn btn-sm z-depth-0" role="button" rel="external nofollow noopener" target="_blank">arXiv</a>
             <a class="bibtex btn btn-sm z-depth-0" role="button">Bib</a>
+            <a href="/assets/pdf/xue24final.pdf" class="btn btn-sm z-depth-0" role="button">PDF</a>
+            <a href="/assets/pdf/xue24final_long.pdf" class="btn btn-sm z-depth-0" role="button">Supp</a>
           <!--
             <div lass="award"><b><span style="color:#DF5279">Spotlight presentation</span></b></div> -->
           </div>
@@ -576,12 +577,12 @@
 
           <!-- Hidden abstract block -->
           <div class="abstract hidden">
-            <p>Increasing the size of overparameterized neural networks has been shown to improve their generalization performance. However, real-world datasets often contain a significant fraction of noisy labels, which can drastically harm the performance of the models trained on them. In this work, we study how neural networks’ test loss changes with model size when the training set contains noisy labels. We show that under a sufficiently large noise-to-sample size ratio, generalization error eventually increases with model size. First, we provide a theoretical analysis on random feature regression and show that this phenomenon occurs as the variance of the generalization loss experiences a second ascent under large noise-to-sample size ratio. Then, we present extensive empirical evidence confirming that our theoretical results hold for neural networks. Furthermore, we empirically observe that the adverse effect of network size is more pronounced when robust training methods are employed to learn from noisy-labeled data. Our results have important practical implications: First, larger models should be employed with extra care, particularly when trained on smaller dataset or using robust learning methods. Second, a large sample size can alleviate the effect of noisy labels and allow larger models to achieve a superior performance even under noise.</p>
+            <p>Increasing the size of overparameterized neural networks has been a key in achieving state-of-the-art performance. This is captured by the double descent phenomenon, where the test loss follows a decreasing-increasing-decreasing pattern (or sometimes monotonically decreasing) as model width increases. However, the effect of label noise on the test loss curve has not been fully explored. In this work, we uncover an intriguing phenomenon where label noise leads to a final ascent in the originally observed double descent curve. Specifically, under a sufficiently large noise-to-sample-size ratio, optimal generalization is achieved at intermediate widths. Through theoretical analysis, we attribute this phenomenon to the shape transition of test loss variance induced by label noise. Furthermore, we extend the final ascent phenomenon to model density and provide the first theoretical characterization showing that reducing density by randomly dropping trainable parameters improves generalization under label noise. We also thoroughly examine the roles of regularization and sample size. Surprisingly, we find that larger l2 regularization and robust learning methods against label noise exacerbate the final ascent. We confirm the validity of our findings through extensive experiments on ReLu networks trained on MNIST, ResNets/ViTs trained on CIFAR-10/100, and InceptionResNet-v2 trained on Stanford Cars with real-world noisy labels.</p>
           </div>
 <!-- Hidden bibtex block -->
           <div class="bibtex hidden">
-            <figure class="highlight"><pre><code class="language-bibtex" data-lang="bibtex"><span class="nc">@article</span><span class="p">{</span><span class="nl">xue2022final</span><span class="p">,</span>
-  <span class="na">title</span> <span class="p">=</span> <span class="s">{The Final Ascent: When Bigger Models Generalize Worse on Noisy-Labeled Data}</span><span class="p">,</span>
+            <figure class="highlight"><pre><code class="language-bibtex" data-lang="bibtex"><span class="nc">@article</span><span class="p">{</span><span class="nl">xue2024final</span><span class="p">,</span>
+  <span class="na">title</span> <span class="p">=</span> <span class="s">{Investigating the Impact of Model Width and Density on Generalization in Presence of Label Noise}</span><span class="p">,</span>
   <span class="na">author</span> <span class="p">=</span> <span class="s">{Xue, Yihao and Whitecross, Kyle and Mirzasoleiman, Baharan}</span><span class="p">,</span>
   <span class="na">journal</span> <span class="p">=</span> <span class="s">{Conference on Uncertainty in Artificial Intelligence (UAI)}</span><span class="p">,</span>
   <span class="na">year</span> <span class="p">=</span> <span class="s">{2024}</span><span class="p">,</span>
@@ -797,6 +798,7 @@
             <a class="bibtex btn btn-sm z-depth-0" role="button">Bib</a>
             <a href="/assets/pdf/xue24_projection.pdf" class="btn btn-sm z-depth-0" role="button">PDF</a>
             <a href="/assets/pdf/xue24_projection_long.pdf" class="btn btn-sm z-depth-0" role="button">Supp</a>
+            <a href="https://yihaoxue.github.io/projection-head-project-page/" class="btn btn-sm z-depth-0" role="button" rel="external nofollow noopener" target="_blank">Website</a>
           <!-- -->
           </div>
           
