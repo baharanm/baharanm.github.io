@@ -341,8 +341,9 @@
           <!-- Links/Buttons -->
           <div class="links">
             <a class="abstract btn btn-sm z-depth-0" role="button">Abs</a>
-            <a href="http://arxiv.org/abs/2310.05862" class="btn btn-sm z-depth-0" role="button" rel="external nofollow noopener" target="_blank">arXiv</a>
             <a class="bibtex btn btn-sm z-depth-0" role="button">Bib</a>
+            <a href="/assets/pdf/yang24better.pdf" class="btn btn-sm z-depth-0" role="button">PDF</a>
+            <a href="https://github.com/BigML-CS-UCLA/SafeCLIP" class="btn btn-sm z-depth-0" role="button" rel="external nofollow noopener" target="_blank">Code</a>
           <!-- -->
           </div>
           
@@ -397,8 +398,8 @@
           <!-- Links/Buttons -->
           <div class="links">
             <a class="abstract btn btn-sm z-depth-0" role="button">Abs</a>
-            <a href="http://arxiv.org/abs/2305.14521" class="btn btn-sm z-depth-0" role="button" rel="external nofollow noopener" target="_blank">arXiv</a>
             <a class="bibtex btn btn-sm z-depth-0" role="button">Bib</a>
+            <a href="/assets/pdf/xue24few.pdf" class="btn btn-sm z-depth-0" role="button">PDF</a>
           <!-- -->
           </div>
           
@@ -452,8 +453,9 @@
           <!-- Links/Buttons -->
           <div class="links">
             <a class="abstract btn btn-sm z-depth-0" role="button">Abs</a>
-            <a href="http://arxiv.org/abs/2403.03241" class="btn btn-sm z-depth-0" role="button" rel="external nofollow noopener" target="_blank">arXiv</a>
             <a class="bibtex btn btn-sm z-depth-0" role="button">Bib</a>
+            <a href="/assets/pdf/lu24newrf.pdf" class="btn btn-sm z-depth-0" role="button">PDF</a>
+            <a href="https://github.com/LuHaofan/NeWRF" class="btn btn-sm z-depth-0" role="button" rel="external nofollow noopener" target="_blank">Code</a>
           <!-- -->
           </div>
           
@@ -486,7 +488,7 @@
         <!-- Entry bib key -->
         <div id="yang2023contrastive" class="col-sm-10">
         <!-- Title -->
-        <div class="title">Graph Contrastive Learning under Heterophily</div>
+        <div class="title">Graph Contrastive Learning under Heterophily via Graph Filters</div>
         <!-- Author -->
         <div class="author">
         
@@ -507,8 +509,9 @@
           <!-- Links/Buttons -->
           <div class="links">
             <a class="abstract btn btn-sm z-depth-0" role="button">Abs</a>
-            <a href="http://arxiv.org/abs/2303.06344" class="btn btn-sm z-depth-0" role="button" rel="external nofollow noopener" target="_blank">arXiv</a>
             <a class="bibtex btn btn-sm z-depth-0" role="button">Bib</a>
+            <a href="/assets/pdf/yang24hlcl.pdf" class="btn btn-sm z-depth-0" role="button">PDF</a>
+            <a href="https://github.com/BigML-CS-UCLA/HLCL" class="btn btn-sm z-depth-0" role="button" rel="external nofollow noopener" target="_blank">Code</a>
           <!-- -->
           </div>
           
@@ -519,12 +522,12 @@
 
           <!-- Hidden abstract block -->
           <div class="abstract hidden">
-            <p>Graph Neural Networks are powerful tools for learning node representations when task-specific node labels are available. However, obtaining labels for graphs is expensive in many applications. This is particularly the case for large graphs. To address this, there has been a body of work to learn node representations in a self-supervised manner without labels. Contrastive learning (CL), has been particularly popular to learn representations in a self-supervised manner. In general, CL methods work by maximizing the similarity between representations of augmented views of the same example, and minimizing the similarity between augmented views of different examples. However, existing graph CL methods cannot learn high-quality representations under heterophily, where connected nodes tend to belong to different classes. This is because under heterophily, augmentations of the same example may not be similar to each other. In this work, we address the above problem by proposing the first graph CL method, HLCL, for learning node representations, under heterophily. HLCL uses a high-pass and a low-pass graph filter to generate different views of the same node. Then, it contrasts the two filtered views to learn the final node representations. Effectively, the high-pass filter captures the dissimilarity between nodes in a neighborhood and the low-pass filter captures the similarity between neighboring nodes.Contrasting the two filtered views allows HLCL to learn rich node representations for graphs, under heterophily and homophily.Empirically, HLCL outperforms state-of-the-art graph CL methods on benchmark heterophily datasets and large-scale real-world datasets by up to 10%.</p>
+            <p>Graph contrastive learning (CL) methods learn node representations in a self-supervised manner by maximizing the similarity between the augmented node representations obtained via a GNN-based encoder. However, CL methods perform poorly on graphs with heterophily, where connected nodes tend to belong to different classes. In this work, we address this problem by proposing an effective graph CL method, namely HLCL, for learning graph representations under heterophily. HLCL first identifies a homophilic and a heterophilic subgraph based on the cosine similarity of node features. It then uses a low-pass and a high-pass graph filter to aggregate representations of nodes connected in the homophilic subgraph and differentiate representations of nodes in the heterophilic subgraph. The final node representations are learned by contrasting both the augmented high-pass filtered views and the augmented low-pass filtered node views. Our extensive experiments show that HLCL outperforms state-ofthe-art graph CL methods on benchmark datasets with heterophily, as well as large-scale real-world graphs, by up to 7%, and outperforms graph supervised learning methods on datasets with heterophily by up to 10%.</p>
           </div>
 <!-- Hidden bibtex block -->
           <div class="bibtex hidden">
             <figure class="highlight"><pre><code class="language-bibtex" data-lang="bibtex"><span class="nc">@article</span><span class="p">{</span><span class="nl">yang2023contrastive</span><span class="p">,</span>
-  <span class="na">title</span> <span class="p">=</span> <span class="s">{Graph Contrastive Learning under Heterophily}</span><span class="p">,</span>
+  <span class="na">title</span> <span class="p">=</span> <span class="s">{Graph Contrastive Learning under Heterophily via Graph Filters}</span><span class="p">,</span>
   <span class="na">author</span> <span class="p">=</span> <span class="s">{Yang., Wenhan and Mirzasoleiman, Baharan}</span><span class="p">,</span>
   <span class="na">journal</span> <span class="p">=</span> <span class="s">{Conference on Uncertainty in Artificial Intelligence (UAI)}</span><span class="p">,</span>
   <span class="na">year</span> <span class="p">=</span> <span class="s">{2024}</span>
