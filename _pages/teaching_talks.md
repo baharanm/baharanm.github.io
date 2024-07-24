@@ -15,6 +15,14 @@ nav_order: 5
 
 <a id="talks"></a>
 <h1>Talks</h1>
+<div class="row justify-content-sm-center">
+    <!-- <div class="col-sm mt-3 mt-md-0"> -->
+        <!-- {% include video.html path="https://www.youtube.com/embed/LszEyqfhW3I" class="img-fluid rounded z-depth-1" %} -->
+        ICML 2024 Tutorial on Foundations of Data-efficient Learning &nbsp;<br />
+        <a href="../assets/pdf/ICML_tutorial_2024.pdf"> Slides</a>
+    <!-- </div> -->
+</div><hr><br />
+
 <div class="row mt-3">
     <div class="col-sm mt-3 mt-md-0">
         {% include video.html path="https://www.youtube.com/embed/Bmn8SNojTlA" class="img-fluid rounded z-depth-1" %}
