@@ -7,4 +7,4 @@ related_posts: false
 
 <!-- A simple inline announcement with Markdown emoji! :sparkles: :smile: -->
 
-I received [Amazon Research Award](https://www.sciencehub.ucla.edu/research-project-funding-recipients) :sparkles:
+I received an[Amazon Research Award](https://www.sciencehub.ucla.edu/research-project-funding-recipients) :sparkles:
