@@ -20,7 +20,7 @@ nav_order: 5
 <div class="row justify-content-sm-center">
         <h5><span style="color:#DF5279"><b>ICML 2024 Tutorial on Foundations of Data-efficient Learning</b></span> &nbsp;</h5><br />
         <h5><a href="../assets/pdf/ICML24_tutorial_DataEfficient.pdf"> Slides</a></h5><br /><br />
-        <h5>Recording will be available on Aug 22.</h5>
+        <h5><a href="https://www.youtube.com/watch?v=30VkdWuwmdA&ab_channel=SiddharthJoshi"><img src="assets/img/youtube3.png" alt="Watch" style="width:25px;height:20px"></a></h5>
 </div>
 <hr style="border-top: 2px dotted" />
 <!--hr-->
