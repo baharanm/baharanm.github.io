@@ -21,19 +21,23 @@ An example of displaying a tweet:
    <div class="col-sm-4 mt-3 mt-md-0">
        <a href="https://sites.google.com/g.ucla.edu/yuyang/" >{% include figure.html path="assets/img/group/Yu.jpeg" title="Yu Yang" class="img-fluid rounded z-depth-1" %}</a>
        <div style="text-align: center">
-         <h6><a href="https://sites.google.com/g.ucla.edu/yuyang/">Yu Yang</a></h6>
+         <h6><a href="https://sites.google.com/g.ucla.edu/yuyang/">Yu Yang</a> 
+         <br/><span style="color:#DF5279">Amazon Fellowship <br> Dissertation Year Award</span>
+        </h6>
        </div>
    </div>
    <div class="col-sm-4 mt-3 mt-md-0">
        <a href="https://sites.google.com/g.ucla.edu/yihao-xue/">{% include figure.html path="assets/img/group/Yihao.jpeg" title="Yihao Xue" class="img-fluid rounded z-depth-1" %}</a>
        <div style="text-align: center">
-            <h6><a href="https://sites.google.com/g.ucla.edu/yihao-xue/">Yihao Xue</a></h6>
+            <h6><a href="https://sites.google.com/g.ucla.edu/yihao-xue/">Yihao Xue</a>
+                <br/><span style="color:#DF5279">OpenAI Superalignment Grant</span></h6>
         </div>
    </div>
    <div class="col-sm-4 mt-3 mt-md-0">
        <a href="https://sjoshi804.github.io/">{% include figure.html path="assets/img/group/Sid.jpeg" title="Siddharth Joshi" class="img-fluid rounded z-depth-1" %}</a>
        <div style="text-align: center">
-            <h6><a href="https://sjoshi804.github.io/">Siddharth Joshi</a></h6>
+            <h6><a href="https://sjoshi804.github.io/">Siddharth Joshi</a>
+                <br/><span style="color:#DF5279">Amazon Fellowship</span></h6>
         </div>
    </div>
 </div>
@@ -54,15 +58,19 @@ An example of displaying a tweet:
 
 <br />
 <h5>Undergraduate Students</h5>
-- Eric Gan (not graduated yet)
+- Jinghao Zheng (not graduated yet)
+- Leo Li (not graduated yet)
+- Rathul Anand (not graduated yet)
+- Siddhartha Mishra (not graduated yet)
 - Jiayi Ni (not graduated yet)
-- Arnav Jain (not graduated yet)
-- Paymon Haddad (not graduated yet)
 - David Davini (not graduated yet)
+- Eric Gan (now at DevRev)
+- Arnav Jain (now at PENNYMAC)
+- Paymon Haddad (now MSc student at UCLA)
 <!-- - Tang Mohan (not graduated yet)  -->
-- Victor Li (not graduated yet)
+- Victor Li (now MSc student at Stanford University)
 - Bruce Qu (now MSc student at UCLA)
-- Kyle Whitecross (not at Kumo.AI)
+- Kyle Whitecross (now PhD student at UMass)
 - Yuetong Xu (now PhD student at MIT)
 - Hao Kang (now PhD student at Georgia Tech)
 - Wenhan Yang, Graduated (now PhD student at UCLA)
@@ -71,7 +79,8 @@ An example of displaying a tweet:
 - Yuhan Liu, Graduated (now at Mission Capital)
 
 <h5>Master Students</h5>
-- Zhaoqian Wang 
+- Spencer Stice (not graduated yet)
+- Zhaoqian Wang (now PhD student at UCLA)
 - Tedi Zaduri (now PhD student at Princeton)
 - Yuchen Liu (now at Meta)
 - Srinath Naik Ajmeera (now at Amazon)
