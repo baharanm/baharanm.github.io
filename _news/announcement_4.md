@@ -7,4 +7,4 @@ related_posts: false
 
 <!-- A simple inline announcement with Markdown emoji! :sparkles: :smile: -->
 
-[Yu Yang](https://sites.google.com/g.ucla.edu/yuyang/home) received Amazon Doctoral Student Fellowship :sparkles:
+[Yu Yang](https://sites.google.com/g.ucla.edu/yuyang/home) received an [Amazon Doctoral Student Fellowship](https://www.amazon.science/latest-news/amazon-and-ucla-announce-fellowship-recipients) :sparkles:
