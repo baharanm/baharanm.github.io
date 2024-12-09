@@ -73,10 +73,10 @@ An example of displaying a tweet:
 - Kyle Whitecross (now PhD student at UMass)
 - Yuetong Xu (now PhD student at MIT)
 - Hao Kang (now PhD student at Georgia Tech)
-- Wenhan Yang, Graduated (now PhD student at UCLA)
-- Siddharth Joshi, Graduated (now PhD student at UCLA)
-- Tian Yu Liu, Graduated (now PhD student at UCLA)
-- Yuhan Liu, Graduated (now at Mission Capital)
+- Wenhan Yang (now PhD student at UCLA)
+- Siddharth Joshi (now PhD student at UCLA)
+- Tian Yu Liu (now PhD student at UCLA)
+- Yuhan Liu (now at Mission Capital)
 
 <h5>Master Students</h5>
 - Spencer Stice (not graduated yet)
@@ -88,9 +88,9 @@ An example of displaying a tweet:
 - Manish Reddy Gottimukkula (now at Aurora)
 - Aditya Jain (now at Aurora)
 - Ashish Kumar Singh (now at Google)
-- Hemil Desai, Graduated (now at Snap Inc)
-- Harsh Chobisa, Graduated (now at Apple)
-- Rahul Malavalli, Graduated (now at YouTube)
+- Hemil Desai (now at Snap Inc)
+- Harsh Chobisa (now at Apple)
+- Rahul Malavalli (now at YouTube)
 
 <!-- 
 <style>
