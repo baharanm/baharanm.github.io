@@ -173,7 +173,7 @@
         <!-- Entry bib key -->
         <div id="joshi2023spuco" class="col-sm-10">
         <!-- Title -->
-        <div class="title">Towards Mitigating Spurious Correlations in the Wild: A Benchmark &amp; a more Realistic Dataset</div>
+        <div class="title">Challenges and Opportunities in Improving Worst-Group Generalization in Presence of Spurious Features</div>
         <!-- Author -->
         <div class="author">
         
@@ -208,12 +208,12 @@
 
           <!-- Hidden abstract block -->
           <div class="abstract hidden">
-            <p>Deep neural networks often exploit non-predictive features that are spuriously correlated with class labels, leading to poor performance on groups of examples without such features. Despite the growing body of recent works on remedying spurious correlations, the lack of a standardized benchmark hinders reproducible evaluation and comparison of the proposed solutions. To address this, we present SpuCo, a python package with modular implementations of state-of-the-art solutions enabling easy and reproducible evaluation of current methods. Using SpuCo, we demonstrate the limitations of existing datasets and evaluation schemes in validating the learning of predictive features over spurious ones. To overcome these limitations, we propose two new vision datasets: (1) SpuCoMNIST, a synthetic dataset that enables simulating the effect of real world data properties e.g. difficulty of learning spurious feature, as well as noise in the labels and features; (2) SpuCoAnimals, a large-scale dataset curated from ImageNet that captures spurious correlations in the wild much more closely than existing datasets. These contributions highlight the shortcomings of current methods and provide a direction for future research in tackling spurious correlations. SpuCo, containing the benchmark and datasets, can be found at https://github.com/BigML-CS-UCLA/SpuCo, with detailed documentation available at https://spuco.readthedocs.io/en/latest/.</p>
+            <p>Deep neural networks often exploit (spurious) features that are present in the majority of examples within a class during training. This leads to poor worst-group test accuracy i.e. poor accuracy for minority groups that lack these spurious features. Despite the growing body of recent efforts to address spurious correlations (SC), several challenging settings remain unexplored. In this work, we propose studying methods to mitigate SC in settings with 1) spurious features that are learned more slowly, 2) a larger number of classes and 3) a larger number of groups. We introduce two new datasets, SPUCOANIMALS and SPUCOSUN, to facilitate this study and conduct a systematic benchmarking of 8 state-of-the-art (SOTA) methods across a total of 5 vision datasets, training over 5K models. Through this, we highlight how existing group inference methods struggle in the presence of spurious features that are learned later in training. Additionally, we demonstrate how all existing methods struggle in settings with more groups and/or classes. Finally, we show the importance of careful model selection (hyperparameter tuning) in extracting optimal performance, especially in the more challenging settings we introduced, and propose more cost-efficient strategies for model selection. Overall, through extensive and systematic experiments, this work uncovers a suite of new challenges and opportunities for improving worst-group generalization in the presence of spurious features.</p>
           </div>
 <!-- Hidden bibtex block -->
           <div class="bibtex hidden">
             <figure class="highlight"><pre><code class="language-bibtex" data-lang="bibtex"><span class="nc">@article</span><span class="p">{</span><span class="nl">joshi2023spuco</span><span class="p">,</span>
-  <span class="na">title</span> <span class="p">=</span> <span class="s">{Towards Mitigating Spurious Correlations in the Wild: A Benchmark &amp; a more Realistic Dataset}</span><span class="p">,</span>
+  <span class="na">title</span> <span class="p">=</span> <span class="s">{Challenges and Opportunities in Improving Worst-Group Generalization in Presence of Spurious Features}</span><span class="p">,</span>
   <span class="na">author</span> <span class="p">=</span> <span class="s">{Joshi, Siddharth and Yang, Yu and Xue, Yihao and Yang., Wenhan and Mirzasoleiman, Baharan}</span><span class="p">,</span>
   <span class="na">journal</span> <span class="p">=</span> <span class="s">{arXiv preprint arXiv:2306.11957}</span><span class="p">,</span>
   <span class="na">year</span> <span class="p">=</span> <span class="s">{Preprints}</span><span class="p">,</span>
