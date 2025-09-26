@@ -27,27 +27,7 @@
   year={1900}
 }
 
-@article{xue25lora,
-  bibtex_show={true},
-  abbr={ArXiv},
-  title={LoRA is All You Need for Safety Alignment of Reasoning LLMs},
-  abstract={Reasoning LLMs have demonstrated remarkable breakthroughs in solving complex problems that were previously out of reach. To ensure LLMs do not assist with harmful requests, safety alignment fine-tuning is necessary in the post-training phase. However, safety alignment fine-tuning has recently been shown to significantly degrade reasoning abilities, a phenomenon known as the "Safety Tax". In this work, we show that using LoRA for SFT on refusal datasets effectively aligns the model for safety without harming its reasoning capabilities. This is because restricting the safety weight updates to a low-rank space minimizes the interference with the reasoning weights. Our extensive experiments across four benchmarks covering math, science, and coding show that this approach produces highly safe LLMs -- with safety levels comparable to full-model fine-tuning -- without compromising their reasoning abilities. Additionally, we observe that LoRA induces weight updates with smaller overlap with the initial weights compared to full-model fine-tuning. We also explore methods that further reduce such overlap -- via regularization or during weight merging -- and observe some improvement on certain tasks. We hope this result motivates designing approaches that yield more consistent improvements in the reasoning-safety trade-off.},
-  author={Xue, Yihao and Mirzasoleiman, Baharan},
-  journal={arXiv preprint arXiv:2507.17075},
-  arxiv={2507.17075},
-  year={Preprints}
-}
 
-@article{wang25safety,
-  bibtex_show={true},
-  abbr={ArXiv},
-  title={Bootstrapping LLM Robustness for VLM Safety via Reducing the Pretraining Modality Gap},
-  abstract={Ensuring Vision-Language Models (VLMs) generate safe outputs is crucial for their reliable deployment. However, LVLMs suffer from drastic safety degradation compared to their LLM backbone. Even blank or irrelevant images can trigger LVLMs to generate harmful responses to prompts that would otherwise be refused in text-only contexts. The modality gap between image and text representations has been recently hypothesized to contribute to safety degradation of LVLMs. However, if and how the amount of modality gap affects LVLMs' safety is not studied. In this work, we show that the amount of modality gap is highly inversely correlated with VLMs' safety. Then, we show that this modality gap is introduced during pretraining LVLMs and persists through fine-tuning. Inspired by this observation, we propose a regularization to reduce the modality gap during pretraining. Our extensive experiments on LLaVA v1.5, ShareGPT4V, and MiniGPT-4 show that our method substantially improves safety alignment of LVLMs, reducing unsafe rate by up to 16.3% without compromising performance, and can further boost existing defenses by up to 18.2%.},
-  author={Yang., Wenhan and Mirzasoleiman, Baharan},
-  journal={arXiv preprint arXiv:2505.24208},
-  arxiv={2505.24208},
-  year={Preprints}
-}
 
 @article{xue25verify,
   bibtex_show={true},
