@@ -14,8 +14,10 @@ nav_order: 1
 
 
 {%- for y in page.years %}
-  <h2 class="year">{{y}}</h2>
-    {% bibliography -f {{ site.scholar.bibliography }} -q @*[year={{y}}]* %}
+  <h2 class="year">{ {y} }</h2>
+  {% raw %}
+    {% bibliography -f { { site.scholar.bibliography } } -q @*[year={ {y} }]* %}
+  {% endraw %}
 {% endfor %}
 
 </div>
