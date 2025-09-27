@@ -142,7 +142,7 @@
   abbr={NeurIPS},
   title={Changing the Training Data Distribution to Reduce Simplicity Bias Improves In-distribution Generalization},
   abstract={Can we modify the training data distribution to encourage the underlying optimization method toward finding solutions with superior generalization performance on in-distribution data? In this work, we approach this question for the first time by comparing the inductive bias of gradient descent (GD) with that of sharpness-aware minimization (SAM). By studying a two-layer CNN, we prove that SAM learns easy and difficult features more uniformly, particularly in early epochs. That is, SAM is less susceptible to simplicity bias compared to GD. Based on this observation, we propose USEFUL, an algorithm that clusters examples based on the network output early in training and upsamples examples with no easy features to alleviate the pitfalls of the simplicity bias. We show empirically that modifying the training data distribution in this way effectively improves the generalization performance on the original data distribution when training with (S)GD by mimicking the training dynamics of SAM. Notably, we demonstrate that our method can be combined with SAM and existing data augmentation strategies to achieve, to the best of our knowledge, state-of-the-art performance for training ResNet18 on CIFAR10, STL10, CINIC10, Tiny-ImageNet; ResNet34 on CIFAR100; and VGG19 and DenseNet121 on CIFAR10.},
-  author={Nguyen, Dang and Haddad, Paymon and Gan, Eric and and Mirzasoleiman, Baharan},
+  author={Nguyen, Dang and Haddad, Paymon and Gan, Eric and Mirzasoleiman, Baharan},
   journal={Advances in Neural Information Processing Systems (NeurIPS)},
   pdf={nguyen24changing.pdf},
   year={2024}
