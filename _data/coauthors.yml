@@ -2,6 +2,10 @@
   - firstname: ["Baharan", "B."]
     url: https://baharanm.github.io/
 
+"Nguyen":
+  - firstname: ["Dang", "D."]
+    url: https://hsgser.github.io/
+
 "Xue":
   - firstname: ["Yihao", "Y."]
     url: https://sites.google.com/g.ucla.edu/yihao-xue/home
@@ -9,6 +13,26 @@
 "Joshi":
   - firstname: ["Siddharth", "S."]
     url: https://sjoshi804.github.io/
+
+"Yang.":
+  - firstname: ["Wenhan", "W."]
+    url: https://sites.google.com/g.ucla.edu/wenhan-yang/home
+
+"Yang":
+  - firstname: ["Yu", "Y."]
+    url: https://sites.google.com/g.ucla.edu/yuyang/home
+
+"Huang":
+  - firstname: ["Huang", "J."]
+    url: https://jhhuang2021.github.io/
+
+"Jiang":
+  - firstname: ["Jiang", "H."]
+    url: https://redredsheep.github.io/
+
+"Jin":
+  - firstname: ["Jin", "H."]
+    url: https://hjenryin.github.io/homepage/
 
 
 
