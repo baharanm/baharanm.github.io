@@ -27,68 +27,7 @@
   year={1900}
 }
 
-@article{xue25lora,
-  bibtex_show={true},
-  abbr={ArXiv},
-  title={LoRA is All You Need for Safety Alignment of Reasoning LLMs},
-  abstract={Reasoning LLMs have demonstrated remarkable breakthroughs in solving complex problems that were previously out of reach. To ensure LLMs do not assist with harmful requests, safety alignment fine-tuning is necessary in the post-training phase. However, safety alignment fine-tuning has recently been shown to significantly degrade reasoning abilities, a phenomenon known as the "Safety Tax". In this work, we show that using LoRA for SFT on refusal datasets effectively aligns the model for safety without harming its reasoning capabilities. This is because restricting the safety weight updates to a low-rank space minimizes the interference with the reasoning weights. Our extensive experiments across four benchmarks covering math, science, and coding show that this approach produces highly safe LLMs -- with safety levels comparable to full-model fine-tuning -- without compromising their reasoning abilities. Additionally, we observe that LoRA induces weight updates with smaller overlap with the initial weights compared to full-model fine-tuning. We also explore methods that further reduce such overlap -- via regularization or during weight merging -- and observe some improvement on certain tasks. We hope this result motivates designing approaches that yield more consistent improvements in the reasoning-safety trade-off.},
-  author={Xue, Yihao and Mirzasoleiman, Baharan},
-  journal={arXiv preprint arXiv:2507.17075},
-  arxiv={2507.17075},
-  year={Preprints}
-}
 
-@article{wang25safety,
-  bibtex_show={true},
-  abbr={ArXiv},
-  title={Bootstrapping LLM Robustness for VLM Safety via Reducing the Pretraining Modality Gap},
-  abstract={Ensuring Vision-Language Models (VLMs) generate safe outputs is crucial for their reliable deployment. However, LVLMs suffer from drastic safety degradation compared to their LLM backbone. Even blank or irrelevant images can trigger LVLMs to generate harmful responses to prompts that would otherwise be refused in text-only contexts. The modality gap between image and text representations has been recently hypothesized to contribute to safety degradation of LVLMs. However, if and how the amount of modality gap affects LVLMs' safety is not studied. In this work, we show that the amount of modality gap is highly inversely correlated with VLMs' safety. Then, we show that this modality gap is introduced during pretraining LVLMs and persists through fine-tuning. Inspired by this observation, we propose a regularization to reduce the modality gap during pretraining. Our extensive experiments on LLaVA v1.5, ShareGPT4V, and MiniGPT-4 show that our method substantially improves safety alignment of LVLMs, reducing unsafe rate by up to 16.3% without compromising performance, and can further boost existing defenses by up to 18.2%.},
-  author={Yang., Wenhan and Mirzasoleiman, Baharan},
-  journal={arXiv preprint arXiv:2505.24208},
-  arxiv={2505.24208},
-  year={Preprints}
-}
-
-@article{xue25verify,
-  bibtex_show={true},
-  abbr={ArXiv},
-  title={Verify when Uncertain: Beyond Self-Consistency in Black Box Hallucination Detection},
-  abstract={Large Language Models (LLMs) suffer from hallucination problems, which hinder their reliability in sensitive applications. In the black-box setting, several self-consistency-based techniques have been proposed for hallucination detection. We empirically study these techniques and show that they achieve performance close to that of a supervised (still black-box) oracle, suggesting little room for improvement within this paradigm. To address this limitation, we explore cross-model consistency checking between the target model and an additional verifier LLM. With this extra information, we observe improved oracle performance compared to purely self-consistency-based methods. We then propose a budget-friendly, two-stage detection algorithm that calls the verifier model only for a subset of cases. It dynamically switches between self-consistency and cross-consistency based on an uncertainty interval of the self-consistency classifier. We provide a geometric interpretation of consistency-based hallucination detection methods through the lens of kernel mean embeddings, offering deeper theoretical insights. Extensive experiments show that this approach maintains high detection performance while significantly reducing computational cost.},
-  author={Xue, Yihao and Greenewald, Kristjan and Mroueh, Youssef and Mirzasoleiman, Baharan},
-  journal={arXiv preprint arXiv:2502.15845},
-  arxiv={2502.15845},
-  year={Preprints}
-}
-
-
-@article{joshi2023spuco,
-  bibtex_show={true},
-  abbr={ArXiv},
-  title={Challenges and Opportunities in Improving Worst-Group Generalization in Presence of Spurious Features},
-  abstract={Deep neural networks often exploit (spurious) features that are present in the majority of examples within a class during training. This leads to poor worst-group test accuracy i.e. poor accuracy for minority groups that lack these spurious features. Despite the growing body of recent efforts to address spurious correlations (SC), several challenging settings remain unexplored. In this work, we propose studying methods to mitigate SC in settings with 1) spurious features that are learned more slowly, 2) a larger number of classes and 3) a larger number of groups. We introduce two new datasets, SPUCOANIMALS and SPUCOSUN, to facilitate this study and conduct a systematic benchmarking of 8 state-of-the-art (SOTA) methods across a total of 5 vision datasets, training over 5K models. Through this, we highlight how existing group inference methods struggle in the presence of spurious features that are learned later in training. Additionally, we demonstrate how all existing methods struggle in settings with more groups and/or classes. Finally, we show the importance of careful model selection (hyperparameter tuning) in extracting optimal performance, especially in the more challenging settings we introduced, and propose more cost-efficient strategies for model selection. Overall, through extensive and systematic experiments, this work uncovers a suite of new challenges and opportunities for improving worst-group generalization in the presence of spurious features.},
-  author={Joshi, Siddharth and Yang, Yu and Xue, Yihao and Yang., Wenhan and Mirzasoleiman, Baharan},
-  journal={arXiv preprint arXiv:2306.11957},
-  arxiv={2306.11957},
-  year={Preprints},
-  code={https://github.com/BigML-CS-UCLA/SpuCo},
-  website={https://spuco.readthedocs.io/en/latest/},
-  spurious={true}
-}
-
-
-##############################################################
-
-@article{joshi25mmgen,
-  bibtex_show={true},
-  abbr={DMLR},
-  title={MM-GEN: Enhancing Task Performance Through Targeted Multimodal Data Curation},
-  abstract={Vision-language models (VLMs) are highly effective but often underperform on specialized tasks; for example, Llava-1.5 struggles with chart and diagram understanding due to scarce task-specific training data. Existing training data, sourced from general-purpose datasets, fails to capture the nuanced details needed for these tasks. We introduce MM-Gen, a scalable method that generates task-specific, high-quality synthetic text for candidate images by leveraging stronger models. MM-Gen employs a three-stage targeted process: partitioning data into subgroups, generating targeted text based on task descriptions, and filtering out redundant and outlier data. Fine-tuning VLMs with data generated by MM-Gen leads to significant performance gains, including 29% on spatial reasoning and 15% on diagram understanding for Llava-1.5 (7B). Compared to human-curated caption data, MM-Gen achieves up to 1.6x better improvements for the original models, proving its effectiveness in enhancing task-specific VLM performance and bridging the gap between general-purpose datasets and specialized requirements. Code available at https://github.com/sjoshi804/MM-Gen.},
-  author={Joshi, Siddharth and Nushi, Besmira and Balachandran, Vidhisha and Chandrasekaran, Varun and Vineet, Vibhav and Joshi, Neel and Mirzasoleiman, Baharan},
-  journal={Journal of Data-centric Machine Learning Research (DMLR)},
-  arxiv={2501.04155},
-  code={https://github.com/sjoshi804/MM-Gen},
-  year={2025}
-}
 
 @article{nguyen25synthetic,
   bibtex_show={true},
@@ -942,3 +881,82 @@
 #######################################################
 
 
+@book{einstein1956investigations,
+  bibtex_show={true},
+  title={Investigations on the Theory of the Brownian Movement},
+  author={Einstein, Albert},
+  year={1956},
+  publisher={Courier Corporation},
+  preview={brownian-motion.gif}
+}
+
+@article{einstein1950meaning,
+  abbr={AJP},
+  bibtex_show={true},
+  title={The meaning of relativity},
+  author={Einstein, Albert and Taub, AH},
+  journal={American Journal of Physics},
+  volume={18},
+  number={6},
+  pages={403--404},
+  year={1950},
+  publisher={American Association of Physics Teachers}
+}
+
+@article{PhysRev.47.777,
+  abbr={PhysRev},
+  title={Can Quantum-Mechanical Description of Physical Reality Be Considered Complete?},
+  author={Einstein, A. and Podolsky, B. and Rosen, N.},
+  abstract={In a complete theory there is an element corresponding to each element of reality. A sufficient condition for the reality of a physical quantity is the possibility of predicting it with certainty, without disturbing the system. In quantum mechanics in the case of two physical quantities described by non-commuting operators, the knowledge of one precludes the knowledge of the other. Then either (1) the description of reality given by the wave function in quantum mechanics is not complete or (2) these two quantities cannot have simultaneous reality. Consideration of the problem of making predictions concerning a system on the basis of measurements made on another system that had previously interacted with it leads to the result that if (1) is false then (2) is also false. One is thus led to conclude that the description of reality as given by a wave function is not complete.},
+  journal={Phys. Rev.},
+  volume={47},
+  issue={10},
+  pages={777--780},
+  numpages={0},
+  year={1935},
+  month={May},
+  publisher=aps,
+  doi={10.1103/PhysRev.47.777},
+  url={http://link.aps.org/doi/10.1103/PhysRev.47.777},
+  html={https://journals.aps.org/pr/abstract/10.1103/PhysRev.47.777},
+  pdf={example_pdf.pdf},
+  altmetric={248277},
+  dimensions={true},
+  selected={true}
+}
+
+@article{einstein1905molekularkinetischen,
+  title={{\"U}ber die von der molekularkinetischen Theorie der W{\"a}rme geforderte Bewegung von in ruhenden Fl{\"u}ssigkeiten suspendierten Teilchen},
+  author={Einstein, A.},
+  journal={Annalen der physik},
+  volume={322},
+  number={8},
+  pages={549--560},
+  year={1905},
+  publisher={Wiley Online Library}
+}
+
+@article{einstein1905movement,
+  abbr={Ann. Phys.},
+  title={Un the movement of small particles suspended in statiunary liquids required by the molecular-kinetic theory 0f heat},
+  author={Einstein, A.},
+  journal={Ann. Phys.},
+  volume={17},
+  pages={549--560},
+  year={1905}
+}
+
+@article{einstein1905electrodynamics,
+  title={On the electrodynamics of moving bodies},
+  author={Einstein, A.},
+  year={1905}
+}
+
+@book{przibram1967letters,
+  bibtex_show={true},
+  title={Letters on wave mechanics},
+  author={Einstein, Albert and Schrödinger, Erwin and Planck, Max and Lorentz, Hendrik Antoon and Przibram, Karl},
+  year={1967},
+  publisher={Vision},
+  preview={wave-mechanics.gif}
+}
