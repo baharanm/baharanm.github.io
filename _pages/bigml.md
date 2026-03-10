@@ -61,14 +61,6 @@ An example of displaying a tweet:
 
 
 
-<div class="col-sm-4 mt-3 mt-md-0">
-       <a href="https://sjoshi804.github.io/">{% include figure.html path="assets/img/group/Sid.jpeg" title="Siddharth Joshi" class="img-fluid rounded z-depth-1" %}</a>
-       <div style="text-align: center">
-            <h6><a href="https://sjoshi804.github.io/">Siddharth Joshi</a>
-                <br/><span style="color:#DF5279">Amazon Fellowship</span></h6>
-        </div>
-</div>
-
 
 <h5>Alumni:</h5>
 <div class="col-sm-4 mt-3 mt-md-0">
