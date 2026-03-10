@@ -18,13 +18,7 @@ An example of displaying a tweet:
  -->
 
 <div class="row justify-content-sm-center">
-   <div class="col-sm-4 mt-3 mt-md-0">
-       <a href="https://sites.google.com/g.ucla.edu/yihao-xue/">{% include figure.html path="assets/img/group/Yihao.jpeg" title="Yihao Xue" class="img-fluid rounded z-depth-1" %}</a>
-       <div style="text-align: center">
-            <h6><a href="https://sites.google.com/g.ucla.edu/yihao-xue/">Yihao Xue</a>
-                <br/><span style="color:#DF5279">OpenAI Superalignment Grant</span></h6>
-        </div>
-   </div>
+   
    <div class="col-sm-4 mt-3 mt-md-0">
        <a href="https://sites.google.com/g.ucla.edu/wenhan-yang/home">{% include figure.html path="assets/img/group/Hanger.jpeg" title="Wenhan Yang" class="img-fluid rounded z-depth-1" %}</a>
        <div style="text-align: center">
@@ -63,23 +57,35 @@ An example of displaying a tweet:
 
 
 <h5>Alumni:</h5>
-<div class="col-sm-4 mt-3 mt-md-0">
+<div class="row justify-content-sm-center">
+    <div class="col-sm-4 mt-3 mt-md-0">
        <a href="https://sites.google.com/g.ucla.edu/yuyang/" >{% include figure.html path="assets/img/group/Yu.jpeg" title="Yu Yang" class="img-fluid rounded z-depth-1" %}</a>
        <div style="text-align: center">
          <h6><a href="https://sites.google.com/g.ucla.edu/yuyang/">Yu Yang</a> 
-         <br/><span style="color:#DF5279">Amazon Fellowship <br> Dissertation Year Award <br> Outstanding Graduate Student Research Award<br> now at OpenAI</span>
+         <br/><span style="color:#DF5279">Amazon Fellowship <br> Dissertation Year Award <br> Outstanding Graduate Student Research Award</span><br> now at OpenAI
         </h6>
        </div>
    </div>
 
+   <div class="col-sm-4 mt-3 mt-md-0">
+       <a href="https://yihaoxue.github.io/">{% include figure.html path="assets/img/group/Yihao.JPG" title="Yihao Xue" class="img-fluid rounded z-depth-1" %}</a>
+       <div style="text-align: center">
+            <h6><a href="https://yihaoxue.github.io/">Yihao Xue</a>
+                <br/><span style="color:#DF5279">OpenAI Superalignment Grant</span><br> now at Google Research</h6>
+        </div>
+   </div>
+</div>
+
 <br />
 <h5>Undergraduate Students</h5>
-- Jinghao Zheng (not graduated yet)
-- Leo Li (not graduated yet)
+
+- Maanas Gantla (not graduated yet)
 - Rathul Anand (not graduated yet)
-- Siddhartha Mishra (not graduated yet)
-- Jiayi Ni (not graduated yet)
-- David Davini (not graduated yet)
+- Siddhartha Mishra (now at DoorDash)
+- David Davini (now at Gridspace)
+- Jinghao Zheng (now Master stdudent at EPFL)
+- Leo Li (now PhD student at UPenn)
+- Jiayi Ni (now at NVIDIA)
 - Eric Gan (now at DevRev)
 - Arnav Jain (now at PENNYMAC)
 - Paymon Haddad (now MSc student at UCLA)
@@ -95,7 +101,9 @@ An example of displaying a tweet:
 - Yuhan Liu (now at Mission Capital)
 
 <h5>Master Students</h5>
-- Spencer Stice (not graduated yet)
+- Yiran Lu (not graduated yet)
+- Henry Liu (not graduated yet)
+- Spencer Stice (now at Perceptronics Solutions)
 - Zhaoqian Wang (now PhD student at UCLA)
 - Tedi Zaduri (now PhD student at Princeton)
 - Yuchen Liu (now at Meta)
