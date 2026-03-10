@@ -146,6 +146,116 @@
         <div class="col-sm-2 abbr"><abbr class="badge">ArXiv</abbr></div>
 
         <!-- Entry bib key -->
+        <div id="xue25lora" class="col-sm-10">
+        <!-- Title -->
+        <div class="title">LoRA is All You Need for Safety Alignment of Reasoning LLMs</div>
+        <!-- Author -->
+        <div class="author">
+        
+
+        <a href="https://sites.google.com/g.ucla.edu/yihao-xue/home" rel="external nofollow noopener" target="_blank">Yihao Xue</a>, and <em>Baharan Mirzasoleiman</em>
+</div>
+
+        <!-- Journal/Book title and date -->
+        
+        
+        <div class="periodical">
+          <em>arXiv preprint arXiv:2507.17075</em>, Preprints
+        </div>
+        <div class="periodical">
+          
+        </div>
+
+          <!-- Links/Buttons -->
+          <div class="links">
+            <a class="abstract btn btn-sm z-depth-0" role="button">Abs</a>
+            <a href="http://arxiv.org/abs/2507.17075" class="btn btn-sm z-depth-0" role="button" rel="external nofollow noopener" target="_blank">arXiv</a>
+            <a class="bibtex btn btn-sm z-depth-0" role="button">Bib</a>
+          <!-- -->
+          </div>
+          
+          <div class="badges">
+            <span class="altmetric-embed" data-hide-no-mentions="true" data-hide-less-than="15" data-badge-type="2" data-badge-popover="right"></span>
+              <span class="__dimensions_badge_embed__" data-pmid="" data-hide-zero-citations="true" data-style="small_rectangle" data-legend="hover-right" style="margin-bottom: 3px;"></span>
+          </div>
+
+          <!-- Hidden abstract block -->
+          <div class="abstract hidden">
+            <p>Reasoning LLMs have demonstrated remarkable breakthroughs in solving complex problems that were previously out of reach. To ensure LLMs do not assist with harmful requests, safety alignment fine-tuning is necessary in the post-training phase. However, safety alignment fine-tuning has recently been shown to significantly degrade reasoning abilities, a phenomenon known as the "Safety Tax". In this work, we show that using LoRA for SFT on refusal datasets effectively aligns the model for safety without harming its reasoning capabilities. This is because restricting the safety weight updates to a low-rank space minimizes the interference with the reasoning weights. Our extensive experiments across four benchmarks covering math, science, and coding show that this approach produces highly safe LLMs – with safety levels comparable to full-model fine-tuning – without compromising their reasoning abilities. Additionally, we observe that LoRA induces weight updates with smaller overlap with the initial weights compared to full-model fine-tuning. We also explore methods that further reduce such overlap – via regularization or during weight merging – and observe some improvement on certain tasks. We hope this result motivates designing approaches that yield more consistent improvements in the reasoning-safety trade-off.</p>
+          </div>
+<!-- Hidden bibtex block -->
+          <div class="bibtex hidden">
+            <figure class="highlight"><pre><code class="language-bibtex" data-lang="bibtex"><span class="nc">@article</span><span class="p">{</span><span class="nl">xue25lora</span><span class="p">,</span>
+  <span class="na">title</span> <span class="p">=</span> <span class="s">{LoRA is All You Need for Safety Alignment of Reasoning LLMs}</span><span class="p">,</span>
+  <span class="na">author</span> <span class="p">=</span> <span class="s">{Xue, Yihao and Mirzasoleiman, Baharan}</span><span class="p">,</span>
+  <span class="na">journal</span> <span class="p">=</span> <span class="s">{arXiv preprint arXiv:2507.17075}</span><span class="p">,</span>
+  <span class="na">year</span> <span class="p">=</span> <span class="s">{Preprints}</span>
+<span class="p">}</span></code></pre></figure>
+          </div>
+        </div>
+      </div>
+</li>
+<li>
+<!-- _layouts/bib.html -->
+      <div class="row">
+        <div class="col-sm-2 abbr"><abbr class="badge">ArXiv</abbr></div>
+
+        <!-- Entry bib key -->
+        <div id="wang25safety" class="col-sm-10">
+        <!-- Title -->
+        <div class="title">Bootstrapping LLM Robustness for VLM Safety via Reducing the Pretraining Modality Gap</div>
+        <!-- Author -->
+        <div class="author">
+        
+
+        <a href="https://sites.google.com/g.ucla.edu/wenhan-yang/home" rel="external nofollow noopener" target="_blank">Wenhan Yang.</a>, and <em>Baharan Mirzasoleiman</em>
+</div>
+
+        <!-- Journal/Book title and date -->
+        
+        
+        <div class="periodical">
+          <em>arXiv preprint arXiv:2505.24208</em>, Preprints
+        </div>
+        <div class="periodical">
+          
+        </div>
+
+          <!-- Links/Buttons -->
+          <div class="links">
+            <a class="abstract btn btn-sm z-depth-0" role="button">Abs</a>
+            <a href="http://arxiv.org/abs/2505.24208" class="btn btn-sm z-depth-0" role="button" rel="external nofollow noopener" target="_blank">arXiv</a>
+            <a class="bibtex btn btn-sm z-depth-0" role="button">Bib</a>
+          <!-- -->
+          </div>
+          
+          <div class="badges">
+            <span class="altmetric-embed" data-hide-no-mentions="true" data-hide-less-than="15" data-badge-type="2" data-badge-popover="right"></span>
+              <span class="__dimensions_badge_embed__" data-pmid="" data-hide-zero-citations="true" data-style="small_rectangle" data-legend="hover-right" style="margin-bottom: 3px;"></span>
+          </div>
+
+          <!-- Hidden abstract block -->
+          <div class="abstract hidden">
+            <p>Ensuring Vision-Language Models (VLMs) generate safe outputs is crucial for their reliable deployment. However, LVLMs suffer from drastic safety degradation compared to their LLM backbone. Even blank or irrelevant images can trigger LVLMs to generate harmful responses to prompts that would otherwise be refused in text-only contexts. The modality gap between image and text representations has been recently hypothesized to contribute to safety degradation of LVLMs. However, if and how the amount of modality gap affects LVLMs’ safety is not studied. In this work, we show that the amount of modality gap is highly inversely correlated with VLMs’ safety. Then, we show that this modality gap is introduced during pretraining LVLMs and persists through fine-tuning. Inspired by this observation, we propose a regularization to reduce the modality gap during pretraining. Our extensive experiments on LLaVA v1.5, ShareGPT4V, and MiniGPT-4 show that our method substantially improves safety alignment of LVLMs, reducing unsafe rate by up to 16.3% without compromising performance, and can further boost existing defenses by up to 18.2%.</p>
+          </div>
+<!-- Hidden bibtex block -->
+          <div class="bibtex hidden">
+            <figure class="highlight"><pre><code class="language-bibtex" data-lang="bibtex"><span class="nc">@article</span><span class="p">{</span><span class="nl">wang25safety</span><span class="p">,</span>
+  <span class="na">title</span> <span class="p">=</span> <span class="s">{Bootstrapping LLM Robustness for VLM Safety via Reducing the Pretraining Modality Gap}</span><span class="p">,</span>
+  <span class="na">author</span> <span class="p">=</span> <span class="s">{Yang., Wenhan and Mirzasoleiman, Baharan}</span><span class="p">,</span>
+  <span class="na">journal</span> <span class="p">=</span> <span class="s">{arXiv preprint arXiv:2505.24208}</span><span class="p">,</span>
+  <span class="na">year</span> <span class="p">=</span> <span class="s">{Preprints}</span>
+<span class="p">}</span></code></pre></figure>
+          </div>
+        </div>
+      </div>
+</li>
+<li>
+<!-- _layouts/bib.html -->
+      <div class="row">
+        <div class="col-sm-2 abbr"><abbr class="badge">ArXiv</abbr></div>
+
+        <!-- Entry bib key -->
         <div id="xue25verify" class="col-sm-10">
         <!-- Title -->
         <div class="title">Verify when Uncertain: Beyond Self-Consistency in Black Box Hallucination Detection</div>
@@ -153,7 +263,7 @@
         <div class="author">
         
 
-        <a href="https://sites.google.com/g.ucla.edu/yihao-xue/home" rel="external nofollow noopener" target="_blank">Yihao Xue</a>, Kristjan Greenewald, Youssef Mroueh, and <a href="https://baharanm.github.io/">Baharan Mirzasoleiman</a>
+        <a href="https://sites.google.com/g.ucla.edu/yihao-xue/home" rel="external nofollow noopener" target="_blank">Yihao Xue</a>, Kristjan Greenewald, Youssef Mroueh, and <em>Baharan Mirzasoleiman</em>
 </div>
 
         <!-- Journal/Book title and date -->
@@ -201,62 +311,6 @@
         <div class="col-sm-2 abbr"><abbr class="badge">ArXiv</abbr></div>
 
         <!-- Entry bib key -->
-        <div id="joshi25mmgen" class="col-sm-10">
-        <!-- Title -->
-        <div class="title">MM-GEN: Enhancing Task Performance Through Targeted Multimodal Data Curation</div>
-        <!-- Author -->
-        <div class="author">
-        
-
-        <a href="https://sjoshi804.github.io/" rel="external nofollow noopener" target="_blank">Siddharth Joshi</a>, Besmira Nushi, Vidhisha Balachandran, Varun Chandrasekaran, Vibhav Vineet, Neel Joshi, and <a href="https://baharanm.github.io/">Baharan Mirzasoleiman</a>
-</div>
-
-        <!-- Journal/Book title and date -->
-        
-        
-        <div class="periodical">
-          <em>arXiv preprint arXiv:2501.04155</em>, Preprints
-        </div>
-        <div class="periodical">
-          
-        </div>
-
-          <!-- Links/Buttons -->
-          <div class="links">
-            <a class="abstract btn btn-sm z-depth-0" role="button">Abs</a>
-            <a href="http://arxiv.org/abs/2501.04155" class="btn btn-sm z-depth-0" role="button" rel="external nofollow noopener" target="_blank">arXiv</a>
-            <a class="bibtex btn btn-sm z-depth-0" role="button">Bib</a>
-            <a href="https://github.com/sjoshi804/MM-Gen" class="btn btn-sm z-depth-0" role="button" rel="external nofollow noopener" target="_blank">Code</a>
-          <!-- -->
-          </div>
-          
-          <div class="badges">
-            <span class="altmetric-embed" data-hide-no-mentions="true" data-hide-less-than="15" data-badge-type="2" data-badge-popover="right"></span>
-              <span class="__dimensions_badge_embed__" data-pmid="" data-hide-zero-citations="true" data-style="small_rectangle" data-legend="hover-right" style="margin-bottom: 3px;"></span>
-          </div>
-
-          <!-- Hidden abstract block -->
-          <div class="abstract hidden">
-            <p>Vision-language models (VLMs) are highly effective but often underperform on specialized tasks; for example, Llava-1.5 struggles with chart and diagram understanding due to scarce task-specific training data. Existing training data, sourced from general-purpose datasets, fails to capture the nuanced details needed for these tasks. We introduce MM-Gen, a scalable method that generates task-specific, high-quality synthetic text for candidate images by leveraging stronger models. MM-Gen employs a three-stage targeted process: partitioning data into subgroups, generating targeted text based on task descriptions, and filtering out redundant and outlier data. Fine-tuning VLMs with data generated by MM-Gen leads to significant performance gains, including 29% on spatial reasoning and 15% on diagram understanding for Llava-1.5 (7B). Compared to human-curated caption data, MM-Gen achieves up to 1.6x better improvements for the original models, proving its effectiveness in enhancing task-specific VLM performance and bridging the gap between general-purpose datasets and specialized requirements. Code available at https://github.com/sjoshi804/MM-Gen.</p>
-          </div>
-<!-- Hidden bibtex block -->
-          <div class="bibtex hidden">
-            <figure class="highlight"><pre><code class="language-bibtex" data-lang="bibtex"><span class="nc">@article</span><span class="p">{</span><span class="nl">joshi25mmgen</span><span class="p">,</span>
-  <span class="na">title</span> <span class="p">=</span> <span class="s">{MM-GEN: Enhancing Task Performance Through Targeted Multimodal Data Curation}</span><span class="p">,</span>
-  <span class="na">author</span> <span class="p">=</span> <span class="s">{Joshi, Siddharth and Nushi, Besmira and Balachandran, Vidhisha and Chandrasekaran, Varun and Vineet, Vibhav and Joshi, Neel and Mirzasoleiman, Baharan}</span><span class="p">,</span>
-  <span class="na">journal</span> <span class="p">=</span> <span class="s">{arXiv preprint arXiv:2501.04155}</span><span class="p">,</span>
-  <span class="na">year</span> <span class="p">=</span> <span class="s">{Preprints}</span>
-<span class="p">}</span></code></pre></figure>
-          </div>
-        </div>
-      </div>
-</li>
-<li>
-<!-- _layouts/bib.html -->
-      <div class="row">
-        <div class="col-sm-2 abbr"><abbr class="badge">ArXiv</abbr></div>
-
-        <!-- Entry bib key -->
         <div id="joshi2023spuco" class="col-sm-10">
         <!-- Title -->
         <div class="title">Challenges and Opportunities in Improving Worst-Group Generalization in Presence of Spurious Features</div>
@@ -264,7 +318,7 @@
         <div class="author">
         
 
-        <a href="https://sjoshi804.github.io/" rel="external nofollow noopener" target="_blank">Siddharth Joshi</a>, <a href="https://sites.google.com/g.ucla.edu/yuyang/home" rel="external nofollow noopener" target="_blank">Yu Yang</a>, <a href="https://sites.google.com/g.ucla.edu/yihao-xue/home" rel="external nofollow noopener" target="_blank">Yihao Xue</a>, <a href="https://sites.google.com/g.ucla.edu/wenhan-yang/home" rel="external nofollow noopener" target="_blank">Wenhan Yang.</a>, and <a href="https://baharanm.github.io/">Baharan Mirzasoleiman</a>
+        <a href="https://sjoshi804.github.io/" rel="external nofollow noopener" target="_blank">Siddharth Joshi</a>, <a href="https://sites.google.com/g.ucla.edu/yuyang/home" rel="external nofollow noopener" target="_blank">Yu Yang</a>, <a href="https://sites.google.com/g.ucla.edu/yihao-xue/home" rel="external nofollow noopener" target="_blank">Yihao Xue</a>, <a href="https://sites.google.com/g.ucla.edu/wenhan-yang/home" rel="external nofollow noopener" target="_blank">Wenhan Yang.</a>, and <em>Baharan Mirzasoleiman</em>
 </div>
 
         <!-- Journal/Book title and date -->
@@ -316,6 +370,62 @@
 <li>
 <!-- _layouts/bib.html -->
       <div class="row">
+        <div class="col-sm-2 abbr"><abbr class="badge">DMLR</abbr></div>
+
+        <!-- Entry bib key -->
+        <div id="joshi25mmgen" class="col-sm-10">
+        <!-- Title -->
+        <div class="title">MM-GEN: Enhancing Task Performance Through Targeted Multimodal Data Curation</div>
+        <!-- Author -->
+        <div class="author">
+        
+
+        <a href="https://sjoshi804.github.io/" rel="external nofollow noopener" target="_blank">Siddharth Joshi</a>, Besmira Nushi, Vidhisha Balachandran, Varun Chandrasekaran, Vibhav Vineet, Neel Joshi, and <em>Baharan Mirzasoleiman</em>
+</div>
+
+        <!-- Journal/Book title and date -->
+        
+        
+        <div class="periodical">
+          <em>Journal of Data-centric Machine Learning Research (DMLR)</em>, 2025
+        </div>
+        <div class="periodical">
+          
+        </div>
+
+          <!-- Links/Buttons -->
+          <div class="links">
+            <a class="abstract btn btn-sm z-depth-0" role="button">Abs</a>
+            <a href="http://arxiv.org/abs/2501.04155" class="btn btn-sm z-depth-0" role="button" rel="external nofollow noopener" target="_blank">arXiv</a>
+            <a class="bibtex btn btn-sm z-depth-0" role="button">Bib</a>
+            <a href="https://github.com/sjoshi804/MM-Gen" class="btn btn-sm z-depth-0" role="button" rel="external nofollow noopener" target="_blank">Code</a>
+          <!-- -->
+          </div>
+          
+          <div class="badges">
+            <span class="altmetric-embed" data-hide-no-mentions="true" data-hide-less-than="15" data-badge-type="2" data-badge-popover="right"></span>
+              <span class="__dimensions_badge_embed__" data-pmid="" data-hide-zero-citations="true" data-style="small_rectangle" data-legend="hover-right" style="margin-bottom: 3px;"></span>
+          </div>
+
+          <!-- Hidden abstract block -->
+          <div class="abstract hidden">
+            <p>Vision-language models (VLMs) are highly effective but often underperform on specialized tasks; for example, Llava-1.5 struggles with chart and diagram understanding due to scarce task-specific training data. Existing training data, sourced from general-purpose datasets, fails to capture the nuanced details needed for these tasks. We introduce MM-Gen, a scalable method that generates task-specific, high-quality synthetic text for candidate images by leveraging stronger models. MM-Gen employs a three-stage targeted process: partitioning data into subgroups, generating targeted text based on task descriptions, and filtering out redundant and outlier data. Fine-tuning VLMs with data generated by MM-Gen leads to significant performance gains, including 29% on spatial reasoning and 15% on diagram understanding for Llava-1.5 (7B). Compared to human-curated caption data, MM-Gen achieves up to 1.6x better improvements for the original models, proving its effectiveness in enhancing task-specific VLM performance and bridging the gap between general-purpose datasets and specialized requirements. Code available at https://github.com/sjoshi804/MM-Gen.</p>
+          </div>
+<!-- Hidden bibtex block -->
+          <div class="bibtex hidden">
+            <figure class="highlight"><pre><code class="language-bibtex" data-lang="bibtex"><span class="nc">@article</span><span class="p">{</span><span class="nl">joshi25mmgen</span><span class="p">,</span>
+  <span class="na">title</span> <span class="p">=</span> <span class="s">{MM-GEN: Enhancing Task Performance Through Targeted Multimodal Data Curation}</span><span class="p">,</span>
+  <span class="na">author</span> <span class="p">=</span> <span class="s">{Joshi, Siddharth and Nushi, Besmira and Balachandran, Vidhisha and Chandrasekaran, Varun and Vineet, Vibhav and Joshi, Neel and Mirzasoleiman, Baharan}</span><span class="p">,</span>
+  <span class="na">journal</span> <span class="p">=</span> <span class="s">{Journal of Data-centric Machine Learning Research (DMLR)}</span><span class="p">,</span>
+  <span class="na">year</span> <span class="p">=</span> <span class="s">{2025}</span>
+<span class="p">}</span></code></pre></figure>
+          </div>
+        </div>
+      </div>
+</li>
+<li>
+<!-- _layouts/bib.html -->
+      <div class="row">
         <div class="col-sm-2 abbr"><abbr class="badge" style="background-color:#00369f"><a href="https://icml.cc/" rel="external nofollow noopener" target="_blank">ICML</a></abbr></div>
 
         <!-- Entry bib key -->
@@ -326,7 +436,7 @@
         <div class="author">
         
 
-        Dang Nguyen, Zeman Li, Mohammadhossein Bateni, Vahab Mirrokni, Meisam Razaviyayn, and <a href="https://baharanm.github.io/">Baharan Mirzasoleiman</a>
+        <a href="https://hsgser.github.io/" rel="external nofollow noopener" target="_blank">Dang Nguyen</a>, Zeman Li, Mohammadhossein Bateni, Vahab Mirrokni, Meisam Razaviyayn, and <em>Baharan Mirzasoleiman</em>
 </div>
 
         <!-- Journal/Book title and date -->
@@ -381,7 +491,7 @@
         <div class="author">
         
 
-        <a href="https://sites.google.com/g.ucla.edu/yihao-xue/home" rel="external nofollow noopener" target="_blank">Yihao Xue</a>, Jiping Li, and <a href="https://baharanm.github.io/">Baharan Mirzasoleiman</a>
+        <a href="https://sites.google.com/g.ucla.edu/yihao-xue/home" rel="external nofollow noopener" target="_blank">Yihao Xue</a>, Jiping Li, and <em>Baharan Mirzasoleiman</em>
 </div>
 
         <!-- Journal/Book title and date -->
@@ -436,7 +546,7 @@
         <div class="author">
         
 
-        Dang Nguyen, <a href="https://sites.google.com/g.ucla.edu/wenhan-yang/home" rel="external nofollow noopener" target="_blank">Wenhan Yang.</a>, Rathul Anand, <a href="https://sites.google.com/g.ucla.edu/yuyang/home" rel="external nofollow noopener" target="_blank">Yu Yang</a>, and <a href="https://baharanm.github.io/">Baharan Mirzasoleiman</a>
+        <a href="https://hsgser.github.io/" rel="external nofollow noopener" target="_blank">Dang Nguyen</a>, <a href="https://sites.google.com/g.ucla.edu/wenhan-yang/home" rel="external nofollow noopener" target="_blank">Wenhan Yang.</a>, Rathul Anand, <a href="https://sites.google.com/g.ucla.edu/yuyang/home" rel="external nofollow noopener" target="_blank">Yu Yang</a>, and <em>Baharan Mirzasoleiman</em>
 </div>
 
         <!-- Journal/Book title and date -->
@@ -492,7 +602,7 @@
         <div class="author">
         
 
-        <a href="https://sjoshi804.github.io/" rel="external nofollow noopener" target="_blank">Siddharth Joshi</a>, Jiayi Ni, and <a href="https://baharanm.github.io/">Baharan Mirzasoleiman</a>
+        <a href="https://sjoshi804.github.io/" rel="external nofollow noopener" target="_blank">Siddharth Joshi</a>, Jiayi Ni, and <em>Baharan Mirzasoleiman</em>
 </div>
 
         <!-- Journal/Book title and date -->
@@ -553,7 +663,7 @@
         <div class="author">
         
 
-        Dang Nguyen, Paymon Haddad, Eric Gan, and <a href="https://baharanm.github.io/">Baharan Mirzasoleiman</a>
+        <a href="https://hsgser.github.io/" rel="external nofollow noopener" target="_blank">Dang Nguyen</a>, Paymon Haddad, Eric Gan, and <em>Baharan Mirzasoleiman</em>
 </div>
 
         <!-- Journal/Book title and date -->
@@ -608,7 +718,7 @@
         <div class="author">
         
 
-        <a href="https://sites.google.com/g.ucla.edu/yuyang/home" rel="external nofollow noopener" target="_blank">Yu Yang</a>, Siddhartha Mishra, Jeffery N. Chiang, and <a href="https://baharanm.github.io/">Baharan Mirzasoleiman</a>
+        <a href="https://sites.google.com/g.ucla.edu/yuyang/home" rel="external nofollow noopener" target="_blank">Yu Yang</a>, Siddhartha Mishra, Jeffery N. Chiang, and <em>Baharan Mirzasoleiman</em>
 </div>
 
         <!-- Journal/Book title and date -->
@@ -664,7 +774,7 @@
         <div class="author">
         
 
-        <a href="https://sites.google.com/g.ucla.edu/wenhan-yang/home" rel="external nofollow noopener" target="_blank">Wenhan Yang.</a>, Jingdong Gao, and <a href="https://baharanm.github.io/">Baharan Mirzasoleiman</a>
+        <a href="https://sites.google.com/g.ucla.edu/wenhan-yang/home" rel="external nofollow noopener" target="_blank">Wenhan Yang.</a>, Jingdong Gao, and <em>Baharan Mirzasoleiman</em>
 </div>
 
         <!-- Journal/Book title and date -->
@@ -721,7 +831,7 @@
         <div class="author">
         
 
-        <a href="https://sites.google.com/g.ucla.edu/yihao-xue/home" rel="external nofollow noopener" target="_blank">Yihao Xue</a>, Ali Payani, <a href="https://sites.google.com/g.ucla.edu/yuyang/home" rel="external nofollow noopener" target="_blank">Yu Yang</a>, and <a href="https://baharanm.github.io/">Baharan Mirzasoleiman</a>
+        <a href="https://sites.google.com/g.ucla.edu/yihao-xue/home" rel="external nofollow noopener" target="_blank">Yihao Xue</a>, Ali Payani, <a href="https://sites.google.com/g.ucla.edu/yuyang/home" rel="external nofollow noopener" target="_blank">Yu Yang</a>, and <em>Baharan Mirzasoleiman</em>
 </div>
 
         <!-- Journal/Book title and date -->
@@ -777,7 +887,7 @@
         <div class="author">
         
 
-        Haofan Lu, Christopher Vattheuer, <a href="https://baharanm.github.io/">Baharan Mirzasoleiman</a>, and Omid Abari</div>
+        Haofan Lu, Christopher Vattheuer, <em>Baharan Mirzasoleiman</em>, and Omid Abari</div>
 
         <!-- Journal/Book title and date -->
         
@@ -832,7 +942,7 @@
         <div class="author">
         
 
-        <a href="https://sites.google.com/g.ucla.edu/wenhan-yang/home" rel="external nofollow noopener" target="_blank">Wenhan Yang.</a>, and <a href="https://baharanm.github.io/">Baharan Mirzasoleiman</a>
+        <a href="https://sites.google.com/g.ucla.edu/wenhan-yang/home" rel="external nofollow noopener" target="_blank">Wenhan Yang.</a>, and <em>Baharan Mirzasoleiman</em>
 </div>
 
         <!-- Journal/Book title and date -->
@@ -888,7 +998,7 @@
         <div class="author">
         
 
-        <a href="https://sites.google.com/g.ucla.edu/yihao-xue/home" rel="external nofollow noopener" target="_blank">Yihao Xue</a>, Kyle Whitecross, and <a href="https://baharanm.github.io/">Baharan Mirzasoleiman</a>
+        <a href="https://sites.google.com/g.ucla.edu/yihao-xue/home" rel="external nofollow noopener" target="_blank">Yihao Xue</a>, Kyle Whitecross, and <em>Baharan Mirzasoleiman</em>
 </div>
 
         <!-- Journal/Book title and date -->
@@ -948,7 +1058,7 @@
         <div class="author">
         
 
-        <a href="https://sjoshi804.github.io/" rel="external nofollow noopener" target="_blank">Siddharth Joshi</a>, Arnav Jain, Ali Payani, and <a href="https://baharanm.github.io/">Baharan Mirzasoleiman</a>
+        <a href="https://sjoshi804.github.io/" rel="external nofollow noopener" target="_blank">Siddharth Joshi</a>, Arnav Jain, Ali Payani, and <em>Baharan Mirzasoleiman</em>
 </div>
 
         <!-- Journal/Book title and date -->
@@ -1005,7 +1115,7 @@
         <div class="author">
         
 
-        <a href="https://sites.google.com/g.ucla.edu/yuyang/home" rel="external nofollow noopener" target="_blank">Yu Yang</a>, Eric Gan, Gintare Karolina Dziugaite, and <a href="https://baharanm.github.io/">Baharan Mirzasoleiman</a>
+        <a href="https://sites.google.com/g.ucla.edu/yuyang/home" rel="external nofollow noopener" target="_blank">Yu Yang</a>, Eric Gan, Gintare Karolina Dziugaite, and <em>Baharan Mirzasoleiman</em>
 </div>
 
         <!-- Journal/Book title and date -->
@@ -1063,7 +1173,7 @@
         <div class="author">
         
 
-        <a href="https://sites.google.com/g.ucla.edu/yihao-xue/home" rel="external nofollow noopener" target="_blank">Yihao Xue</a>, <a href="https://sjoshi804.github.io/" rel="external nofollow noopener" target="_blank">Siddharth Joshi</a>, Dang Nguyen, and <a href="https://baharanm.github.io/">Baharan Mirzasoleiman</a>
+        <a href="https://sites.google.com/g.ucla.edu/yihao-xue/home" rel="external nofollow noopener" target="_blank">Yihao Xue</a>, <a href="https://sjoshi804.github.io/" rel="external nofollow noopener" target="_blank">Siddharth Joshi</a>, <a href="https://hsgser.github.io/" rel="external nofollow noopener" target="_blank">Dang Nguyen</a>, and <em>Baharan Mirzasoleiman</em>
 </div>
 
         <!-- Journal/Book title and date -->
@@ -1121,7 +1231,7 @@
         <div class="author">
         
 
-        <a href="https://sites.google.com/g.ucla.edu/yihao-xue/home" rel="external nofollow noopener" target="_blank">Yihao Xue</a>, Eric Gan, Jiayi Ni, <a href="https://sjoshi804.github.io/" rel="external nofollow noopener" target="_blank">Siddharth Joshi</a>, and <a href="https://baharanm.github.io/">Baharan Mirzasoleiman</a>
+        <a href="https://sites.google.com/g.ucla.edu/yihao-xue/home" rel="external nofollow noopener" target="_blank">Yihao Xue</a>, Eric Gan, Jiayi Ni, <a href="https://sjoshi804.github.io/" rel="external nofollow noopener" target="_blank">Siddharth Joshi</a>, and <em>Baharan Mirzasoleiman</em>
 </div>
 
         <!-- Journal/Book title and date -->
@@ -1179,7 +1289,7 @@
         <div class="author">
         
 
-        Xuxi Chen*, <a href="https://sites.google.com/g.ucla.edu/yuyang/home" rel="external nofollow noopener" target="_blank">Yu Yang*</a>, Zhangyang Wang, and <a href="https://baharanm.github.io/">Baharan Mirzasoleiman</a>
+        Xuxi Chen*, <a href="https://sites.google.com/g.ucla.edu/yuyang/home" rel="external nofollow noopener" target="_blank">Yu Yang*</a>, Zhangyang Wang, and <em>Baharan Mirzasoleiman</em>
 </div>
 
         <!-- Journal/Book title and date -->
@@ -1241,7 +1351,7 @@
         <div class="author">
         
 
-        <a href="https://sites.google.com/g.ucla.edu/wenhan-yang/home" rel="external nofollow noopener" target="_blank">Wenhan Yang.</a>, Jingdong Gao, and <a href="https://baharanm.github.io/">Baharan Mirzasoleiman</a>
+        <a href="https://sites.google.com/g.ucla.edu/wenhan-yang/home" rel="external nofollow noopener" target="_blank">Wenhan Yang.</a>, Jingdong Gao, and <em>Baharan Mirzasoleiman</em>
 </div>
 
         <!-- Journal/Book title and date -->
@@ -1300,7 +1410,7 @@
         <div class="author">
         
 
-        Yihe Deng*, <a href="https://sites.google.com/g.ucla.edu/yuyang/home" rel="external nofollow noopener" target="_blank">Yu Yang*</a>, <a href="https://baharanm.github.io/">Baharan Mirzasoleiman</a>, and Quanquan Gu</div>
+        Yihe Deng*, <a href="https://sites.google.com/g.ucla.edu/yuyang/home" rel="external nofollow noopener" target="_blank">Yu Yang*</a>, <em>Baharan Mirzasoleiman</em>, and Quanquan Gu</div>
 
         <!-- Journal/Book title and date -->
         
@@ -1357,7 +1467,7 @@
         <div class="author">
         
 
-        Orsolya Kiss, Zihan Qu, Eva M. Müller-Oehring, Fiona C. Baker, and <a href="https://baharanm.github.io/">Baharan Mirzasoleiman</a>
+        Orsolya Kiss, Zihan Qu, Eva M. Müller-Oehring, Fiona C. Baker, and <em>Baharan Mirzasoleiman</em>
 </div>
 
         <!-- Journal/Book title and date -->
@@ -1412,7 +1522,7 @@
         <div class="author">
         
 
-        <a href="https://sites.google.com/g.ucla.edu/yuyang/home" rel="external nofollow noopener" target="_blank">Yu Yang</a>, Besmira Nushi, Hamid Palangi, and <a href="https://baharanm.github.io/">Baharan Mirzasoleiman</a>
+        <a href="https://sites.google.com/g.ucla.edu/yuyang/home" rel="external nofollow noopener" target="_blank">Yu Yang</a>, Besmira Nushi, Hamid Palangi, and <em>Baharan Mirzasoleiman</em>
 </div>
 
         <!-- Journal/Book title and date -->
@@ -1469,7 +1579,7 @@
         <div class="author">
         
 
-        <a href="https://sjoshi804.github.io/" rel="external nofollow noopener" target="_blank">Siddharth Joshi</a>, and <a href="https://baharanm.github.io/">Baharan Mirzasoleiman</a>
+        <a href="https://sjoshi804.github.io/" rel="external nofollow noopener" target="_blank">Siddharth Joshi</a>, and <em>Baharan Mirzasoleiman</em>
 </div>
 
         <!-- Journal/Book title and date -->
@@ -1528,7 +1638,7 @@
         <div class="author">
         
 
-        <a href="https://sites.google.com/g.ucla.edu/yihao-xue/home" rel="external nofollow noopener" target="_blank">Yihao Xue</a>, <a href="https://sjoshi804.github.io/" rel="external nofollow noopener" target="_blank">Siddharth Joshi</a>, Eric Gan, Pin-Yu Chen, and <a href="https://baharanm.github.io/">Baharan Mirzasoleiman</a>
+        <a href="https://sites.google.com/g.ucla.edu/yihao-xue/home" rel="external nofollow noopener" target="_blank">Yihao Xue</a>, <a href="https://sjoshi804.github.io/" rel="external nofollow noopener" target="_blank">Siddharth Joshi</a>, Eric Gan, Pin-Yu Chen, and <em>Baharan Mirzasoleiman</em>
 </div>
 
         <!-- Journal/Book title and date -->
@@ -1588,7 +1698,7 @@
         <div class="author">
         
 
-        <a href="https://sites.google.com/g.ucla.edu/yuyang/home" rel="external nofollow noopener" target="_blank">Yu Yang</a>, Hao Kang, and <a href="https://baharanm.github.io/">Baharan Mirzasoleiman</a>
+        <a href="https://sites.google.com/g.ucla.edu/yuyang/home" rel="external nofollow noopener" target="_blank">Yu Yang</a>, Hao Kang, and <em>Baharan Mirzasoleiman</em>
 </div>
 
         <!-- Journal/Book title and date -->
@@ -1646,7 +1756,7 @@
         <div class="author">
         
 
-        Neha Prakriya, <a href="https://sites.google.com/g.ucla.edu/yuyang/home" rel="external nofollow noopener" target="_blank">Yu Yang</a>, <a href="https://baharanm.github.io/">Baharan Mirzasoleiman</a>, Cho-Jui Hsieh, and Jason Cong</div>
+        Neha Prakriya, <a href="https://sites.google.com/g.ucla.edu/yuyang/home" rel="external nofollow noopener" target="_blank">Yu Yang</a>, <em>Baharan Mirzasoleiman</em>, Cho-Jui Hsieh, and Jason Cong</div>
 
         <!-- Journal/Book title and date -->
         
@@ -1701,7 +1811,7 @@
         <div class="author">
         
 
-        Evan Becker, Jingdong Gao, Ted Zadouri, and <a href="https://baharanm.github.io/">Baharan Mirzasoleiman</a>
+        Evan Becker, Jingdong Gao, Ted Zadouri, and <em>Baharan Mirzasoleiman</em>
 </div>
 
         <!-- Journal/Book title and date -->
@@ -1759,7 +1869,7 @@
         <div class="author">
         
 
-        Shayan Fazeli, Lionel Levine, Mehrab Beikzadeh, <a href="https://baharanm.github.io/">Baharan Mirzasoleiman</a>, Bita Zadeh, Tara Peris, and Majid Sarrafzadeh</div>
+        Shayan Fazeli, Lionel Levine, Mehrab Beikzadeh, <em>Baharan Mirzasoleiman</em>, Bita Zadeh, Tara Peris, and Majid Sarrafzadeh</div>
 
         <!-- Journal/Book title and date -->
         
@@ -1814,7 +1924,7 @@
         <div class="author">
         
 
-        Junaid Ali, Mahmoudreza Babaei, Abhijnan Chakraborty, <a href="https://baharanm.github.io/">Baharan Mirzasoleiman</a>, Krishna Gummadi, and Adish Singla</div>
+        Junaid Ali, Mahmoudreza Babaei, Abhijnan Chakraborty, <em>Baharan Mirzasoleiman</em>, Krishna Gummadi, and Adish Singla</div>
 
         <!-- Journal/Book title and date -->
         
@@ -1873,7 +1983,7 @@
         <div class="author">
         
 
-        Tian Yu Liu, <a href="https://sites.google.com/g.ucla.edu/yuyang/home" rel="external nofollow noopener" target="_blank">Yu Yang</a>, and <a href="https://baharanm.github.io/">Baharan Mirzasoleiman</a>
+        Tian Yu Liu, <a href="https://sites.google.com/g.ucla.edu/yuyang/home" rel="external nofollow noopener" target="_blank">Yu Yang</a>, and <em>Baharan Mirzasoleiman</em>
 </div>
 
         <!-- Journal/Book title and date -->
@@ -1931,7 +2041,7 @@
         <div class="author">
         
 
-        Tian Yu Liu, and <a href="https://baharanm.github.io/">Baharan Mirzasoleiman</a>
+        Tian Yu Liu, and <em>Baharan Mirzasoleiman</em>
 </div>
 
         <!-- Journal/Book title and date -->
@@ -1989,7 +2099,7 @@
         <div class="author">
         
 
-        <a href="https://sites.google.com/g.ucla.edu/yuyang/home" rel="external nofollow noopener" target="_blank">Yu Yang</a>, Tian Yu Liu, and <a href="https://baharanm.github.io/">Baharan Mirzasoleiman</a>
+        <a href="https://sites.google.com/g.ucla.edu/yuyang/home" rel="external nofollow noopener" target="_blank">Yu Yang</a>, Tian Yu Liu, and <em>Baharan Mirzasoleiman</em>
 </div>
 
         <!-- Journal/Book title and date -->
@@ -2052,7 +2162,7 @@
         <div class="author">
         
 
-        Omead Pooladzandi, David Davini, and <a href="https://baharanm.github.io/">Baharan Mirzasoleiman</a>
+        Omead Pooladzandi, David Davini, and <em>Baharan Mirzasoleiman</em>
 </div>
 
         <!-- Journal/Book title and date -->
@@ -2111,7 +2221,7 @@
         <div class="author">
         
 
-        <a href="https://sites.google.com/g.ucla.edu/yihao-xue/home" rel="external nofollow noopener" target="_blank">Yihao Xue</a>, Kyle Whitecross, and <a href="https://baharanm.github.io/">Baharan Mirzasoleiman</a>
+        <a href="https://sites.google.com/g.ucla.edu/yihao-xue/home" rel="external nofollow noopener" target="_blank">Yihao Xue</a>, Kyle Whitecross, and <em>Baharan Mirzasoleiman</em>
 </div>
 
         <!-- Journal/Book title and date -->
@@ -2170,7 +2280,7 @@
         <div class="author">
         
 
-        Omead Pooladzandi, Pasha Khosravi, Erik Nijkamp, and <a href="https://baharanm.github.io/">Baharan Mirzasoleiman</a>
+        Omead Pooladzandi, Pasha Khosravi, Erik Nijkamp, and <em>Baharan Mirzasoleiman</em>
 </div>
 
         <!-- Journal/Book title and date -->
@@ -2225,7 +2335,7 @@
         <div class="author">
         
 
-        Shayan Fazeli, Lionel Levine, Mehrab Beikzadeh, <a href="https://baharanm.github.io/">Baharan Mirzasoleiman</a>, Bita Zadeh, Tara Peris, and Majid Sarrafzadeh</div>
+        Shayan Fazeli, Lionel Levine, Mehrab Beikzadeh, <em>Baharan Mirzasoleiman</em>, Bita Zadeh, Tara Peris, and Majid Sarrafzadeh</div>
 
         <!-- Journal/Book title and date -->
         
@@ -2282,7 +2392,7 @@
         <div class="author">
         
 
-        Mahmoudreza Babaei, <a href="https://baharanm.github.io/">Baharan Mirzasoleiman</a>, Jungseock Joo, and Adrian Weller</div>
+        Mahmoudreza Babaei, <em>Baharan Mirzasoleiman</em>, Jungseock Joo, and Adrian Weller</div>
 
         <!-- Journal/Book title and date -->
         
@@ -2336,7 +2446,7 @@
         <div class="author">
         
 
-        Róbert Pálovics, Tony Wyss-Coray, and <a href="https://baharanm.github.io/">Baharan Mirzasoleiman</a>
+        Róbert Pálovics, Tony Wyss-Coray, and <em>Baharan Mirzasoleiman</em>
 </div>
 
         <!-- Journal/Book title and date -->
@@ -2391,7 +2501,7 @@
         <div class="author">
         
 
-        Alexandra Porter, <a href="https://baharanm.github.io/">Baharan Mirzasoleiman</a>, and Jure Leskovec</div>
+        Alexandra Porter, <em>Baharan Mirzasoleiman</em>, and Jure Leskovec</div>
 
         <!-- Journal/Book title and date -->
         
@@ -2446,7 +2556,7 @@
         <div class="author">
         
 
-        Yuhan Liu, <a href="https://sjoshi804.github.io/" rel="external nofollow noopener" target="_blank">Siddharth Joshi</a>, and <a href="https://baharanm.github.io/">Baharan Mirzasoleiman</a>
+        Yuhan Liu, <a href="https://sjoshi804.github.io/" rel="external nofollow noopener" target="_blank">Siddharth Joshi</a>, and <em>Baharan Mirzasoleiman</em>
 </div>
 
         <!-- Journal/Book title and date -->
@@ -2501,7 +2611,7 @@
         <div class="author">
         
 
-        Ahmad Khajehnejad, Moein Khajehnejad, Mahmoudreza Babaei, Krishna P Gummadi, Adrian Weller, and <a href="https://baharanm.github.io/">Baharan Mirzasoleiman</a>
+        Ahmad Khajehnejad, Moein Khajehnejad, Mahmoudreza Babaei, Krishna P Gummadi, Adrian Weller, and <em>Baharan Mirzasoleiman</em>
 </div>
 
         <!-- Journal/Book title and date -->
@@ -2560,7 +2670,7 @@
         <div class="author">
         
 
-        Junaid Ali, Mahmoudreza Babaei, Abhijnan Chakraborty, <a href="https://baharanm.github.io/">Baharan Mirzasoleiman</a>, Krishna Gummadi, and Adish Singla</div>
+        Junaid Ali, Mahmoudreza Christiansen Babaei, Abhijnan Chakraborty, <em>Baharan Mirzasoleiman</em>, Krishna Gummadi, and Adish Singla</div>
 
         <!-- Journal/Book title and date -->
         
@@ -2593,7 +2703,7 @@
           <div class="bibtex hidden">
             <figure class="highlight"><pre><code class="language-bibtex" data-lang="bibtex"><span class="nc">@article</span><span class="p">{</span><span class="nl">ali2022fairness</span><span class="p">,</span>
   <span class="na">title</span> <span class="p">=</span> <span class="s">{On the fairness of time-critical influence maximization in social networks}</span><span class="p">,</span>
-  <span class="na">author</span> <span class="p">=</span> <span class="s">{Ali, Junaid and Babaei, Mahmoudreza and Chakraborty, Abhijnan and Mirzasoleiman, Baharan and Gummadi, Krishna and Singla, Adish}</span><span class="p">,</span>
+  <span class="na">author</span> <span class="p">=</span> <span class="s">{Ali, Junaid and Babaei, Mahmoudreza Christiansen and Chakraborty, Abhijnan and Mirzasoleiman, Baharan and Gummadi, Krishna and Singla, Adish}</span><span class="p">,</span>
   <span class="na">journal</span> <span class="p">=</span> <span class="s">{IEEE International Conference on Data Engineering (ICDE)}</span><span class="p">,</span>
   <span class="na">year</span> <span class="p">=</span> <span class="s">{2022}</span><span class="p">,</span>
   <span class="na">publisher</span> <span class="p">=</span> <span class="s">{IEEE}</span><span class="p">,</span>
@@ -2619,7 +2729,7 @@
         <div class="author">
         
 
-        Saeed Vahidian, <a href="https://baharanm.github.io/">Baharan Mirzasoleiman</a>, and Alexander Cloninger</div>
+        Saeed Vahidian, <em>Baharan Mirzasoleiman</em>, and Alexander Cloninger</div>
 
         <!-- Journal/Book title and date -->
         
@@ -2676,7 +2786,7 @@
         <div class="author">
         
 
-        <a href="https://baharanm.github.io/">Baharan Mirzasoleiman</a>, Jeff Bilmes, and Jure Leskovec</div>
+        <em>Baharan Mirzasoleiman</em>, Jeff Bilmes, and Jure Leskovec</div>
 
         <!-- Journal/Book title and date -->
         
@@ -2735,7 +2845,7 @@
         <div class="author">
         
 
-        <a href="https://baharanm.github.io/">Baharan Mirzasoleiman</a>, Kaidi Cao, and Jure Leskovec</div>
+        <em>Baharan Mirzasoleiman</em>, Kaidi Cao, and Jure Leskovec</div>
 
         <!-- Journal/Book title and date -->
         
@@ -2794,7 +2904,7 @@
         <div class="author">
         
 
-        Cody Coleman, Christopher Yeh, Stephen Mussmann, <a href="https://baharanm.github.io/">Baharan Mirzasoleiman</a>, Peter Bailis, Percy Liang, Jure Leskovec, and Matei Zaharia</div>
+        Cody Coleman, Christopher Yeh, Stephen Mussmann, <em>Baharan Mirzasoleiman</em>, Peter Bailis, Percy Liang, Jure Leskovec, and Matei Zaharia</div>
 
         <!-- Journal/Book title and date -->
         
@@ -2853,7 +2963,7 @@
         <div class="author">
         
 
-        <a href="https://baharanm.github.io/">Baharan Mirzasoleiman</a>, Stefanie Jegelka, and Andreas Krause</div>
+        <em>Baharan Mirzasoleiman</em>, Stefanie Jegelka, and Andreas Krause</div>
 
         <!-- Journal/Book title and date -->
         
@@ -2910,7 +3020,7 @@
         <div class="author">
         
 
-        Elahe Ghalebi, <a href="https://baharanm.github.io/">Baharan Mirzasoleiman</a>, Radu Grosu, and Jure Leskovec</div>
+        Elahe Ghalebi, <em>Baharan Mirzasoleiman</em>, Radu Grosu, and Jure Leskovec</div>
 
         <!-- Journal/Book title and date -->
         
@@ -2972,7 +3082,7 @@
         <div class="author">
         
 
-        <a href="https://baharanm.github.io/">Baharan Mirzasoleiman</a>, Amin Karbasi, and Andreas Krause</div>
+        <em>Baharan Mirzasoleiman</em>, Amin Karbasi, and Andreas Krause</div>
 
         <!-- Journal/Book title and date -->
         
@@ -3029,7 +3139,7 @@
         <div class="author">
         
 
-        Andrew An Bian, <a href="https://baharanm.github.io/">Baharan Mirzasoleiman</a>, Joachim Buhmann, and Andreas Krause</div>
+        Andrew An Bian, <em>Baharan Mirzasoleiman</em>, Joachim Buhmann, and Andreas Krause</div>
 
         <!-- Journal/Book title and date -->
         
@@ -3090,7 +3200,7 @@
         <div class="author">
         
 
-        Eric Balkanski*, <a href="https://baharanm.github.io/">Baharan Mirzasoleiman*</a>, Andreas Krause, and Yaron Singer</div>
+        Eric Balkanski*, <em>Baharan Mirzasoleiman*</em>, Andreas Krause, and Yaron Singer</div>
 
         <!-- Journal/Book title and date -->
         
@@ -3147,7 +3257,7 @@
         <div class="author">
         
 
-        <a href="https://baharanm.github.io/">Baharan Mirzasoleiman</a>, Ashwinkumar Badanidiyuru, and Amin Karbasi</div>
+        <em>Baharan Mirzasoleiman</em>, Ashwinkumar Badanidiyuru, and Amin Karbasi</div>
 
         <!-- Journal/Book title and date -->
         
@@ -3204,7 +3314,7 @@
         <div class="author">
         
 
-        <a href="https://baharanm.github.io/">Baharan Mirzasoleiman</a>, Morteza Zadimoghaddam, and Amin Karbasi</div>
+        <em>Baharan Mirzasoleiman</em>, Morteza Zadimoghaddam, and Amin Karbasi</div>
 
         <!-- Journal/Book title and date -->
         
@@ -3260,7 +3370,7 @@
         <div class="author">
         
 
-        <a href="https://baharanm.github.io/">Baharan Mirzasoleiman</a>, Amin Karbasi, Rik Sarkar, and Andreas Krause</div>
+        <em>Baharan Mirzasoleiman</em>, Amin Karbasi, Rik Sarkar, and Andreas Krause</div>
 
         <!-- Journal/Book title and date -->
         
@@ -3322,7 +3432,7 @@
         <div class="author">
         
 
-        <a href="https://baharanm.github.io/">Baharan Mirzasoleiman</a>, Ashwinkumar Badanidiyuru, Amin Karbasi, Jan Vondrák, and Andreas Krause</div>
+        <em>Baharan Mirzasoleiman</em>, Ashwinkumar Badanidiyuru, Amin Karbasi, Jan Vondrák, and Andreas Krause</div>
 
         <!-- Journal/Book title and date -->
         
@@ -3378,7 +3488,7 @@
         <div class="author">
         
 
-        <a href="https://baharanm.github.io/">Baharan Mirzasoleiman</a>, Amin Karbasi, Ashwinkumar Badanidiyuru, and Andreas Krause</div>
+        <em>Baharan Mirzasoleiman</em>, Amin Karbasi, Ashwinkumar Badanidiyuru, and Andreas Krause</div>
 
         <!-- Journal/Book title and date -->
         
@@ -3408,7 +3518,7 @@
 
           <!-- Hidden abstract block -->
           <div class="abstract hidden">
-            <p>How can one find a subset, ideally as small as possible, that well represents a massive dataset? Ie, its corresponding utility, measured according to a suitable utility function, should be comparable to that of the whole dataset. In this paper, we formalize this challenge as a submodular cover problem. Here, the utility is assumed to exhibit submodularity, a natural diminishing returns condition preva-lent in many data summarization applications. The classical greedy algorithm is known to provide solutions with logarithmic approximation guarantees compared to the optimum solution. However, this sequential, centralized approach is imprac-tical for truly large-scale problems. In this work, we develop the first distributed algorithm–DISCOVER–for submodular set cover that is easily implementable using MapReduce-style computations. We theoretically analyze our approach, and present approximation guarantees for the solutions returned by DISCOVER. We also study a natural trade-off between the communication cost and the num-ber of rounds required to obtain such a solution. In our extensive experiments, we demonstrate the effectiveness of our approach on several applications, includ-ing active set selection, exemplar based clustering, and vertex cover on tens of millions of data points using Spark.</p>
+            <p>How can one find a subset, ideally as possible, that well represents a massive dataset? Ie, its corresponding utility, measured according to a suitable utility function, should be comparable to that of the whole dataset. In this paper, we formalize this challenge as a submodular cover problem. Here, the utility is assumed to exhibit submodularity, a natural diminishing returns condition preva-lent in many data summarization applications. The classical greedy algorithm is known to provide solutions with logarithmic approximation guarantees compared to the optimum solution. However, this sequential, centralized approach is imprac-tical for truly large-scale problems. In this work, we develop the first distributed algorithm–DISCOVER–for submodular set cover that is easily implementable using MapReduce-style computations. We theoretically analyze our approach, and present approximation guarantees for the solutions returned by DISCOVER. We also study a natural trade-off between the communication cost and the num-ber of rounds required to obtain such a solution. In our extensive experiments, we demonstrate the effectiveness of our approach on several applications, includ-ing active set selection, exemplar based clustering, and vertex cover on tens of millions of data points using Spark.</p>
           </div>
 <!-- Hidden bibtex block -->
           <div class="bibtex hidden">
@@ -3441,7 +3551,7 @@
         <div class="author">
         
 
-        Ashwinkumar Badanidiyuru, <a href="https://baharanm.github.io/">Baharan Mirzasoleiman</a>, Amin Karbasi, and Andreas Krause</div>
+        Ashwinkumar Badanidiyuru, <em>Baharan Mirzasoleiman</em>, Amin Karbasi, and Andreas Krause</div>
 
         <!-- Journal/Book title and date -->
         
@@ -3497,7 +3607,7 @@
         <div class="author">
         
 
-        <a href="https://baharanm.github.io/">Baharan Mirzasoleiman</a>, Hamid R Rabiee, and Mostafa Salehi</div>
+        <em>Baharan Mirzasoleiman</em>, Hamid R Rabiee, and Mostafa Salehi</div>
 
         <!-- Journal/Book title and date -->
         
@@ -3555,7 +3665,7 @@
         <div class="author">
         
 
-        Mahmoudreza Babaei, <a href="https://baharanm.github.io/">Baharan Mirzasoleiman</a>, Mahdi Jalili, and Mohammad Ali Safari</div>
+        Mahmoudreza Babaei, <em>Baharan Mirzasoleiman</em>, Mahdi Jalili, and Mohammad Ali Safari</div>
 
         <!-- Journal/Book title and date -->
         
@@ -3612,7 +3722,7 @@
         <div class="author">
         
 
-        <a href="https://baharanm.github.io/">Baharan Mirzasoleiman</a>, Amin Karbasi, Rik Sarkar, and Andreas Krause</div>
+        <em>Baharan Mirzasoleiman</em>, Amin Karbasi, Rik Sarkar, and Andreas Krause</div>
 
         <!-- Journal/Book title and date -->
         
@@ -3671,7 +3781,7 @@
         <div class="author">
         
 
-        <a href="https://baharanm.github.io/">Baharan Mirzasoleiman</a>, Mahmoudreza Babaei, and Mahdi Jalili</div>
+        <em>Baharan Mirzasoleiman</em>, Mahmoudreza Babaei, and Mahdi Jalili</div>
 
         <!-- Journal/Book title and date -->
         
@@ -3732,7 +3842,7 @@
         <div class="author">
         
 
-        <a href="https://baharanm.github.io/">Baharan Mirzasoleiman</a>, Mahmoudreza Babaei, Mahdi Jalili, and MohammadAli Safari</div>
+        <em>Baharan Mirzasoleiman</em>, Mahmoudreza Babaei, Mahdi Jalili, and MohammadAli Safari</div>
 
         <!-- Journal/Book title and date -->
         
@@ -3790,7 +3900,7 @@
         <div class="author">
         
 
-        <a href="https://baharanm.github.io/">Baharan Mirzasoleiman</a>, and Mahdi Jalili</div>
+        <em>Baharan Mirzasoleiman</em>, and Mahdi Jalili</div>
 
         <!-- Journal/Book title and date -->
         
@@ -3848,7 +3958,7 @@
         <div class="author">
         
 
-        Hossein Shafiei, Ahmad Khonsari, <a href="https://baharanm.github.io/">Baharan Mirzasoleiman</a>, and Mohammad Ould-Khaoua</div>
+        Hossein Shafiei, Ahmad Khonsari, <em>Baharan Mirzasoleiman</em>, and Mohammad Ould-Khaoua</div>
 
         <!-- Journal/Book title and date -->
         
@@ -3908,7 +4018,7 @@
         <div class="author">
         
 
-        Ali Jafari, Hosein Shafiei, <a href="https://baharanm.github.io/">Baharan Mirzasoleiman</a>, and Ghodrat Sepidnam</div>
+        Ali Jafari, Hosein Shafiei, <em>Baharan Mirzasoleiman</em>, and Ghodrat Sepidnam</div>
 
         <!-- Journal/Book title and date -->
         
@@ -3952,6 +4062,354 @@
       </div>
 </li></ol>
 
+  <h2 class="year">1967</h2>
+  <ol class="bibliography"><li>
+<!-- _layouts/bib.html -->
+      <div class="row">
+        <div class="col-sm-2 preview">
+<figure>
+
+  <picture>
+    
+
+    <!-- Fallback to the original file -->
+    <img src="/assets/img/publication_preview/wave-mechanics.gif" class="preview z-depth-1 rounded" width="auto" height="auto" alt="wave-mechanics.gif" onerror="this.onerror=null; $('.responsive-img-srcset').remove();">
+
+  </picture>
+
+</figure>
+</div>
+
+        <!-- Entry bib key -->
+        <div id="przibram1967letters" class="col-sm-10">
+        <!-- Title -->
+        <div class="title">Letters on wave mechanics</div>
+        <!-- Author -->
+        <div class="author">
+        
+
+        Albert Einstein, <a href="https://en.wikipedia.org/wiki/Erwin_Schr%C3%B6dinger" rel="external nofollow noopener" target="_blank">Erwin Schrödinger</a>, <a href="https://en.wikipedia.org/wiki/Max_Planck" rel="external nofollow noopener" target="_blank">Max Planck</a>, <a href="https://en.wikipedia.org/wiki/Hendrik_Lorentz" rel="external nofollow noopener" target="_blank">Hendrik Antoon Lorentz</a>, and <a href="https://link.springer.com/article/10.1007/s00016-019-00242-z" rel="external nofollow noopener" target="_blank">Karl Przibram</a>
+</div>
+
+        <!-- Journal/Book title and date -->
+        
+        
+        <div class="periodical">
+          1967
+        </div>
+        <div class="periodical">
+          
+        </div>
+
+          <!-- Links/Buttons -->
+          <div class="links">
+            <a class="bibtex btn btn-sm z-depth-0" role="button">Bib</a>
+          <!-- -->
+          </div>
+          
+          <div class="badges">
+            <span class="altmetric-embed" data-hide-no-mentions="true" data-hide-less-than="15" data-badge-type="2" data-badge-popover="right"></span>
+              <span class="__dimensions_badge_embed__" data-pmid="" data-hide-zero-citations="true" data-style="small_rectangle" data-legend="hover-right" style="margin-bottom: 3px;"></span>
+          </div>
+
+          <!-- Hidden bibtex block -->
+          <div class="bibtex hidden">
+            <figure class="highlight"><pre><code class="language-bibtex" data-lang="bibtex"><span class="nc">@book</span><span class="p">{</span><span class="nl">przibram1967letters</span><span class="p">,</span>
+  <span class="na">title</span> <span class="p">=</span> <span class="s">{Letters on wave mechanics}</span><span class="p">,</span>
+  <span class="na">author</span> <span class="p">=</span> <span class="s">{Einstein, Albert and Schrödinger, Erwin and Planck, Max and Lorentz, Hendrik Antoon and Przibram, Karl}</span><span class="p">,</span>
+  <span class="na">year</span> <span class="p">=</span> <span class="s">{1967}</span><span class="p">,</span>
+  <span class="na">publisher</span> <span class="p">=</span> <span class="s">{Vision}</span><span class="p">,</span>
+<span class="p">}</span></code></pre></figure>
+          </div>
+        </div>
+      </div>
+</li></ol>
+
+  <h2 class="year">1956</h2>
+  <ol class="bibliography"><li>
+<!-- _layouts/bib.html -->
+      <div class="row">
+        <div class="col-sm-2 preview">
+<figure>
+
+  <picture>
+    
+
+    <!-- Fallback to the original file -->
+    <img src="/assets/img/publication_preview/brownian-motion.gif" class="preview z-depth-1 rounded" width="auto" height="auto" alt="brownian-motion.gif" onerror="this.onerror=null; $('.responsive-img-srcset').remove();">
+
+  </picture>
+
+</figure>
+</div>
+
+        <!-- Entry bib key -->
+        <div id="einstein1956investigations" class="col-sm-10">
+        <!-- Title -->
+        <div class="title">Investigations on the Theory of the Brownian Movement</div>
+        <!-- Author -->
+        <div class="author">
+        
+
+        Albert Einstein</div>
+
+        <!-- Journal/Book title and date -->
+        
+        
+        <div class="periodical">
+          1956
+        </div>
+        <div class="periodical">
+          
+        </div>
+
+          <!-- Links/Buttons -->
+          <div class="links">
+            <a class="bibtex btn btn-sm z-depth-0" role="button">Bib</a>
+          <!-- -->
+          </div>
+          
+          <div class="badges">
+            <span class="altmetric-embed" data-hide-no-mentions="true" data-hide-less-than="15" data-badge-type="2" data-badge-popover="right"></span>
+              <span class="__dimensions_badge_embed__" data-pmid="" data-hide-zero-citations="true" data-style="small_rectangle" data-legend="hover-right" style="margin-bottom: 3px;"></span>
+          </div>
+
+          <!-- Hidden bibtex block -->
+          <div class="bibtex hidden">
+            <figure class="highlight"><pre><code class="language-bibtex" data-lang="bibtex"><span class="nc">@book</span><span class="p">{</span><span class="nl">einstein1956investigations</span><span class="p">,</span>
+  <span class="na">title</span> <span class="p">=</span> <span class="s">{Investigations on the Theory of the Brownian Movement}</span><span class="p">,</span>
+  <span class="na">author</span> <span class="p">=</span> <span class="s">{Einstein, Albert}</span><span class="p">,</span>
+  <span class="na">year</span> <span class="p">=</span> <span class="s">{1956}</span><span class="p">,</span>
+  <span class="na">publisher</span> <span class="p">=</span> <span class="s">{Courier Corporation}</span><span class="p">,</span>
+<span class="p">}</span></code></pre></figure>
+          </div>
+        </div>
+      </div>
+</li></ol>
+
+  <h2 class="year">1950</h2>
+  <ol class="bibliography"><li>
+<!-- _layouts/bib.html -->
+      <div class="row">
+        <div class="col-sm-2 abbr"><abbr class="badge" style="background-color:#00369f"><a href="https://aapt.scitation.org/journal/ajp" rel="external nofollow noopener" target="_blank">AJP</a></abbr></div>
+
+        <!-- Entry bib key -->
+        <div id="einstein1950meaning" class="col-sm-10">
+        <!-- Title -->
+        <div class="title">The meaning of relativity</div>
+        <!-- Author -->
+        <div class="author">
+        
+
+        Albert Einstein, and AH Taub</div>
+
+        <!-- Journal/Book title and date -->
+        
+        
+        <div class="periodical">
+          <em>American Journal of Physics</em>, 1950
+        </div>
+        <div class="periodical">
+          
+        </div>
+
+          <!-- Links/Buttons -->
+          <div class="links">
+            <a class="bibtex btn btn-sm z-depth-0" role="button">Bib</a>
+          <!-- -->
+          </div>
+          
+          <div class="badges">
+            <span class="altmetric-embed" data-hide-no-mentions="true" data-hide-less-than="15" data-badge-type="2" data-badge-popover="right"></span>
+              <span class="__dimensions_badge_embed__" data-pmid="" data-hide-zero-citations="true" data-style="small_rectangle" data-legend="hover-right" style="margin-bottom: 3px;"></span>
+          </div>
+
+          <!-- Hidden bibtex block -->
+          <div class="bibtex hidden">
+            <figure class="highlight"><pre><code class="language-bibtex" data-lang="bibtex"><span class="nc">@article</span><span class="p">{</span><span class="nl">einstein1950meaning</span><span class="p">,</span>
+  <span class="na">title</span> <span class="p">=</span> <span class="s">{The meaning of relativity}</span><span class="p">,</span>
+  <span class="na">author</span> <span class="p">=</span> <span class="s">{Einstein, Albert and Taub, AH}</span><span class="p">,</span>
+  <span class="na">journal</span> <span class="p">=</span> <span class="s">{American Journal of Physics}</span><span class="p">,</span>
+  <span class="na">volume</span> <span class="p">=</span> <span class="s">{18}</span><span class="p">,</span>
+  <span class="na">number</span> <span class="p">=</span> <span class="s">{6}</span><span class="p">,</span>
+  <span class="na">pages</span> <span class="p">=</span> <span class="s">{403--404}</span><span class="p">,</span>
+  <span class="na">year</span> <span class="p">=</span> <span class="s">{1950}</span><span class="p">,</span>
+  <span class="na">publisher</span> <span class="p">=</span> <span class="s">{American Association of Physics Teachers}</span>
+<span class="p">}</span></code></pre></figure>
+          </div>
+        </div>
+      </div>
+</li></ol>
+
+  <h2 class="year">1935</h2>
+  <ol class="bibliography"><li>
+<!-- _layouts/bib.html -->
+      <div class="row">
+        <div class="col-sm-2 abbr"><abbr class="badge"><a href="https://journals.aps.org/" rel="external nofollow noopener" target="_blank">PhysRev</a></abbr></div>
+
+        <!-- Entry bib key -->
+        <div id="PhysRev.47.777" class="col-sm-10">
+        <!-- Title -->
+        <div class="title">Can Quantum-Mechanical Description of Physical Reality Be Considered Complete?</div>
+        <!-- Author -->
+        <div class="author">
+        
+
+        A. Einstein, <a href="https://en.wikipedia.org/wiki/Boris_Podolsky" rel="external nofollow noopener" target="_blank">B. Podolsky</a>, and <a href="https://en.wikipedia.org/wiki/Nathan_Rosen" rel="external nofollow noopener" target="_blank">N. Rosen</a>
+</div>
+
+        <!-- Journal/Book title and date -->
+        
+        
+        <div class="periodical">
+          <em>Phys. Rev.</em>, May 1935
+        </div>
+        <div class="periodical">
+          
+        </div>
+
+          <!-- Links/Buttons -->
+          <div class="links">
+            <a class="abstract btn btn-sm z-depth-0" role="button">Abs</a>
+            <a href="https://journals.aps.org/pr/abstract/10.1103/PhysRev.47.777" class="btn btn-sm z-depth-0" role="button" rel="external nofollow noopener" target="_blank">HTML</a>
+            <a href="/assets/pdf/example_pdf.pdf" class="btn btn-sm z-depth-0" role="button">PDF</a>
+          <!-- -->
+          </div>
+          
+          <div class="badges">
+            <span class="altmetric-embed" data-hide-no-mentions="true" data-hide-less-than="15" data-badge-type="2" data-badge-popover="right" data-doi="10.1103/PhysRev.47.777"></span>
+              <span class="__dimensions_badge_embed__" data-doi="10.1103/PhysRev.47.777" data-hide-zero-citations="true" data-style="small_rectangle" data-legend="hover-right" style="margin-bottom: 3px;"></span>
+          </div>
+
+          <!-- Hidden abstract block -->
+          <div class="abstract hidden">
+            <p>In a complete theory there is an element corresponding to each element of reality. A sufficient condition for the reality of a physical quantity is the possibility of predicting it with certainty, without disturbing the system. In quantum mechanics in the case of two physical quantities described by non-commuting operators, the knowledge of one precludes the knowledge of the other. Then either (1) the description of reality given by the wave function in quantum mechanics is not complete or (2) these two quantities cannot have simultaneous reality. Consideration of the problem of making predictions concerning a system on the basis of measurements made on another system that had previously interacted with it leads to the result that if (1) is false then (2) is also false. One is thus led to conclude that the description of reality as given by a wave function is not complete.</p>
+          </div>
+        </div>
+      </div>
+</li></ol>
+
+  <h2 class="year">1905</h2>
+  <ol class="bibliography">
+<li>
+<!-- _layouts/bib.html -->
+      <div class="row">
+        <div class="col-sm-2 abbr"></div>
+
+        <!-- Entry bib key -->
+        <div id="einstein1905molekularkinetischen" class="col-sm-10">
+        <!-- Title -->
+        <div class="title">Über die von der molekularkinetischen Theorie der Wärme geforderte Bewegung von in ruhenden Flüssigkeiten suspendierten Teilchen</div>
+        <!-- Author -->
+        <div class="author">
+        
+
+        A. Einstein</div>
+
+        <!-- Journal/Book title and date -->
+        
+        
+        <div class="periodical">
+          <em>Annalen der physik</em>, May 1905
+        </div>
+        <div class="periodical">
+          
+        </div>
+
+          <!-- Links/Buttons -->
+          <div class="links">
+          <!-- -->
+          </div>
+          
+          <div class="badges">
+            <span class="altmetric-embed" data-hide-no-mentions="true" data-hide-less-than="15" data-badge-type="2" data-badge-popover="right"></span>
+              <span class="__dimensions_badge_embed__" data-pmid="" data-hide-zero-citations="true" data-style="small_rectangle" data-legend="hover-right" style="margin-bottom: 3px;"></span>
+          </div>
+
+          
+        </div>
+      </div>
+</li>
+<li>
+<!-- _layouts/bib.html -->
+      <div class="row">
+        <div class="col-sm-2 abbr"><abbr class="badge">Ann. Phys.</abbr></div>
+
+        <!-- Entry bib key -->
+        <div id="einstein1905movement" class="col-sm-10">
+        <!-- Title -->
+        <div class="title">Un the movement of small particles suspended in statiunary liquids required by the molecular-kinetic theory 0f heat</div>
+        <!-- Author -->
+        <div class="author">
+        
+
+        A. Einstein</div>
+
+        <!-- Journal/Book title and date -->
+        
+        
+        <div class="periodical">
+          <em>Ann. Phys.</em>, May 1905
+        </div>
+        <div class="periodical">
+          
+        </div>
+
+          <!-- Links/Buttons -->
+          <div class="links">
+          <!-- -->
+          </div>
+          
+          <div class="badges">
+            <span class="altmetric-embed" data-hide-no-mentions="true" data-hide-less-than="15" data-badge-type="2" data-badge-popover="right"></span>
+              <span class="__dimensions_badge_embed__" data-pmid="" data-hide-zero-citations="true" data-style="small_rectangle" data-legend="hover-right" style="margin-bottom: 3px;"></span>
+          </div>
+
+          
+        </div>
+      </div>
+</li>
+<li>
+<!-- _layouts/bib.html -->
+      <div class="row">
+        <div class="col-sm-2 abbr"></div>
+
+        <!-- Entry bib key -->
+        <div id="einstein1905electrodynamics" class="col-sm-10">
+        <!-- Title -->
+        <div class="title">On the electrodynamics of moving bodies</div>
+        <!-- Author -->
+        <div class="author">
+        
+
+        A. Einstein</div>
+
+        <!-- Journal/Book title and date -->
+        
+        
+        <div class="periodical">
+          <em></em> May 1905
+        </div>
+        <div class="periodical">
+          
+        </div>
+
+          <!-- Links/Buttons -->
+          <div class="links">
+          <!-- -->
+          </div>
+          
+          <div class="badges">
+            <span class="altmetric-embed" data-hide-no-mentions="true" data-hide-less-than="15" data-badge-type="2" data-badge-popover="right"></span>
+              <span class="__dimensions_badge_embed__" data-pmid="" data-hide-zero-citations="true" data-style="small_rectangle" data-legend="hover-right" style="margin-bottom: 3px;"></span>
+          </div>
+
+          
+        </div>
+      </div>
+</li>
+</ol>
+
   <h2 class="year">Thesis</h2>
   <ol class="bibliography"><li>
 <!-- _layouts/bib.html -->
@@ -3966,14 +4424,14 @@
         <div class="author">
         
 
-        <a href="https://baharanm.github.io/">Baharan Mirzasoleiman</a>
+        <em>Baharan Mirzasoleiman</em>
 </div>
 
         <!-- Journal/Book title and date -->
         
         
         <div class="periodical">
-          <em>ETH Zurich, 2017</em>, Thesis
+          <em>ETH Zurich, 2017</em>, May Thesis
         </div>
         <div class="periodical">
           
@@ -4017,7 +4475,7 @@
     <!-- Footer -->    
     <footer class="fixed-bottom">
       <div class="container mt-0">
-        © Copyright 2025 Baharan  Mirzasoleiman. 
+        © Copyright 2026 Baharan  Mirzasoleiman. 
       </div>
     </footer>
 
