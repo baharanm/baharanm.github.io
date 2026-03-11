@@ -59,9 +59,9 @@ An example of displaying a tweet:
 <h5>Alumni:</h5>
 <div class="row justify-content-sm-center">
     <div class="col-sm-4 mt-3 mt-md-0">
-       <a href="https://sites.google.com/g.ucla.edu/yuyang/" >{% include figure.html path="assets/img/group/Yu.jpeg" title="Yu Yang" class="img-fluid rounded z-depth-1" %}</a>
+       <a href="https://sites.google.com/view/yuyang0901/home" >{% include figure.html path="assets/img/group/Yu.jpeg" title="Yu Yang" class="img-fluid rounded z-depth-1" %}</a>
        <div style="text-align: center">
-         <h6><a href="https://sites.google.com/g.ucla.edu/yuyang/">Yu Yang</a> 
+         <h6><a href="https://sites.google.com/view/yuyang0901/home">Yu Yang</a> 
          <br/><span style="color:#DF5279">Amazon Fellowship <br> Dissertation Year Award <br> Outstanding Graduate Student Research Award</span><br> now at OpenAI
         </h6>
        </div>
