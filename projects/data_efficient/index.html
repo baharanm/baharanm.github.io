@@ -167,6 +167,117 @@
         <div class="col-sm-2 abbr"><abbr class="badge">ICLR</abbr></div>
 
         <!-- Entry bib key -->
+        <div id="javanmard2026data" class="col-sm-10">
+        <!-- Title -->
+        <div class="title">Understanding the Role of Training Data in Test-Time Scaling</div>
+        <!-- Author -->
+        <div class="author">
+        
+
+        Adel Javanmard, <em>Baharan Mirzasoleiman</em>, and Vahab Mirrokni</div>
+
+        <!-- Journal/Book title and date -->
+        
+        
+        <div class="periodical">
+          <em>International Conference on Learning Representations (ICLR)</em>, 2026
+        </div>
+        <div class="periodical">
+          
+        </div>
+
+          <!-- Links/Buttons -->
+          <div class="links">
+            <a class="abstract btn btn-sm z-depth-0" role="button">Abs</a>
+            <a class="bibtex btn btn-sm z-depth-0" role="button">Bib</a>
+            <a href="/assets/pdf/javanmard26data.pdf" class="btn btn-sm z-depth-0" role="button">PDF</a>
+          <!-- -->
+          </div>
+          
+          <div class="badges">
+            <span class="altmetric-embed" data-hide-no-mentions="true" data-hide-less-than="15" data-badge-type="2" data-badge-popover="right"></span>
+              <span class="__dimensions_badge_embed__" data-pmid="" data-hide-zero-citations="true" data-style="small_rectangle" data-legend="hover-right" style="margin-bottom: 3px;"></span>
+          </div>
+
+          <!-- Hidden abstract block -->
+          <div class="abstract hidden">
+            <p>Test-time scaling improves the reasoning capabilities of large language models (LLMs) by allocating extra compute to generate longer Chains-of-Thoughts (CoTs). This enables models to  tackle more complex problem by breaking them down into additional steps, backtracking, and correcting mistakes. Despite its strong performance–demonstrated by OpenAI’s o1 and DeepSeek R1, the conditions in the training data under which long CoTs emerge, and when such long CoTs improve the performance, remain unclear. In this paper, we study the performance of test-time scaling for transformers trained on an in-context weight prediction task for linear regression. Our analysis provides a theoretical explanation for several intriguing observations: First,  at any fixed test error, increasing test-time compute allows us to reduce the number of in-context examples (context length) in training prompts. Second, if the skills required to solve a downstream task are not sufficiently present in the training data, increasing test-time compute can harm performance. Finally, we characterize task hardness via the smallest eigenvalue of its feature covariance matrix and show that training on a diverse, relevant, and hard set of tasks results in best performance for test-time scaling. We confirm our findings with experiments on large, nonlinear transformer architectures.</p>
+          </div>
+<!-- Hidden bibtex block -->
+          <div class="bibtex hidden">
+            <figure class="highlight"><pre><code class="language-bibtex" data-lang="bibtex"><span class="nc">@article</span><span class="p">{</span><span class="nl">javanmard2026data</span><span class="p">,</span>
+  <span class="na">title</span> <span class="p">=</span> <span class="s">{Understanding the Role of Training Data in Test-Time Scaling}</span><span class="p">,</span>
+  <span class="na">author</span> <span class="p">=</span> <span class="s">{Javanmard, Adel and Mirzasoleiman, Baharan and Mirrokni, Vahab}</span><span class="p">,</span>
+  <span class="na">journal</span> <span class="p">=</span> <span class="s">{International Conference on Learning Representations (ICLR)}</span><span class="p">,</span>
+  <span class="na">year</span> <span class="p">=</span> <span class="s">{2026}</span><span class="p">,</span>
+  <span class="na">efficient</span> <span class="p">=</span> <span class="s">{true}</span>
+<span class="p">}</span></code></pre></figure>
+          </div>
+        </div>
+      </div>
+</li>
+<li>
+<!-- _layouts/bib.html -->
+      <div class="row">
+        <div class="col-sm-2 abbr"><abbr class="badge">ICLR</abbr></div>
+
+        <!-- Entry bib key -->
+        <div id="nguyen2026synthetic" class="col-sm-10">
+        <!-- Title -->
+        <div class="title">Do We Need All the Synthetic Data? Targeted Synthetic Image Augmentation via Diffusion Models</div>
+        <!-- Author -->
+        <div class="author">
+        
+
+        <a href="https://hsgser.github.io/" rel="external nofollow noopener" target="_blank">Dang Nguyen</a>, Jiping Li, Jinghao Zheng, and <em>Baharan Mirzasoleiman</em>
+</div>
+
+        <!-- Journal/Book title and date -->
+        
+        
+        <div class="periodical">
+          <em>International Conference on Learning Representations (ICLR)</em>, 2026
+        </div>
+        <div class="periodical">
+          
+        </div>
+
+          <!-- Links/Buttons -->
+          <div class="links">
+            <a class="abstract btn btn-sm z-depth-0" role="button">Abs</a>
+            <a class="bibtex btn btn-sm z-depth-0" role="button">Bib</a>
+            <a href="/assets/pdf/nguyen26synthetic.pdf" class="btn btn-sm z-depth-0" role="button">PDF</a>
+          <!-- -->
+          </div>
+          
+          <div class="badges">
+            <span class="altmetric-embed" data-hide-no-mentions="true" data-hide-less-than="15" data-badge-type="2" data-badge-popover="right"></span>
+              <span class="__dimensions_badge_embed__" data-pmid="" data-hide-zero-citations="true" data-style="small_rectangle" data-legend="hover-right" style="margin-bottom: 3px;"></span>
+          </div>
+
+          <!-- Hidden abstract block -->
+          <div class="abstract hidden">
+            <p>Synthetically augmenting training datasets with diffusion models has been an effective strategy for improving generalization of image classifiers. However, existing techniques struggle to ensure the diversity of generation and increase the size of the data by up to 10-30x to improve the in-distribution performance. In this work, we show that synthetically augmenting part of the data that is not learned early in training with faithful images-containing same features but different noise-outperforms augmenting the entire dataset. By analyzing a two-layer CNN, we prove that this strategy improves generalization by promoting homogeneity in feature learning speed without amplifying noise. Our extensive experiments show that by augmenting only 30%-40% of the data, our method boosts generalization by up to 2.8% in a variety of scenarios, including training ResNet, ViT, ConvNeXt, and Swin Transformer on CIFAR-10/100, and TinyImageNet, with various optimizers including SGD and SAM. Notably, our method applied with SGD outperforms the SOTA optimizer, SAM, on CIFAR-100 and TinyImageNet.</p>
+          </div>
+<!-- Hidden bibtex block -->
+          <div class="bibtex hidden">
+            <figure class="highlight"><pre><code class="language-bibtex" data-lang="bibtex"><span class="nc">@article</span><span class="p">{</span><span class="nl">nguyen2026synthetic</span><span class="p">,</span>
+  <span class="na">title</span> <span class="p">=</span> <span class="s">{Do We Need All the Synthetic Data? Targeted Synthetic Image Augmentation via Diffusion Models}</span><span class="p">,</span>
+  <span class="na">author</span> <span class="p">=</span> <span class="s">{Nguyen, Dang and Li, Jiping and Zheng, Jinghao and Mirzasoleiman, Baharan}</span><span class="p">,</span>
+  <span class="na">journal</span> <span class="p">=</span> <span class="s">{International Conference on Learning Representations (ICLR)}</span><span class="p">,</span>
+  <span class="na">year</span> <span class="p">=</span> <span class="s">{2026}</span><span class="p">,</span>
+  <span class="na">efficient</span> <span class="p">=</span> <span class="s">{true}</span>
+<span class="p">}</span></code></pre></figure>
+          </div>
+        </div>
+      </div>
+</li>
+<li>
+<!-- _layouts/bib.html -->
+      <div class="row">
+        <div class="col-sm-2 abbr"><abbr class="badge">ICLR</abbr></div>
+
+        <!-- Entry bib key -->
         <div id="nguyen2025memory" class="col-sm-10">
         <!-- Title -->
         <div class="title">Mini-batch Coresets for Memory-efficient Language Model Training on Data Mixtures</div>
