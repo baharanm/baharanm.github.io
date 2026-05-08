@@ -36,39 +36,6 @@
   year={Preprints}
 }
 
-@article{javanmard26prepost,
-  bibtex_show={true},
-  abbr={ArXiv},
-  title={Theoretical Perspectives on Data Quality and Synergistic Effects in Pre-and Post-Training Reasoning Models},
-  abstract={Large Language Models (LLMs) are pretrained on massive datasets and later instruction-tuned via supervised fine-tuning (SFT) or reinforcement learning (RL). Best practices emphasize large, diverse pretraining data, whereas post-training operates differently: SFT relies on smaller, high-quality datasets, while RL benefits more from scale, with larger amounts of feedback often outweighing label quality. Yet it remains unclear why pretraining and RL require large datasets, why SFT excels on smaller ones, and what defines high-quality SFT data. In this work, we theoretically analyze transformers trained on an in-context weight prediction task for linear regression. Our analysis reveals several key findings: (i) balanced pretraining data can induce latent capabilities later activated during post-training, and (ii) SFT learns best from a small set of examples challenging for the pretrained model, while excessively large SFT datasets may dilute informative pretraining signals. In contrast, RL is most effective on large-scale data that is not overly difficult for the pretrained model. We validate these theoretical insights with experiments on large nonlinear transformer architectures.},
-  author={Javanmard, Adel and Mirzasoleiman, Baharan and Mirrokni, Vahab},
-  journal={arXiv preprint arXiv:2603.01293},
-  arxiv={2603.01293},
-  year={Preprints}
-}
-
-@article{huang26dlm,
-  bibtex_show={true},
-  abbr={ArXiv},
-  title={Tuning the Implicit Regularizer of Masked Diffusion Language Models: Enhancing Generalization via Insights from k-Parity},
-  abstract={Masked Diffusion Language Models have recently emerged as a powerful generative paradigm, yet their generalization properties remain understudied compared to their auto-regressive counterparts. In this work, we investigate these properties within the setting of the -parity problem (computing the XOR sum of  relevant bits), where neural networks typically exhibit grokking -- a prolonged plateau of chance-level performance followed by sudden generalization. We theoretically decompose the Masked Diffusion (MD) objective into a Signal regime which drives feature learning, and a Noise regime which serves as an implicit regularizer. By training nanoGPT using MD objective on the -parity problem, we demonstrate that MD objective fundamentally alters the learning landscape, enabling rapid and simultaneous generalization without experiencing grokking. Furthermore, we leverage our theoretical insights to optimize the distribution of the mask probability in the MD objective. Our method significantly improves perplexity for 50M-parameter models and achieves superior results across both pre-training from scratch and supervised fine-tuning. Specifically, we observe performance gains peaking at 8.8% and 5.5%, respectively, on 8B-parameter models, confirming the scalability and effectiveness of our framework in large-scale masked diffusion language model regimes.},
-  author={Huang, Jianhao and Mirzasoleiman, Baharan},
-  journal={arXiv preprint arXiv:2601.22450},
-  arxiv={2601.22450},
-  year={Preprints}
-}
-
-@article{nguyen26vlm,
-  bibtex_show={true},
-  abbr={ArXiv},
-  title={Data Selection for Fine-tuning Vision Language Models via Cross Modal Alignment Trajectories},
-  abstract={Data-efficient learning aims to eliminate redundancy in large training datasets by training models on smaller subsets of the most informative examples. While data selection has been extensively explored for vision models and large language models (LLMs), it remains underexplored for Large Vision-Language Models (LVLMs). Notably, none of existing methods can outperform random selection at different subset sizes. In this work, we propose the first principled method for data-efficient instruction tuning of LVLMs. We prove that examples with similar cross-modal attention matrices during instruction tuning have similar gradients. Thus, they influence model parameters in a similar manner and convey the same information to the model during training. Building on this insight, we propose XMAS, which clusters examples based on the trajectories of the top singular values of their attention matrices obtained from fine-tuning a small proxy LVLM. By sampling a balanced subset from these clusters, XMAS effectively removes redundancy in large-scale LVLM training data. Extensive experiments show that XMAS can discard 50% of the LLaVA-665k dataset and 85% of the Vision-Flan dataset while fully preserving performance of LLaVA-1.5-7B on 10 downstream benchmarks and speeding up its training by 1.2x. This is 30% more data reduction compared to the best baseline for LLaVA-665k. The project's website can be found at https://bigml-cs-ucla.github.io/XMAS-project-page/.},
-  author={Naharas*, Nilay and Nguyen*, Dang and Bulut, Nesihan and Bateni, Mohammadhossein and Mirrokni, Vahab and Mirzasoleiman, Baharan},
-  journal={arXiv preprint arXiv:2510.01454},
-  arxiv={2510.01454},
-  year={Preprints}
-}
-
 @article{xue26rl,
   bibtex_show={true},
   abbr={ArXiv},
@@ -91,7 +58,7 @@
   year={Preprints}
 }
 
-@article{wang25safety,
+@article{yang25safety,
   bibtex_show={true},
   abbr={ArXiv},
   title={Bootstrapping LLM Robustness for VLM Safety via Reducing the Pretraining Modality Gap},
@@ -130,6 +97,48 @@
 
 
 ##############################################################
+@article{javanmard26prepost,
+  bibtex_show={true},
+  abbr={ICML},
+  title={Theoretical Perspectives on Data Quality and Synergistic Effects in Pre-and Post-Training Reasoning Models},
+  abstract={Large Language Models (LLMs) are pretrained on massive datasets and later instruction-tuned via supervised fine-tuning (SFT) or reinforcement learning (RL). Best practices emphasize large, diverse pretraining data, whereas post-training operates differently: SFT relies on smaller, high-quality datasets, while RL benefits more from scale, with larger amounts of feedback often outweighing label quality. Yet it remains unclear why pretraining and RL require large datasets, why SFT excels on smaller ones, and what defines high-quality SFT data. In this work, we theoretically analyze transformers trained on an in-context weight prediction task for linear regression. Our analysis reveals several key findings: (i) balanced pretraining data can induce latent capabilities later activated during post-training, and (ii) SFT learns best from a small set of examples challenging for the pretrained model, while excessively large SFT datasets may dilute informative pretraining signals. In contrast, RL is most effective on large-scale data that is not overly difficult for the pretrained model. We validate these theoretical insights with experiments on large nonlinear transformer architectures.},
+  author={Javanmard, Adel and Mirzasoleiman, Baharan and Mirrokni, Vahab},
+  arxiv={2603.01293},
+  journal={International Conference on Machine Learning (ICML)},
+  year={2026}
+}
+
+@article{huang26dlm,
+  bibtex_show={true},
+  abbr={ICML},
+  title={Tuning the Implicit Regularizer of Masked Diffusion Language Models: Enhancing Generalization via Insights from k-Parity},
+  abstract={Masked Diffusion Language Models have recently emerged as a powerful generative paradigm, yet their generalization properties remain understudied compared to their auto-regressive counterparts. In this work, we investigate these properties within the setting of the -parity problem (computing the XOR sum of  relevant bits), where neural networks typically exhibit grokking -- a prolonged plateau of chance-level performance followed by sudden generalization. We theoretically decompose the Masked Diffusion (MD) objective into a Signal regime which drives feature learning, and a Noise regime which serves as an implicit regularizer. By training nanoGPT using MD objective on the -parity problem, we demonstrate that MD objective fundamentally alters the learning landscape, enabling rapid and simultaneous generalization without experiencing grokking. Furthermore, we leverage our theoretical insights to optimize the distribution of the mask probability in the MD objective. Our method significantly improves perplexity for 50M-parameter models and achieves superior results across both pre-training from scratch and supervised fine-tuning. Specifically, we observe performance gains peaking at 8.8% and 5.5%, respectively, on 8B-parameter models, confirming the scalability and effectiveness of our framework in large-scale masked diffusion language model regimes.},
+  author={Huang, Jianhao and Mirzasoleiman, Baharan},
+  arxiv={2601.22450},
+  journal={International Conference on Machine Learning (ICML)},
+  year={2026}
+}
+
+@article{huang26dlm,
+  bibtex_show={true},
+  abbr={ICML},
+  title={Which Reasoning Traces Are Worth Generating Further? Data Curation for Training Reasoning Models},
+  abstract={Supervised fine-tuning (SFT) on a small high-quality set of long reasoning traces is an effective way to enable strong reasoning abilities for Large Language Models (LLMs). However, curating a high-quality SFT data requires generating a large pool of long Chain of Thoughts (CoTs), and filtering the generated data for diversity and difficulty. Both stages rely heavily on strong reasoning models and make data curation prohibitively expensive. In this work, we show that diverse and difficult reasoning examples can be identified very early during their generation. We show that after generating as few as 100 out of 34k tokens of a reasoning trace, challenging examples can be reliably identified based on their loss at a highly perturbed checkpoints of the pretrained model. Then, we prove that examples with similar loss trajectory, i.e., value at a few noisy, perturbed checkpoints of the pretrained model, have similar gradients. A diverse subset can be then found by sampling from clusters of loss trajectories obtained after generating 1k tokens. Our extensive experiments for fine-tuning Qwen2.5-7B and Llama3 on m23K medical reasoning and Openthoughs datasets confirms the effectiveness of our approach. our approach outperforms existing baselines by up to 2% while generating only as few as 9% tokens for reasoning traces.},
+  author={Jin, Henry and Yang., Wenhan and Ghaffari, Meysam and Morato, Carlos and Mirzasoleiman, Baharan},
+  journal={International Conference on Machine Learning (ICML)},
+  year={2026}
+}
+
+@article{nguyen26vlm,
+  bibtex_show={true},
+  abbr={ICML},
+  title={Data Selection for Fine-tuning Vision Language Models via Cross Modal Alignment Trajectories},
+  abstract={Data-efficient learning aims to eliminate redundancy in large training datasets by training models on smaller subsets of the most informative examples. While data selection has been extensively explored for vision models and large language models (LLMs), it remains underexplored for Large Vision-Language Models (LVLMs). Notably, none of existing methods can outperform random selection at different subset sizes. In this work, we propose the first principled method for data-efficient instruction tuning of LVLMs. We prove that examples with similar cross-modal attention matrices during instruction tuning have similar gradients. Thus, they influence model parameters in a similar manner and convey the same information to the model during training. Building on this insight, we propose XMAS, which clusters examples based on the trajectories of the top singular values of their attention matrices obtained from fine-tuning a small proxy LVLM. By sampling a balanced subset from these clusters, XMAS effectively removes redundancy in large-scale LVLM training data. Extensive experiments show that XMAS can discard 50% of the LLaVA-665k dataset and 85% of the Vision-Flan dataset while fully preserving performance of LLaVA-1.5-7B on 10 downstream benchmarks and speeding up its training by 1.2x. This is 30% more data reduction compared to the best baseline for LLaVA-665k. The project's website can be found at https://bigml-cs-ucla.github.io/XMAS-project-page/.},
+  author={Naharas*, Nilay and Nguyen*, Dang and Bulut, Nesihan and Bateni, Mohammadhossein and Mirrokni, Vahab and Mirzasoleiman, Baharan},
+  journal={International Conference on Machine Learning (ICML)},
+  arxiv={2510.01454},
+  year={2026}
+}
 @article{javanmard2026data,
   bibtex_show={true},
   abbr={ICLR},
