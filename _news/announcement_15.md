@@ -5,4 +5,4 @@ inline: true
 related_posts: false
 ---
 
-Co-organizing the [3nd New Frontiers in Adversarial Machine Learning at NeurIPS'24](https://advml-frontier.github.io/)
+I will be co-organizing the [3nd New Frontiers in Adversarial Machine Learning at NeurIPS'24](https://advml-frontier.github.io/)

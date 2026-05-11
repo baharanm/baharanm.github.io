@@ -7,4 +7,4 @@ related_posts: false
 
 <!-- A simple inline announcement with Markdown emoji! :sparkles: :smile: -->
 
-Invited talk at [ATTRIB at NeurIPS'24](https://attrib-workshop.cc/), Northwestern Statistics & Data Science Seminar, and [SCLS at ICLR'25](https://scslworkshop.github.io/)
+I will give invited talks at [ATTRIB at NeurIPS'24](https://attrib-workshop.cc/), Northwestern Statistics & Data Science Seminar, and [SCLS at ICLR'25](https://scslworkshop.github.io/)

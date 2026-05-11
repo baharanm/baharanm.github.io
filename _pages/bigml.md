@@ -62,7 +62,7 @@ An example of displaying a tweet:
        <a href="https://sites.google.com/view/yuyang0901/home" >{% include figure.html path="assets/img/group/Yu.jpeg" title="Yu Yang" class="img-fluid rounded z-depth-1" %}</a>
        <div style="text-align: center">
          <h6><a href="https://sites.google.com/view/yuyang0901/home">Yu Yang</a> 
-         <br/><span style="color:#DF5279">Amazon Fellowship <br> Dissertation Year Award <br> Outstanding Graduate Student Research Award</span><br> now at OpenAI
+         <br/><span style="color:#DF5279">Amazon Fellowship <br> Dissertation Year Award <br> <b>Outstanding Graduate Student Research Award</b></span><br> now at OpenAI
         </h6>
        </div>
    </div>
@@ -71,7 +71,7 @@ An example of displaying a tweet:
        <a href="https://yihaoxue.github.io/">{% include figure.html path="assets/img/group/Yihao.JPG" title="Yihao Xue" class="img-fluid rounded z-depth-1" %}</a>
        <div style="text-align: center">
             <h6><a href="https://yihaoxue.github.io/">Yihao Xue</a>
-                <br/><span style="color:#DF5279">OpenAI Superalignment Grant</span><br> now at Google Research</h6>
+                <br/><span style="color:#DF5279">OpenAI Superalignment Grant<br> <b>Outstanding Graduate Student Research Award</b></span><br> now at Google Research</h6>
         </div>
    </div>
 </div>

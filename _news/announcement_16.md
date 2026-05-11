@@ -5,4 +5,4 @@ inline: true
 related_posts: false
 ---
 
-Invited talk at Google workshop on Theory and Practice of Foundation Models
+I will give an invited talk at Google workshop on Theory and Practice of Foundation Models
