@@ -270,8 +270,8 @@ display_tags: ['data-efficiency', 'robustness', 'contrastive-learning', 'multimo
 
 scholar:
 
-  last_name: [Mirzasoleiman]
-  first_name: [Baharan, B.]
+  last_name: ["Mirzasoleiman "]
+  first_name: ["Baharan", "B."]
 
   style: apa
   locale: en
