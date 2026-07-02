@@ -20,9 +20,11 @@ news: true  # includes a list of news items
 social: true  # includes social icons at the bottom of the page
 ---
 
-I am an Assistant Professor in the [Computer Science Department](https://www.cs.ucla.edu/) at [UCLA](https://www.ucla.edu/), where I lead the [BigML](http://web.cs.ucla.edu/~baharan/research.htm) research group.
+I am an Associate Professor in the [Computer Science Department](https://www.cs.ucla.edu/) at [UCLA](https://www.ucla.edu/), where I lead the [BigML](http://web.cs.ucla.edu/~baharan/research.htm) research group.
                     
-My research aims to address [sustainability, reliability, and efficiency](https://baharanm.github.io/projects/) of machine learning. I am mainly working on improving the <b>big data quality</b>, by developing theoretically rigorous methods to select the most beneficial data for [efficient](projects/#efficiency) and [robust](projects/#robustness) learning. Besides, I am also interested in improving the models and learning algorithms. The resulting methods are broadly applicable for learning from massive datasets across a wide range of applications, such as medical diagnosis and environment sensing.
+My research aims to make machine learning more sustainable, reliable, and efficient through principled improvements to how models are trained. I develop data-centric and optimization-guided methods that improve the quality of training data and the learning algorithms used throughout the foundation model lifecycle. My recent work spans pretraining, supervised fine-tuning (SFT), and reinforcement learning (RL), with a particular focus on reasoning, multimodal, and diffusion models. By understanding how data and optimization interact to shape model capabilities, I develop algorithms that improve performance, robustness, and training efficiency while reducing computational cost.
+
+<!--The resulting methods are broadly applicable for learning from massive datasets across a wide range of applications, such as medical diagnosis and environment sensing.-->
 
 <!-- My research focuses on developing new methods that enable efficient machine learning from massive datasets. More specifically, I am interested in designing techniques that can gain insights from the underlying data structure by utilizing complex and higher-order interactions between data points. The extracted information can be used to efficiently explore and robustly learn from datasets that are too large to be dealt with by traditional approaches. My methods have immediate application to high-impact problems where massive data volumes prohibit efficient learning and inference, such as huge image collections, recommender systems, Web and social services, video and other large data streams. -->
 
