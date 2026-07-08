@@ -85,6 +85,29 @@
 
 
 ##############################################################
+@article{huang26multi,
+  bibtex_show={true},
+  abbr={COLM},
+  title={Learning as Reasoning Unfolds: Progressive Rollout Allocation for Efficient Reinforcement Learning},
+  abstract={Reinforcement learning with verifiable rewards (RLVR) has emerged as a highly effective framework for improving LLM reasoning, with methods such as GRPO among its most successful instantiations. However, GRPO relies on repeated generation of long chain-of-thought rollouts. Training time scales with the number of rollouts, a large fraction of which are uninformative. Thus, GRPO is computationally expensive and unstable. To mitigate this, existing approaches either generate a larger pool of rollouts and filter the most informative prompts, or leverage historical signals for filtering at later stages of training. These strategies offer modest performance gains, but slow down the overall process. To address this, we propose VarIance Guided Online Rollout allocation (VIGOR) which instead of allocating a fixed rollout budget per example, begins with a small number of rollouts for all examples in a batch and iteratively allocates additional rollouts to those with the highest group reward variance until a fixed total rollout budget is reached. Theoretically, we show that under the binary-reward setting of GRPO, within-group reward variance directly controls the gradient magnitude and speeds up training. Experiments on three model scales show that VIGOR reaches the target accuracy with up to 3.6
+ fewer rollouts, outperforms GRPO and baselines by up to 2.4%, and further improves training stability and final performance under extended training.},
+  author={Jiang, Heyang and Liu, Henry and Mirzasoleiman, Baharan},
+  pdf={jiang26learning.pdf},
+  journal={Conference on Language Modeling (COLM)},
+  year={2026}
+}
+
+@article{huang26multi,
+  bibtex_show={true},
+  abbr={COLM},
+  title={How Transformers Learn to Plan via Multi-Token Prediction},
+  abstract={While next-token prediction (NTP) has been the standard objective for training language models, it often struggles to capture global structure in reasoning tasks. Multi-token prediction (MTP) has recently emerged as a promising alternative, yet its underlying mechanisms remain poorly understood. In this paper, we study how MTP facilitates reasoning, with a focus on planning. Empirically, we show that MTP consistently outperforms NTP on both synthetic graph path-finding tasks and more realistic reasoning benchmarks, such as Countdown and boolean satisfiability problems. Theoretically, we analyze a simplified two-layer Transformer on a star graph task. We prove that MTP induces a two-stage reverse reasoning process: the model first attends to the end node and then reconstructs the path by tracing intermediate nodes backward. This behavior arises from a gradient decoupling property of MTP, which provides a cleaner training signal compared to NTP. Ultimately, our results highlight how multi-token objectives inherently bias optimization toward robust and interpretable reasoning circuits.},
+  author={Huang, Jianhao and Zhou, Zhanpeng and Xia, Renqiu and Mirzasoleiman, Baharan and Su, Weijie and Huang, Wei},
+  arxiv={2604.11912},
+  journal={Conference on Language Modeling (COLM)},
+  year={2026}
+}
+
 @article{xue26verify,
   bibtex_show={true},
   abbr={TMLR},
@@ -138,6 +161,8 @@
   author={Naharas*, Nilay and Nguyen*, Dang and Bulut, Nesihan and Bateni, Mohammadhossein and Mirrokni, Vahab and Mirzasoleiman, Baharan},
   journal={International Conference on Machine Learning (ICML)},
   pdf={naharas26data.pdf},
+  website={https://bigml-cs-ucla.github.io/XMAS-project-page/},
+  code={https://github.com/BigML-CS-UCLA/XMAS/tree/main},
   year={2026}
 }
 @article{javanmard2026data,
