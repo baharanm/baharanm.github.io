@@ -5,4 +5,4 @@ inline: true
 related_posts: false
 ---
 
-I will give an invited talk at [ICLR'26 Data-FM workshop](https://data-fm-iclr2026.github.io/)
+I will give a keynote at [ICLR'26 Data-FM workshop](https://data-fm-iclr2026.github.io/) and Apple Workshop on Reasoning and Planning

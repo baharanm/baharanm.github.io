@@ -28,7 +28,8 @@ An example of displaying a tweet:
    <div class="col-sm-4 mt-3 mt-md-0">
        <a href="https://hsgser.github.io/">{% include figure.html path="assets/img/group/Dang.jpg" title="Dang Nguyen" class="img-fluid rounded z-depth-1" %}</a>
        <div style="text-align: center">
-           <h6><a href="https://hsgser.github.io/">Dang Nguyen</a></h6>
+           <h6><a href="https://hsgser.github.io/">Dang Nguyen</a><br>
+           <span style="color:#DF5279">Amazon Fellowship</span></h6>
        </div>
    </div>
 </div>
@@ -48,21 +49,36 @@ An example of displaying a tweet:
    <div class="col-sm-4 mt-3 mt-md-0">
        <a href="https://redredsheep.github.io/">{% include figure.html path="assets/img/group/heyang.jpg" title="Heyang Jiang" class="img-fluid rounded z-depth-1" %}</a>
        <div style="text-align: center">
-           <h6><a href="https://redredsheep.github.io/">Heyang Jiang</a></h6>
+           <h6><a href="https://redredsheep.github.io/">Heyang Jiang</a><br>
+           <span style="color:#DF5279">Amazon Fellowship</span></h6>
+       </div>
+   </div>
+</div>
+<div class="row justify-content-sm-center">
+   <div class="col-sm-4 mt-3 mt-md-0">
+       <a href="https://beomhanbaek.github.io/">{% include figure.html path="assets/img/group/beomhan.jpg" title="Jianhao Huang" class="img-fluid rounded z-depth-1" %}</a>
+       <div style="text-align: center">
+           <h6><a href="https://beomhanbaek.github.io/">Beomhan Baek</a></h6>
+       </div>
+   </div>
+   <div class="col-sm-4 mt-3 mt-md-0">
+       <a href="https://pinhank0121.github.io/">{% include figure.html path="assets/img/group/pinhan.jpg" title="Henry Jin" class="img-fluid rounded z-depth-1" %}</a>
+       <div style="text-align: center">
+           <h6><a href="https://pinhank0121.github.io/">Pin-Han Huang</a></h6>
        </div>
    </div>
 </div>
 
 
 
-
+<br>
 <h5>Alumni:</h5>
 <div class="row justify-content-sm-center">
     <div class="col-sm-4 mt-3 mt-md-0">
        <a href="https://sites.google.com/view/yuyang0901/home" >{% include figure.html path="assets/img/group/Yu.jpeg" title="Yu Yang" class="img-fluid rounded z-depth-1" %}</a>
        <div style="text-align: center">
          <h6><a href="https://sites.google.com/view/yuyang0901/home">Yu Yang</a> 
-         <br/><span style="color:#DF5279">Amazon Fellowship <br> Dissertation Year Award <br> <b>Outstanding Graduate Student Research Award</b></span><br> now at OpenAI
+         <br/><span style="color:#DF5279">Amazon Fellowship <br> Dissertation Year Award <br> <b>Outstanding Graduate Student Research Award :sparkles:</b></span><br> now at OpenAI
         </h6>
        </div>
    </div>
@@ -71,7 +87,7 @@ An example of displaying a tweet:
        <a href="https://yihaoxue.github.io/">{% include figure.html path="assets/img/group/Yihao.JPG" title="Yihao Xue" class="img-fluid rounded z-depth-1" %}</a>
        <div style="text-align: center">
             <h6><a href="https://yihaoxue.github.io/">Yihao Xue</a>
-                <br/><span style="color:#DF5279">OpenAI Superalignment Grant<br> <b>Outstanding Graduate Student Research Award</b></span><br> now at Google Research</h6>
+                <br/><span style="color:#DF5279">OpenAI Superalignment Grant<br> <b>Outstanding Graduate Student Research Award :sparkles:</b></span><br> now at Google Research</h6>
         </div>
    </div>
 </div>
@@ -79,8 +95,12 @@ An example of displaying a tweet:
 <br />
 <h5>Undergraduate Students</h5>
 
+- Daniel Huang (Visiting from UBC)
+- Aarnav Choudhary (not graduated yet)
+- Allan Zhang (not graduated yet)
+- Mira Hadler (not graduated yet)
 - Maanas Gantla (not graduated yet)
-- Rathul Anand (not graduated yet)
+- Jiping Li (not PhD at Stanford University)
 - Siddhartha Mishra (now at DoorDash)
 - David Davini (now at Gridspace)
 - Jinghao Zheng (now Master stdudent at EPFL)
