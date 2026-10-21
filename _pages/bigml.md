@@ -100,7 +100,7 @@ An example of displaying a tweet:
 - Allan Zhang (not graduated yet)
 - Mira Haldar (not graduated yet)
 - Maanas Gantla (not graduated yet)
-- Jiping Li (not PhD at Stanford University)
+- Jiping Li (now PhD at Stanford University)
 - Siddhartha Mishra (now at DoorDash)
 - David Davini (now at Gridspace)
 - Jinghao Zheng (now Master stdudent at EPFL)
