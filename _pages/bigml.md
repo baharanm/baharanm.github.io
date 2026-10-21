@@ -98,7 +98,7 @@ An example of displaying a tweet:
 - Daniel Huang (Visiting from UBC)
 - Aarnav Choudhary (not graduated yet)
 - Allan Zhang (not graduated yet)
-- Mira Hadler (not graduated yet)
+- Mira Haldar (not graduated yet)
 - Maanas Gantla (not graduated yet)
 - Jiping Li (not PhD at Stanford University)
 - Siddhartha Mishra (now at DoorDash)
