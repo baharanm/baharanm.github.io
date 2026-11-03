@@ -36,17 +36,6 @@
   year={Preprints}
 }
 
-@article{xue26rl,
-  bibtex_show={true},
-  abbr={ArXiv},
-  title={Beyond What Seems Necessary: Hidden Gains from Scaling Training-Time Reasoning Length under Outcome Supervision},
-  abstract={Training LLMs to think and reason for longer has become a key ingredient in building state-of-the-art models that can solve complex problems previously out of reach. Recent efforts pursue this in different ways, such as RL fine-tuning to elicit long CoT or scaling latent reasoning through architectural recurrence. This makes reasoning length an important scaling knob. In this work, we identify a novel phenomenon (both theoretically and experimentally): under outcome-only supervision, out-of-distribution (OOD) performance can continue improving as training-time reasoning length (e.g., the token budget in RL, or the loop count in looped Transformers) increases, even after in-distribution (ID) performance has saturated. This suggests that robustness may require a larger budget than ID validation alone would indicate. We provide theoretical explanations via two mechanisms: (i) self-iteration can induce a stronger inductive bias in the hypothesis class, reshaping ID-optimal solutions in ways that improve OOD generalization; and (ii) when shortcut solutions that work for ID samples but not for OOD samples persist in the hypothesis class, regularization can reduce the learned solution's reliance on these shortcuts as the number of self-iterations increases. We complement the theory with empirical evidence from two realizations of scaling training-time reasoning length: increasing the number of loops in looped Transformers on a synthetic task, and increasing token budgets during RL fine-tuning of LLMs on mathematical reasoning.},
-  author={Xue, Yihao and Zhang, Allan and Huang, Jianhao and Sahai, Amit and Mirzasoleiman, Baharan},
-  journal={arXiv preprint arXiv:2602.00927},
-  arxiv={2602.00927},
-  year={Preprints}
-}
-
 @article{gangavarapu26synthetic,
   bibtex_show={true},
   abbr={ArXiv},
@@ -85,6 +74,30 @@
 
 
 ##############################################################
+@article{xue26rl,
+  bibtex_show={true},
+  abbr={NeurIPS},
+  title={From Weeks to Hours: Fast and Principled SFT Data Generation for Reasoning LLMs},
+  abstrat={Reasoning-oriented post-training enables large language models (LLMs) to solve complex tasks via multi-step inference. Supervised fine-tuning (SFT) on high-quality reasoning traces is a particularly efficient approach, but its effectiveness depends critically on careful data curation. Existing pipelines rely on a costly generate-then-filter paradigm: large pools of long reasoning traces are produced by multiple teacher models and subsequently filtered for difficulty and diversity using additional LLMs, often requiring weeks of computation. In this work, we propose SFTPROBE, a fundamentally different approach that bypasses this pipeline by directly predicting the quality of reasoning data. We show that a brief LoRA-based adaptation, combined with evaluating loss on only 5% of each reasoning trace, suffices to estimate both difficulty and diversity. SFTPROBE is grounded in a geometric view of post-training, where pretrained LLMs lie in a low-rank, anisotropic loss basin. By probing this basin via low-rank perturbations, we construct compact loss signatures whose clustering captures diversity, while loss at curvature inflection points provides a robust proxy for difficulty. We also provide a simple criterion for teacher selection. Empirically, our approach reduces data curation time from weeks to hours while maintaining or improving performance. Remarkably, on mathematical reasoning, 5k generated examples match the highly filtered 89k-example in OpenThoughts-Math dataset, and 7.5k generated examples outperforms it by 2.5% in accuracy. We further introduce a high-quality physics reasoning dataset, and use it to train a model that outperforms an IPhO 2025 silver-medal-winning model.},
+  author={Jin, Hongyi Henry and Yang., Wenhan and Ghaffari, Meysam and Morato, Carlos and Mirzasoleiman, Baharan},
+  journal={Advances in Neural Information Processing Systems (NeurIPS)},
+  website = {https://bigml-cs-ucla.github.io/SFTProbe-page/},
+  arxiv={2602.00927},
+  pdf={jin26fast.pdf},
+  year={2026}
+}
+
+@article{xue26rl,
+  bibtex_show={true},
+  abbr={NeurIPS},
+  title={Beyond What Seems Necessary: Hidden Gains from Scaling Training-Time Reasoning Length under Outcome Supervision},
+  abstract={Training LLMs to think and reason for longer has become a key ingredient in building state-of-the-art models that can solve complex problems previously out of reach. Recent efforts pursue this in different ways, such as RL fine-tuning to elicit long CoT or scaling latent reasoning through architectural recurrence. This makes reasoning length an important scaling knob. In this work, we identify a novel phenomenon (both theoretically and experimentally): under outcome-only supervision, out-of-distribution (OOD) performance can continue improving as training-time reasoning length (e.g., the token budget in RL, or the loop count in looped Transformers) increases, even after in-distribution (ID) performance has saturated. This suggests that robustness may require a larger budget than ID validation alone would indicate. We provide theoretical explanations via two mechanisms: (i) self-iteration can induce a stronger inductive bias in the hypothesis class, reshaping ID-optimal solutions in ways that improve OOD generalization; and (ii) when shortcut solutions that work for ID samples but not for OOD samples persist in the hypothesis class, regularization can reduce the learned solution's reliance on these shortcuts as the number of self-iterations increases. We complement the theory with empirical evidence from two realizations of scaling training-time reasoning length: increasing the number of loops in looped Transformers on a synthetic task, and increasing token budgets during RL fine-tuning of LLMs on mathematical reasoning.},
+  author={Xue, Yihao and Zhang, Allan and Huang, Jianhao and Sahai, Amit and Mirzasoleiman, Baharan},
+  journal={Advances in Neural Information Processing Systems (NeurIPS)},
+  arxiv={2602.00927},
+  year={2026}
+}
+
 @article{huang26multi,
   bibtex_show={true},
   abbr={COLM},
@@ -146,7 +159,7 @@
   abbr={ICML},
   title={Reasoning Quality Emerges Early: Data Curation for Reasoning Models},
   abstract={Supervised fine-tuning (SFT) on a small, high-quality set of long reasoning traces is an effective approach for eliciting strong reasoning capabilities in Large Language Models (LLMs). However, existing methods for curating high-quality SFT data rely heavily on strong reasoning models to filter examples based on diversity and difficulty, making the curation process costly while often yielding suboptimal data quality. In this work, we show that diverse and challenging reasoning examples can be identified using only the initial reasoning tokens. Specifically, we demonstrate that difficult problems can be reliably detected based on the loss of the first 100 reasoning tokens evaluated at a randomly perturbed checkpoint of the pretrained model. We further show that examples exhibiting similar loss patterns over their first 1k reasoning tokens across a small number of perturbed checkpoints extrapolating along the fine-tuning trajectory provably induce similar gradients. We validate our approach through extensive experiments on fine-tuning Qwen2.5-7B and Llama3.1-8B models on the M23K medical reasoning and OpenThoughts-Math datasets. Our method outperforms existing baselines by up to 1.7\% while being 91\% more token efficient. Our repo is available at \url{https://bigml-cs-ucla.github.io/TEMP-project-page/}},
-  author={Jin, Henry and Yang., Wenhan and Ghaffari, Meysam and Morato, Carlos and Mirzasoleiman, Baharan},
+  author={Jin, Hongyi Henry and Yang., Wenhan and Ghaffari, Meysam and Morato, Carlos and Mirzasoleiman, Baharan},
   pdf={jin26reasoning.pdf},
   website={https://bigml-cs-ucla.github.io/TEMP-project-page/},
   journal={International Conference on Machine Learning (ICML)},
