@@ -58,6 +58,17 @@
   year={Preprints}
 }
 
+@article{yang26distill,
+  bibtex_show={true},
+  abbr={ArXiv},
+  title={Distilling Visual Reasoning into Text Space},
+  abstract={ELarge Vision–Language Models (LVLMs) have shown strong promise for multimodal reasoning, yet often struggle with tasks requiring concepts beyond what is directly observable in the input image. Existing methods generate intermediate images or latent visual tokens to guide reasoning, but these representations can introduce errors and increasingly interfere with textual reasoning as reasoning progresses. We propose Visual-to-Text Chain-of-Thought Distillation (V2T), a framework that enables LVLMs to internalize visual reasoning without generating intermediate visual representations at inference time. V2T first trains a teacher LVLM using interleaved visual and textual chains of thought, and then uses knowledge distillation to train a student LVLM using the teacher’s logits and cross-entropy supervision from ground-truth textual reasoning. When reasoning images can be mapped to the original image, V2T can additionally distill the teacher’s attention to corresponding regions, while ground-truth bounding boxes can further guide a subsequent reinforcement learning stage. Experiments across multiple multimodal reasoning benchmarks show that V2T consistently outperforms the teacher and existing baselines, improving average accuracy by 14.3% on a held-out set and 2.7% on the broader visual evaluation suite. Moreover, lightweight SFT and substantially reduced RL make V2T up to 42× faster to train than state-of-the-art baselines.},
+  author={Yang., Wenhan and Naharas, Nilay and Mirzasoleiman, Baharan},
+  journal={arXiv preprint arXiv:2609.34408},
+  arxiv={2609.34408},
+  year={Preprints}
+}
+
 @article{joshi2023spuco,
   bibtex_show={true},
   abbr={ArXiv},
@@ -115,7 +126,7 @@
   title={How Transformers Learn to Plan via Multi-Token Prediction},
   abstract={While next-token prediction (NTP) has been the standard objective for training language models, it often struggles to capture global structure in reasoning tasks. Multi-token prediction (MTP) has recently emerged as a promising alternative, yet its underlying mechanisms remain poorly understood. In this paper, we study how MTP facilitates reasoning, with a focus on planning. Empirically, we show that MTP consistently outperforms NTP on both synthetic graph path-finding tasks and more realistic reasoning benchmarks, such as Countdown and boolean satisfiability problems. Theoretically, we analyze a simplified two-layer Transformer on a star graph task. We prove that MTP induces a two-stage reverse reasoning process: the model first attends to the end node and then reconstructs the path by tracing intermediate nodes backward. This behavior arises from a gradient decoupling property of MTP, which provides a cleaner training signal compared to NTP. Ultimately, our results highlight how multi-token objectives inherently bias optimization toward robust and interpretable reasoning circuits.},
   author={Huang, Jianhao and Zhou, Zhanpeng and Xia, Renqiu and Mirzasoleiman, Baharan and Su, Weijie and Huang, Wei},
-  arxiv={2604.11912},
+  pdf={huang26multi.pdf},
   journal={Conference on Language Modeling (COLM)},
   year={2026}
 }
